@@ -19,12 +19,18 @@ function renderCalendario(mes) {
     const totalDias = diasPorMes[mes];
     const mesNumero = Object.keys(diasPorMes).indexOf(mes) + 1;
 
+    // 🔧 Actualizar el select al mes actual
+    const selectMes = document.getElementById("mes");
+    if (selectMes.value !== mes) {
+        selectMes.value = mes;
+    }
+
     for (let d = 1; d <= totalDias; d++) {
         const boton = document.createElement("button");
         boton.classList.add("dia");
         boton.textContent = d;
 
-        const fecha = new Date(`2026-${String(mesNumero).padStart(2,"0")}-${String(d).padStart(2,"0")}`);
+        const fecha = new Date(`2026-${String(mesNumero).padStart(2, "0")}-${String(d).padStart(2, "0")}`);
         const fechaISO = fecha.toISOString().split("T")[0];
 
         // Condiciones de disponibilidad
@@ -53,6 +59,7 @@ function renderCalendario(mes) {
         grid.appendChild(boton);
     }
 }
+
 
 document.getElementById("mes").addEventListener("change", e => {
     renderCalendario(e.target.value);
