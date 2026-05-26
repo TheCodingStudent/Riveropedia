@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calendario de poemas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Topbar -->
+    <nav class="topbar">
+        <h1 class="titulo tooltip">N. I. N. A
+            <span class="tooltiptext">Neural Interface for Noble Affection</span>
+        </h1>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Poemas</a></li>
+            <li><a href="#">Sobre mí</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Selector de mes -->
+    <section class="selector">
+        <label for="mes">Selecciona mes:</label>
+        <select id="mes">
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+            <option value="septiembre">Septiembre</option>
+            <option value="octubre">Octubre</option>
+            <option value="noviembre">Noviembre</option>
+            <option value="diciembre">Diciembre</option>
+        </select>
+    </section>
+
+    <!-- Calendario cuadrado -->
+    <section class="calendario">
+        <div id="grid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 A. Ssshparro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
