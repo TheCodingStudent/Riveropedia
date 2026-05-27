@@ -1,167 +1,700 @@
+/* =========================
+   FUENTES Y BASE
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+
+    --rosa-main: #ff4f87;
+    --rosa-soft: #ffd4e2;
+    --rosa-light: #fff1f6;
+    --rosa-dark: #d6336c;
+
+    --glass: rgba(255, 255, 255, 0.18);
+
+    --texto: #4a2a35;
+    --texto-light: #7c5b66;
+
+    --shadow:
+        0 10px 30px rgba(255, 79, 135, 0.15);
+
+    --radius: 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    font-family: 'Times New Roman', serif;
-    background: linear-gradient(135deg, #ffe6f0, #f8c6d8);
-    margin: 0;
-    padding: 0;
-    color: #333;
+
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-}
 
-.topbar {
-    background-color: #e75480;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    /* título a la izquierda, menú a la derecha */
-    align-items: center;
-    padding: 1em 2em;
-    position: sticky;
-    top: 0;
-}
-
-/* Estilo del título */
-.titulo {
     position: relative;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white;
-    /* rosa principal */
+
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(circle at 10% 20%, #ffd1e0 0%, transparent 30%),
+        radial-gradient(circle at 90% 10%, #ffb6cf 0%, transparent 25%),
+        radial-gradient(circle at 80% 80%, #ff9fc0 0%, transparent 30%),
+        linear-gradient(145deg,
+            #fff0f5 0%,
+            #ffd9e8 35%,
+            #ffc1d8 70%,
+            #ffb0cb 100%);
+
+    background-attachment: fixed;
 }
 
-/* Tooltip oculto por defecto */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 220px;
-    background-color: #ffb6c1;
-    /* rosa claro */
-    color: #fff;
-    text-align: center;
-    border-radius: 8px;
-    padding: 8px;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    /* aparece arriba del título */
-    left: 50%;
-    /* transform: translateX(-50%); */
-    opacity: 0;
-    transition: opacity 0.4s;
-    font-size: 0.9em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Flechita decorativa */
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    /* parte inferior del tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #ffb6c1 transparent transparent transparent;
-}
-
-/* Mostrar tooltip al pasar el mouse */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
-
-.topbar ul {
-    list-style: none;
+html,
+body {
     margin: 0;
     padding: 0;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    /* backdrop-filter: blur(18px); */
+    /* -webkit-backdrop-filter: blur(18px); */
+
+    /* background: rgba(255, 255, 255, 0.35); */
+    background: var(--rosa-main);
+
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 1.2rem;
+
+    /* box-shadow:
+        0 8px 25px rgba(255, 105, 145, 0.08); */
 }
 
-.topbar ul li {
-    margin-left: 1em;
+/* =========================
+   TITULO
+========================= */
+
+.titulo {
+
+    position: relative;
+
+    margin: 0;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+
+    color: var(--rosa-light);
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
 }
 
-.topbar ul li a {
-    color: white;
+.titulo:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   TOOLTIP
+========================= */
+
+.tooltip .tooltiptext {
+
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+
+    top: 135%;
+    left: 0;
+
+    width: 240px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(20px);
+
+    color: var(--texto);
+
+    padding: 0.9rem 1rem;
+
+    border-radius: 18px;
+
+    font-size: 0.8rem;
+    line-height: 1.4;
+
+    box-shadow:
+        0 10px 35px rgba(255, 79, 135, 0.2);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+
+    transform: translateY(-5px);
+}
+
+.tooltip:hover .tooltiptext {
+
+    visibility: visible;
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================
+   MENU
+========================= */
+
+.topbar ul {
+
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+
+    margin: 0;
+    padding: 0;
+}
+
+.topbar a {
+
     text-decoration: none;
-    font-weight: bold;
+
+    color: var(--texto);
+
+    font-size: 0.92rem;
+    font-weight: 500;
+
+    transition: 0.2s ease;
 }
 
+.topbar a:hover {
 
-/* Selector */
+    color: var(--rosa-main);
+}
+
+/* =========================
+   SELECTOR
+========================= */
+
 .selector {
-    text-align: center;
-    margin: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+
+    gap: 0.8rem;
 }
 
-/* Calendario cuadrado */
+.selector label {
+
+    font-size: 0.95rem;
+    color: var(--texto-light);
+}
+
+#mes {
+
+    appearance: none;
+
+    border: none;
+    outline: none;
+
+    background:
+        rgba(255, 255, 255, 0.5);
+
+    backdrop-filter: blur(10px);
+
+    padding:
+        0.9rem 1.4rem;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: var(--texto);
+
+    box-shadow: var(--shadow);
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+#mes:hover {
+
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CALENDARIO
+========================= */
+
 .calendario {
+
     flex: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding:
+        0 1rem 2rem;
 }
 
 #grid {
+
+    width: 100%;
+    max-width: 430px;
+
     display: grid;
+
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 5px;
-    width: 90vmin;
-    /* cuadrado proporcional */
-    height: 90vmin;
-    /* cuadrado proporcional */
-    max-width: 700px;
-    max-height: 700px;
+
+    gap: 0.65rem;
 }
+
+/* =========================
+   DIAS
+========================= */
 
 .dia {
-    background: #f8c6d8;
+
+    aspect-ratio: 1 / 1;
+
     border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    cursor: pointer;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255, 255, 255, 0.45);
+
+    backdrop-filter: blur(14px);
+
+    color: var(--texto);
+
+    font-size: 1rem;
+    font-weight: 500;
+
     position: relative;
+
+    box-shadow:
+        0 8px 20px rgba(255, 105, 145, 0.08);
+
+    transition:
+        transform 0.18s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
-.dia:hover {
-    background: #e75480;
-    color: white;
+.disponible {
+
+    cursor: pointer;
 }
+
+.disponible:hover {
+
+    transform:
+        translateY(-4px) scale(1.03);
+
+    background:
+        linear-gradient(145deg,
+            #ff4f87,
+            #ff77a8,
+            #ff5d95);
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(255, 79, 135, 0.45),
+        0 0 20px rgba(255, 120, 170, 0.35);
+}
+
+.disponible:active {
+
+    transform: scale(0.96);
+}
+
+/* =========================
+   FUTUROS
+========================= */
 
 .futuro {
-    background: #ffe6f0;
-    color: #aaa;
+
+    background:
+        rgba(255, 255, 255, 0.18);
+
+    color: #c7aeb7;
+
     cursor: not-allowed;
 }
 
+/* =========================
+   VISITADOS
+========================= */
+
 .visitado {
-    background: #f8c6d8;
-    color: #000;
+
+    background:
+        linear-gradient(145deg,
+            #ff8fb3,
+            #ff6c9f);
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 145, 0.3);
 }
 
 .visitado .x {
-    color: red;
-    font-weight: bold;
+
     position: absolute;
+
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
-    font-size: 5em;
-    /* tamaño más grande */
-    opacity: 0.5;
+
+    font-size: 3rem;
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
 }
 
+/* =========================
+   FOOTER
+========================= */
 
-/* Footer */
 footer {
-    text-align: left;
-    background-color: #e75480;
-    color: white;
-    padding: 1em;
+
     margin-top: auto;
+
+    width: 100%;
+
+    text-align: center;
+
+    /* padding:
+        1.2rem; */
+
+    /* background:
+        rgba(255, 255, 255, 0.25); */
+
+    /* backdrop-filter: blur(14px); */
+
+    /* border-top:
+        1px solid rgba(255, 255, 255, 0.3); */
+
+    color: #a14d6d;
+
+    font-size: 0.82rem;
+
+    letter-spacing: 0.05rem;
+}
+
+body::before,
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    opacity: 0.45;
+
+    z-index: -1;
+
+    animation: floatBlob 12s ease-in-out infinite;
+}
+
+body::before {
+
+    background: #ff78aa;
+
+    top: -100px;
+    left: -80px;
+}
+
+body::after {
+
+    background: #ff4f87;
+
+    bottom: -120px;
+    right: -80px;
+
+    animation-delay: 4s;
+}
+
+@keyframes floatBlob {
+
+    0% {
+        transform:
+            translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform:
+            translate(20px, -30px) scale(1.08);
+    }
+
+    100% {
+        transform:
+            translate(0, 0) scale(1);
+    }
+}
+
+/* =========================
+   MOBILE EXTRA
+========================= */
+
+@media (max-width: 480px) {
+
+    .topbar {
+
+        padding:
+            1rem;
+    }
+
+    .titulo {
+
+        font-size: 1.1rem;
+        letter-spacing: 0.18rem;
+    }
+
+    .topbar ul {
+
+        gap: 0.7rem;
+    }
+
+    .topbar a {
+
+        font-size: 0.8rem;
+    }
+
+    #grid {
+
+        gap: 0.5rem;
+    }
+
+    .dia {
+
+        border-radius: 18px;
+
+        font-size: 0.95rem;
+    }
+
+    .visitado .x {
+
+        font-size: 2.4rem;
+    }
+}
+
+/* =========================
+   PAGINA DE POEMA
+========================= */
+
+.poema-container {
+
+    flex: 1;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding:
+        2rem 1rem 3rem;
+}
+
+.poema-card {
+
+    width: 100%;
+    max-width: 760px;
+
+    background:
+        rgba(255, 255, 255, 0.4);
+
+    backdrop-filter: blur(18px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 34px;
+
+    padding:
+        2rem;
+
+    box-shadow:
+        0 20px 50px rgba(255, 79, 135, 0.15);
+
+    animation:
+        fadeUp 0.7s ease;
+}
+
+.poema-fecha {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    padding:
+        0.45rem 0.9rem;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255, 255, 255, 0.55);
+
+    color: #b04c73;
+
+    font-size: 0.82rem;
+    font-weight: 500;
+
+    letter-spacing: 0.04rem;
+}
+
+.poema-card h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: #d6336c;
+
+    line-height: 1.1;
+}
+
+.poema-texto p {
+
+    font-size: 1.05rem;
+
+    line-height: 2;
+
+    color: #5a3442;
+
+    margin-bottom: 1.8rem;
+}
+
+.firma {
+
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 0.4rem;
+
+    color: #a14d6d;
+}
+
+.firma span {
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.firma small {
+
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* =========================
+   ANIMACION
+========================= */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .poema-container {
+
+        padding:
+            1rem 0.8rem 2rem;
+    }
+
+    .poema-card {
+
+        padding:
+            1.4rem;
+
+        border-radius: 28px;
+    }
+
+    .poema-card h2 {
+
+        font-size: 1.6rem;
+    }
+
+    .poema-texto p {
+
+        font-size: 0.98rem;
+
+        line-height: 1.9;
+    }
+
+    .firma {
+
+        margin-top: 2rem;
+    }
 }

@@ -2,113 +2,111 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Poema de cumpleaños</title>
+
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .topbar {
-            background-color: #e75480;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            /* título a la izquierda, botón a la derecha */
-            align-items: center;
-            padding: 1em 2em;
-            position: sticky;
-            top: 0;
-        }
 
-        .btn-volver {
-            /* background-color: #ffb6c1; */
-            /* rosa claro */
-            color: #fff;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-volver:hover {
-            background-color: #e75480;
-            /* rosa más intenso al pasar el mouse */
-        }
-
-        body {
-            font-family: "Times New Roman", serif;
-            background-color: #fff0f5;
-            /* rosa muy suave */
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .poema {
-            max-width: 700px;
-            margin: 3em auto;
-            background: #ffe4ec;
-            padding: 2em;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .poema h2 {
-            text-align: center;
-            color: #e75480;
-        }
-
-        .poema p {
-            line-height: 1.6;
-            margin-bottom: 1em;
-        }
-
-        .firma {
-            text-align: right;
-            font-style: italic;
-            margin-top: 2em;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Topbar -->
+
+    <!-- TOPBAR -->
     <nav class="topbar">
-        <h1 class="titulo tooltip">N.I.N.A
-            <span class="tooltiptext">Neural Interface for Noble Affection</span>
+
+        <h1 class="titulo tooltip">
+            N.I.N.A
+
+            <span class="tooltiptext">
+                Neural Interface for Noble Affection
+            </span>
         </h1>
-        <a href="../index.html" class="btn-volver">Volver al calendario</a>
+
+        <ul>
+            <li>
+                <a href="../index.html">
+                    Calendario
+                </a>
+            </li>
+        </ul>
+
     </nav>
 
+    <!-- CONTENIDO -->
+    <main class="poema-container">
 
-    <section class="poema">
-        <h2>Poema de cumpleaños</h2>
-        <p>Hoy cumple años mi amigo el topógrafo más cabezón,<br>
-            el que mide caminos pero nunca la dimensión<br>
-            de lo mucho que lo quiero, aunque me haga renegar,<br>
-            porque siempre tiene un dato listo para corregir y aclarar.</p>
+        <article class="poema-card">
 
-        <p>Eres como Spider-Man colgando entre edificios,<br>
-            terco como Peter Parker guardando sus sacrificios.<br>
-            Con tu casco y tus planos pareces héroe en misión,<br>
-            aunque a veces tu terquedad gane cualquier discusión.</p>
+            <span class="poema-fecha">
+                7 de mayo de 2026
+            </span>
 
-        <p>Si la vida fuera un mapa, tú serías coordenada,<br>
-            de esas que nunca se pierden aunque la ruta esté nublada.<br>
-            Y aunque seas un cabezón nivel multiverso total,<br>
-            eres de esas personas que uno quiere de verdad.</p>
+            <h2>
+                Poema de cumpleaños
+            </h2>
 
-        <p>Así que hoy brinda fuerte, mi amigo sin comparación,<br>
-            que tengas risas, aventuras y cero error de medición.<br>
-            Y recuerda: un gran poder y una gran cabezonería conlleva una gran responsabilidad... y buen amigo también.
+            <div class="poema-texto">
+
+                <p>
+                    Hoy cumple años mi amigo el topógrafo más cabezón,<br>
+                    el que mide caminos pero nunca la dimensión<br>
+                    de lo mucho que lo quiero, aunque me haga renegar,<br>
+                    porque siempre tiene un dato listo para corregir y aclarar.
+                </p>
+
+                <p>
+                    Eres como Spider-Man colgando entre edificios,<br>
+                    terco como Peter Parker guardando sus sacrificios.<br>
+                    Con tu casco y tus planos pareces héroe en misión,<br>
+                    aunque a veces tu terquedad gane cualquier discusión.
+                </p>
+
+                <p>
+                    Si la vida fuera un mapa, tú serías coordenada,<br>
+                    de esas que nunca se pierden aunque la ruta esté nublada.<br>
+                    Y aunque seas un cabezón nivel multiverso total,<br>
+                    eres de esas personas que uno quiere de verdad.
+                </p>
+
+                <p>
+                    Así que hoy brinda fuerte, mi amigo sin comparación,<br>
+                    que tengas risas, aventuras y cero error de medición.<br>
+                    Y recuerda: un gran poder y una gran cabezonería
+                    conlleva una gran responsabilidad...
+                    y buen amigo también.
+                </p>
+
+            </div>
+
+            <div class="firma">
+
+                <span>
+                    — G. Rivero
+                </span>
+
+                <small>
+                    Pd. Come mucho pastel 🥳
+                </small>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 A. Ssshparro
         </p>
 
-        <p class="firma">- G. Rivero<br>
-            Pd. Come mucho pastel 🥳</p>
-    </section>
-
-    <footer>
-        <p style="text-align:left;">© 2026 A. Ssshparro</p>
     </footer>
+
 </body>
 
 </html>
