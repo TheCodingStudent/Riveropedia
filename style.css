@@ -211,17 +211,11 @@ body {
 }
 
 #grid {
-
     width: 100%;
-
-    max-width: 430px;
-
+    max-width: 380px;
     aspect-ratio: 1 / 1;
-
     display: grid;
-
     grid-template-columns: repeat(7, 1fr);
-
     gap: 0.65rem;
 }
 
