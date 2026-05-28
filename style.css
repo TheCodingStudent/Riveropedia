@@ -207,12 +207,12 @@ body {
     justify-content: center;
     align-items: flex-start;
 
-    padding: 0 1rem 2rem;
+    padding: 0 1rem 2rem; 
 }
 
 #grid {
-    width: min(100vw, 800px);
-    height: min(100vw, 430px);
+    width: min(100vw - 2rem, 800px);
+    height: min(100vw - 2rem, 430px);
 
     aspect-ratio: 1 / 1;
 
@@ -486,63 +486,6 @@ body::after {
     }
 }
 
-@media (max-width: 480px) {
-    .topbar {
-        padding: 1rem;
-    }
-
-    .titulo {
-        font-size: 1.1rem;
-        letter-spacing: 0.18rem;
-    }
-
-    .topbar ul {
-        gap: 0.7rem;
-    }
-
-    .topbar a {
-        font-size: 0.8rem;
-    }
-
-    #grid {
-        gap: 0.5rem;
-    }
-
-    .dia {
-        border-radius: 18px;
-
-        font-size: 0.95rem;
-    }
-
-    .visitado .x {
-        font-size: 2.4rem;
-    }
-
-    .poema-container {
-        padding: 1rem 0.8rem 2rem;
-    }
-
-    .poema-card {
-        padding: 1.4rem;
-
-        border-radius: 28px;
-    }
-
-    .poema-card h2 {
-        font-size: 1.6rem;
-    }
-
-    .poema-texto p {
-        font-size: 0.98rem;
-
-        line-height: 1.9;
-    }
-
-    .firma {
-        margin-top: 2rem;
-    }
-}
-
 .poema-container {
     flex: 1;
 
@@ -607,8 +550,8 @@ body::after {
 }
 
 .poema-texto p {
-    font-size: 1.05rem;
-    line-height: 2;
+    font-size: 1.1rem;
+    line-height: 1.5;
     color: #5a3442;
     margin-bottom: 1.8rem;
     text-align: justify;
@@ -648,5 +591,65 @@ body::after {
         opacity: 1;
 
         transform: translateY(0);
+    }
+}
+
+@media (orientation: portrait) {
+    .topbar {
+        padding: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.1rem;
+        letter-spacing: 0.18rem;
+    }
+
+    .topbar ul {
+        gap: 0.7rem;
+    }
+
+    .topbar a {
+        font-size: 0.8rem;
+    }
+
+    #grid {
+        gap: 0.5rem;
+    }
+
+    .dia {
+        border-radius: 18px;
+
+        font-size: 0.95rem;
+    }
+
+    .visitado .x {
+        font-size: 2.4rem;
+    }
+
+    .poema-container {
+        padding: 1rem 0.8rem 2rem;
+    }
+
+    .poema-card {
+        padding: 1.4rem;
+
+        border-radius: 28px;
+    }
+
+    .poema-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .poema-texto p {
+        font-size: clamp(0.8rem, 1.8vw, 1rem);
+        line-height: 1;
+    }
+
+    .firma {
+        margin-top: 2rem;
+    }
+
+    .poema-texto p::-webkit-scrollbar {
+        display: none;
     }
 }
