@@ -652,6 +652,7 @@ body::after {
     .poema-texto p {
         font-size: clamp(0.8rem, 1.8vw, 1rem);
         line-height: 1;
+        color: red;
     }
 
     .firma {
