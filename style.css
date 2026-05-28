@@ -1,11 +1,6 @@
-/* =========================
-   FUENTES Y BASE
-========================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-
     --rosa-main: #ff4f87;
     --rosa-soft: #ffd4e2;
     --rosa-light: #fff1f6;
@@ -16,9 +11,7 @@
     --texto: #4a2a35;
     --texto-light: #7c5b66;
 
-    --shadow:
-        0 10px 30px rgba(255, 79, 135, 0.15);
-
+    --shadow: 0 10px 30px rgba(255, 79, 135, 0.15);
     --radius: 24px;
 }
 
@@ -26,12 +19,17 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
 }
 
 body {
-
     min-height: 100vh;
 
     display: flex;
@@ -45,41 +43,23 @@ body {
         radial-gradient(circle at 10% 20%, #ffd1e0 0%, transparent 30%),
         radial-gradient(circle at 90% 10%, #ffb6cf 0%, transparent 25%),
         radial-gradient(circle at 80% 80%, #ff9fc0 0%, transparent 30%),
-        linear-gradient(145deg,
+        linear-gradient(
+            145deg,
             #fff0f5 0%,
             #ffd9e8 35%,
             #ffc1d8 70%,
-            #ffb0cb 100%);
+            #ffb0cb 100%
+        );
 
     background-attachment: fixed;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* =========================
-   TOPBAR
-========================= */
-
 .topbar {
-
     width: 100%;
-    margin: 0;
-    border-radius: 0;
+
     position: sticky;
     top: 0;
     z-index: 100;
-
-    /* backdrop-filter: blur(18px); */
-    /* -webkit-backdrop-filter: blur(18px); */
-
-    /* background: rgba(255, 255, 255, 0.35); */
-    background: var(--rosa-main);
-
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
 
     display: flex;
     justify-content: space-between;
@@ -87,16 +67,10 @@ body {
 
     padding: 1rem 1.2rem;
 
-    /* box-shadow:
-        0 8px 25px rgba(255, 105, 145, 0.08); */
+    background: var(--rosa-main);
 }
 
-/* =========================
-   TITULO
-========================= */
-
 .titulo {
-
     position: relative;
 
     margin: 0;
@@ -116,12 +90,7 @@ body {
     transform: scale(1.03);
 }
 
-/* =========================
-   TOOLTIP
-========================= */
-
 .tooltip .tooltiptext {
-
     visibility: hidden;
     opacity: 0;
 
@@ -145,8 +114,7 @@ body {
     font-size: 0.8rem;
     line-height: 1.4;
 
-    box-shadow:
-        0 10px 35px rgba(255, 79, 135, 0.2);
+    box-shadow: 0 10px 35px rgba(255, 79, 135, 0.2);
 
     transition:
         opacity 0.25s ease,
@@ -156,19 +124,13 @@ body {
 }
 
 .tooltip:hover .tooltiptext {
-
     visibility: visible;
     opacity: 1;
 
     transform: translateY(0);
 }
 
-/* =========================
-   MENU
-========================= */
-
 .topbar ul {
-
     list-style: none;
 
     display: flex;
@@ -179,7 +141,6 @@ body {
 }
 
 .topbar a {
-
     text-decoration: none;
 
     color: var(--texto);
@@ -191,16 +152,10 @@ body {
 }
 
 .topbar a:hover {
-
-    color: var(--rosa-main);
+    color: var(--rosa-light);
 }
 
-/* =========================
-   SELECTOR
-========================= */
-
 .selector {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,25 +167,21 @@ body {
 }
 
 .selector label {
-
     font-size: 0.95rem;
     color: var(--texto-light);
 }
 
 #mes {
-
     appearance: none;
 
     border: none;
     outline: none;
 
-    background:
-        rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
 
     backdrop-filter: blur(10px);
 
-    padding:
-        0.9rem 1.4rem;
+    padding: 0.9rem 1.4rem;
 
     border-radius: 999px;
 
@@ -247,52 +198,37 @@ body {
 }
 
 #mes:hover {
-
     transform: translateY(-2px);
 }
 
-/* =========================
-   CALENDARIO
-========================= */
-
 .calendario {
-
-    flex: 1;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    padding:
-        0 1rem 2rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0 1rem 2rem;
 }
 
 #grid {
+    width: min(100vw, 800px);
+    height: min(100vw, 430px);
 
-    width: 100%;
-    max-width: 430px;
+    aspect-ratio: 1 / 1;
 
     display: grid;
-
     grid-template-columns: repeat(7, 1fr);
 
     gap: 0.65rem;
 }
 
-/* =========================
-   DIAS
-========================= */
-
 .dia {
-
     aspect-ratio: 1 / 1;
 
     border: none;
-
     border-radius: 22px;
 
-    background:
-        rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.45);
 
     backdrop-filter: blur(14px);
 
@@ -303,8 +239,7 @@ body {
 
     position: relative;
 
-    box-shadow:
-        0 8px 20px rgba(255, 105, 145, 0.08);
+    box-shadow: 0 8px 20px rgba(255, 105, 145, 0.08);
 
     transition:
         transform 0.18s ease,
@@ -315,20 +250,19 @@ body {
 }
 
 .disponible {
-
     cursor: pointer;
 }
 
 .disponible:hover {
-
-    transform:
-        translateY(-4px) scale(1.03);
+    transform: translateY(-4px) scale(1.03);
 
     background:
-        linear-gradient(145deg,
+        linear-gradient(
+            145deg,
             #ff4f87,
             #ff77a8,
-            #ff5d95);
+            #ff5d95
+        );
 
     color: white;
 
@@ -338,43 +272,141 @@ body {
 }
 
 .disponible:active {
-
     transform: scale(0.96);
 }
 
-/* =========================
-   FUTUROS
-========================= */
-
 .futuro {
-
-    background:
-        rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.18);
 
     color: #c7aeb7;
 
     cursor: not-allowed;
 }
 
-/* =========================
-   VISITADOS
-========================= */
 
-.visitado {
+.dia.armando {
+    background-color: #4da6ff;
+    color: white;
+}
+
+.dia.armando:hover {
+    transform: translateY(-4px) scale(1.03);
 
     background:
-        linear-gradient(145deg,
-            #ff8fb3,
-            #ff6c9f);
+        linear-gradient(
+            145deg,
+            #69b7ff,
+            #4da6ff,
+            #2d7dd2
+        );
 
     color: white;
 
     box-shadow:
-        0 10px 25px rgba(255, 105, 145, 0.3);
+        0 15px 35px rgba(77, 166, 255, 0.45),
+        0 0 20px rgba(77, 166, 255, 0.35);
+}
+
+.dia.gina {
+    background-color: #ff9f43;
+    color: white;
+}
+
+.dia.gina:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffb45f,
+            #ff9f43,
+            #ff7b00
+        );
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(255, 159, 67, 0.45),
+        0 0 20px rgba(255, 159, 67, 0.35);
+}
+
+.dia.visitado {
+    background-color: #ff6c9f;
+    color: white;
+}
+
+.dia.visitado:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ff8fb3,
+            #ff6c9f,
+            #ff4f87
+        );
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(255, 105, 145, 0.45),
+        0 0 20px rgba(255, 120, 170, 0.35);
+}
+
+.dia.gina.visitado {
+    background-color: #cc6a00;
+    color: white;
+}
+
+.dia.gina.visitado:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    background:
+        linear-gradient(
+            145deg,
+            #e58a2c,
+            #cc6a00,
+            #a65300
+        );
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(204, 106, 0, 0.45),
+        0 0 20px rgba(255, 159, 67, 0.35);
+}
+
+.dia.armando.visitado {
+    background-color: #2d7dd2;
+    color: white;
+}
+
+.dia.armando.visitado:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    background:
+        linear-gradient(
+            145deg,
+            #5ea9f0,
+            #2d7dd2,
+            #1f5fa3
+        );
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(45, 125, 210, 0.45),
+        0 0 20px rgba(77, 166, 255, 0.35);
+}
+
+
+.visitado {
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(255, 105, 145, 0.3);
 }
 
 .visitado .x {
-
     position: absolute;
 
     top: 50%;
@@ -390,28 +422,12 @@ body {
     pointer-events: none;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
 footer {
-
     margin-top: auto;
 
     width: 100%;
 
     text-align: center;
-
-    /* padding:
-        1.2rem; */
-
-    /* background:
-        rgba(255, 255, 255, 0.25); */
-
-    /* backdrop-filter: blur(14px); */
-
-    /* border-top:
-        1px solid rgba(255, 255, 255, 0.3); */
 
     color: #a14d6d;
 
@@ -422,7 +438,6 @@ footer {
 
 body::before,
 body::after {
-
     content: "";
 
     position: fixed;
@@ -442,7 +457,6 @@ body::after {
 }
 
 body::before {
-
     background: #ff78aa;
 
     top: -100px;
@@ -450,7 +464,6 @@ body::before {
 }
 
 body::after {
-
     background: #ff4f87;
 
     bottom: -120px;
@@ -460,75 +473,77 @@ body::after {
 }
 
 @keyframes floatBlob {
-
     0% {
-        transform:
-            translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1);
     }
 
     50% {
-        transform:
-            translate(20px, -30px) scale(1.08);
+        transform: translate(20px, -30px) scale(1.08);
     }
 
     100% {
-        transform:
-            translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1);
     }
 }
 
-/* =========================
-   MOBILE EXTRA
-========================= */
-
 @media (max-width: 480px) {
-
     .topbar {
-
-        padding:
-            1rem;
+        padding: 1rem;
     }
 
     .titulo {
-
         font-size: 1.1rem;
         letter-spacing: 0.18rem;
     }
 
     .topbar ul {
-
         gap: 0.7rem;
     }
 
     .topbar a {
-
         font-size: 0.8rem;
     }
 
     #grid {
-
         gap: 0.5rem;
     }
 
     .dia {
-
         border-radius: 18px;
 
         font-size: 0.95rem;
     }
 
     .visitado .x {
-
         font-size: 2.4rem;
+    }
+
+    .poema-container {
+        padding: 1rem 0.8rem 2rem;
+    }
+
+    .poema-card {
+        padding: 1.4rem;
+
+        border-radius: 28px;
+    }
+
+    .poema-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .poema-texto p {
+        font-size: 0.98rem;
+
+        line-height: 1.9;
+    }
+
+    .firma {
+        margin-top: 2rem;
     }
 }
 
-/* =========================
-   PAGINA DE POEMA
-========================= */
-
 .poema-container {
-
     flex: 1;
 
     width: 100%;
@@ -537,48 +552,38 @@ body::after {
     justify-content: center;
     align-items: center;
 
-    padding:
-        2rem 1rem 3rem;
+    padding: 2rem 1rem 3rem;
 }
 
 .poema-card {
-
     width: 100%;
     max-width: 760px;
 
-    background:
-        rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
 
     backdrop-filter: blur(18px);
 
-    border:
-        1px solid rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.35);
 
     border-radius: 34px;
 
-    padding:
-        2rem;
+    padding: 2rem;
 
-    box-shadow:
-        0 20px 50px rgba(255, 79, 135, 0.15);
+    box-shadow: 0 20px 50px rgba(255, 79, 135, 0.15);
 
-    animation:
-        fadeUp 0.7s ease;
+    animation: fadeUp 0.7s ease;
 }
 
 .poema-fecha {
-
     display: inline-block;
 
     margin-bottom: 1rem;
 
-    padding:
-        0.45rem 0.9rem;
+    padding: 0.45rem 0.9rem;
 
     border-radius: 999px;
 
-    background:
-        rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.55);
 
     color: #b04c73;
 
@@ -589,9 +594,7 @@ body::after {
 }
 
 .poema-card h2 {
-
     margin-top: 0;
-
     margin-bottom: 2rem;
 
     font-size: 2rem;
@@ -600,21 +603,19 @@ body::after {
     color: #d6336c;
 
     line-height: 1.1;
+    text-align: center;
 }
 
 .poema-texto p {
-
     font-size: 1.05rem;
-
     line-height: 2;
-
     color: #5a3442;
-
     margin-bottom: 1.8rem;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .firma {
-
     margin-top: 3rem;
 
     display: flex;
@@ -627,74 +628,25 @@ body::after {
 }
 
 .firma span {
-
     font-size: 1rem;
     font-weight: 600;
 }
 
 .firma small {
-
     font-size: 0.9rem;
     opacity: 0.9;
 }
 
-/* =========================
-   ANIMACION
-========================= */
-
 @keyframes fadeUp {
-
     from {
-
         opacity: 0;
 
-        transform:
-            translateY(30px);
+        transform: translateY(30px);
     }
 
     to {
-
         opacity: 1;
 
-        transform:
-            translateY(0);
-    }
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-    .poema-container {
-
-        padding:
-            1rem 0.8rem 2rem;
-    }
-
-    .poema-card {
-
-        padding:
-            1.4rem;
-
-        border-radius: 28px;
-    }
-
-    .poema-card h2 {
-
-        font-size: 1.6rem;
-    }
-
-    .poema-texto p {
-
-        font-size: 0.98rem;
-
-        line-height: 1.9;
-    }
-
-    .firma {
-
-        margin-top: 2rem;
+        transform: translateY(0);
     }
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aún no disponible</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <nav class="topbar">
+
+        <h1 class="titulo tooltip">
+            N. I. N. A
+
+            <span class="tooltiptext">
+                Neural Interface for Noble Affection
+            </span>
+        </h1>
+
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../info/sobre-ti.html">Sobre ti</a></li>
+        </ul>
+
+    </nav>
+
+    <main class="poema-container">
+
+        <article class="poema-card">
+
+            <span class="poema-fecha" id="fecha"></span>
+
+            <h2>
+                Poema aún no disponible
+            </h2>
+
+            <div class="poema-texto">
+
+                <p>
+                    El contenido de esta fecha todavía
+                    no ha sido publicado.
+                </p>
+
+                <p>
+                    Los poemas se desbloquean
+                    diariamente a las 9:00 PM.
+                </p>
+
+                <p>
+                    Vuelve más tarde ♡
+                </p>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 A. Ssshparro</p>
+    </footer>
+
+    <script>
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const fecha =
+            params.get("fecha");
+
+        if (fecha) {
+
+            document.getElementById("fecha")
+                .textContent = fecha;
+        }
+
+    </script>
+
+</body>
+
+</html>
