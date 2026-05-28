@@ -202,6 +202,7 @@ body {
 }
 
 .calendario {
+
     width: 100%;
 
     display: flex;
@@ -212,9 +213,10 @@ body {
 }
 
 #grid {
-    width: min(100%, 430px);
 
-    aspect-ratio: 1 / 1;
+    width: 100%;
+
+    max-width: 430px;
 
     display: grid;
 
@@ -224,9 +226,13 @@ body {
 }
 
 .dia {
+
+    width: 100%;
+
     aspect-ratio: 1 / 1;
 
     border: none;
+
     border-radius: 22px;
 
     background: rgba(255, 255, 255, 0.45);
