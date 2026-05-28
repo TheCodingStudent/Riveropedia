@@ -202,21 +202,24 @@ body {
 }
 
 .calendario {
+
     display: flex;
 
     justify-content: center;
-    align-items: flex-start;
 
-    padding: 0 1rem 2rem; 
+    padding: 0 1rem 2rem;
 }
 
 #grid {
-    width: min(100vw - 2rem, 800px);
-    height: min(100vw - 2rem, 430px);
+
+    width: 100%;
+
+    max-width: 430px;
 
     aspect-ratio: 1 / 1;
 
     display: grid;
+
     grid-template-columns: repeat(7, 1fr);
 
     gap: 0.65rem;
@@ -594,7 +597,7 @@ body::after {
     }
 }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) and (max-width: 600px) {
     .topbar {
         padding: 1rem;
     }
