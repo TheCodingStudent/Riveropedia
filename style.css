@@ -31,14 +31,10 @@ html {
 
 body {
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
-
     position: relative;
-
     overflow-x: hidden;
-
     background:
         radial-gradient(circle at 10% 20%, #ffd1e0 0%, transparent 30%),
         radial-gradient(circle at 90% 10%, #ffb6cf 0%, transparent 25%),
@@ -50,39 +46,29 @@ body {
             #ffc1d8 70%,
             #ffb0cb 100%
         );
-
     background-attachment: fixed;
 }
 
 .topbar {
     width: 100%;
-
     position: sticky;
     top: 0;
     z-index: 100;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem 1.2rem;
-
     background: var(--rosa-main);
 }
 
 .titulo {
     position: relative;
-
     margin: 0;
-
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.25rem;
-
     color: var(--rosa-light);
-
     cursor: pointer;
-
     transition: 0.25s ease;
 }
 
@@ -93,61 +79,43 @@ body {
 .tooltip .tooltiptext {
     visibility: hidden;
     opacity: 0;
-
     position: absolute;
-
     top: 135%;
     left: 0;
-
     width: 240px;
-
     background: rgba(255, 255, 255, 0.75);
-
     backdrop-filter: blur(20px);
-
     color: var(--texto);
-
     padding: 0.9rem 1rem;
-
     border-radius: 18px;
-
     font-size: 0.8rem;
     line-height: 1.4;
-
     box-shadow: 0 10px 35px rgba(255, 79, 135, 0.2);
-
     transition:
         opacity 0.25s ease,
         transform 0.25s ease;
-
     transform: translateY(-5px);
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-
     transform: translateY(0);
 }
 
 .topbar ul {
     list-style: none;
-
     display: flex;
     gap: 1rem;
-
     margin: 0;
     padding: 0;
 }
 
 .topbar a {
     text-decoration: none;
-
     color: var(--texto);
-
     font-size: 0.92rem;
     font-weight: 500;
-
     transition: 0.2s ease;
 }
 
@@ -159,10 +127,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-top: 2rem;
     margin-bottom: 1.5rem;
-
     gap: 0.8rem;
 }
 
@@ -173,27 +139,17 @@ body {
 
 #mes {
     appearance: none;
-
     border: none;
     outline: none;
-
     background: rgba(255, 255, 255, 0.5);
-
     backdrop-filter: blur(10px);
-
     padding: 0.9rem 1.4rem;
-
     border-radius: 999px;
-
     font-size: 1rem;
     font-weight: 500;
-
     color: var(--texto);
-
     box-shadow: var(--shadow);
-
     cursor: pointer;
-
     transition: 0.25s ease;
 }
 
@@ -202,57 +158,36 @@ body {
 }
 
 .calendario {
-
     width: 100%;
-
     display: flex;
-
     justify-content: center;
-
     padding: 0 1rem 2rem;
 }
 
 #grid {
-
     width: 100%;
-
-    max-width: 430px;
-
+    max-width: 800px;
     display: grid;
-
     grid-template-columns: repeat(7, 1fr);
-
     gap: 0.65rem;
 }
 
 .dia {
-
     width: 100%;
-
     aspect-ratio: 1 / 1;
-
     border: none;
-
     border-radius: 22px;
-
     background: rgba(255, 255, 255, 0.45);
-
     backdrop-filter: blur(14px);
-
     color: var(--texto);
-
     font-size: 1rem;
     font-weight: 500;
-
     position: relative;
-
     box-shadow: 0 8px 20px rgba(255, 105, 145, 0.08);
-
     transition:
         transform 0.18s ease,
         background 0.2s ease,
         box-shadow 0.2s ease;
-
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -262,7 +197,6 @@ body {
 
 .disponible:hover {
     transform: translateY(-4px) scale(1.03);
-
     background:
         linear-gradient(
             145deg,
@@ -270,9 +204,7 @@ body {
             #ff77a8,
             #ff5d95
         );
-
     color: white;
-
     box-shadow:
         0 15px 35px rgba(255, 79, 135, 0.45),
         0 0 20px rgba(255, 120, 170, 0.35);
@@ -284,9 +216,7 @@ body {
 
 .futuro {
     background: rgba(255, 255, 255, 0.18);
-
     color: #c7aeb7;
-
     cursor: not-allowed;
 }
 
@@ -298,7 +228,6 @@ body {
 
 .dia.armando:hover {
     transform: translateY(-4px) scale(1.03);
-
     background:
         linear-gradient(
             145deg,
@@ -308,7 +237,6 @@ body {
         );
 
     color: white;
-
     box-shadow:
         0 15px 35px rgba(77, 166, 255, 0.45),
         0 0 20px rgba(77, 166, 255, 0.35);
@@ -321,7 +249,6 @@ body {
 
 .dia.gina:hover {
     transform: translateY(-4px) scale(1.03);
-
     background:
         linear-gradient(
             145deg,
@@ -329,9 +256,7 @@ body {
             #ff9f43,
             #ff7b00
         );
-
     color: white;
-
     box-shadow:
         0 15px 35px rgba(255, 159, 67, 0.45),
         0 0 20px rgba(255, 159, 67, 0.35);
@@ -344,7 +269,6 @@ body {
 
 .dia.visitado:hover {
     transform: translateY(-4px) scale(1.03);
-
     background:
         linear-gradient(
             145deg,
@@ -352,9 +276,7 @@ body {
             #ff6c9f,
             #ff4f87
         );
-
     color: white;
-
     box-shadow:
         0 15px 35px rgba(255, 105, 145, 0.45),
         0 0 20px rgba(255, 120, 170, 0.35);
@@ -367,7 +289,6 @@ body {
 
 .dia.gina.visitado:hover {
     transform: translateY(-4px) scale(1.03);
-
     background:
         linear-gradient(
             145deg,
@@ -375,9 +296,7 @@ body {
             #cc6a00,
             #a65300
         );
-
     color: white;
-
     box-shadow:
         0 15px 35px rgba(204, 106, 0, 0.45),
         0 0 20px rgba(255, 159, 67, 0.35);
@@ -390,7 +309,6 @@ body {
 
 .dia.armando.visitado:hover {
     transform: translateY(-4px) scale(1.03);
-
     background:
         linear-gradient(
             145deg,
@@ -398,9 +316,7 @@ body {
             #2d7dd2,
             #1f5fa3
         );
-
     color: white;
-
     box-shadow:
         0 15px 35px rgba(45, 125, 210, 0.45),
         0 0 20px rgba(77, 166, 255, 0.35);
@@ -409,73 +325,52 @@ body {
 
 .visitado {
     color: white;
-
     box-shadow: 0 10px 25px rgba(255, 105, 145, 0.3);
 }
 
 .visitado .x {
     position: absolute;
-
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     font-size: 3rem;
     font-weight: 600;
-
     color: rgba(255, 255, 255, 0.7);
-
     pointer-events: none;
 }
 
 footer {
     margin-top: auto;
-
     width: 100%;
-
     text-align: center;
-
     color: #a14d6d;
-
     font-size: 0.82rem;
-
     letter-spacing: 0.05rem;
 }
 
 body::before,
 body::after {
     content: "";
-
     position: fixed;
-
     width: 320px;
     height: 320px;
-
     border-radius: 50%;
-
     filter: blur(80px);
-
     opacity: 0.45;
-
     z-index: -1;
-
     animation: floatBlob 12s ease-in-out infinite;
 }
 
 body::before {
     background: #ff78aa;
-
     top: -100px;
     left: -80px;
 }
 
 body::after {
     background: #ff4f87;
-
     bottom: -120px;
     right: -80px;
-
     animation-delay: 4s;
 }
 
@@ -493,65 +388,57 @@ body::after {
     }
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .poema-container {
     flex: 1;
-
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 2rem 1rem 3rem;
 }
 
 .poema-card {
     width: 100%;
     max-width: 760px;
-
     background: rgba(255, 255, 255, 0.4);
-
     backdrop-filter: blur(18px);
-
     border: 1px solid rgba(255, 255, 255, 0.35);
-
     border-radius: 34px;
-
     padding: 2rem;
-
     box-shadow: 0 20px 50px rgba(255, 79, 135, 0.15);
-
     animation: fadeUp 0.7s ease;
 }
 
 .poema-fecha {
     display: inline-block;
-
     margin-bottom: 1rem;
-
     padding: 0.45rem 0.9rem;
-
     border-radius: 999px;
-
     background: rgba(255, 255, 255, 0.55);
-
     color: #b04c73;
-
     font-size: 0.82rem;
     font-weight: 500;
-
     letter-spacing: 0.04rem;
 }
 
 .poema-card h2 {
     margin-top: 0;
     margin-bottom: 2rem;
-
     font-size: 2rem;
     font-weight: 600;
-
     color: #d6336c;
-
     line-height: 1.1;
     text-align: center;
 }
@@ -567,13 +454,10 @@ body::after {
 
 .firma {
     margin-top: 3rem;
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
     gap: 0.4rem;
-
     color: #a14d6d;
 }
 
@@ -585,20 +469,6 @@ body::after {
 .firma small {
     font-size: 0.9rem;
     opacity: 0.9;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-
-        transform: translateY(0);
-    }
 }
 
 @media (orientation: portrait) and (max-width: 600px) {
@@ -621,13 +491,12 @@ body::after {
 
     #grid {
         width: 100%;
-
+        max-width: 480px;
         gap: 0.45rem;
     }
 
     .dia {
         border-radius: 16px;
-
         font-size: 0.85rem;
     }
 
@@ -641,7 +510,6 @@ body::after {
 
     .poema-card {
         padding: 1.4rem;
-
         border-radius: 28px;
     }
 
