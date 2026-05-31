@@ -1,3 +1,9 @@
+const BASE = "/Riveropedia/";
+
+/* =========================
+   DATOS
+========================= */
+
 const diasPorMes = {
     enero: 31,
     febrero: 28,
@@ -15,7 +21,7 @@ const diasPorMes = {
 
 const meses = Object.keys(diasPorMes);
 
-let mesActual = 4; // mayo
+let mesActual = 4;
 
 const inicio = new Date(2026, 4, 25);
 const fin = new Date(2026, 6, 31);
@@ -28,6 +34,13 @@ const excepciones = {
 
 const hoy = new Date();
 hoy.setHours(0, 0, 0, 0);
+
+/* =========================
+   AUDIO ERROR
+========================= */
+
+const sonidoError = new Audio(BASE + "wrong.mp3");
+sonidoError.preload = "auto";
 
 /* =========================
    UTILIDADES
@@ -65,14 +78,12 @@ function renderCalendario(mesIndex) {
             mes.charAt(0).toUpperCase() + mes.slice(1);
     }
 
-    // espacios vacíos
     for (let i = 0; i < offset; i++) {
         const vacio = document.createElement("div");
         vacio.classList.add("dia-vacio");
         grid.appendChild(vacio);
     }
 
-    // días
     for (let d = 1; d <= totalDias; d++) {
 
         const boton = document.createElement("button");
@@ -112,7 +123,8 @@ function renderCalendario(mesIndex) {
                     fechaISO === formatearFecha(hoy) &&
                     !desbloqueado
                 ) {
-                    window.location.href = `../info/pendiente.html?fecha=${fechaISO}`;
+                    window.location.href =
+                        BASE + "info/pendiente.html?fecha=" + fechaISO;
                     return;
                 }
 
@@ -121,10 +133,13 @@ function renderCalendario(mesIndex) {
                     localStorage.setItem(fechaISO, "visitado");
                     boton.classList.add("visitado");
 
-                    window.location.href = `../info/poema.html?fecha=${fechaISO}`;
+                    window.location.href =
+                        BASE + "info/poema.html?fecha=" + fechaISO;
 
                 } else {
-                    window.location.href = `../info/pendiente.html?fecha=${fechaISO}`;
+
+                    window.location.href =
+                        BASE + "info/pendiente.html?fecha=" + fechaISO;
                 }
             });
 
@@ -138,7 +153,7 @@ function renderCalendario(mesIndex) {
 }
 
 /* =========================
-   NAVEGACIÓN DE MES
+   NAVEGACIÓN MES
 ========================= */
 
 function initMesNavigation() {
@@ -181,20 +196,18 @@ function navegarBusqueda() {
             Object.prototype.hasOwnProperty.call(secretos, palabra)
         ) {
             location.href =
-                `../info/secreto.html?clave=${encodeURIComponent(palabra)}`;
+                BASE + "info/secreto.html?clave=" +
+                encodeURIComponent(palabra);
         } else {
             sonidoError.currentTime = 0;
-            sonidoError.play();
+            sonidoError.play().catch(() => {});
             input.value = "";
         }
     });
 }
 
-const sonidoError = new Audio("../wrong.mp3");
-sonidoError.preload = "auto";
-
 /* =========================
-   INIT GLOBAL SEGURO
+   AUTOCOMPLETE
 ========================= */
 
 function getFechaPorTitulo(titulo) {
@@ -215,7 +228,6 @@ function initAutocomplete() {
     input.addEventListener("input", () => {
 
         const valor = input.value.toLowerCase();
-
         lista.innerHTML = "";
 
         if (!valor) return;
@@ -235,15 +247,18 @@ function initAutocomplete() {
 
                 if (fecha) {
                     window.location.href =
-                        `/info/poema.html?fecha=${fecha}`;
+                        BASE + "info/poema.html?fecha=" + fecha;
                 }
-
             });
 
             lista.appendChild(li);
         });
     });
 }
+
+/* =========================
+   INIT
+========================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -252,8 +267,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initMesNavigation?.();
 
     const grid = document.getElementById("grid");
-
-    if (grid) {
-        renderCalendario(mesActual);
-    }
+    if (grid) renderCalendario(mesActual);
 });
