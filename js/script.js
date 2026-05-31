@@ -78,12 +78,14 @@ function renderCalendario(mesIndex) {
             mes.charAt(0).toUpperCase() + mes.slice(1);
     }
 
+    /* espacios vacíos */
     for (let i = 0; i < offset; i++) {
         const vacio = document.createElement("div");
         vacio.classList.add("dia-vacio");
         grid.appendChild(vacio);
     }
 
+    /* días */
     for (let d = 1; d <= totalDias; d++) {
 
         const boton = document.createElement("button");
@@ -98,9 +100,12 @@ function renderCalendario(mesIndex) {
         const dentroDeRango = fecha >= inicio && fecha <= fin;
         const esExcepcion = Object.prototype.hasOwnProperty.call(excepciones, fechaISO);
         const autorExcepcion = excepciones[fechaISO];
-        const noEsFuturo = fecha <= hoy;
 
-        if ((dentroDeRango && noEsFuturo) || esExcepcion) {
+        /* =========================
+           FIX: lógica simplificada
+        ========================= */
+
+        if (dentroDeRango || esExcepcion) {
 
             boton.classList.add("disponible");
             boton.dataset.dia = fechaISO;
@@ -117,10 +122,13 @@ function renderCalendario(mesIndex) {
             boton.addEventListener("click", () => {
 
                 const ahora = new Date();
-                const desbloqueado = ahora.getHours() >= 21;
+                // const desbloqueado = ahora.getHours() >= 20;
+                const desbloqueado = true;
+
+                const hoyISO = formatearFecha(new Date());
 
                 if (
-                    fechaISO === formatearFecha(hoy) &&
+                    fechaISO === hoyISO &&
                     !desbloqueado
                 ) {
                     window.location.href =
@@ -128,7 +136,13 @@ function renderCalendario(mesIndex) {
                     return;
                 }
 
-                if (poemaExiste(fechaISO)) {
+                const poema = typeof poemas !== "undefined"
+                    ? poemas[fechaISO]
+                    : null;
+
+                console.log(poema);
+
+                if (poema) {
 
                     localStorage.setItem(fechaISO, "visitado");
                     boton.classList.add("visitado");

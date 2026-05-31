@@ -260,10 +260,9 @@ const poemas = {
         ]
     },
 
-
     "2026-05-29": {
         fecha: "29 de mayo de 2026",
-        titulo: "La Fuerza del amor",
+        titulo: "La Fuerza del amor.",
         autor: "A. Ssshparro",
         pd: "Pd. Que La Fuerza te acompañe ✨",
         estrofas: [
@@ -308,7 +307,7 @@ const poemas = {
 
     "2026-05-30": {
         fecha: "30 de mayo de 2026",
-        titulo: "La biología del amor",
+        titulo: "La biología del amor.",
         autor: "A. Ssshparro",
         pd: "Tu eres la parte más elemental de mi 🧬❤️",
         estrofas: [
@@ -362,4 +361,49 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-05-31": {
+        fecha: "31 de mayo de 2026",
+        titulo: "Cartografía del amor",
+        autor: "A. Ssshparro",
+        pd: "Si me pierdo en ti, no me busquen. Ahí quiero estar 🗺️❤️",
+        estrofas: [
+            [
+                "Te leo como se leen los mapas antiguos,",
+                "con respeto por lo que no se debe nombrar del todo,",
+                "siguiendo líneas que parecen seguras desde lejos",
+                "pero se vuelven fuego cuando intento entenderte."
+            ],
+            [
+                "Tu amor tiene valles prohibidos que no se dibujan fácil,",
+                "zonas donde la tinta tiembla antes de avanzar,",
+                "y aun así mi mirada insiste en descender despacio",
+                "como quien sabe que lo peligroso también llama."
+            ],
+            [
+                "Tus curvas de nivel no describen solo tu forma,",
+                "dibujan la inteligencia con la que ordenas el mundo,",
+                "cada pendiente tuya es pensamiento en movimiento,",
+                "cada elevación un argumento que no puedo ignorar."
+            ],
+            [
+                "He trazado mapas buscando el punto prohibido en ti,",
+                "ese lugar donde todas las rutas pierden su nombre,",
+                "donde la razón deja de ser brújula y se rinde,",
+                "y el deseo se convierte en única coordenada."
+            ],
+            [
+                "Tu mente es la cartografía más precisa que he visto,",
+                "un sistema de líneas que se cruzan sin perderse,",
+                "como si pensar en ti fuera explorar un continente vivo,",
+                "que entiende el universo antes de que yo lo entienda."
+            ],
+            [
+                "Y yo, explorador sin permiso en tu geografía completa,",
+                "sigo buscando el límite que nunca se deja alcanzar,",
+                "porque amarte es estudiar un mapa que piensa,",
+                "y aun así seguir viajando hacia su centro imposible."
+            ]
+        ]
+    }
 };
