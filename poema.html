@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Poema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="topbar">
+        <form id="busqueda-form">
+            <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
+        </form>
+        <h1 class="titulo tooltip">
+            N. I. N. A
+            <span class="tooltiptext">
+                Neural Interface for Noble Affection
+            </span>
+        </h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="info/sobre-ti.html">Sobre ti</a></li>
+        </ul>
+    </nav>
+
+    <main class="poema-container">
+        <article class="poema-card">
+            <span class="poema-fecha" id="poema-fecha"></span>
+            <h2 id="poema-titulo"></h2>
+            <div class="poema-texto" id="poema-texto"></div>
+            <div class="firma" id="poema-firma"></div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2026 A. Ssshparro</p>
+    </footer>
+
+    <script src="poemas.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const fecha = params.get("fecha");
+        const poema = poemas[fecha];
+
+        if (!poema) {
+            window.location.href = "pendiente.html";
+        } else {
+            document.title = poema.titulo;
+            document.getElementById("poema-fecha").textContent = poema.fecha;
+            document.getElementById("poema-titulo").textContent = poema.titulo;
+
+            const contenedor = document.getElementById("poema-texto");
+
+            poema.estrofas.forEach(
+                estrofa => {
+
+                    const p = document.createElement("p");
+
+                    p.innerHTML =
+                        estrofa.join("<br>");
+
+                    contenedor
+                        .appendChild(p);
+                }
+            );
+
+            document.getElementById("poema-firma").innerHTML = `
+                <span>
+                    — ${poema.autor}
+                </span>
+
+                <small>
+                    ${poema.pd}
+                </small>
+            `;
+        }
+
+    </script>
+
+</body>
+
+</html>

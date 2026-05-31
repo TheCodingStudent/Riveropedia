@@ -471,6 +471,31 @@ body::after {
     opacity: 0.9;
 }
 
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#busqueda {
+    border: none;
+    outline: none;
+
+    padding: 0.55rem 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.25);
+
+    color: white;
+
+    backdrop-filter: blur(10px);
+}
+
+#busqueda::placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
 @media (orientation: portrait) and (max-width: 600px) {
     .topbar {
         padding: 1rem;

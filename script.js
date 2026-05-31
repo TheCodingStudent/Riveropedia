@@ -13,18 +13,15 @@ const diasPorMes = {
     diciembre: 31
 };
 
-// Rango permitido
 const inicio = new Date(2026, 4, 25);
 const fin = new Date(2026, 6, 31);
 
-// Excepciones
 const excepciones = {
     "2026-05-07": "Gina",
     "2026-05-23": "Gina",
     "2026-10-18": "Armando"
 };
 
-// Fecha actual SIN hora
 const hoy = new Date();
 hoy.setHours(0, 0, 0, 0);
 
@@ -33,22 +30,33 @@ function formatearFecha(fecha) {
     return `${fecha.getFullYear()}-${String(fecha.getMonth() + 1).padStart(2, "0")}-${String(fecha.getDate()).padStart(2, "0")}`;
 }
 
+function poemaExiste(fechaISO) {
+
+    return Object.prototype.hasOwnProperty.call(
+        poemas,
+        fechaISO
+    );
+}
+
 function renderCalendario(mes) {
 
-    const grid = document.getElementById("grid");
+    const grid =
+        document.getElementById("grid");
 
     grid.innerHTML = "";
 
-    const totalDias = diasPorMes[mes];
+    const totalDias =
+        diasPorMes[mes];
 
     const mesNumero =
-        Object.keys(diasPorMes).indexOf(mes);
+        Object.keys(diasPorMes)
+            .indexOf(mes);
 
-    // Actualizar select
     const selectMes =
         document.getElementById("mes");
 
     if (selectMes.value !== mes) {
+
         selectMes.value = mes;
     }
 
@@ -61,7 +69,6 @@ function renderCalendario(mes) {
 
         boton.textContent = d;
 
-        // Fecha local correcta
         const fecha =
             new Date(2026, mesNumero, d);
 
@@ -70,7 +77,6 @@ function renderCalendario(mes) {
         const fechaISO =
             formatearFecha(fecha);
 
-        // Condiciones
         const dentroDeRango =
             fecha >= inicio &&
             fecha <= fin;
@@ -89,104 +95,109 @@ function renderCalendario(mes) {
             esExcepcion
         ) {
 
-            boton.classList.add("disponible");
+            boton.classList.add(
+                "disponible"
+            );
 
-            boton.dataset.dia = fechaISO;
+            boton.dataset.dia =
+                fechaISO;
 
-            // Color especial
             if (esExcepcion) {
 
-                if (autorExcepcion === "Armando") {
+                if (
+                    autorExcepcion ===
+                    "Armando"
+                ) {
 
-                    boton.classList.add("armando");
+                    boton.classList.add(
+                        "armando"
+                    );
                 }
 
-                if (autorExcepcion === "Gina") {
+                if (
+                    autorExcepcion ===
+                    "Gina"
+                ) {
 
-                    boton.classList.add("gina");
+                    boton.classList.add(
+                        "gina"
+                    );
                 }
             }
 
-            // Revisar visitado
             if (
-                localStorage.getItem(fechaISO) ===
-                "visitado"
+                localStorage.getItem(
+                    fechaISO
+                ) === "visitado"
             ) {
 
-                boton.classList.add("visitado");
+                boton.classList.add(
+                    "visitado"
+                );
 
                 boton.innerHTML =
                     `${d} <span class="x">X</span>`;
             }
 
-            // Click
             boton.addEventListener(
                 "click",
-                async () => {
+                () => {
 
                     const ahora =
                         new Date();
 
                     const desbloqueado =
-                        ahora.getHours() >= 21;
+                        ahora.getHours() >=
+                        21;
 
-                    // Si es hoy y aún no son las 9 PM
                     if (
-                        fechaISO === formatearFecha(hoy) &&
+                        fechaISO ===
+                            formatearFecha(
+                                hoy
+                            ) &&
                         !desbloqueado
                     ) {
 
                         window.location.href =
-                            `poemas/pendiente.html?fecha=${fechaISO}`;
+                            `pendiente.html?fecha=${fechaISO}`;
 
                         return;
                     }
 
-                    try {
+                    if (
+                        poemaExiste(
+                            fechaISO
+                        )
+                    ) {
 
-                        const response =
-                            await fetch(
-                                `poemas/${fechaISO}.html`,
-                                {
-                                    method: "HEAD"
-                                }
-                            );
+                        localStorage.setItem(
+                            fechaISO,
+                            "visitado"
+                        );
 
-                        // SOLO marcar visitado si existe
-                        if (response.ok) {
+                        boton.classList.add(
+                            "visitado"
+                        );
 
-                            localStorage.setItem(
-                                fechaISO,
-                                "visitado"
-                            );
-
-                            boton.classList.add(
-                                "visitado"
-                            );
-
-                            boton.innerHTML =
-                                `${d} <span class="x">X</span>`;
-
-                            window.location.href =
-                                `poemas/${fechaISO}.html`;
-
-                        } else {
-
-                            window.location.href =
-                                `poemas/pendiente.html?fecha=${fechaISO}`;
-                        }
-
-                    } catch {
+                        boton.innerHTML =
+                            `${d} <span class="x">X</span>`;
 
                         window.location.href =
-                            `poemas/pendiente.html?fecha=${fechaISO}`;
+                            `poema.html?fecha=${fechaISO}`;
+
+                    } else {
+
+                        window.location.href =
+                            `pendiente.html?fecha=${fechaISO}`;
                     }
                 }
             );
 
         } else {
 
-            boton.classList.add("futuro");
+            boton.classList.add(
+                "futuro"
+            );
 
             boton.disabled = true;
         }
@@ -195,12 +206,60 @@ function renderCalendario(mes) {
     }
 }
 
-// Cambio de mes
-document.getElementById("mes")
-    .addEventListener("change", e => {
+const selectorMes =
+    document.getElementById("mes");
 
-        renderCalendario(e.target.value);
-    });
+if (selectorMes) {
 
-// Render inicial
-renderCalendario("mayo");
+    selectorMes.addEventListener(
+        "change",
+        e => {
+
+            renderCalendario(
+                e.target.value
+            );
+        }
+    );
+}
+
+const formularioBusqueda =
+    document.getElementById(
+        "busqueda-form"
+    );
+
+if (formularioBusqueda) {
+
+    formularioBusqueda.addEventListener(
+        "submit",
+        e => {
+
+            e.preventDefault();
+
+            const palabra =
+                document
+                    .getElementById(
+                        "busqueda"
+                    )
+                    .value
+                    .trim()
+                    .toLowerCase();
+
+            if (!palabra) {
+
+                return;
+            }
+
+            window.location.href =
+                `secretos/${palabra}.html`;
+        }
+    );
+}
+
+if (
+    document.getElementById(
+        "grid"
+    )
+) {
+
+    renderCalendario("mayo");
+}
