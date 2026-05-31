@@ -5,63 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para: G. Rivero</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Topbar -->
-    <nav class="topbar">
-        <form id="busqueda-form">
-            <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
-        </form>
-        
-        <h1 class="titulo tooltip">
-            N. I. N. A
-            <span class="tooltiptext">
-                Neural Interface for Noble Affection
-            </span>
-        </h1>
-        
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="info/sobre-ti.html">Sobre tí</a></li>
-        </ul>
 
+    <!-- Fondo decorativo -->
+    <div class="background-blobs"></div>
+    <div class="hearts-layer"></div>
+
+    <!-- NAVBAR -->
+    <nav class="topbar">
+        <div class="topbar-section left">
+            <form id="busqueda-form">
+                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
+                <ul id="sugerencias"></ul>
+            </form>
+        </div>
+
+        <div class="topbar-section center">
+            <h1 class="titulo tooltip">
+                ♡ N.I.N.A
+                <span class="tooltiptext">
+                    Neural Interface for Noble Affection
+                </span>
+            </h1>
+        </div>
+
+        <div class="topbar-section right">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="info/sobre-ti.html">
+                        Sobre ti
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-
-    <!-- Selector de mes -->
+    <!-- Selector -->
     <section class="selector">
-        <label for="mes">Selecciona mes:</label>
-        <select id="mes">
-            <option value="enero">Enero</option>
-            <option value="febrero">Febrero</option>
-            <option value="marzo">Marzo</option>
-            <option value="abril">Abril</option>
-            <option value="mayo">Mayo</option>
-            <option value="junio">Junio</option>
-            <option value="julio">Julio</option>
-            <option value="agosto">Agosto</option>
-            <option value="septiembre">Septiembre</option>
-            <option value="octubre">Octubre</option>
-            <option value="noviembre">Noviembre</option>
-            <option value="diciembre">Diciembre</option>
-        </select>
+
+        <label for="mes">
+            Mes
+        </label>
+
+        <div class="selector-wrapper">
+
+            <div class="month-selector">
+
+                <button id="prev-mes" class="month-btn">‹</button>
+
+                <span id="mes-actual">Enero</span>
+
+                <button id="next-mes" class="month-btn">›</button>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- Calendario cuadrado -->
     <section class="calendario">
-        <div id="grid"></div>
+
+        <div class="calendar-wrapper">
+
+            <div class="dias-semana">
+
+                <span>L</span>
+                <span>M</span>
+                <span>M</span>
+                <span>J</span>
+                <span>V</span>
+                <span>S</span>
+                <span>D</span>
+
+            </div>
+
+            <div id="grid"></div>
+
+        </div>
+
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 A. Ssshparro</p>
+
+        <p>
+            © 2026 A. Ssshparro
+        </p>
+
     </footer>
 
-    <script src="poemas.js"></script>
-    <script src="secretos.js"></script>
-    <script src="script.js"></script>
+    <script src="/js/poemas.js"></script>
+    <script src="/js/secretos.js"></script>
+    <script src="/js/script.js"></script>
+
 </body>
 
 </html>

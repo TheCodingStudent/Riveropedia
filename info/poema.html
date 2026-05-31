@@ -5,24 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Poema</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <nav class="topbar">
-        <form id="busqueda-form">
-            <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
-        </form>
-        <h1 class="titulo tooltip">
-            N. I. N. A
-            <span class="tooltiptext">
-                Neural Interface for Noble Affection
-            </span>
-        </h1>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="info/sobre-ti.html">Sobre ti</a></li>
-        </ul>
+        <div class="topbar-section left">
+            <form id="busqueda-form">
+                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
+                <ul id="sugerencias"></ul>
+            </form>
+        </div>
+
+        <div class="topbar-section center">
+            <h1 class="titulo tooltip">
+                ♡ N.I.N.A
+                <span class="tooltiptext">
+                    Neural Interface for Noble Affection
+                </span>
+            </h1>
+        </div>
+
+        <div class="topbar-section right">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre-ti.html">
+                        Sobre ti
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </nav>
 
     <main class="poema-container">
@@ -38,8 +59,9 @@
         <p>© 2026 A. Ssshparro</p>
     </footer>
 
-    <script src="poemas.js"></script>
-    <script src="script.js"></script>
+    <script src="../js/poemas.js"></script>
+    <script src="../js/secretos.js"></script>
+    <script src="../js/script.js"></script>
 
     <script>
         const params = new URLSearchParams(window.location.search);
@@ -72,6 +94,8 @@
                 <span>
                     — ${poema.autor}
                 </span>
+
+                <br>
 
                 <small>
                     ${poema.pd}
