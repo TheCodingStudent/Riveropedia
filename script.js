@@ -43,6 +43,8 @@ function renderCalendario(mes) {
     const grid =
         document.getElementById("grid");
 
+    if (!grid) return;
+
     grid.innerHTML = "";
 
     const totalDias =
@@ -55,7 +57,10 @@ function renderCalendario(mes) {
     const selectMes =
         document.getElementById("mes");
 
-    if (selectMes.value !== mes) {
+    if (
+        selectMes &&
+        selectMes.value !== mes
+    ) {
 
         selectMes.value = mes;
     }
@@ -147,14 +152,11 @@ function renderCalendario(mes) {
                         new Date();
 
                     const desbloqueado =
-                        ahora.getHours() >=
-                        21;
+                        ahora.getHours() >= 21;
 
                     if (
                         fechaISO ===
-                            formatearFecha(
-                                hoy
-                            ) &&
+                        formatearFecha(hoy) &&
                         !desbloqueado
                     ) {
 
@@ -249,8 +251,26 @@ if (formularioBusqueda) {
                 return;
             }
 
-            window.location.href =
-                `secretos/${palabra}.html`;
+            if (
+                typeof secretos !==
+                "undefined" &&
+                Object.prototype.hasOwnProperty.call(
+                    secretos,
+                    palabra
+                )
+            ) {
+
+                window.location.href =
+                    `secreto.html?clave=${encodeURIComponent(
+                        palabra
+                    )}`;
+
+            } else {
+
+                alert(
+                    "No encontrado"
+                );
+            }
         }
     );
 }
@@ -261,5 +281,7 @@ if (
     )
 ) {
 
-    renderCalendario("mayo");
+    renderCalendario(
+        "mayo"
+    );
 }
