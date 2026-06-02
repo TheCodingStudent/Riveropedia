@@ -1,5 +1,5 @@
 const secretos = {
-    "luna": {
+    "lunes": {
         titulo: "Luz prestada",
         contenido: `
         <p>La Luna ha sido observada durante milenios.</p>
