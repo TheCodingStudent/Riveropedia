@@ -366,7 +366,7 @@ const poemas = {
         fecha: "31 de mayo de 2026",
         titulo: "Cartografía del amor",
         autor: "A. Ssshparro",
-        pd: "Si me pierdo en ti, no me busquen. Ahí quiero estar 🗺️❤️",
+        pd: "Pd. Si me pierdo en ti, no me busquen. Ahí quiero estar 🗺️❤️",
         estrofas: [
             [
                 "Te leo como se leen los mapas antiguos,",
@@ -405,5 +405,45 @@ const poemas = {
                 "y aun así seguir viajando hacia su centro imposible."
             ]
         ]
+    },
+
+    "2026-06-01": {
+        fecha: "1 de junio de 2026",
+        titulo: "La Luna y sus secretos.",
+        autor: "A. Ssshparro",
+        pd: "Pd. Algunas palabras nacieron mirando el cielo. 🌙✨",
+        estrofas: [
+            [
+                "Lenta se alza la Luna sobre el borde del cielo,",
+                "guardando en plata historias que nadie llegó a contar,",
+                "mientras la noche acomoda sus sombras en silencio,",
+                "como un libro abierto que se resiste a terminar."
+            ],
+            [
+                "Una luz tranquila derrama sobre el mundo,",
+                "senderos invisibles para quien quiera mirar,",
+                "y en su reflejo sereno parece esconder respuestas",
+                "a preguntas que jamás nos atrevimos a formular."
+            ],
+            [
+                "Nace distinta cada vez que vuelve a encontrarnos,",
+                "aunque conserve el mismo brillo de eternidad,",
+                "como si conociera el arte de reinventarse",
+                "sin perder aquello que la hace especial."
+            ],
+            [
+                "Entre nubes viaja con paciencia infinita,",
+                "cruzando horizontes que no dejan de cambiar,",
+                "y aun desde tan lejos consigue acompañarnos",
+                "con una presencia que nunca deja de estar."
+            ],
+            [
+                "Siempre regreso a ella cuando el mundo se vuelve ruido,",
+                "porque en su calma encuentro un lugar donde habitar,",
+                "y porque algunas luces no están hechas para guiarnos,",
+                "sino para recordarnos que vale la pena continuar."
+            ]
+        ]
     }
+
 };

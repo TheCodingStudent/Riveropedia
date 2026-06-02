@@ -1,16 +1,11 @@
 const secretos = {
-    "queretaro": {
-        titulo: "Plano de Querétaro",
+    "luna": {
+        titulo: "Luz prestada",
         contenido: `
-            <p>Este es un mensaje secreto.</p>
-            <p>Solo para quien encontró la pista.</p>
-        `
-    },
-
-    "coordenadas": {
-        titulo: "Coordenadas ocultas",
-        contenido: `
-            <p>20.5888, -100.3899</p>
-        `
+        <p>La Luna ha sido observada durante milenios.</p>
+        <p>Su movimiento inspiró calendarios, mapas del cielo y preguntas sin fin.</p>
+        <p>Existe una disciplina dedicada a comprenderla a ella y a todo cuanto la acompaña en la bóveda nocturna.</p>
+        <p>Quizá el comienzo de ese camino sea también el comienzo del siguiente.</p>
+    `
     }
 };
