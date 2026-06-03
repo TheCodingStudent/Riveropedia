@@ -1,62 +1,75 @@
+ILOVEU3K
+31245768
+47653231
+
 1. Dias de la semana
-    - Lunes:     Luna     (Lunes)
-    - Martes:    Marte    (Martes)
-    - Miercoles: Mercurio (Miercoles)
-    - Jueves:    Jupiter  (Jueves)
-    - Viernes:   Venus    (Viernes)
-    - Sabado:    Saturno  (Sabado)
-    - Domingo:   Sol      (Domingo)
+    - Lunes:     Luna     (Lunes = ASTRONOMIA)     S
+    - Martes:    Marte    (Martes)    I
+    - Miercoles: Mercurio (Miercoles) D
+    - Jueves:    Jupiter  (Jueves)    E
+    - Viernes:   Venus    (Viernes)   R
+    - Sabado:    Saturno  (Sabado)    A
+    - Domingo:   Sol      (Domingo)   L -> 7
 
 2. Pecados Capitales
-    - Lunes:     Lujuria    (Gowther)
-    - Martes:    Gula       (Merlin)
-    - Miercoles: Avaricia   (Ban)
-    - Jueves:    Pereza     (King)
-    - Viernes:   Ira        (Meliodas)
-    - Sabado:    Envidia    (Diana)
-    - Domingo:   Soberbia   (Escanor)
+    - Lunes:     Lujuria  (Gowther)  C
+    - Martes:    Gula     (Merlin)   A
+    - Miercoles: Avaricia (Ban)      M
+    - Jueves:    Pereza   (King)     E
+    - Viernes:   Ira      (Meliodas) L 
+    - Sabado:    Envidia  (Diana)    O -> 6
+    - Domingo:   Soberbia (Escanor)  T
 
 3. Maravillas del mundo
-    - Lunes:     Gran muralla China (40.4319° N, 116.5704° E)
-    - Martes:    Chichen Itza       (20.6843° N, 88.5678° W)
-    - Miercoles: Machu Pichu        (13.1631° S, 72.5450° W)
-    - Jueves:    Petra              (30.3285° N, 35.4444° E)
-    - Viernes:   Taj Mahal          (27.1751° N, 78.0421° E)
-    - Sabado:    Coliseo romano     (41.8902° N, 12.4922° E)
-    - Domingo:   Cristo redentor    (22.9519° S, 43.2105° W)
+    - Lunes:     Gran muralla China (40.4319° N, 116.570° E)  I
+    - Martes:    Chichen Itza       (20.6843° N, 88.5678° W)  N
+    - Miercoles: Machu Pichu        (13.1631° S, 72.5450° W)  D
+    - Jueves:    Petra              (30.3285° N, 35.4444° E)  I -> 4
+    - Viernes:   Taj Mahal          (27.1751° N, 78.0421° E)  A
+    - Sabado:    Coliseo romano     (41.8902° N, 12.4922° E)  N
+    - Domingo:   Cristo redentor    (22.9519° S, 43.2105° W)  A
 
 4. Notas Musicales
-    - Lunes:     La  (440Hz)           = 440
-    - Martes:    Si  (440Hz * 2^2/12)  = 493.88
-    - Miercoles: Do  (440Hz * 2^3/12)  = 523.25
-    - Jueves:    Re  (440Hz * 2^5/12)  = 587.33
-    - Viernes:   Mi  (440Hz * 2^7/12)  = 659.25
-    - Sabado:    Fa  (440Hz * 2^8/12)  = 698.46
-    - Domingo:   Sol (440Hz * 2^10/12) = 783.99
+    - Lunes:     La  (440Hz)           = 440     O
+    - Martes:    Si  (440Hz * 2^2/12)  = 493.88  C
+    - Miercoles: Do  (440Hz * 2^3/12)  = 523.25  T
+    - Jueves:    Re  (440Hz * 2^5/12)  = 587.33  A
+    - Viernes:   Mi  (440Hz * 2^7/12)  = 659.25  V -> 5
+    - Sabado:    Fa  (440Hz * 2^8/12)  = 698.46  A
+    - Domingo:   Sol (440Hz * 2^10/12) = 783.99  S
 
 5. Colores del arcoiris
-    - Lunes:     Rojo     (620nm - 750nm)
-    - Martes:    Naranja  (255, 127, 0)      RGB
-    - Miercoles: Amarillo (#FFFF00)          HEX
-    - Jueves:    Verde    (495nm - 570nm)
-    - Viernes:   Cyan     (0, 255, 255)      RGB
-    - Sabado:    Azul     (#0000FF)          HEX
-    - Domingo:   Magenta  (300°, 100%, 100%) HSV
+    - Lunes:     Rojo     (620nm - 750nm)         S
+    - Martes:    Naranja  (255, 127, 0)      RGB  P
+    - Miercoles: Amarillo (#FFFF00)          HEX  E -> 3
+    - Jueves:    Verde    (495nm - 570nm)         C
+    - Viernes:   Cyan     (0, 255, 255)      RGB  T
+    - Sabado:    Azul     (#0000FF)          HEX  R
+    - Domingo:   Magenta  (300°, 100%, 100%) HSV  E
 
-6. Magnitudes fundamentales:
-    - Lunes:     Longitud
-    - Martes:    Masa
-    - Miercoles: Tiempo
-    - Jueves:    Corriente electrica
-    - Viernes:   Temperatura
-    - Sabado:    Cantidad de sustancia
-    - Domingo:   Intensidad luminosa
+6. Mujeres de la ciencia:
+    - Lunes:     Marie Curie       (Quimica)      T
+    - Martes:    Emmy Noether      (Matematicas)  R
+    - Miercoles: Ada Lovelace      (Programacion) I
+    - Jueves:    Cristina Koch     (Astronomia)   N
+    - Viernes:   Tu Youyou         (Medicina)     I
+    - Sabado:    Lise Meitner      (Fisica)       T
+    - Domingo:   Rosalind Franklin (Bioquimica)   Y
 
-7. Mujeres de la ciencia:
-    - Lunes:     Marie Curie       (Quimica)
-    - Martes:    Emmy Noether      (Matematicas)
-    - Miercoles: Ada Lovelace      (Programacion)
-    - Jueves:    Cristina Koch     (Astronomia)
-    - Viernes:   Tu Youyou         (Medicina)
-    - Sabado:    Lise Meitner      (Fisica)
-    - Domingo:   Rosalind Franklin (Bioquimica)
+7. Magnitudes fundamentales:
+    - Lunes:     Longitud               Q
+    - Martes:    Masa                   U - 2
+    - Miercoles: Tiempo                 A
+    - Jueves:    Corriente electrica    N
+    - Viernes:   Temperatura            T
+    - Sabado:    Cantidad de sustancia  U
+    - Domingo:   Intensidad luminosa    M
+
+8. Elementos quimicos:
+    - Lunes:     Potasio   K  -> 1
+    - Martes:    Rodio     Rh
+    - Miercoles: Itrio     Y
+    - Jueves:    Paladio   Pd
+    - Viernes:   Titanio   Ti
+    - Sabado:    Oxigeno   O
+    - Domingo:   Neodimio  Nd

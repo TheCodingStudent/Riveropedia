@@ -1,11 +1,16 @@
 const secretos = {
     "lunes": {
-        titulo: "Luz prestada",
+        titulo: "Astronomía",
         contenido: `
-        <p>La Luna ha sido observada durante milenios.</p>
-        <p>Su movimiento inspiró calendarios, mapas del cielo y preguntas sin fin.</p>
-        <p>Existe una disciplina dedicada a comprenderla a ella y a todo cuanto la acompaña en la bóveda nocturna.</p>
-        <p>Quizá el comienzo de ese camino sea también el comienzo del siguiente.</p>
-    `
+            En la bóveda nocturna danza el misterio.\n
+            Estrellas antiguas susurran historias al viento.\n
+            La Luna vigila, guardiana de los sueños.\n
+            Los planetas trazan caminos invisibles en silencio.\n
+            La astronomía es puente entre lo humano y lo eterno,\n
+            un lenguaje de luces que revela nuestro origen.\n\n
+            Pd. Al igual que la Luna, el título tiene un lado oculto 🔍.
+        `,
+        index: 1,
+        tooltip: 6
     }
 };
