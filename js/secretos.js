@@ -11,6 +11,22 @@ const secretos = {
             Pd. Al igual que la Luna, el título tiene un lado oculto 🔍.
         `,
         index: 1,
-        tooltip: 6
+        tooltip: 1
+    },
+
+    "martes": {
+        titulo: "Marciano",
+        contenido: `
+        En la superficie roja se trazan vectores.\n
+        Algoritmos calculan trayectorias en silencio.\n
+        Registros de presión describen su tenue atmósfera.\n
+        Topografía marciana se mide con precisión.\n
+        Energía solar alimenta sistemas en su suelo.\n
+        Sensores registran coordenadas con rigor.\n\n
+        Pd. Cada cálculo revela un secreto oculto 🔍.
+    `,
+        index: 4,       // 👈 índice de la letra a resaltar en el título
+        tooltip: 2      // 👈 valor del tooltip asociado
     }
+
 };

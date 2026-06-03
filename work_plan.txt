@@ -3,8 +3,8 @@ ILOVEU3K
 47653231
 
 1. Dias de la semana
-    - Lunes:     Luna     (Lunes = ASTRONOMIA)     S
-    - Martes:    Marte    (Martes)    I
+    - Lunes:     Luna     (Lunes = ASTRONOMIA) S
+    - Martes:    Marte    (Martes = MARCIANO)  I
     - Miercoles: Mercurio (Miercoles) D
     - Jueves:    Jupiter  (Jueves)    E
     - Viernes:   Venus    (Viernes)   R

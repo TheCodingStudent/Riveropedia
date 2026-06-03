@@ -411,7 +411,7 @@ const poemas = {
         fecha: "1 de junio de 2026",
         titulo: "La Luna y sus secretos.",
         autor: "A. Ssshparro",
-        pd: "Pd. Algunas palabras nacieron mirando el cielo. 🌙✨",
+        pd: "Pd. Algunas palabras nacieron mirando el cielo y perduran hoy en día. 🌙✨",
         estrofas: [
             [
                 "Lenta se alza la Luna sobre el borde del cielo,",
@@ -444,6 +444,52 @@ const poemas = {
                 "sino para recordarnos que vale la pena continuar."
             ]
         ]
-    }
+    },
+
+    "2026-06-02": {
+    fecha: "2 de junio de 2026",
+    titulo: "Marte y sus cálculos.",
+    autor: "A. Ssshparro",
+    pd: "Pd. Hoy es el día del Dios de la guerra. ⚔️🔥",
+    estrofas: [
+        [
+            "Marte se mide con vectores en su órbita,",
+            "ecuaciones precisas definen su trayecto,",
+            "los radianes trazan la curva infinita,",
+            "y el cálculo numérico sostiene el proyecto."
+        ],
+        [
+            "Algoritmos ajustan su tiempo de giro,",
+            "Kepler describe la elipse marciana,",
+            "cada parámetro se guarda en archivo,",
+            "y la ciencia lo traduce en forma temprana."
+        ],
+        [
+            "Registros de presión dibujan su aire,",
+            "aunque tenue y frío, se mide en valores,",
+            "barómetros fijan la curva exacta,",
+            "y la ingeniería traduce cifras mayores."
+        ],
+        [
+            "Topografía marciana se traza en modelos,",
+            "altímetros láser dibujan relieves,",
+            "las coordenadas se fijan en mallas,",
+            "y el mapa del suelo se guarda en niveles."
+        ],
+        [
+            "Energía solar alimenta sistemas,",
+            "paneles despliegan su carga en el suelo,",
+            "la potencia se mide en joules por segundo,",
+            "y la eficiencia se ajusta en el vuelo."
+        ],
+        [
+            "Sensores registran la tierra rojiza,",
+            "latitud y longitud se cruzan con rigor,",
+            "Marte revela su rostro en datos,",
+            "y la ciencia lo estudia con cálculo mayor."
+        ]
+    ]
+}
+
 
 };
