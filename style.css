@@ -562,3 +562,10 @@ footer {
     font-size: 0.8rem;
     letter-spacing: 0.08em;
 }
+
+.sherlocked-locked {
+    color: transparent !important;
+    /* pointer-events: none; */
+    text-shadow:0 0 10px rgba(255,255,255,0.25);
+    transition: .4s;
+}

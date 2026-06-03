@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para: La mujer</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .sherlock-lock {
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 1.5rem;
+
+            margin: 2rem 0;
+        }
+
+        .lock-line {
+
+            font-size: 3rem;
+
+            font-weight: 700;
+
+            letter-spacing: .4rem;
+
+            color: var(--rosa-dark);
+        }
+
+        .lock-cajas {
+
+            display: flex;
+
+            gap: 1rem;
+        }
+
+        .caja {
+
+            width: 72px;
+            height: 72px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px;
+
+            background:
+                rgba(255, 255, 255, .5);
+
+            backdrop-filter:
+                blur(20px);
+
+            border:
+                1px solid var(--rosa-hover);
+
+            font-size: 2rem;
+
+            font-weight: 700;
+
+            color:
+                var(--rosa-dark);
+
+            transition:
+                .2s ease;
+        }
+
+        .caja.activa {
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+                0 0 30px rgba(255, 79, 135, .35);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="topbar">
+        <div class="topbar-section left">
+            <form id="busqueda-form">
+                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
+                <ul id="sugerencias"></ul>
+            </form>
+        </div>
+
+        <div class="topbar-section center">
+            <h1 class="titulo tooltip">
+                ♡ N.I.N.A
+                <span class="tooltiptext">
+                    Neural Interface for Noble Affection
+                </span>
+            </h1>
+        </div>
+
+        <div class="topbar-section right">
+            <ul>
+                <li>
+                    <a href="/Riveropedia/index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/Riveropedia/info/sobre-ti.html">
+                        Sobre ti
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="poema-container">
+        <article class="poema-card">
+            <div class="sherlock-lock">
+                <div class="lock-line">I'M</div>
+                <div class="lock-cajas" id="palabra">
+                    <div class="caja" data-index="0"></div>
+                    <div class="caja" data-index="1"></div>
+                    <div class="caja" data-index="2"></div>
+                    <div class="caja" data-index="3"></div>
+                </div>
+                <div class="lock-line">LOCKED</div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2026 A. Ssshparro</p>
+    </footer>
+
+    <script>
+        const state = localStorage.getItem("sherlocked") === "true";
+
+        if (state) {
+            window.location.href = "sherlocked.html";
+        }
+
+        const respuesta = "SHER";
+        const cajas = [...document.querySelectorAll(".caja")];
+        let posicion = 0;
+
+        document.addEventListener(
+            "keydown",
+            e => {
+
+                if (/^[a-z]$/i.test(e.key)) {
+
+                    if (posicion >= 4)
+                        return;
+
+                    cajas[posicion]
+                        .textContent =
+                        e.key.toUpperCase();
+
+                    posicion++;
+
+                    actualizar();
+                }
+
+                if (
+                    e.key === "Backspace"
+                ) {
+
+                    if (posicion <= 0)
+                        return;
+
+                    posicion--;
+
+                    cajas[posicion]
+                        .textContent = "";
+
+                    actualizar();
+                }
+            }
+        );
+
+        function actualizar() {
+
+            cajas.forEach(
+                c => c.classList.remove(
+                    "activa"
+                )
+            );
+
+            if (
+                posicion < 4
+            ) {
+
+                cajas[posicion]
+                    .classList.add(
+                        "activa"
+                    );
+            }
+
+            const intento =
+                cajas
+                    .map(
+                        c => c.textContent
+                    )
+                    .join("");
+
+            if (
+                intento.length === 4
+            ) {
+
+                if (
+                    intento === respuesta
+                ) {
+
+                    localStorage.setItem(
+                        "sherlocked",
+                        "true"
+                    );
+
+                    setTimeout(
+                        () => {
+                            document.getElementById(
+                                "palabra"
+                            ).innerHTML = `
+                                <div class="lock-line">
+                                    S   H   E   R
+                                </div>
+                            `;
+                        },
+                        1000
+                    );
+
+                    setTimeout(
+                        () => {
+                            location.href = "sherlocked.html";
+                        },
+                        2000
+                    );
+                }
+                else {
+
+                    cajas.forEach(
+                        c =>
+                            c.classList.add(
+                                "shake"
+                            )
+                    );
+
+                    setTimeout(
+                        () => {
+
+                            cajas.forEach(
+                                c => {
+
+                                    c.textContent =
+                                        "";
+
+                                    c.classList.remove(
+                                        "shake"
+                                    );
+                                }
+                            );
+
+                            posicion = 0;
+
+                            actualizar();
+
+                        },
+                        500
+                    );
+                }
+            }
+        }
+
+        actualizar();
+
+    </script>
+
+</body>
+
+</html>

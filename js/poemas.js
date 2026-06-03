@@ -447,49 +447,137 @@ const poemas = {
     },
 
     "2026-06-02": {
-    fecha: "2 de junio de 2026",
-    titulo: "Marte y sus cálculos.",
-    autor: "A. Ssshparro",
-    pd: "Pd. Hoy es el día del Dios de la guerra. ⚔️🔥",
-    estrofas: [
-        [
-            "Marte se mide con vectores en su órbita,",
-            "ecuaciones precisas definen su trayecto,",
-            "los radianes trazan la curva infinita,",
-            "y el cálculo numérico sostiene el proyecto."
+        fecha: "2 de junio de 2026",
+        titulo: "Marte y sus cálculos.",
+        autor: "A. Ssshparro",
+        pd: "Pd. Hoy es el día del Dios de la guerra. ⚔️🔥",
+        estrofas: [
+            [
+                "Marte se mide con vectores en su órbita,",
+                "ecuaciones precisas definen su trayecto,",
+                "los radianes trazan la curva infinita,",
+                "y el cálculo numérico sostiene el proyecto."
+            ],
+            [
+                "Algoritmos ajustan su tiempo de giro,",
+                "Kepler describe la elipse marciana,",
+                "cada parámetro se guarda en archivo,",
+                "y la ciencia lo traduce en forma temprana."
+            ],
+            [
+                "Registros de presión dibujan su aire,",
+                "aunque tenue y frío, se mide en valores,",
+                "barómetros fijan la curva exacta,",
+                "y la ingeniería traduce cifras mayores."
+            ],
+            [
+                "Topografía marciana se traza en modelos,",
+                "altímetros láser dibujan relieves,",
+                "las coordenadas se fijan en mallas,",
+                "y el mapa del suelo se guarda en niveles."
+            ],
+            [
+                "Energía solar alimenta sistemas,",
+                "paneles despliegan su carga en el suelo,",
+                "la potencia se mide en joules por segundo,",
+                "y la eficiencia se ajusta en el vuelo."
+            ],
+            [
+                "Sensores registran la tierra rojiza,",
+                "latitud y longitud se cruzan con rigor,",
+                "Marte revela su rostro en datos,",
+                "y la ciencia lo estudia con cálculo mayor."
+            ]
         ],
-        [
-            "Algoritmos ajustan su tiempo de giro,",
-            "Kepler describe la elipse marciana,",
-            "cada parámetro se guarda en archivo,",
-            "y la ciencia lo traduce en forma temprana."
-        ],
-        [
-            "Registros de presión dibujan su aire,",
-            "aunque tenue y frío, se mide en valores,",
-            "barómetros fijan la curva exacta,",
-            "y la ingeniería traduce cifras mayores."
-        ],
-        [
-            "Topografía marciana se traza en modelos,",
-            "altímetros láser dibujan relieves,",
-            "las coordenadas se fijan en mallas,",
-            "y el mapa del suelo se guarda en niveles."
-        ],
-        [
-            "Energía solar alimenta sistemas,",
-            "paneles despliegan su carga en el suelo,",
-            "la potencia se mide en joules por segundo,",
-            "y la eficiencia se ajusta en el vuelo."
-        ],
-        [
-            "Sensores registran la tierra rojiza,",
-            "latitud y longitud se cruzan con rigor,",
-            "Marte revela su rostro en datos,",
-            "y la ciencia lo estudia con cálculo mayor."
+    },
+
+    "2026-06-03": {
+        fecha: "3 de junio de 2026",
+        titulo: "Mercurio y su soledad.",
+        autor: "A. Ssshparro",
+        pd: `Pd. El silencio obliga a buscar... respuestas que no existen. 🌌`,
+        estrofas: [
+            [
+                "Miro el vacío con ojos cansados,",
+                "mi sombra se pierde en abismos helados,",
+                "mi órbita se arrastra sin compañía,",
+                "mi tiempo se rompe en noches vacías."
+            ],
+            [
+                "errantes recuerdos se quiebran en sombras,",
+                "erosión del alma consume las horas,",
+                "erráticos pasos se pierden sin rumbo,",
+                "errores del tiempo me hunden profundo."
+            ],
+            [
+                "Coordenadas marcan caminos sin fin,",
+                "colisiones pasadas me dejaron ruin,",
+                "constantes del cielo me atan al frío,",
+                "códigos de muerte me guardan vacío."
+            ],
+            [
+                "Leves susurros se apagan en tinieblas,",
+                "lejanos destellos se vuelven derrotas,",
+                "lecciones de polvo me cubren la piel,",
+                "leales recuerdos se mueren también."
+            ],
+            [
+                "Sueños quebrados se hunden en mares,",
+                "silencios eternos que cubren lugares,",
+                "sombras me siguen sin voz ni consuelo,",
+                "soledad me ata con hierro y desvelo."
+            ],
+            [
+                "La bóveda se cierra, cadenas me rodean,",
+                "estrellas lejanas me miran y no me liberan,",
+                "sombras perpetuas me atan sin descanso,",
+                "el universo me guarda cautivo en su manto."
+            ]
         ]
-    ]
-}
+    },
 
-
+    "2026-06-04": {
+        fecha: "4 de junio de 2026",
+        titulo: "Júpiter fue hecho pensando en ti.",
+        autor: "A. Ssshparro",
+        pd: `Pd. ¿Conoces a César? Dile que retroceda 3 pasos. 🪐✨`,
+        estrofas: [
+            [
+                "Guarda Júpiter noventa y tantas lunas en su abrazo,",
+                "cada una siguiendo un sendero especial,",
+                "y si yo pudiera ordenar el cielo paso a paso,",
+                "haría que todas brillaran para ti, nada más."
+            ],
+            [
+                "Resplandece la Gran Mancha Roja desde hace siglos,",
+                "desafiando al tiempo con su inmensidad,",
+                "como este sentimiento que no conoce límites ni ciclos,",
+                "porque todo lo que soy gira hacia tu claridad."
+            ],
+            [
+                "Bajo sus nubes nacen corrientes infinitas,",
+                "capas y capas imposibles de contar,",
+                "y cada una de mis palabras escritas",
+                "termina encontrando tu nombre al llegar."
+            ],
+            [
+                "Si Júpiter protege mundos con su gravedad,",
+                "desviando del camino aquello que podría dañar,",
+                "yo quisiera tener esa misma capacidad",
+                "para apartar de ti todo lo que te haga llorar."
+            ],
+            [
+                "Brillan sus lunas alrededor de un único destino,",
+                "sin perderse jamás en la oscuridad,",
+                "como mis sueños, que toman tu camino,",
+                "porque todo lo que imagino busca tu felicidad."
+            ],
+            [
+                "Porque si Júpiter tuviera voz para hablar del universo,",
+                "y cada estrella pudiera elegir dónde estar,",
+                "dirían lo mismo que repite cada uno de mis versos:",
+                "todo es para ti, incluso aquello que no sé expresar."
+            ]
+        ]
+    }
 };

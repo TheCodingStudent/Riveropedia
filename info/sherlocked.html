@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .cesar-container {
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 1rem;
+
+            margin-top: 2rem;
+        }
+
+        .cesar-container label {
+
+            font-size: .9rem;
+
+            font-weight: 600;
+
+            color: var(--rosa-dark);
+        }
+
+        #texto-entrada,
+        #texto-salida,
+        #clave {
+
+            width: 100%;
+
+            border: none;
+
+            outline: none;
+
+            border-radius: 20px;
+
+            padding: 1rem 1.2rem;
+
+            background:
+                rgba(255, 255, 255, .55);
+
+            backdrop-filter:
+                blur(20px);
+
+            color:
+                var(--texto);
+
+            font-size: 1rem;
+        }
+
+        #texto-salida {
+
+            background:
+                rgba(255, 255, 255, .35);
+        }
+
+        #procesar {
+
+            margin-top: .5rem;
+
+            border: none;
+
+            border-radius: 20px;
+
+            padding: 1rem;
+
+            cursor: pointer;
+
+            font-weight: 700;
+
+            color: white;
+
+            background:
+                linear-gradient(135deg,
+                    #ff4f87,
+                    #ff8bb2);
+
+            box-shadow:
+                0 8px 25px rgba(255, 79, 135, .25);
+
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease,
+                filter .25s ease;
+        }
+
+        #procesar:hover {
+
+            transform:
+                translateY(-3px);
+
+            filter:
+                brightness(1.08);
+
+            box-shadow:
+                0 15px 35px rgba(255, 79, 135, .4);
+        }
+
+        #procesar:active {
+
+            transform:
+                translateY(0) scale(.97);
+
+            box-shadow:
+                0 5px 15px rgba(255, 79, 135, .2);
+        }
+
+        #modo {
+
+            width: 100%;
+
+            border: none;
+            outline: none;
+
+            border-radius: 20px;
+
+            padding: 1rem 1.2rem;
+
+            background:
+                rgba(255, 255, 255, .55);
+
+            backdrop-filter:
+                blur(20px);
+
+            color:
+                var(--texto);
+
+            font-size: 1rem;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="topbar">
+        <div class="topbar-section left">
+            <form id="busqueda-form">
+                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
+                <ul id="sugerencias"></ul>
+            </form>
+        </div>
+
+        <div class="topbar-section center">
+            <h1 class="titulo tooltip">
+                ♡ N.I.N.A
+                <span class="tooltiptext">
+                    Neural Interface for Noble Affection
+                </span>
+            </h1>
+        </div>
+
+        <div class="topbar-section right">
+            <ul>
+                <li>
+                    <a href="/Riveropedia/index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/Riveropedia/info/sobre-ti.html">
+                        Sobre ti
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="poema-container">
+
+        <article class="poema-card">
+
+            <h2>I'm Sher-locked</h2>
+
+            <small>El cifrado César fue utilizado por Julio César para ocultar mensajes desplazando cada letra varias
+                posiciones dentro del alfabeto.
+
+                Aunque es uno de los métodos de encriptación más antiguos, inspiró sistemas mucho más complejos como el
+                cifrado de Vigenère.
+
+                Toda clave deja pistas. Toda pista puede ser descifrada. ✦</small>
+
+            <div class="cesar-container">
+
+                <label>Texto cifrado</label>
+
+                <input id="texto-entrada" type="text" autocomplete="off" placeholder="Introduce texto...">
+
+                <label>Resultado</label>
+
+                <input id="texto-salida" type="text" readonly>
+
+                <label>Clave</label>
+
+                <input id="clave" type="text" autocomplete="off" placeholder="Número o palabra clave...">
+
+                <select id="modo">
+                    <option value="descifrar">
+                        Descifrar
+                    </option>
+
+                    <option value="cifrar">
+                        Cifrar
+                    </option>
+                </select>
+
+                <button id="procesar">
+                    Descifrar
+                </button>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 A. Ssshparro</p>
+    </footer>
+
+    <script>
+
+        const ALFABETO =
+            "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+
+        function normalizar(texto) {
+
+            return texto
+                .normalize("NFD")
+                .replace(
+                    /[\u0300-\u036f]/g,
+                    ""
+                )
+                .toUpperCase();
+        }
+
+        function desplazarLetra(
+            letra,
+            desplazamiento
+        ) {
+
+            const indice =
+                ALFABETO.indexOf(
+                    letra
+                );
+
+            if (
+                indice === -1
+            ) {
+
+                return letra;
+            }
+
+            let nuevoIndice =
+                (
+                    indice +
+                    desplazamiento
+                ) %
+                ALFABETO.length;
+
+            if (
+                nuevoIndice < 0
+            ) {
+
+                nuevoIndice +=
+                    ALFABETO.length;
+            }
+
+            return ALFABETO[
+                nuevoIndice
+            ];
+        }
+
+        function cesar(
+            texto,
+            desplazamiento
+        ) {
+
+            let resultado = "";
+
+            for (
+                const letra of texto
+            ) {
+
+                resultado +=
+                    desplazarLetra(
+                        letra,
+                        desplazamiento
+                    );
+            }
+
+            return resultado;
+        }
+
+        function cesarPalabra(
+            texto,
+            clave,
+            descifrar = false
+        ) {
+
+            let resultado = "";
+
+            let indiceClave = 0;
+
+            const desplazamientos =
+                [...clave]
+                    .map(
+                        letra =>
+                            ALFABETO.indexOf(
+                                letra
+                            ) + 1
+                    )
+                    .filter(
+                        n => n > 0
+                    );
+
+            if (
+                desplazamientos.length === 0
+            ) {
+
+                return texto;
+            }
+
+            for (
+                const letra of texto
+            ) {
+
+                const indice =
+                    ALFABETO.indexOf(
+                        letra
+                    );
+
+                if (
+                    indice === -1
+                ) {
+
+                    resultado +=
+                        letra;
+
+                    continue;
+                }
+
+                let desplazamiento =
+                    desplazamientos[
+                    indiceClave %
+                    desplazamientos.length
+                    ];
+
+                if (
+                    descifrar
+                ) {
+
+                    desplazamiento *= -1;
+                }
+
+                resultado +=
+                    desplazarLetra(
+                        letra,
+                        desplazamiento
+                    );
+
+                indiceClave++;
+            }
+
+            return resultado;
+        }
+
+        function procesar() {
+
+            const texto =
+                normalizar(
+                    document
+                        .getElementById(
+                            "texto-entrada"
+                        )
+                        .value
+                );
+
+            const clave =
+                normalizar(
+                    document
+                        .getElementById(
+                            "clave"
+                        )
+                        .value
+                        .trim()
+                );
+
+            const modo =
+                document
+                    .getElementById(
+                        "modo"
+                    )
+                    .value;
+
+            if (
+                !texto ||
+                !clave
+            ) {
+
+                return;
+            }
+
+            const descifrar =
+                modo ===
+                "descifrar";
+
+            let resultado = "";
+
+            if (
+                /^-?\d+$/.test(
+                    clave
+                )
+            ) {
+
+                let desplazamiento =
+                    parseInt(
+                        clave
+                    );
+
+                if (
+                    descifrar
+                ) {
+
+                    desplazamiento *= -1;
+                }
+
+                resultado =
+                    cesar(
+                        texto,
+                        desplazamiento
+                    );
+
+            } else {
+
+                resultado =
+                    cesarPalabra(
+                        texto,
+                        clave,
+                        descifrar
+                    );
+            }
+
+            document
+                .getElementById(
+                    "texto-salida"
+                )
+                .value =
+                resultado;
+        }
+
+        document
+            .getElementById(
+                "procesar"
+            )
+            .addEventListener(
+                "click",
+                procesar
+            );
+
+        document
+            .getElementById(
+                "texto-entrada"
+            )
+            .addEventListener(
+                "keydown",
+                e => {
+
+                    if (
+                        e.key ===
+                        "Enter"
+                    ) {
+
+                        procesar();
+                    }
+                }
+            );
+
+        document
+            .getElementById(
+                "clave"
+            )
+            .addEventListener(
+                "keydown",
+                e => {
+
+                    if (
+                        e.key ===
+                        "Enter"
+                    ) {
+
+                        procesar();
+                    }
+                }
+            );
+
+    </script>
+
+</body>
+
+</html>

@@ -97,7 +97,7 @@ function renderCalendario(mesIndex) {
 
         const fechaISO = formatearFecha(fecha);
 
-        const dentroDeRango = fecha >= inicio && fecha <= fin;
+        const dentroDeRango = fecha >= inicio && fecha <= hoy && fecha <= fin;
         const esExcepcion = Object.prototype.hasOwnProperty.call(excepciones, fechaISO);
         const autorExcepcion = excepciones[fechaISO];
 
@@ -122,7 +122,6 @@ function renderCalendario(mesIndex) {
             boton.addEventListener("click", () => {
 
                 const ahora = new Date();
-                // const desbloqueado = ahora.getHours() >= 20;
                 const desbloqueado = true;
 
                 const hoyISO = formatearFecha(new Date());
@@ -140,7 +139,7 @@ function renderCalendario(mesIndex) {
                     ? poemas[fechaISO]
                     : null;
 
-                console.log(poema);
+                // console.log(poema);
 
                 if (poema) {
 
@@ -214,7 +213,7 @@ function navegarBusqueda() {
                 encodeURIComponent(palabra);
         } else {
             sonidoError.currentTime = 0;
-            sonidoError.play().catch(() => {});
+            sonidoError.play().catch(() => { });
             input.value = "";
         }
     });
@@ -274,11 +273,22 @@ function initAutocomplete() {
    INIT
 ========================= */
 
+function initSherlocked() {
+    const link = document.getElementById("link-sherlocked");
+    if (!link) return;
+    const desbloqueado = localStorage.getItem("sherlocked") === "true";
+
+    if (!desbloqueado) {
+        link.classList.add("sherlocked-locked");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
     navegarBusqueda();
     initAutocomplete();
     initMesNavigation?.();
+    initSherlocked();
 
     const grid = document.getElementById("grid");
     if (grid) renderCalendario(mesActual);

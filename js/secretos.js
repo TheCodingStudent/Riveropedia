@@ -17,16 +17,33 @@ const secretos = {
     "martes": {
         titulo: "Marciano",
         contenido: `
-        En la superficie roja se trazan vectores.\n
-        Algoritmos calculan trayectorias en silencio.\n
-        Registros de presión describen su tenue atmósfera.\n
-        Topografía marciana se mide con precisión.\n
-        Energía solar alimenta sistemas en su suelo.\n
-        Sensores registran coordenadas con rigor.\n\n
-        Pd. Cada cálculo revela un secreto oculto 🔍.
-    `,
-        index: 4,       // 👈 índice de la letra a resaltar en el título
-        tooltip: 2      // 👈 valor del tooltip asociado
+            En la superficie roja se trazan vectores.\n
+            Algoritmos calculan trayectorias en silencio.\n
+            Registros de presión describen su tenue atmósfera.\n
+            Topografía marciana se mide con precisión.\n
+            Energía solar alimenta sistemas en su suelo.\n
+            Sensores registran coordenadas con rigor.\n\n
+            Pd. Cada cálculo revela un secreto oculto 🔍.
+        `,
+        index: 4,
+        tooltip: 2
+    },
+
+    "miércoles": {
+        titulo: "Hermes",
+        contenido: `
+            Mensajero alado que cruza fronteras.\n
+            Hermes recorre caminos entre dioses y hombres.\n
+            Sus pasos veloces atraviesan mundos ocultos.\n
+            Sus palabras viajan en el murmullo del viento.\n
+            Astuto guardián de secretos y destinos.\n
+            Errante viajero que nunca descansa.\n\n
+            Pd. Hermes sonríe entre las mieses, apertura de cantos que el sol enriquece. 🔍.
+        `,
+        index: -1,
+        tooltip: 3
     }
+
+
 
 };
