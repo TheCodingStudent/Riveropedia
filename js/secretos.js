@@ -38,7 +38,7 @@ const secretos = {
             Sus palabras viajan en el murmullo del viento.\n
             Astuto guardián de secretos y destinos.\n
             Errante viajero que nunca descansa.\n\n
-            Pd. Hermes sonríe entre las mieses, apertura de cantos que el sol enriquece. 🔍.
+            Pd. Hermes, peón de los dioses; sonríe entre las 𝑀𝑖𝑒𝑠𝑒𝑠, 𝑎𝑝𝑒𝑟𝑡𝑢𝑟𝑎 \na su marmolada reina 🔍.
         `,
         index: -1,
         tooltip: 3
