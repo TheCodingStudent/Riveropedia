@@ -6,8 +6,8 @@ ILOVEU3K
     - Lunes:     Luna     (Lunes = ASTRONOMIA) S
     - Martes:    Marte    (Martes = MARCIANO)  I
     - Miercoles: Mercurio (Miercoles = DERIVA) D
-    - Jueves:    Jupiter  (Jueves)    E
-    - Viernes:   Venus    (Viernes)   R
+    - Jueves:    Jupiter  (Jueves = ESTETROL)  E
+    - Viernes:   Venus    (Viernes = CONTROL)  R
     - Sabado:    Saturno  (Sabado)    A
     - Domingo:   Sol      (Domingo)   L -> 7
 

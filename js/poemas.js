@@ -579,5 +579,52 @@ const poemas = {
                 "todo es para ti, incluso aquello que no sé expresar."
             ]
         ]
+    },
+
+    "2026-06-05": {
+        fecha: "5 de junio de 2026",
+        titulo: "Quiero venirme en Venus.",
+        autor: "A. Ssshparro",
+        pd: `Pd. Venus no es solo estrella del alba, también mujer que inspira la entrega. 🧡`,
+        estrofas: [
+            [
+                "Vibrar contigo es perderse en la dulzura de Venus,",
+                "Eres la diosa que me consume sin temor,",
+                "Nectar de tu piel me lleva a la locura,",
+                "Siento que entregarme a ti me da calor."
+            ],
+            [
+                "Vierte mi ser en tu abrazo infinito, como Venus en el cielo,",
+                "Erguido mi deseo se rinde a tu paz,",
+                "Necesito tu cuerpo, tu voz, tu mito,",
+                "Suspiro entregado, no quiero nada más."
+            ],
+            [
+                "Vilumbro tu risa como un manantial, reflejo de Venus, mujer,",
+                "Eres la fuerza que me arrastra al placer,",
+                "Neblina se disuelve en tu ser,",
+                "Siempre contigo, me dejo vencer."
+            ],
+            [
+                "Viento ardiente recorre mi piel contigo, como Venus al amanecer,",
+                "Eres refugio, pasión y verdad,",
+                "Necesito perderme en tu abrigo,",
+                "Ser tuyo entero es mi libertad."
+            ],
+            [
+                "Vivo en la entrega que nunca se acaba, inocultable como Venus,",
+                "Eres el centro de todo mi ser,",
+                "Nectar de amor que mi alma reclama,",
+                "Siempre contigo me quiero perder."
+            ],
+            [
+                "Vida mia, derrama tu ser en mi, como Venus derrama su luz,",
+                "Errante estaba sin ti, hoy tu, la razón de mi entrega total,",
+                "Necesito tu fuego, tu claridad,",
+                "Suspiro rendido en tu amor carnal."
+            ]
+        ]
     }
+
+
 };

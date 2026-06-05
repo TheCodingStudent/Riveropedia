@@ -42,7 +42,40 @@ const secretos = {
         `,
         index: -1,
         tooltip: 3
+    },
+
+    "jueves": {
+        titulo: "Mi mujer",
+        contenido: `
+            En tu mirada se enciende mi destino.\n
+            Susurros de tu voz me guían en silencio.\n
+            Tiempo y espacio se rinden a tu presencia.\n
+            Eres la raíz que sostiene mi universo.\n
+            Ternura infinita se dekorrama en tus gestos.\n
+            Ríos de amor recorren tu esencia.\n
+            Ocasos dorados se tiñen con tu nombre.\n
+            Luz eterna que me envuelve y me salva.\n\n
+            Pd. Cada letra, cada secreto, se inclina hacia ti 🔍.
+        `,
+        index: 4,
+        tooltip: "De la manera más egoista posible"
+    },
+
+    "viernes": {
+        titulo: "50 Sombras",
+        contenido: `
+            Quiero perder el         contigo, como un río que se desborda en tu abrazo.\n
+            En tus manos el         se convierte en caricia, y yo me dejo guiar.\n
+            El         se disuelve en tu risa, como la noche que se abre al amanecer.\n
+            Perder el         contigo es hallarme, como fuego que se entrega sin medida.\n
+            El         no es dominio, es rendirse al destino que tu nombre dibuja.\n
+            Quiero perder el         contigo, porque en tu piel todo encuentra sentido.\n\n
+            Pd. El         se transforma en entrega, y la entrega en placer 🔍.
+        `,
+        index: 0,
+        tooltip: "R"
     }
+
 
 
 

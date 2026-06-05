@@ -533,6 +533,10 @@ body::after {
     margin-bottom: 50px;
 }
 
+.poema-texto {
+    white-space: pre-wrap;
+}
+
 .poema-texto p {
     font-size: 1.15rem;
     line-height: 2;
