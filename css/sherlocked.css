@@ -1,0 +1,197 @@
+.cesar-container {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.cesar-container label {
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    color: var(--rosa-dark);
+}
+
+#texto-entrada,
+#texto-salida,
+#clave {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 20px;
+
+    padding: 1rem 1.2rem;
+
+    background:
+        rgba(255, 255, 255, .55);
+
+    backdrop-filter:
+        blur(20px);
+
+    color:
+        var(--texto);
+
+    font-size: 1rem;
+}
+
+#texto-salida {
+
+    background:
+        rgba(255, 255, 255, .35);
+}
+
+#procesar {
+
+    margin-top: .5rem;
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 1rem;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    color: white;
+
+    background:
+        linear-gradient(135deg,
+            #ff4f87,
+            #ff8bb2);
+
+    box-shadow:
+        0 8px 25px rgba(255, 79, 135, .25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+}
+
+#procesar:hover {
+
+    transform:
+        translateY(-3px);
+
+    filter:
+        brightness(1.08);
+
+    box-shadow:
+        0 15px 35px rgba(255, 79, 135, .4);
+}
+
+#procesar:active {
+
+    transform:
+        translateY(0) scale(.97);
+
+    box-shadow:
+        0 5px 15px rgba(255, 79, 135, .2);
+}
+
+#modo {
+
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    border-radius: 20px;
+
+    padding: 1rem 1.2rem;
+
+    background:
+        rgba(255, 255, 255, .55);
+
+    backdrop-filter:
+        blur(20px);
+
+    color:
+        var(--texto);
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.sherlock-lock {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1.5rem;
+
+    margin: 2rem 0;
+}
+
+.lock-line {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    letter-spacing: .4rem;
+
+    color: var(--rosa-dark);
+}
+
+.lock-cajas {
+
+    display: flex;
+
+    gap: 1rem;
+}
+
+.caja {
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, .5);
+
+    backdrop-filter:
+        blur(20px);
+
+    border:
+        1px solid var(--rosa-hover);
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color:
+        var(--rosa-dark);
+
+    transition:
+        .2s ease;
+}
+
+.caja.activa {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 0 30px rgba(255, 79, 135, .35);
+}

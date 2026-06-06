@@ -8,8 +8,8 @@ ILOVEU3K
     - Miercoles: Mercurio (Miercoles = DERIVA) D
     - Jueves:    Jupiter  (Jueves = ESTETROL)  E
     - Viernes:   Venus    (Viernes = CONTROL)  R
-    - Sabado:    Saturno  (Sabado)    A
-    - Domingo:   Sol      (Domingo)   L -> 7
+    - Sabado:    Saturno  (Sabado = ANILLOS)   A
+    - Domingo:   Sol      (Domingo = HELIOS)   L -> 7
 
 2. Pecados Capitales
     - Lunes:     Lujuria  (Gowther)  C

@@ -1,0 +1,247 @@
+.selector {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.selector label {
+    display: none;
+}
+
+.month-selector {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#mes-actual {
+    min-width: 120px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.month-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#mes-actual {
+    color: #000;
+}
+
+.month-btn:hover {
+    background: rgba(255, 77, 141, 0.25);
+    transform: scale(1.05);
+}
+
+.month-btn:active {
+    transform: scale(0.95);
+}
+
+#mes {
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 220px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--texto);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .05);
+    transition: .25s ease;
+}
+
+#mes:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.calendario {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    padding: 0 24px 60px;
+}
+
+.dia {
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    opacity: 0.35;
+    color: var(--texto);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: default;
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .04);
+}
+
+.dia.visitado::after {
+    content: "♥";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: red;
+    opacity: 0.85;
+}
+
+.dia.visitado:hover::after {
+    content: "♥";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: white;
+    opacity: 0.85;
+}
+
+.dia.visitado.gina::after {
+    content: "♥";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: orange;
+    opacity: 0.85;
+}
+
+.dia.visitado.gina:hover::after {
+    content: "♥";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: white;
+    opacity: 0.85;
+}
+
+.dia.visitado.armando::after {
+    content: "♥";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: blue;
+    opacity: 0.85;
+}
+
+.dia.visitado.armando:hover::after {
+    content: "♥";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: white;
+    opacity: 0.85;
+}
+
+.disponible {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.disponible:hover {
+    transform:
+        translateY(-4px) scale(1.02);
+
+    background:
+        linear-gradient(135deg,
+            #ff4f87,
+            #ff7ea9);
+
+    color: white;
+
+    box-shadow:
+        0 16px 35px rgba(255, 79, 135, .30);
+}
+
+.disponible.gina:hover {
+    transform:
+        translateY(-4px) scale(1.02);
+
+    background:
+        linear-gradient(135deg,
+            #ff7a18,
+            #ffb347);
+
+    color: white;
+
+    box-shadow:
+        0 16px 35px rgba(255, 122, 24, 0.30);
+}
+
+.disponible.armando:hover {
+    transform:
+        translateY(-4px) scale(1.02);
+
+    background:
+        linear-gradient(135deg,
+            #3a7bd5,
+            #00d2ff);
+
+    color: white;
+
+    box-shadow:
+        0 16px 35px rgba(58, 123, 213, 0.30);
+}
+
+.weekday {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: #b88a9d;
+    padding-bottom: 10px;
+}
+
+.dia-vacio {
+    aspect-ratio: 1;
+}
+
+.calendar-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+}

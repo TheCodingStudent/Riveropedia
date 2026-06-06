@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Poema</title>
-    <link rel="stylesheet" href="/Riveropedia/style.css">
+    <link rel="stylesheet" href="/Riveropedia/css/style.css">
+    <link rel="stylesheet" href="/Riveropedia/css/poema.css">
 </head>
 
 <body>
@@ -65,9 +66,6 @@
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        
-        console.log(params);
-        
         const fecha = params.get("fecha");
         const poema = poemas[fecha];
 
@@ -82,27 +80,16 @@
 
             poema.estrofas.forEach(
                 estrofa => {
-
                     const p = document.createElement("p");
-
-                    p.innerHTML =
-                        estrofa.join("<br>");
-
-                    contenedor
-                        .appendChild(p);
+                    p.innerHTML = estrofa.join("<br>");
+                    contenedor.appendChild(p);
                 }
             );
 
             document.getElementById("poema-firma").innerHTML = `
-                <span>
-                    — ${poema.autor}
-                </span>
-
+                <span>— ${poema.autor}</span>
                 <br>
-
-                <small>
-                    ${poema.pd}
-                </small>
+                <small>${poema.pd}</small>
             `;
         }
 

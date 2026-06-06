@@ -624,6 +624,51 @@ const poemas = {
                 "Suspiro rendido en tu amor carnal."
             ]
         ]
+    },
+
+    "2026-06-06": {
+        fecha: "6 de junio de 2026",
+        titulo: "El señor de los anillos.",
+        autor: "A. Ssshparro",
+        pd: `Pd. Acróstico tallado en la proporción que todo círculo obedece, voz del infinito.<br>Te lleva a seleccionarlo todo, guardando su secreto bendito. 🪐`,
+        estrofas: [
+            [
+                "Quién vive <span class='camaleon'>s</span>ilencio desde el borde de la noche,",
+                "coronado por anillos de hielo y resplandor,",
+                "sus círculos parecen promesas guardadas con honor,",
+                "tesoros que el tiempo protege bajo invisible broche."
+            ],
+            [
+                "<span class='camaleon'>A</span>stros revelan que el Sol pidió la mano de la Luna,",
+                "temiendo que un sí lo hiciera estallar de emoción,",
+                "y que un no apagara para siempre su corazón,",
+                "dejando al cielo sin aurora, sin fuego y sin fortuna."
+            ],
+            [
+                "La Luna miró <span class='camaleon'>b</span>revemente los sueños y el firmamento,",
+                "y respondió solamente con un suave 'tal vez',",
+                "palabra que sigue viva una y otra y otra vez,",
+                "suspendida entre los siglos como un eterno momento."
+            ],
+            [
+                "<span class='camaleon'>A</span>nhelo de cada eclipse es una visita repetida,",
+                "el Sol se acerca y vuelve a formular la cuestión,",
+                "mientras la Luna sonríe sin dar resolución,",
+                "guardando entre sus sombras una respuesta escondida."
+            ],
+            [
+                "Y Saturno, paciente, custodia <span class='camaleon'>d</span>ulcemente los anillos del destino,",
+                "como si fueran alianzas aún sin entregar,",
+                "esperando el día en que la Luna quiera contestar,",
+                "o el Sol decida descansar de su largo camino."
+            ],
+            [
+                "Más allá, Neptuno conserva diamantes en el abismo <span class='camaleon'>o</span>nírico,",
+                "Saturno guarda anillos, Neptuno guarda esplendor,",
+                "y entre ambos resguardan los símbolos del amor,",
+                "mientras el 'tal vez' sostiene el equilibrio del mundo."
+            ]
+        ]
     }
 
 
