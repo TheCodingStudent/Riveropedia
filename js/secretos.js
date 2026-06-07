@@ -64,8 +64,8 @@ const secretos = {
 
             Pd. Cada letra, cada secreto, se inclina hacia ti 🔍.<br>
         `,
-        index: 4,
-        tooltip: "4<br>De la manera más egoista posible",
+        index: 6,
+        tooltip: "4",
         audio: "Mi casa. Mi silla. Mi mujer."
     },
 
