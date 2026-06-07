@@ -7,6 +7,9 @@
     <title id="page-title">Poema</title>
     <link rel="stylesheet" href="/Riveropedia/css/style.css">
     <link rel="stylesheet" href="/Riveropedia/css/poema.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>(function () { emailjs.init("keJJLe8j0STrmJjvm"); })();</script>
+
 </head>
 
 <body>
@@ -29,22 +32,10 @@
 
         <div class="topbar-section right">
             <ul>
-                <li>
-                    <a href="/Riveropedia/index.html">
-                        Inicio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/Riveropedia/info/sobre-ti.html">
-                        Sobre ti
-                    </a>
-                </li>
-
+                <li><a href="/Riveropedia/index.html">Inicio</a></li>
+                <li><a href="/Riveropedia/info/sobre-ti.html">Sobre ti</a></li>
             </ul>
-
         </div>
-
     </nav>
 
     <main class="poema-container">
@@ -53,6 +44,18 @@
             <h2 id="poema-titulo"></h2>
             <div class="poema-texto" id="poema-texto"></div>
             <div class="firma" id="poema-firma"></div>
+        </article>
+
+        <article class="poema-card">
+            <h2>Enviar un mensaje</h2>
+            <form id="form">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo">
+                <input type="text" name="title" placeholder="Asunto">
+                <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <input type="hidden" name="time" id="time">
+                <button type="submit">Enviar</button>
+            </form>
         </article>
     </main>
 
@@ -68,6 +71,23 @@
         const params = new URLSearchParams(window.location.search);
         const fecha = params.get("fecha");
         const poema = poemas[fecha];
+
+        function puedeAbrirse(fechaISO) {
+            const [year, month, day] = fechaISO.split("-").map(Number);
+            const fechaPoema = new Date(year, month - 1, day);
+            const hoy = new Date();
+            hoy.setHours(0, 0, 0, 0);
+            return fechaPoema <= hoy;
+        }
+
+        if (!puedeAbrirse(fecha)) {
+
+            window.location.replace(
+                "/Riveropedia/info/tramposa.html?fecha=" +
+                encodeURIComponent(fecha)
+            );
+
+        } 
 
         if (!poema) {
             window.location.href = "/Riveropedia/info/pendiente.html";
@@ -87,12 +107,17 @@
             );
 
             document.getElementById("poema-firma").innerHTML = `
-                <span>— ${poema.autor}</span>
-                <br>
+                <span>— ${poema.autor}</span><br>
                 <small>${poema.pd}</small>
             `;
         }
 
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            emailjs.sendForm("service_j62vr7a", "template_9b5jaiy", this)
+                .then(() => alert("Mensaje enviado ✅"))
+                .catch(err => alert("Error ❌ " + JSON.stringify(err)));
+        });
     </script>
 
 </body>

@@ -1,12 +1,16 @@
 .poema-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 0 24px 60px;
     align-items: center;
+    gap: 20px;
 }
 
 .poema-card {
-    width: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
     max-width: 900px;
     padding: 60px;
     border-radius: 36px;
@@ -27,9 +31,12 @@
 
 .poema-texto {
     white-space: pre-wrap;
+    margin: 1em 0;
+    line-height: 1.6;
 }
 
 .poema-texto p {
+    margin: 1em 0;
     font-size: 1.15rem;
     line-height: 2;
     text-align: left;
@@ -37,7 +44,13 @@
     margin-bottom: 42px;
 }
 
+.poema-texto br {
+    line-height: 1;
+}
+
 .poema-fecha {
+    width: 200px;
+    text-align: center;
     display: inline-flex;
     align-items: center;
     padding: 10px 18px;
@@ -54,4 +67,89 @@
     color: #d6336c;
     text-decoration: underline;
     text-decoration-color: #d6336c;
+}
+
+.poema-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.poema-card form input,
+.poema-card form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255, 79, 135, 0.15);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+
+    padding: 14px 18px;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--texto);
+
+    transition: .25s ease;
+
+}
+
+.poema-card form textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.poema-card form input::placeholder,
+.poema-card form textarea::placeholder {
+    color: #b78398;
+}
+
+.poema-card form input:focus,
+.poema-card form textarea:focus {
+    outline: none;
+    border-color: rgba(255, 79, 135, 0.45);
+
+    background: rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 0 0 4px rgba(255, 79, 135, 0.08),
+        0 10px 25px rgba(255, 79, 135, 0.08);
+
+}
+
+.poema-card form button {
+    align-self: flex-end;
+
+    border: none;
+    border-radius: 999px;
+
+    padding: 12px 24px;
+
+    background: var(--rosa-main);
+    color: white;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+
+}
+
+.poema-card form button:hover {
+    background: var(--rosa-hover);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(255, 79, 135, 0.25);
+}
+
+.poema-card form button:active {
+    transform: translateY(0);
 }

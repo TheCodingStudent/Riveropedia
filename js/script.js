@@ -3,6 +3,43 @@ const BASE = "/Riveropedia/";
 const sonidoError = new Audio(BASE + "wrong.mp3");
 sonidoError.preload = "auto";
 
+function speak(text) {
+
+    const message =
+        new SpeechSynthesisUtterance(text);
+
+    const voices =
+        speechSynthesis.getVoices();
+
+    const voice =
+        voices.find(v =>
+            v.name.includes("Sabina")
+        ) ||
+        voices.find(v =>
+            v.name.includes("Dalia")
+        ) ||
+        voices.find(v =>
+            v.name.includes("Paulina")
+        ) ||
+        voices.find(v =>
+            v.name.includes("Helena")
+        ) ||
+        voices.find(v =>
+            v.lang.startsWith("es")
+        );
+
+    if (voice) {
+        message.voice = voice;
+        console.log("Usando:", voice.name);
+    }
+
+    message.lang = "es-MX";
+    message.rate = 1;
+    message.pitch = 1.5;
+
+    speechSynthesis.speak(message);
+}
+
 function navegarBusqueda() {
     const form = document.getElementById("busqueda-form");
     if (!form) return;

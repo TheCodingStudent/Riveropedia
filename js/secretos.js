@@ -2,17 +2,17 @@ const secretos = {
     "lunes": {
         titulo: "Astronomía",
         contenido: `
-            En la bóveda nocturna danza el misterio.<br>
-            Estrellas antiguas susurran historias al viento.<br>
-            La Luna vigila, guardiana de los sueños.<br>
-            Los planetas trazan caminos invisibles en silencio.<br>
-            La astronomía es puente entre lo humano y lo eterno,<br>
-            un lenguaje de luces que revela nuestro origen.<br>
-
-            Pd. Al igual que la Luna, el título tiene un lado oculto 🔍.<br>
+        En la bóveda nocturna danza el misterio.<br>
+        Estrellas antiguas susurran historias al viento.<br>
+        La Luna vigila, guardiana de los sueños.<br>
+        Los planetas trazan caminos invisibles en silencio.<br>
+        La astronomía es puente entre lo humano y lo eterno,<br>
+        un lenguaje de luces que revela nuestro origen.<br>
+        Pd. Al igual que la Luna, el título tiene un lado oculto 🔍
         `,
         index: 1,
-        tooltip: 1
+        tooltip: 1,
+        audio: "Tercera ley de Newton: La única forma en que los humanos lleguen a alguna parte es dejando algo atrás."
     },
 
     "martes": {
@@ -28,7 +28,8 @@ const secretos = {
             Pd. Cada cálculo revela un secreto oculto 🔍.<br>
         `,
         index: 4,
-        tooltip: 2
+        tooltip: 2,
+        audio: "Marte está ahí, esperando a que lleguemos."
     },
 
     "miércoles": {
@@ -45,7 +46,8 @@ const secretos = {
             <em>𝑀𝑖𝑒𝑠𝑒𝑠</em>, <em>𝑎𝑝𝑒𝑟𝑡𝑢𝑟𝑎</em> a su marmolada reina 🔍.
         `,
         index: -1,
-        tooltip: 3
+        tooltip: 3,
+        audio: "Mi nombre es Barry Allen, y soy el hombre más rápido sobre la faz de la Tierra."
     },
 
     "jueves": {
@@ -63,7 +65,8 @@ const secretos = {
             Pd. Cada letra, cada secreto, se inclina hacia ti 🔍.<br>
         `,
         index: 4,
-        tooltip: "4<br>De la manera más egoista posible"
+        tooltip: "4<br>De la manera más egoista posible",
+        audio: "Mi casa. Mi silla. Mi mujer."
     },
 
     "viernes": {
@@ -83,7 +86,8 @@ const secretos = {
             "De la", "manera más",
             "egoista", "posible",
             "5", "mi", "cielo."
-        ]
+        ],
+        audio: ""
     },
 
     "sábado": {
@@ -99,9 +103,8 @@ const secretos = {
             Pd. Un lazo secreto une tu mano con mi latido, y en ese silencio todo amor se revela. ❤️🔍.<br>
         `,
         index: [3, 5],
-        tooltip: ["6", "6"]
+        tooltip: ["6", "6"],
+        audio: ""
     }
-
-
 
 };
