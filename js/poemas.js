@@ -675,45 +675,48 @@ const poemas = {
         fecha: "7 de junio de 2026",
         titulo: "El sol",
         autor: "A. Ssshparro",
-        pd: `Pd. Acróstico tallado en la proporción que todo círculo obedece, voz del infinito.<br>Te lleva a seleccionarlo todo, guardando su secreto bendito. 🪐`,
+        pd: `Pd. Como los lados de un hexágono, cada destello pertenecen a la misma figura. ☀️`,
         estrofas: [
             [
-                "Quién vive <span class='camaleon'>s</span>ilencio desde el borde de la noche,",
-                "coronado por anillos de hielo y resplandor,",
-                "sus círculos parecen promesas guardadas con honor,",
-                "tesoros que el tiempo protege bajo invisible broche."
+                "Tu luz que alumbra mi mañana,",
+                "beso ardiente en mi piel al despertar,",
+                "es la pasión que me reclama,",
+                "un amor que no deja de quemar."
             ],
             [
-                "<span class='camaleon'>A</span>stros revelan que el Sol pidió la mano de la Luna,",
-                "temiendo que un sí lo hiciera estallar de emoción,",
-                "y que un no apagara para siempre su corazón,",
-                "dejando al cielo sin aurora, sin fuego y sin fortuna."
+                "Como el <span class='loop camaleon-inverse'>destello</span> que todo lo transforma,",
+                "tu presencia mi mundo ilumina,",
+                "en tu <span class='loop camaleon-inverse'>océano</span> mi alma se conforma,",
+                "una <span class='loop camaleon-inverse'>mantra</span> que nunca declina."
             ],
             [
-                "La Luna miró <span class='camaleon'>b</span>revemente los sueños y el firmamento,",
-                "y respondió solamente con un suave 'tal vez',",
-                "palabra que sigue viva una y otra y otra vez,",
-                "suspendida entre los siglos como un eterno momento."
+                "Eres mi sol, mi guía, mi destino,",
+                "El <span class='loop camaleon-inverse'>ídolo</span> que rige mi amanecer.",
+                "En tu abrazo encuentro mi camino,",
+                "Y en tu amor, mi eterno florecer."
             ],
             [
-                "<span class='camaleon'>A</span>nhelo de cada eclipse es una visita repetida,",
-                "el Sol se acerca y vuelve a formular la cuestión,",
-                "mientras la Luna sonríe sin dar resolución,",
-                "guardando entre sus sombras una respuesta escondida."
+                "Tus caricias, <span class='loop camaleon-inverse'>nube</span> que me elevan,",
+                "<span class='loop camaleon-inverse'>gema</span> dulce que me hace soñar,",
+                "mis anhelos contigo se atrevan,",
+                "un deseo que no puedo ocultar."
             ],
             [
-                "Y Saturno, paciente, custodia <span class='camaleon'>d</span>ulcemente los anillos del destino,",
-                "como si fueran alianzas aún sin entregar,",
-                "esperando el día en que la Luna quiera contestar,",
-                "o el Sol decida descansar de su largo camino."
+                "En el ocaso de tu alma bella,",
+                "mi corazón encuentra su reposo,",
+                "eres mi eterna y <span class='loop camaleon-inverse'>orquídea</span> estrella,",
+                "mi amor eterno, mi sol glorioso."
             ],
             [
-                "Más allá, Neptuno conserva diamantes en el abismo <span class='camaleon'>o</span>nírico,",
-                "Saturno guarda anillos, Neptuno guarda esplendor,",
-                "y entre ambos resguardan los símbolos del amor,",
-                "mientras el 'tal vez' sostiene el equilibrio del mundo."
+                "Así te amo, con fuerza divina,",
+                "un fuego que jamás se extinguirá,",
+                "mi pasión por ti es genuina,",
+                "como el sol que siempre brillará."
             ]
         ]
     }
+
+
+
 
 };

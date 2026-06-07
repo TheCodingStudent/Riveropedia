@@ -69,6 +69,10 @@
     text-decoration-color: #d6336c;
 }
 
+.camaleon-inverse::selection {
+    color: transparent;
+}
+
 .poema-card form {
     display: flex;
     flex-direction: column;
@@ -152,4 +156,20 @@
 
 .poema-card form button:active {
     transform: translateY(0);
+}
+
+.loop {
+    animation: colorShift 5s ease-in-out infinite alternate;
+}
+
+@keyframes colorShift {
+    from {
+        color: #000000;
+        /* opacity: 1; */
+    }
+
+    to {
+        color: #92460f;
+        /* opacity: 0.5; */
+    }
 }
