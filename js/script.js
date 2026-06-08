@@ -52,7 +52,11 @@ function navegarBusqueda() {
 
         if (!palabra) return;
 
-        if (
+        if (palabra === "sideral"){
+            location.href = BASE + "info/sideral.html";
+        }
+
+        else if (
             typeof secretos !== "undefined" &&
             Object.prototype.hasOwnProperty.call(secretos, palabra)
         ) {

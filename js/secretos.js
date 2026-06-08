@@ -105,6 +105,24 @@ const secretos = {
         index: [3, 5],
         tooltip: ["6", "6"],
         audio: ""
+    },
+
+    "domingo": {
+        titulo: "Sol de octubre",
+        contenido: `
+            Luna luminosa, luces lentamente los latidos leales.<br>
+            Los Labios ligeros liberan largos lazos llenos.<br>
+            Lentamente logras levantar los límites, lindo lucero.<br>
+            Leves llanas luces liberan largos latidos locamente.<br>
+            Llena la lejanía, luna; libera luminosos lazos.<br>
+            Llaves lógicos, legendarias, liberan los límites laberínticos.<br>
+            Lunares llamativos llenan lentamente los labios llamenates.<br>
+
+            Pd. Ya tiens todo para buscar la palabra de esta semana. Suerte ❤️🔍.<br>
+        `,
+        index: [2],
+        tooltip: ["La verdad, he pensado en ti todo el día"],
+        audio: ""
     }
 
 };

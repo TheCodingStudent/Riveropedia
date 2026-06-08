@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDERAL</title>
+
+    <link rel="stylesheet" href="/Riveropedia/css/style.css">
+    <link rel="stylesheet" href="/Riveropedia/css/poema.css">
+
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        .estrellas,
+        .estrellas::before,
+        .estrellas::after {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .estrellas::before,
+        .estrellas::after {
+            content: "";
+            background-image:
+                radial-gradient(white 1px, transparent 1px);
+        }
+
+        .estrellas::before {
+            background-size: 70px 70px;
+            opacity: .6;
+        }
+
+        .estrellas::after {
+            background-size: 130px 130px;
+            opacity: .25;
+        }
+
+        .titulo,
+        .topbar a:hover {
+            color: blue;
+        }
+
+        .indices {
+            display: flex;
+            justify-content: space-between;
+
+            width: min(900px, 90%);
+
+            margin-bottom: 20px;
+
+            color: rgba(255, 255, 255, .55);
+
+            letter-spacing: .3em;
+
+            font-family: monospace;
+        }
+
+        .sideral-card,
+        footer {
+            color: white;
+        }
+
+        .sideral-container h1,
+        .sideral-container h3 {
+            color: white;
+            width: 100%;
+            text-align: left;
+
+            letter-spacing: .4em;
+
+            text-shadow:
+                0 0 10px rgba(255, 255, 255, .5),
+                0 0 30px rgba(120, 160, 255, .5);
+        }
+
+        .sideral-texto p {
+            margin: 0 0 30px 10%;
+            line-height: 2;
+        }
+
+        .sideral-card {
+            width: min(900px, 90%);
+
+            padding: 60px;
+
+            border-radius: 36px;
+
+            background: rgba(255, 255, 255, 0.04);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            box-shadow:
+                0 0 40px rgba(100, 150, 255, .08);
+
+            color: white;
+
+            box-sizing: border-box;
+        }
+
+        .firma {
+            margin: 30px 0 0 0;
+        }
+
+        .sideral-texto p {
+            margin: 0 0 30px 10%;
+            line-height: 2;
+        }
+
+        .sideral-container {
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: flex-start;
+
+            width: 100%;
+
+            /* padding: 40px; */
+            box-sizing: border-box;
+        }
+
+        .sideral-container::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+
+            background:
+                radial-gradient(circle at 20% 20%,
+                    rgba(80, 120, 255, .18),
+                    transparent 25%),
+
+                radial-gradient(circle at 80% 30%,
+                    rgba(150, 180, 255, .12),
+                    transparent 30%),
+
+                radial-gradient(circle at 60% 80%,
+                    rgba(120, 140, 255, .10),
+                    transparent 25%),
+
+                linear-gradient(180deg,
+                    #020611 0%,
+                    #071327 45%,
+                    #0d1c36 100%);
+
+            z-index: -3;
+        }
+
+        .indice {
+            position: relative;
+            cursor: pointer;
+            margin: 20px 0 0 0;
+        }
+
+        .indice::after {
+            content: attr(data-tooltip);
+
+            position: absolute;
+
+            top: 150%;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            background: rgba(5, 10, 25, .95);
+
+            border: 1px solid rgba(150, 180, 255, .3);
+
+            color: white;
+
+            padding: 8px 12px;
+
+            border-radius: 12px;
+
+            opacity: 0;
+            visibility: hidden;
+
+            z-index: 1000;
+            transition: .3s;
+
+            white-space: nowrap;
+        }
+
+        .indice:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        ::selection {
+            color: transparent;
+            background: transparent;
+        }
+
+        .indices {
+            display: flex;
+            justify-content: space-between;
+
+            width: min(900px, 90%);
+
+            margin: 20px 0;
+
+            color: rgba(255, 255, 255, .55);
+
+            letter-spacing: .3em;
+
+            font-family: monospace;
+        }
+
+        .indices small {
+            color: transparent;
+        }
+
+        .indices small::selection {
+            color: white;
+        }
+
+        .firma {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="topbar">
+        <div class="topbar-section left">
+            <form id="busqueda-form">
+                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
+                <ul id="sugerencias"></ul>
+            </form>
+        </div>
+
+        <div class="topbar-section center">
+            <h1 class="titulo tooltip">
+                ♡ N.I.N.A
+                <span class="tooltiptext">
+                    Neural Interface for Noble Affection
+                </span>
+            </h1>
+        </div>
+
+        <div class="topbar-section right">
+            <ul>
+                <li>
+                    <a href="/Riveropedia/index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/Riveropedia/info/sobre-ti.html">
+                        Sobre ti
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="sideral-container">
+
+        <div class="estrellas"></div>
+
+        <div class="indices">
+            <small class="indice" data-tooltip="Semana">
+                3
+            </small>
+
+            <small class="indice" data-tooltip="Letra">
+                4
+            </small>
+        </div>
+
+        <h3 style="margin-left: 100px;">Semana 1</h3>
+
+        <article class="sideral-card">
+
+            <h1 style="width: 100%; text-align: left">
+                SIDERAL
+            </h1>
+
+            <div class="sideral-texto">
+
+                <p>
+                    Quisiera darte el mundo entero<br>
+                    La luna, el cielo, el sol y el mar<br>
+                    Regalarte las estrellas<br>
+                    En una caja de cristal<br>
+                    Llevarte al espacio sideral<br>
+                    Y volar como lo hace Superman<br>
+                </p>
+                <p>
+                    Quisiera ser un super héroe<br>
+                    Y protegerte contra el mal<br>
+                    Regalarte la vía láctea<br>
+                    En un plato de cereal<br>
+                    Llevarte al espacio sideral<br>
+                    Y volar como lo hace Superman<br>
+                </p>
+
+            </div>
+
+            <div class="firma">
+                <small>
+                    1/8
+                </small>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 A. Ssshparro</p>
+    </footer>
+
+    <script src="/Riveropedia/js/poemas.js"></script>
+    <script src="/Riveropedia/js/secretos.js"></script>
+    <script src="/Riveropedia/js/script.js"></script>
+
+</body>
+
+</html>
