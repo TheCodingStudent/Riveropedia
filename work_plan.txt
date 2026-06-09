@@ -12,13 +12,13 @@ ILOVEU3K
     - Domingo:   Sol      (Domingo = HELIOS)   L -> 7
 
 2. Pecados Capitales
-    - Lunes:     Lujuria  (Gowther)  C
-    - Martes:    Gula     (Merlin)   A
-    - Miercoles: Avaricia (Ban)      M
-    - Jueves:    Pereza   (King)     E
-    - Viernes:   Ira      (Meliodas) L 
-    - Sabado:    Envidia  (Diana)    O -> 6
-    - Domingo:   Soberbia (Escanor)  T
+    - Lunes:     Soberbia (Rhitta = Escanor)    C
+    - Martes:    Avaricia (Ban)        A
+    - Miercoles: Pereza   (Harle-king) M
+    - Jueves:    Envidia  (Diane)      E
+    - Viernes:   Gula     (Merlin)     L 
+    - Sabado:    Ira      (Meliodas)   O -> 6
+    - Domingo:   Lujuria  (Gowther)    T
 
 3. Maravillas del mundo
     - Lunes:     Gran muralla China (40.4319° N, 116.570° E)  I

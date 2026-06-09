@@ -123,6 +123,23 @@ const secretos = {
         index: [2],
         tooltip: ["La verdad, he pensado en ti todo el día"],
         audio: ""
-    }
+    },
+    
+    // ------------------------------
+
+    "rhitta": {
+        titulo: "Escanor",
+        contenido: `
+            Aquel que brillaba como sol.<span class="oculto"> ¿Qué tan</span><br>
+            Su orgullo eclipsaba dioses, reyes.<span class="oculto"> orgulloso</span><br>
+            Al mediodía alcanzaba poder absoluto.<span class="oculto"> crees</span><br>
+            Portaba Rhitta, hacha divina legendaria.<span class="oculto"> que</span><br>
+            Amó profundamente sin pedir reciprocidad.<span class="oculto"> soy?</span><br>
+            Pd. Dices que el calor que emano es por ti ¿y quién lo decidió? 🔥<span class="oculto"> ¿un 3?</span>.<br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: ""
+    },
 
 };

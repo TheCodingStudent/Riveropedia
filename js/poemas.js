@@ -714,9 +714,58 @@ const poemas = {
                 "como el sol que siempre brillará."
             ]
         ]
+    },
+
+    "2026-06-08": {
+        fecha: "8 de junio de 2026",
+        titulo: "El León del Orgullo",
+        autor: "A. Ssshparro",
+        pd: `Pd. Tesoro sagrado, adorado y bendito por el mismo sol. 🌞`,
+        estrofas: [
+            [
+                "<span class='camaleon'>R</span>ey del astro que domina los cielos, mi voluntad siembro;",
+                "ninguna sombra osa desafiar mi fulgor,",
+                "mi fuego arde más alto que mi miembro",
+                "y sobre ti me alzo, sin algún pudor."
+            ],
+            [
+                "<span class='camaleon'>H</span>ombres tiemblan al ver mi figura,",
+                "mi paso convierte la noche en día,",
+                "soy la fuerza que rompe la penumbra,",
+                "el poder que dicta la eterna armonía."
+            ],
+            [
+                "<span class='camaleon'>I</span>mposible estrella que iguale mi grandeza,",
+                "ni diosa que soporte mi ardiente corona,",
+                "soy soberano de toda belleza,",
+                "y mi posesión sobre ti jamás te abandona."
+            ],
+            [
+                "<span class='camaleon'>T</span>u, mi hechicera de saber infinito,",
+                "te ofrezco mi semilla como destino,",
+                "pues solo mi orgullo puede ser bendito,",
+                "y solo mi fuego es tu camino divino."
+            ],
+            [
+                "<span class='camaleon'>T</span>u brújula moral se curva al verse someter,",
+                "tus caderas se rinden ante mi poder,",
+                "soy el sol que nadie puede vencer,",
+                "el dueño absoluto que en ti se quiere meter."
+            ],
+            [
+                "<span class='camaleon'>Á</span>vidamente el mundo se quiebra bajo mi llama,",
+                "yo lo rehago con soberbia divina,",
+                "porque mi fuerza nunca se apaga,",
+                "soy eternidad que siempre ilumina."
+            ],
+            [
+                "Y tú, mujer de secretos eternos,",
+                "recibe mi fuego como tu verdad,",
+                "pues mi orgullo no conoce inviernos,",
+                "y mi sol te reclama en su inmensidad."
+            ]
+        ]
     }
-
-
 
 
 };
