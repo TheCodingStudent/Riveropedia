@@ -136,3 +136,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const grid = document.getElementById("grid");
     if (grid) renderCalendario(mesActual);
 });
+
+document.addEventListener("contextmenu", e => {
+    e.preventDefault();
+});
+
+document.addEventListener("keydown", e => {
+
+    if (
+        (e.ctrlKey || e.metaKey) &&
+        ["c"].includes(e.key.toLowerCase())
+    ) {
+        e.preventDefault();
+    }
+
+});
