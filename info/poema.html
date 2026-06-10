@@ -80,6 +80,33 @@
             return fechaPoema <= hoy;
         }
 
+        function envolverLetras(html, letras) {
+
+            let dentroTag = false;
+            let resultado = "";
+
+            for (const c of html) {
+
+                if (c === "<") dentroTag = true;
+
+                if (
+                    !dentroTag &&
+                    letras.some(
+                        letra => letra.toLowerCase() === c.toLowerCase()
+                    )
+                ) {
+                    resultado +=
+                        `<span class="oculto-tecla">${c}</span>`;
+                } else {
+                    resultado += c;
+                }
+
+                if (c === ">") dentroTag = false;
+            }
+
+            return resultado;
+        }
+
         if (!puedeAbrirse(fecha)) {
 
             window.location.replace(
@@ -87,37 +114,97 @@
                 encodeURIComponent(fecha)
             );
 
-        } 
-
-        if (!poema) {
-            window.location.href = "/Riveropedia/info/pendiente.html";
-        } else {
-            document.title = poema.titulo;
-            document.getElementById("poema-fecha").textContent = poema.fecha;
-            document.getElementById("poema-titulo").textContent = poema.titulo;
-
-            const contenedor = document.getElementById("poema-texto");
-
-            poema.estrofas.forEach(
-                estrofa => {
-                    const p = document.createElement("p");
-                    p.innerHTML = estrofa.join("<br>");
-                    contenedor.appendChild(p);
-                }
-            );
-
-            document.getElementById("poema-firma").innerHTML = `
-                <span>— ${poema.autor}</span><br>
-                <small>${poema.pd}</small>
-            `;
         }
 
-        document.getElementById("form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            document.getElementById("time").value = poema.titulo;
-            emailjs.sendForm("service_j62vr7a", "template_9b5jaiy", this)
-                .then(() => alert("Mensaje enviado ✅"))
-                .catch(err => alert("Error ❌ " + JSON.stringify(err)));
+        if (!poema) {
+
+            window.location.href =
+                "/Riveropedia/info/pendiente.html";
+
+        } else {
+
+            document.title = poema.titulo;
+
+            document.getElementById("poema-fecha")
+                .textContent = poema.fecha;
+
+            document.getElementById("poema-titulo")
+                .textContent = poema.titulo;
+
+            let html = "";
+
+            poema.estrofas.forEach(estrofa => {
+
+                html += "<p>";
+                html += estrofa.join("<br>");
+                html += "</p>";
+
+            });
+
+            if (Object.hasOwn(poema, "ocultar")) {
+
+                const letras =
+                    Array.isArray(poema.ocultar)
+                        ? poema.ocultar
+                        : [...poema.ocultar];
+
+                html = envolverLetras(
+                    html,
+                    letras
+                );
+            }
+
+            document.getElementById("poema-texto")
+                .innerHTML = html;
+
+            document.getElementById("poema-firma").innerHTML = `
+            <span>— ${poema.autor}</span><br>
+            <small>${poema.pd}</small>
+        `;
+        }
+
+        document
+            .getElementById("form")
+            .addEventListener("submit", function (e) {
+
+                e.preventDefault();
+
+                document.getElementById("time").value =
+                    poema.titulo;
+
+                emailjs
+                    .sendForm(
+                        "service_j62vr7a",
+                        "template_9b5jaiy",
+                        this
+                    )
+                    .then(() =>
+                        alert("Mensaje enviado ✅")
+                    )
+                    .catch(err =>
+                        alert(
+                            "Error ❌ " +
+                            JSON.stringify(err)
+                        )
+                    );
+            });
+
+        document.addEventListener("keydown", e => {
+            if (e.ctrlKey ||e.shiftKey ||
+                e.altKey || e.metaKey
+            ) {return;}
+
+            const tecla = e.key.toLowerCase();
+
+            document
+            .querySelectorAll(".oculto-tecla")
+            .forEach(el => {
+
+                if (el.textContent.toLowerCase() === tecla) {
+                    el.classList.add("revelado");
+                }
+            });
+
         });
     </script>
 

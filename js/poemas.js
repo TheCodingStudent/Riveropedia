@@ -765,7 +765,63 @@ const poemas = {
                 "y mi sol te reclama en su inmensidad."
             ]
         ]
+    },
+
+    "2026-06-09": {
+        fecha: "9 de junio de 2026",
+        titulo: "El zorro de la avaricia",
+        autor: "A. Ssshparro",
+        pd: `Pd. Elaine, joya eterna del ladrón inmortal.`,
+        ocultar: "ELAINE",
+        estrofas: [
+            [
+                "Ansío tu aliento como tesoro oculto,",
+                "ningún oro brilla como tu mirada,",
+                "mi avaricia se aferra a tu mundo,",
+                "pues sin ti mi alma queda desgarrada."
+            ],
+            [
+                "Robé la eternidad con manos vacías,",
+                "pero tu voz me devuelve la calma,",
+                "soy ladrón de sueños y alegrías,",
+                "y tu amor es la joya que inflama mi alma."
+            ],
+            [
+                "El bosque guarda tu esencia sagrada,",
+                "como un secreto que nunca se entrega,",
+                "mi avaricia te busca en cada jornada,",
+                "mi corazón a tu nombre se apega."
+            ],
+            [
+                "No quiero riquezas ni coronas,",
+                "ni el poder que los hombres veneran,",
+                "solo tus labios, dulces personas,",
+                "son el botín que mis ansias esperan."
+            ],
+            [
+                "Si la eternidad me fue concedida,",
+                "es porque tu amor la sostiene,",
+                "mi avaricia no conoce medida,",
+                "cuando tu ternura me detiene."
+            ],
+            [
+                "Soy ladrón, pero de tu cariño,",
+                "no de oro ni de plata escondida,",
+                "mi pecado se vuelve mi destino,",
+                "y tu luz me regresa la vida."
+            ],
+            [
+                "Elaine, guardiana de mis deseos,",
+                "mi avaricia se rinde ante tu pureza,",
+                "pues en tu abrazo hallo los trofeos,",
+                "y en tu amor, la más grande riqueza."
+            ],
+            [
+                "ELAINE"
+            ]
+        ]
     }
+
 
 
 };

@@ -162,6 +162,15 @@
     animation: colorShift 5s ease-in-out infinite alternate;
 }
 
+.oculto-tecla {
+    color: transparent;
+    transition: color .4s ease;
+}
+
+.oculto-tecla.revelado {
+    color: #d6336c;
+}
+
 @keyframes colorShift {
     from {
         color: #000000;

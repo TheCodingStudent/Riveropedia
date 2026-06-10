@@ -124,22 +124,25 @@ const secretos = {
         tooltip: ["La verdad, he pensado en ti todo el día"],
         audio: ""
     },
-    
+
     // ------------------------------
 
-    "rhitta": {
-        titulo: "Escanor",
+    "elaine": {
+        titulo: "Ban",
         contenido: `
-            Aquel que brillaba como sol.<span class="oculto"> ¿Qué tan</span><br>
-            Su orgullo eclipsaba dioses, reyes.<span class="oculto"> orgulloso</span><br>
-            Al mediodía alcanzaba poder absoluto.<span class="oculto"> crees</span><br>
-            Portaba Rhitta, hacha divina legendaria.<span class="oculto"> que</span><br>
-            Amó profundamente sin pedir reciprocidad.<span class="oculto"> soy?</span><br>
-            Pd. Dices que el calor que emano es por ti ¿y quién lo decidió? 🔥<span class="oculto"> ¿un 3?</span>.<br>
+            Ladrón inmortal que desafía la muerte.<br>
+            Su avaricia no busca oro ni poder.<br>
+            Robó la eternidad con manos vacías.<br>
+            Portaba Courechouse, bastón del zorro astuto.<br>
+            Amó a Elaine con un amor infinito.<br>
+            Su pecado es ansia de lo eterno.<br>
+            Pd. No importaa qué defectos tengaas, yo voy aa robarte enteraa. 🦊
         `,
         index: [-1],
         tooltip: [""],
-        audio: ""
-    },
+        audio: "",
+        robar: "BAN"
+    }
+
 
 };
