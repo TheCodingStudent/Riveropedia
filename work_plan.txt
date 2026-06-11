@@ -12,9 +12,9 @@ ILOVEU3K
     - Domingo:   Sol      (Domingo = HELIOS)   L -> 7
 
 2. Pecados Capitales
-    - Lunes:     Soberbia (Rhitta = Escanor)    C
-    - Martes:    Avaricia (Ban)        A
-    - Miercoles: Pereza   (Harle-king) M
+    - Lunes:     Soberbia (Rhitta = Escanor) C
+    - Martes:    Avaricia (Elaine = Ban)     A
+    - Miercoles: Pereza   (King = ) M
     - Jueves:    Envidia  (Diane)      E
     - Viernes:   Gula     (Merlin)     L 
     - Sabado:    Ira      (Meliodas)   O -> 6

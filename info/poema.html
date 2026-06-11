@@ -68,19 +68,25 @@
     <script src="/Riveropedia/js/script.js"></script>
 
     <script>
-        const params = new URLSearchParams(window.location.search);
-        const fecha = params.get("fecha");
+
+        const fecha = new URLSearchParams(location.search).get("fecha");
         const poema = poemas[fecha];
 
-        function puedeAbrirse(fechaISO) {
-            const [year, month, day] = fechaISO.split("-").map(Number);
-            const fechaPoema = new Date(year, month - 1, day);
+        const $ = id => document.getElementById(id);
+
+        const puedeAbrirse = fechaISO => {
+
+            const [y, m, d] = fechaISO.split("-").map(Number);
+
+            const fechaPoema = new Date(y, m - 1, d);
+
             const hoy = new Date();
             hoy.setHours(0, 0, 0, 0);
-            return fechaPoema <= hoy;
-        }
 
-        function envolverLetras(html, letras) {
+            return fechaPoema <= hoy;
+        };
+
+        const envolverLetras = (html, letras) => {
 
             let dentroTag = false;
             let resultado = "";
@@ -89,87 +95,145 @@
 
                 if (c === "<") dentroTag = true;
 
-                if (
+                resultado += (
                     !dentroTag &&
                     letras.some(
-                        letra => letra.toLowerCase() === c.toLowerCase()
+                        l => l.toLowerCase() === c.toLowerCase()
                     )
-                ) {
-                    resultado +=
-                        `<span class="oculto-tecla">${c}</span>`;
-                } else {
-                    resultado += c;
-                }
+                )
+                    ? `<span class="oculto-tecla">${c}</span>`
+                    : c;
 
                 if (c === ">") dentroTag = false;
             }
 
             return resultado;
-        }
+        };
+
+        const aplicarMask = (el, textoReal) => {
+
+            const textoVisible = el.textContent;
+
+            el.classList.add("mask-container");
+
+            el.innerHTML = `
+            <span class="mask-falso">
+                ${textoVisible}
+            </span>
+
+            <span class="mask-real">
+                ${textoReal}
+            </span>
+        `;
+
+            const real =
+                el.querySelector(".mask-real");
+
+            el.addEventListener("mousemove", e => {
+
+                const rect =
+                    el.getBoundingClientRect();
+
+                const x =
+                    e.clientX - rect.left;
+
+                const y =
+                    e.clientY - rect.top;
+
+                const radio =
+                    rect.height * 0.5;
+
+                real.style.setProperty(
+                    "--mx",
+                    `${x}px`
+                );
+
+                real.style.setProperty(
+                    "--my",
+                    `${y}px`
+                );
+
+                real.style.setProperty(
+                    "--radio",
+                    `${radio}px`
+                );
+
+                real.style.clipPath =
+                    `circle(${radio}px at ${x}px ${y}px)`;
+            });
+
+            el.addEventListener("mouseleave", () => {
+
+                real.style.clipPath =
+                    "circle(0px at 0px 0px)";
+            });
+        };
 
         if (!puedeAbrirse(fecha)) {
 
-            window.location.replace(
+            location.replace(
                 "/Riveropedia/info/tramposa.html?fecha=" +
                 encodeURIComponent(fecha)
             );
 
-        }
+        } else if (!poema) {
 
-        if (!poema) {
-
-            window.location.href =
+            location.href =
                 "/Riveropedia/info/pendiente.html";
 
         } else {
 
-            document.title = poema.titulo;
+            document.title =
+                poema.titulo;
 
-            document.getElementById("poema-fecha")
-                .textContent = poema.fecha;
+            $("poema-fecha").textContent =
+                poema.fecha;
 
-            document.getElementById("poema-titulo")
-                .textContent = poema.titulo;
+            $("poema-titulo").textContent =
+                poema.titulo;
 
-            let html = "";
+            let html =
+                poema.estrofas
+                    .map(
+                        e => `<p>${e.join("<br>")}</p>`
+                    )
+                    .join("");
 
-            poema.estrofas.forEach(estrofa => {
+            if (poema.ocultar) {
 
-                html += "<p>";
-                html += estrofa.join("<br>");
-                html += "</p>";
-
-            });
-
-            if (Object.hasOwn(poema, "ocultar")) {
-
-                const letras =
-                    Array.isArray(poema.ocultar)
-                        ? poema.ocultar
-                        : [...poema.ocultar];
-
-                html = envolverLetras(
-                    html,
-                    letras
-                );
+                html =
+                    envolverLetras(
+                        html,
+                        Array.isArray(poema.ocultar)
+                            ? poema.ocultar
+                            : [...poema.ocultar]
+                    );
             }
 
-            document.getElementById("poema-texto")
-                .innerHTML = html;
+            $("poema-texto").innerHTML =
+                html;
 
-            document.getElementById("poema-firma").innerHTML = `
+            $("poema-firma").innerHTML = `
             <span>— ${poema.autor}</span><br>
             <small>${poema.pd}</small>
         `;
+
+            if (poema.mask) {
+
+                aplicarMask(
+                    $("poema-titulo"),
+                    poema.mask
+                );
+            }
         }
 
-        document
-            .getElementById("form")
-            .addEventListener("submit", function (e) {
+        $("form").addEventListener(
+            "submit",
+            function (e) {
 
                 e.preventDefault();
 
-                document.getElementById("time").value =
+                $("time").value =
                     poema.titulo;
 
                 emailjs
@@ -187,25 +251,43 @@
                             JSON.stringify(err)
                         )
                     );
-            });
+            }
+        );
 
-        document.addEventListener("keydown", e => {
-            if (e.ctrlKey ||e.shiftKey ||
-                e.altKey || e.metaKey
-            ) {return;}
+        document.addEventListener(
+            "keydown",
+            e => {
 
-            const tecla = e.key.toLowerCase();
-
-            document
-            .querySelectorAll(".oculto-tecla")
-            .forEach(el => {
-
-                if (el.textContent.toLowerCase() === tecla) {
-                    el.classList.add("revelado");
+                if (
+                    e.ctrlKey ||
+                    e.shiftKey ||
+                    e.altKey ||
+                    e.metaKey
+                ) {
+                    return;
                 }
-            });
 
-        });
+                const tecla =
+                    e.key.toLowerCase();
+
+                document
+                    .querySelectorAll(
+                        ".oculto-tecla"
+                    )
+                    .forEach(el => {
+
+                        if (
+                            el.textContent
+                                .toLowerCase() === tecla
+                        ) {
+                            el.classList.add(
+                                "revelado"
+                            );
+                        }
+                    });
+            }
+        );
+
     </script>
 
 </body>

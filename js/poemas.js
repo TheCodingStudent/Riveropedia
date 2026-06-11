@@ -820,8 +820,59 @@ const poemas = {
                 "ELAINE"
             ]
         ]
-    }
+    },
 
+    "2026-06-10": {
+        fecha: "10 de junio de 2026",
+        titulo: "El Rey Hada",
+        autor: "A. Ssshparro",
+        pd: `Pd. Tesoro sagrado, revélate. 🐻`,
+        mask: "Harlequín",
+        estrofas: [
+            [
+                "Dormía el bosque dentro de mis huesos,",
+                "y el tiempo pasaba sin pedirme nada;",
+                "las hojas caían sobre mis silencios,",
+                "como si el mundo olvidara mi mirada."
+            ],
+            [
+                "La pereza me vistió de eternidades,",
+                "de tardes inmóviles bajo el follaje;",
+                "dejé que los días fueran estaciones,",
+                "sin perseguir senderos ni paisajes."
+            ],
+            [
+                "Pero entonces llegó una fuerza extraña,",
+                "capaz de estremecer al gran árbol mágico;",
+                "no fue un trueno, ni una guerra distante,",
+                "sino una risa sencilla y en mayúsculas."
+            ],
+            [
+                "Por ella aprendí el peso de los pasos,",
+                "el valor de avanzar aunque doliera;",
+                "descubrí que el descanso no bastaba,",
+                "cuando su ausencia volvía fría la tierra."
+            ],
+            [
+                "Quise guardar su nombre entre las ramas,",
+                "proteger cada sueño que tenía;",
+                "ser refugio en la noche más oscura,",
+                "y escudo frente a toda la agonía."
+            ],
+            [
+                "Porque hay amores que vencen la costumbre,",
+                "que arrancan al corazón de su guarida;",
+                "y el mío, lento como crecen los árboles,",
+                "terminó abrazando por completo tu esencia vívida."
+            ],
+            [
+                "Si alguna vez seré esclavo de la calma,",
+                "hoy descanso tan sólo en su presencia;",
+                "pues nada pesaría más que estar sin ella,",
+                "y nada me da más paz que compartir cama.",
+            ]
+        ]
+    }
 
 
 };

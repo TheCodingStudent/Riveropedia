@@ -182,3 +182,50 @@
         /* opacity: 0.5; */
     }
 }
+
+.mask-container {
+    position: relative;
+    display: inline-block;
+}
+
+.mask-falso {
+    position: relative;
+    z-index: 1;
+    color: #d6336c;
+}
+
+.mask-real {
+    position: absolute;
+    inset: 0;
+
+    z-index: 2;
+
+    color: #f59f00;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,.8),
+        0 0 10px rgba(255,220,120,.9),
+        0 0 20px rgba(255,190,40,.7),
+        0 0 40px rgba(255,190,40,.4);
+
+    background: radial-gradient(circle var(--radio) at var(--mx) var(--my),
+            rgba(255, 255, 220, 1) 0%,
+            rgba(255, 245, 180, 1) 25%,
+            rgba(255, 220, 120, 1) 55%,
+            rgba(255, 180, 40, 1) 80%,
+            rgba(255, 180, 40, 0) 100%);
+
+    clip-path: circle(0px at 0 0);
+
+    pointer-events: none;
+    animation: girasol 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes girasol {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(1.15);
+    }
+}
