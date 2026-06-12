@@ -229,3 +229,16 @@
         filter: brightness(1.15);
     }
 }
+
+.blur-letra {
+    /* filter: blur(8px); */
+    /* color: black; */
+    /* font-weight: bold; */
+    transition: .4s;
+}
+
+.blur-letra.revelada {
+    filter: blur(0);
+    color: #d6336c;
+    font-weight: bolder;
+}

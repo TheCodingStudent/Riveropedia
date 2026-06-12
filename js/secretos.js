@@ -130,11 +130,11 @@ const secretos = {
     "rhitta": {
         titulo: "Escanor",
         contenido: `
-            Aquel que brillaba como sol.<span class="oculto"> ¿Qué tan</span><br>
-            Su orgullo eclipsaba dioses, reyes.<span class="oculto"> orgulloso</span><br>
-            Al mediodía alcanzaba poder absoluto.<span class="oculto"> crees</span><br>
-            Portaba Rhitta, hacha divina legendaria.<span class="oculto"> que</span><br>
-            Amó profundamente sin pedir reciprocidad.<span class="oculto"> soy?</span><br>
+            Aquel que brillaba como sol.<span class="oculto"> ¿Qué tan</span>
+            Su orgullo eclipsaba dioses, reyes.<span class="oculto"> orgulloso</span>
+            Al mediodía alcanzaba poder absoluto.<span class="oculto"> crees</span>
+            Portaba Rhitta, hacha divina legendaria.<span class="oculto"> que</span>
+            Amó profundamente sin pedir reciprocidad.<span class="oculto"> soy?</span>
             Pd. Dices que el calor que emano es por ti ¿y quién lo decidió? 🔥<span class="oculto"> ¿un 3?</span>.<br>
         `,
         index: [-1],
@@ -145,12 +145,12 @@ const secretos = {
     "elaine": {
         titulo: "Ban",
         contenido: `
-            Ladrón inmortal que desafía la muerte.<br>
-            Su avaricia no busca oro ni poder.<br>
-            Robó la eternidad con manos vacías.<br>
-            Portaba Courechouse, bastón del zorro astuto.<br>
-            Amó a Elaine con un amor infinito.<br>
-            Su pecado es ansia de lo eterno.<br>
+            Ladrón inmortal que desafía la muerte.
+            Su avaricia no busca oro ni poder.
+            Robó la eternidad con manos vacías.
+            Portaba Courechouse, bastón del zorro astuto.
+            Amó a Elaine con un amor infinito.
+            Su pecado es ansia de lo eterno.
             Pd. No importaa qué defectos tengaas, yo voy aa robarte enteraa. 🦊
         `,
         index: [-1],
@@ -162,19 +162,38 @@ const secretos = {
     "harlequín": {
         titulo: "Lanza sagrada Chastiefol",
         contenido: `
-            Rey de las hadas que carga con su deber.<br>
-            Su pereza no es desinterés, sino peso del pasado.<br>
-            Guardián del bosque que una vez abandonó.<br>
-            Portaba Chastiefol, lanza sagrada que cambia de forma.<br>
-            Amó a Diane con un corazón silencioso.<br>
-            Su pecado es la pereza de no proteger a tiempo.<br>
+            Rey de las hadas que carga con su deber.
+            Su pereza no es desinterés, sino peso del pasado.
+            Guardián del bosque que una vez abandonó.
+            Portaba Chastiefol, lanza sagrada que cambia de forma.
+            Amó a Diane con un corazón silencioso.
+            Su pecado es la pereza de no proteger a tiempo.
             Pd. Aunque me acuse la historia, mi descanso es vigilia por ti. 🌿
         `,
         index: [-1],
         tooltip: [""],
         audio: "",
         mask: "Modo 1: Madurar"
+    },
+
+    "serpiente": {
+        titulo: "Serpiente de la Envidia",
+        contenido: `
+            Guardiana de los seis sentidos, su ternura despierta cada uno.
+            Sexto elemento oculto, pasión que supera la materia.
+            En la sexta estación florece su deseo, imposible pero eterno.
+            Mano que protege con seis gestos, fuerza que abraza el mundo.
+            La sexta luna refleja su rostro, secreto que ilumina la noche.
+            Hexagrama oculto, seis líneas que cantan su amor profundo.<br>
+            Pd. Mi envidia no es por lo ajeno, sino por querer poseerte <span class="oculto">mi cielo 🧡</span>.
+        `,
+        index: [16],
+        tooltip: [""],
+        audio: "",
     }
+
+
+
 
 
 };

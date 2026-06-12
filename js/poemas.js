@@ -872,7 +872,68 @@ const poemas = {
                 "y nada me da más paz que compartir cama.",
             ]
         ]
-    }
+    },
 
+    "2026-06-11": {
+        fecha: "11 de junio de 2026",
+        titulo: "Tengo una enorme envidia",
+        autor: "A. Ssshparro",
+        pd: `Pd. El juicio puede nublarse estando tan lejos. 🐍`,
+        blur: [
+            ["S", 1.5],
+            ["E", 1.8],
+            ["R", 2.1],
+            ["P", 2.4],
+            ["I", 2.7],
+            ["E", 3.0],
+            ["N", 3.3],
+            ["T", 3.6],
+            ["E", 3.9],
+        ],
+        estrofas: [
+            [
+                "Tengo envidia de la brisa que te toca,",
+                "acaricia tu piel sin pedir permiso,",
+                "yo deseo ser quien tu cuerpo provoca,",
+                "y hundirme en ti sin perder el juicio."
+            ],
+            [
+                "Tengo envidia de la luna que te mira,",
+                "vigila tu sueño con ternura callada,",
+                "yo ansío ser quien tu noche altera,",
+                "y beber tu pasión desbordada."
+            ],
+            [
+                "Tengo envidia de la seda que te cubre,",
+                "se desliza suave por tu piel ardiente,",
+                "yo quiero ser quien tu alma desviste",
+                "y con movimientos ansiosos comerte."
+            ],
+            [
+                "Tengo envidia del espejo que te observa,",
+                "cuando tomas fotos para provocarme,",
+                "pues conoce secretos de tu imagen,",
+                "secretos que quisiera conocer al tocarme."
+            ],
+            [
+                "Tengo envidia de la música que te envuelve,",
+                "susurra secretos en tu oído rendido,",
+                "yo quiero ser con quien tu instrumento toque",
+                "y en mi oido grabar cada gemido."
+            ],
+            [
+                "Tengo envidia de la sombra que te sigue,",
+                "se aferra a tu forma con devoción,",
+                "yo quiero ser quien tu deseo persigue,",
+                "y perderme en tu ardiente perdición."
+            ],
+            [
+                "Tengo envidia de todo lo que te toca,",
+                "de tu mano cuando satisfaces tu deseo,",
+                "pues todo en mi arde, mi miembro, mis manos y mi boca,",
+                "y me entro al pecado de la envidia sin consuelo."
+            ]
+        ]
+    }
 
 };
