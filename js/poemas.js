@@ -1122,7 +1122,7 @@ const poemas = {
             ],
             [
                 [
-                    "Elizabeth, tu nombre desarma mi guerra,",
+                    "Mi cielo, tu nombre desarma mi guerra,",
                     "ángel que cruza mi noche al caer;",
                     "yo soy demonio nacido de la tierra,",
                     "pero tus alas me enseñan a creer."
@@ -1228,7 +1228,7 @@ const poemas = {
                 [
                     "Invierno de siglos cargué en la mirada,",
                     "demonio cansado de tanto perder;",
-                    "hasta que tu luz, Elizabeth amada,",
+                    "hasta que tu luz, mi niña amada,",
                     "me dio otra razón para arder."
                 ],
                 [
