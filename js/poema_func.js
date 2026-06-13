@@ -60,6 +60,59 @@ function aplicarMask(el, textoReal) {
     el.addEventListener("mouseleave", () => real.style.clipPath = "circle(0px at 0px 0px)");
 }
 
+function estrofasHtml(estrofas) {
+    return estrofas.map(estrofa => `<p>${estrofa.join("<br>")}</p>`).join("");
+}
+
+function estrofasHtmlConIniciales(estrofas) {
+    return estrofas.map(estrofa => {
+        const versos = [...estrofa];
+        versos[0] = versos[0].replace(/^(\S)/, `<span class="inicial-revelada">$1</span>`);
+        return `<p>${versos.join("<br>")}</p>`;
+    }).join("");
+}
+
+function renderCopias() {
+    const seleccion = poema.estadoInicial?.length ? [...poema.estadoInicial] : poema.estrofasCopias.map(() => 0);
+    const correcto = poema.combinacionCorrecta;
+    const contenedor = $("poema-texto");
+    let ultimaAnimacion = null;
+
+    const render = () => {
+        contenedor.innerHTML = poema.estrofasCopias.map((grupo, i) => `
+            <article class="copia-estrofa ${ultimaAnimacion?.index === i ? ultimaAnimacion.clase : ""}">
+                <button class="copia-btn" type="button" data-index="${i}" data-dir="-1" aria-label="Estrofa anterior">‹</button>
+                <div class="copia-texto">${estrofasHtml([grupo[seleccion[i]]])}</div>
+                <button class="copia-btn" type="button" data-index="${i}" data-dir="1" aria-label="Estrofa siguiente">›</button>
+            </article>
+        `).join("");
+        ultimaAnimacion = null;
+    };
+
+    const revelar = () => {
+        contenedor.classList.add("tesoro-revelado");
+        $("poema-titulo").classList.add("titulo-revelado");
+        $("poema-titulo").textContent = poema.revelacion?.titulo || poema.titulo;
+        contenedor.innerHTML = `<div class="poema-revelado">${estrofasHtmlConIniciales(poema.estrofas)}</div>`;
+        $("poema-firma").innerHTML = `<span>— ${poema.autor}</span><br><small>${poema.revelacion?.pd || poema.pd}</small>`;
+    };
+
+    render();
+    contenedor.addEventListener("click", e => {
+        const btn = e.target.closest(".copia-btn");
+        if (!btn || contenedor.classList.contains("tesoro-revelado")) return;
+
+        const index = Number(btn.dataset.index);
+        const dir = Number(btn.dataset.dir);
+        const total = poema.estrofasCopias[index].length;
+        seleccion[index] = (seleccion[index] + dir + total) % total;
+        ultimaAnimacion = { index, clase: dir > 0 ? "copia-slide-next" : "copia-slide-prev" };
+        render();
+
+        if (seleccion.every((valor, i) => valor === correcto[i])) revelar();
+    });
+}
+
 function renderPoema() {
     if (!puedeAbrirse(fecha)) {
         location.replace("/Riveropedia/info/tramposa.html?fecha=" + encodeURIComponent(fecha || ""));
@@ -75,11 +128,17 @@ function renderPoema() {
     $("poema-fecha").textContent = poema.fecha;
     $("poema-titulo").textContent = poema.titulo;
 
-    let html = poema.estrofas.map(estrofa => `<p>${estrofa.join("<br>")}</p>`).join("");
+    if (poema.mecanica === "copias") {
+        renderCopias();
+        $("poema-firma").innerHTML = `<span>— ${poema.autor}</span><br><small>${poema.pd}</small>`;
+        return;
+    }
+
+    let html = estrofasHtml(poema.estrofas);
     if (poema.ocultar) html = envolverLetras(html, poema.ocultar);
     if (poema.blur) html = aplicarBlur(html, poema.blur);
     if (poema.carrusel) {
-        let versos = poema.estrofas.map(estrofa => `<p>${estrofa.join("<br>")}</p>`).join("");
+        let versos = estrofasHtml(poema.estrofas);
         html = `
             <div class="carrusel">
                 <div class="carrusel-track">${versos}</div>

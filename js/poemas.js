@@ -1033,6 +1033,250 @@ const poemas = {
                 "que la vuelve humana, cálida y real."
             ]
         ]
+    },
+
+    "2026-06-13": {
+        fecha: "13 de junio de 2026",
+        titulo: "El demonio de la ira",
+        autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🐉", color: "#7f2f2f", escala: 0.65 },
+        pd: "Pd. Odio esta oscuridad en mi, me confunde.",
+        mecanica: "copias",
+        estadoInicial: [2, 3, 3, 3, 3, 3, 3],
+        combinacionCorrecta: [3, 3, 3, 3, 3, 3, 3],
+        revelacion: {
+            titulo: "Y tu ángel guardián",
+            pista: "LIONESS",
+            pd: "Pd. Pero tu eres la diosa que ilumina mi camino."
+        },
+        estrofas: [
+            [
+                "Lleva mi sangre un fuego condenado,",
+                "capaz de volver ceniza cualquier ciudad;",
+                "pero tu luz me encuentra arrodillado,",
+                "y mi destrucción aprende tu piedad."
+            ],
+            [
+                "Incluso mi sombra reconoce tu nombre,",
+                "Mi cielo, milagro que no sé merecer;",
+                "ángel que besa tu noche con hambre,",
+                "demonio dispuesto a dejarse vencer."
+            ],
+            [
+                "Otra vez mi ira despierta en ruinas,",
+                "rompe el silencio, amenaza con arder;",
+                "pero tus alas detienen mis espinas,",
+                "y encuentro en ti el paraíso que deseo poseer."
+            ],
+            [
+                "No hay maldición que apague esta memoria,",
+                "ni muerte capaz de borrar tu mirar;",
+                "si el destino me arranca de la historia,",
+                "mi alma destruirá el mundo por regresar."
+            ],
+            [
+                "Entre infiernos, tu voz sigue siendo templo,",
+                "la única paz que mi pecho entendió;",
+                "yo, demonio, me miro en tu ejemplo,",
+                "y encuentro un cielo donde antes ardió."
+            ],
+            [
+                "Sobre mi culpa se alza tu ternura,",
+                "como un ángel tocando mi tempestad;",
+                "mi pasión no conoce medida segura,",
+                "solo tu ser me recibe con mi oscuridad."
+            ],
+            [
+                "Si mi pecado ruge contra el cielo,",
+                "que ruja para abrirte con total placer;",
+                "porque te amo con furia y desvelo,",
+                "y tu hermosura me obliga a venir."
+            ]
+        ],
+        estrofasCopias: [
+            [
+                [
+                    "Despierta mi sangre como incendio antiguo,",
+                    "capaz de volver ceniza cualquier ciudad;",
+                    "pero tu luz me encuentra arrodillado,",
+                    "y mi destrucción aprende piedad."
+                ],
+                [
+                    "Deshace el destino mis pasos contigo,",
+                    "como si el cielo nos quisiera separar;",
+                    "pero mi alma rompe cada castigo,",
+                    "cuando tu voz me vuelve a llamar."
+                ],
+                [
+                    "Muerde mi culpa la raíz del pecho,",
+                    "demonio marcado por perder y arder;",
+                    "si destruyo el mundo, lo dejo rehecho,",
+                    "solo para verte amanecer."
+                ],
+                [
+                    "Lleva mi sangre un fuego condenado,",
+                    "capaz de volver ceniza cualquier ciudad;",
+                    "pero tu luz me encuentra arrodillado,",
+                    "y mi destrucción aprende tu piedad."
+                ],
+            ],
+            [
+                [
+                    "Elizabeth, tu nombre desarma mi guerra,",
+                    "ángel que cruza mi noche al caer;",
+                    "yo soy demonio nacido de la tierra,",
+                    "pero tus alas me enseñan a creer."
+                ],
+                [
+                    "Entre mil vidas te busca mi destino,",
+                    "como una promesa imposible de romper;",
+                    "si el mundo borra otra vez el camino,",
+                    "mi ira lo vuelve a encender."
+                ],
+                [
+                    "Atraviesa tu luz mi reino maldito,",
+                    "como espada dulce sobre mi dolor;",
+                    "mi pecado tiembla, pequeño, infinito,",
+                    "cuando tu ternura pronuncia amor."
+                ],
+                [
+                    "Incluso mi sombra reconoce tu nombre,",
+                    "Mi cielo, milagro que no sé merecer;",
+                    "ángel que besa tu noche con hambre,",
+                    "demonio dispuesto a dejarse vencer."
+                ],
+            ],
+            [
+                [
+                    "Mi pecho conserva tormentas de infierno,",
+                    "la ira golpeando con hambre brutal;",
+                    "pero tu mirada convierte lo eterno,",
+                    "en una promesa menos fatal."
+                ],
+                [
+                    "Si la maldición nos devuelve al abismo,",
+                    "yo cruzo sus llamas para encontrarte;",
+                    "no temo perderme dentro de mí mismo,",
+                    "si al final mi sombra puede abrazarte."
+                ],
+                [
+                    "La noche me llama por nombres prohibidos,",
+                    "demonio sin paz, pecado sin final;",
+                    "pero tú recoges mis restos caídos,",
+                    "como un ángel venciendo mi mal."
+                ],
+                [
+                    "Otra vez mi ira despierta en ruinas,",
+                    "rompe el silencio, amenaza con arder;",
+                    "pero tus alas detienen mis espinas,",
+                    "y encuentro en ti el paraíso que deseo poseer."
+                ],
+            ],
+            [
+                [
+                    "Oscuro es el filo que guardo en mis manos,",
+                    "Lostvayne me copia para no ceder;",
+                    "si mis reflejos parecen tiranos,",
+                    "todos te buscan para obedecer."
+                ],
+                [
+                    "Todo lo que soy te nombra en secreto,",
+                    "destino clavado bajo mi piel;",
+                    "aunque mi furia parezca decreto,",
+                    "tu amor la vuelve dulce y fiel."
+                ],
+                [
+                    "Destruye mi ira castillos y cielo,",
+                    "cuando la muerte te intenta tocar;",
+                    "pero no existe demonio ni duelo,",
+                    "que me convenza de dejarte marchar."
+                ],
+                [
+                    "No hay maldición que apague esta memoria,",
+                    "ni muerte capaz de borrar tu mirar;",
+                    "si el destino me arranca de la historia,",
+                    "mi alma destruirá el mundo por regresar."
+                ],
+            ],
+            [
+                [
+                    "Nadie conoce la sed de mi condena,",
+                    "ni el ruido feroz de mi soledad;",
+                    "pero tu pecho calma la pena,",
+                    "y vuelve hogar mi oscuridad."
+                ],
+                [
+                    "Inmortal parece el lazo que nos ata,",
+                    "más fuerte que muerte, reino o dolor;",
+                    "cada regreso mi rabia desata,",
+                    "cada mirada confirma el amor."
+                ],
+                [
+                    "Invoco mi furia si el mundo te hiere,",
+                    "demonio sin freno, incendio total;",
+                    "pero tu voz, cuando cerca me quiere,",
+                    "le pone nombre humano a mi mal."
+                ],
+                [
+                    "Entre infiernos, tu voz sigue siendo templo,",
+                    "la única paz que mi pecho entendió;",
+                    "yo, demonio, me miro en tu ejemplo,",
+                    "y encuentro un cielo donde antes ardió."
+                ],
+            ],
+            [
+                [
+                    "Invierno de siglos cargué en la mirada,",
+                    "demonio cansado de tanto perder;",
+                    "hasta que tu luz, Elizabeth amada,",
+                    "me dio otra razón para arder."
+                ],
+                [
+                    "No importa cuántas vidas nos condenen,",
+                    "ni cuántas memorias deba romper;",
+                    "mis copias, mis culpas, mis sombras vienen,",
+                    "porque nacieron para proteger."
+                ],
+                [
+                    "Todos mis pecados conocen tu altura,",
+                    "ángel que incendia mi necesidad;",
+                    "la pasión que me arrastra y me cura,",
+                    "tiene tu nombre por eternidad."
+                ],
+                [
+                    "Sobre mi culpa se alza tu ternura,",
+                    "como un ángel tocando mi tempestad;",
+                    "mi pasión no conoce medida segura,",
+                    "solo tu ser me recibe con mi oscuridad."
+                ],
+            ],
+            [
+                [
+                    "Oscila mi alma entre rabia y deseo,",
+                    "entre destruir o aprender a ceder;",
+                    "pero en tus ojos encuentro el rodeo,",
+                    "que guía mi furia hasta proteger."
+                ],
+                [
+                    "Otra vez regreso desde la ceniza,",
+                    "con el pecho partido y vuelto a encender;",
+                    "si tu sonrisa me llama deprisa,",
+                    "ni el infierno me puede retener."
+                ],
+                [
+                    "Oscuro y maldito, te amo sin calma,",
+                    "con hambre de cielo, con sed de volver;",
+                    "si eres mi ángel, destino y alma,",
+                    "yo soy la ira que aprende a querer."
+                ],
+                [
+                    "Si mi pecado ruge contra el cielo,",
+                    "que ruja para abrirte con total placer;",
+                    "porque te amo con furia y desvelo,",
+                    "y tu hermosura me obliga a venir."
+                ]
+            ]
+        ]
     }
 
 };

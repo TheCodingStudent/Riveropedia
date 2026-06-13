@@ -8,7 +8,7 @@ const secretos = {
         Los planetas trazan caminos invisibles en silencio.<br>
         La astronomía es puente entre lo humano y lo eterno,<br>
         un lenguaje de luces que revela nuestro origen.<br>
-        Pd. Al igual que la Luna, el título tiene un lado oculto 🔍
+        <br>Pd. Al igual que la Luna, el título tiene un lado oculto 🔍<br><br>
         `,
         index: 1,
         tooltip: 1,
@@ -25,7 +25,7 @@ const secretos = {
             Energía solar alimenta sistemas en su suelo.<br>
             Sensores registran coordenadas con rigor.<br>
 
-            Pd. Cada cálculo revela un secreto oculto 🔍.<br>
+            <br>Pd. Cada cálculo revela un secreto oculto 🔍.<br><br>
         `,
         index: 4,
         tooltip: 2,
@@ -42,8 +42,8 @@ const secretos = {
             Astuto guardián de secretos y destinos.<br>
             Errante viajero que nunca descansa.<br>
             
-            Pd. Hermes, peón de los dioses; sonríe entre las
-            <em>𝑀𝑖𝑒𝑠𝑒𝑠</em>, <em>𝑎𝑝𝑒𝑟𝑡𝑢𝑟𝑎</em> a su marmolada reina 🔍.
+            <br>Pd. Hermes, peón de los dioses; sonríe entre las<br>
+            <em>𝑀𝑖𝑒𝑠𝑒𝑠</em>, <em>𝑎𝑝𝑒𝑟𝑡𝑢𝑟𝑎</em> a su marmolada reina 🔍.<br><br>
         `,
         index: -1,
         tooltip: 3,
@@ -62,7 +62,7 @@ const secretos = {
             <span class='camaleon'>O</span>casos dorados se tiñen con tu nombre.<br>
             <span class='camaleon'>L</span>uz eterna que me envuelve y me salva.<br>
 
-            Pd. Cada letra, cada secreto, se inclina hacia ti 🔍.<br>
+            <br>Pd. Cada letra, cada secreto, se inclina hacia ti 🔍.<br><br>
         `,
         index: 6,
         tooltip: "4",
@@ -79,7 +79,7 @@ const secretos = {
             El <span class="oculto">control</span> no es dominio, es rendirse al destino que tu nombre dibuja.<br>
             Quiero perder el <span class="oculto">control</span> contigo, porque en tu piel todo encuentra sentido.<br>
 
-            Pd. El <span class="oculto">control</span> se transforma en entrega, y la entrega en placer 🔍.<br>
+            <br>Pd. El <span class="oculto">control</span> se transforma en entrega, y la entrega en placer 🔍.<br><br>
         `,
         index: [0, 1, 3, 4, 5, 6, 7],
         tooltip: [
@@ -100,7 +100,7 @@ const secretos = {
             El de Salomón habla con sabiduría, controlando espíritus y secretos antiguos.<br>
             El olímpico enlaza naciones, cinco símbolos que giran como planetas en armonía.<br>
 
-            Pd. Un lazo secreto une tu mano con mi latido, y en ese silencio todo amor se revela. ❤️🔍.<br>
+            <br>Pd. Un lazo secreto une tu mano con mi latido, y en ese silencio todo amor se revela. ❤️🔍.<br><br>
         `,
         index: [3, 5],
         tooltip: ["6", "6"],
@@ -118,7 +118,7 @@ const secretos = {
             Llaves lógicos, legendarias, liberan los límites laberínticos.<br>
             Lunares llamativos llenan lentamente los labios llamenates.<br>
 
-            Pd. Ya tiens todo para buscar la palabra de esta semana. Suerte ❤️🔍.<br>
+            <br>Pd. Ya tiens todo para buscar la palabra de esta semana. Suerte ❤️🔍.<br><br>
         `,
         index: [2],
         tooltip: ["La verdad, he pensado en ti todo el día"],
@@ -130,12 +130,12 @@ const secretos = {
     "rhitta": {
         titulo: "Escanor",
         contenido: `
-            Aquel que brillaba como sol.<span class="oculto"> ¿Qué tan</span>
-            Su orgullo eclipsaba dioses, reyes.<span class="oculto"> orgulloso</span>
-            Al mediodía alcanzaba poder absoluto.<span class="oculto"> crees</span>
-            Portaba Rhitta, hacha divina legendaria.<span class="oculto"> que</span>
-            Amó profundamente sin pedir reciprocidad.<span class="oculto"> soy?</span>
-            Pd. Dices que el calor que emano es por ti ¿y quién lo decidió? 🔥<span class="oculto"> ¿un 3?</span>.<br>
+            Aquel que brillaba como sol.<span class="oculto"> ¿Qué tan</span><br>
+            Su orgullo eclipsaba dioses, reyes.<span class="oculto"> orgulloso</span><br>
+            Al mediodía alcanzaba poder absoluto.<span class="oculto"> crees</span><br>
+            Portaba Rhitta, hacha divina legendaria.<span class="oculto"> que</span><br>
+            Amó profundamente sin pedir reciprocidad.<span class="oculto"> soy?</span><br>
+            <br>Pd. Dices que el calor que emano es por ti ¿y quién lo decidió? 🔥<span class="oculto"> ¿un 3?</span>.<br><br>
         `,
         index: [-1],
         tooltip: [""],
@@ -145,13 +145,13 @@ const secretos = {
     "elaine": {
         titulo: "Ban",
         contenido: `
-            Ladrón inmortal que desafía la muerte.
-            Su avaricia no busca oro ni poder.
-            Robó la eternidad con manos vacías.
-            Portaba Courechouse, bastón del zorro astuto.
-            Amó a Elaine con un amor infinito.
-            Su pecado es ansia de lo eterno.
-            Pd. No importaa qué defectos tengaas, yo voy aa robarte enteraa. 🦊
+            Ladrón inmortal que desafía la muerte.<br>
+            Su avaricia no busca oro ni poder.<br>
+            Robó la eternidad con manos vacías.<br>
+            Portaba Courechouse, bastón del zorro astuto.<br>
+            Amó a Elaine con un amor infinito.<br>
+            Su pecado es ansia de lo eterno.<br>
+            <br>Pd. No importaa qué defectos tengaas, yo voy aa robarte enteraa. 🦊<br><br>
         `,
         index: [-1],
         tooltip: [""],
@@ -162,13 +162,13 @@ const secretos = {
     "harlequín": {
         titulo: "Lanza sagrada Chastiefol",
         contenido: `
-            Rey de las hadas que carga con su deber.
-            Su pereza no es desinterés, sino peso del pasado.
-            Guardián del bosque que una vez abandonó.
-            Portaba Chastiefol, lanza sagrada que cambia de forma.
-            Amó a Diane con un corazón silencioso.
-            Su pecado es la pereza de no proteger a tiempo.
-            Pd. Aunque me acuse la historia, mi descanso es vigilia por ti. 🌿
+            Rey de las hadas que carga con su deber.<br>
+            Su pereza no es desinterés, sino peso del pasado.<br>
+            Guardián del bosque que una vez abandonó.<br>
+            Portaba Chastiefol, lanza sagrada que cambia de forma.<br>
+            Amó a Diane con un corazón silencioso.<br>
+            Su pecado es la pereza de no proteger a tiempo.<br>
+            <br>Pd. Aunque me acuse la historia, mi descanso es vigilia por ti. 🌿<br><br>
         `,
         index: [-1],
         tooltip: [""],
@@ -179,13 +179,13 @@ const secretos = {
     "serpiente": {
         titulo: "Serpiente de la Envidia",
         contenido: `
-            Guardiana de los seis sentidos, su ternura despierta cada uno.
-            Sexto elemento oculto, pasión que supera la materia.
-            En la sexta estación florece su deseo, imposible pero eterno.
-            Mano que protege con seis gestos, fuerza que abraza el mundo.
-            La sexta luna refleja su rostro, secreto que ilumina la noche.
+            Guardiana de los seis sentidos, su ternura despierta cada uno.<br>
+            Sexto elemento oculto, pasión que supera la materia.<br>
+            En la sexta estación florece su deseo, imposible pero eterno.<br>
+            Mano que protege con seis gestos, fuerza que abraza el mundo.<br>
+            La sexta luna refleja su rostro, secreto que ilumina la noche.<br>
             Hexagrama oculto, seis líneas que cantan su amor profundo.<br>
-            Pd. Mi envidia no es por lo ajeno, sino por querer poseerte <span class="oculto">mi cielo 🧡</span>.
+            <br>Pd. Mi envidia no es por lo ajeno, sino por querer poseerte <span class="oculto">mi cielo 🧡</span>.<br><br>
         `,
         index: [16],
         tooltip: [""],
@@ -195,18 +195,43 @@ const secretos = {
     "infinito": {
         titulo: "Gula del Conocimiento",
         contenido: `
-            Hechicera que devora verdades ocultas.
-            Su gula no es de carne, sino de saber eterno.
-            En cada hechizo mantiene la llama infinita.
-            Aldan flota como ojo que todo observa.
-            Bendecida por dioses y demonios, inmune a sus cadenas.
+            Hechicera que devora verdades ocultas.<br>
+            Su gula no es de carne, sino de saber eterno.<br>
+            En cada hechizo mantiene la llama infinita.<br>
+            Aldan flota como ojo que todo observa.<br>
+            Bendecida por dioses y demonios, inmune a sus cadenas.<br>
             Su pecado es hambre insaciable de lo prohibido.<br>
-            Pd. Luz de Belialuin, lugar legendario,<br>                   lenguas latentes levantan letanías,
-                   labrando la lógica de lo ilimitado,
-                   latido de la luna, legado luminoso.
+            <br>Pd. Luz de Belialuin, lugar legendario,<br>                   lenguas latentes levantan letanías,<br>
+                   labrando la lógica de lo ilimitado,<br>
+                   latido de la luna, legado luminoso.<br><br>
         `,
         index: [-1],
         tooltip: [""],
+        audio: ""
+    },
+
+    "lioness": {
+        titulo: "Tierno y pervertido",
+        contenido: `
+            Demonio nacido para la guerra, pero rendido ante una luz imposible.<br>
+            Sus copias repiten heridas, juramentos y regresos.<br>
+            Lostvayne no divide su amor: lo multiplica para protegerla.<br>
+            En Elizabeth encuentra el cielo que su sangre niega.<br>
+            La ira destruye reinos cuando teme perderla,<br>
+            pero también aprende a inclinarse cuando ella respira cerca.<br>
+            Siete letras guardan el reino, siete copias guardan el camino.<br>
+
+            <br>Pd. El truco es volverse fuerte de corazón, sin perder la ternura del alma. 🐉<br><br>
+        `,
+        index: [0, 1, 2, 3, 4, 5],
+        tooltip: [
+            "Osado",
+            "Original",
+            "Objetivo",
+            "Obstinado",
+            "Ocurrente",
+            "Orgulloso",
+        ],
         audio: ""
     }
 
