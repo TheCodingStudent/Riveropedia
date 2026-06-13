@@ -934,6 +934,100 @@ const poemas = {
                 "y me entro al pecado de la envidia sin consuelo."
             ]
         ]
+    },
+
+    "2026-06-12": {
+        fecha: "11 de junio de 2026",
+        titulo: "La hechicera del tiempo y conocimiento",
+        autor: "A. Ssshparro",
+        pd: `Pd. Hermosa niña, tu gran cabeza me tiene vuelto loco.`,
+        carrusel: true,
+        estrofas: [
+            [
+                "Océanos de conocimiento habitan en tu mente,",
+                "y aun así conservas el calor de una estrella;",
+                "como si la verdad caminara silenciosamente,",
+                "oculta tras la sensualidad de tu huella."
+            ],
+            [
+                "Todo cuanto aprendes parece multiplicarse,",
+                "como galaxias naciendo dentro de tu razón;",
+                "pues no buscas respuestas para conformarte,",
+                "sino para expandir los límites de la creación."
+            ],
+            [
+                "Inagotable es la luz de tu inteligencia,",
+                "capaz de atravesar las sombras más profundas;",
+                "hay en tus palabras una extraña ciencia,",
+                "que convierte las dudas en rutas fecundas."
+            ],
+            [
+                "Nadie que contemple tu mente atentamente,",
+                "podría olvidar semejante inmensidad;",
+                "porque piensas con la fuerza de quien siente,",
+                "y sientes con absoluta claridad."
+            ],
+            [
+                "Infinito parece el universo que resguardas,",
+                "tras la calma elegante de tu mirada;",
+                "como si mil bibliotecas aguardaran,",
+                "detrás de cada frase pronunciada."
+            ],
+            [
+                "Frente a ti, las horas se vuelven pequeñas,",
+                "y los misterios pierden complejidad;",
+                "porque aquello que para otros son fronteras,",
+                "para ti es apenas curiosidad."
+            ],
+            [
+                "Nunca he conocido una mente tan brillante,",
+                "ni un corazón tan dispuesto a comprender;",
+                "eres el raro equilibrio fascinante,",
+                "entre descubrir y también creer."
+            ],
+            [
+                "Imagino que las estrellas te observan con envidia,",
+                "al ver cuánto resplandor puedes contener;",
+                "pues incluso ellas, con toda su vigilia,",
+                "no iluminan tanto como tu forma de aprender."
+            ],
+            [
+                "Nace en mí una admiración imposible de ocultar,",
+                "cada vez que revelas una nueva perspectiva;",
+                "porque logras hacerme contemplar",
+                "mundos enteros dentro de una sola idea viva."
+            ],
+            [
+                "Fuiste hecha para desafiar lo establecido,",
+                "para preguntar donde otros callarían;",
+                "y en cada pensamiento compartido,",
+                "hay siglos de sabiduría."
+            ],
+            [
+                "Incluso cuando guardas silencio, enseñas,",
+                "como un libro abierto ante quien sabe leer;",
+                "y tus gestos contienen más certezas,",
+                "que muchas voces intentando convencer."
+            ],
+            [
+                "Ni el tiempo bastaría para explorar,",
+                "todos los paisajes que habitan en tu interior;",
+                "porque cada respuesta vuelve a señalar,",
+                "un horizonte todavía mayor."
+            ],
+            [
+                "Inevitablemente termino maravillado,",
+                "no sólo por lo mucho que puedes saber;",
+                "sino por cómo transformas lo complicado,",
+                "en algo hermoso de comprender."
+            ],
+            [
+                "Tan inmensa es tu inteligencia,",
+                "que a veces parece no tener final;",
+                "pero aún más extraordinaria es la esencia,",
+                "que la vuelve humana, cálida y real."
+            ]
+        ]
     }
 
 };

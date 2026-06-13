@@ -78,6 +78,16 @@ function renderPoema() {
     let html = poema.estrofas.map(estrofa => `<p>${estrofa.join("<br>")}</p>`).join("");
     if (poema.ocultar) html = envolverLetras(html, poema.ocultar);
     if (poema.blur) html = aplicarBlur(html, poema.blur);
+    if (poema.carrusel) {
+        let versos = poema.estrofas.map(estrofa => `<p>${estrofa.join("<br>")}</p>`).join("");
+        html = `
+            <div class="carrusel">
+                <div class="carrusel-track">${versos}</div>
+                <div class="carrusel-track">${versos}</div>
+            </div>
+        `;
+    }
+
 
     $("poema-texto").innerHTML = html;
     $("poema-firma").innerHTML = `<span>— ${poema.autor}</span><br><small>${poema.pd}</small>`;

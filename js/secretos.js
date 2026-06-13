@@ -190,6 +190,24 @@ const secretos = {
         index: [16],
         tooltip: [""],
         audio: "",
+    },
+
+    "infinito": {
+        titulo: "Gula del Conocimiento",
+        contenido: `
+            Hechicera que devora verdades ocultas.
+            Su gula no es de carne, sino de saber eterno.
+            En cada hechizo mantiene la llama infinita.
+            Aldan flota como ojo que todo observa.
+            Bendecida por dioses y demonios, inmune a sus cadenas.
+            Su pecado es hambre insaciable de lo prohibido.<br>
+            Pd. Luz de Belialuin, lugar legendario,<br>                   lenguas latentes levantan letanías,
+                   labrando la lógica de lo ilimitado,
+                   latido de la luna, legado luminoso.
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: ""
     }
 
 
