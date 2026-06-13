@@ -5,105 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cifrado César</title>
-
     <link rel="stylesheet" href="/Riveropedia/css/style.css">
     <link rel="stylesheet" href="/Riveropedia/css/poema.css">
     <link rel="stylesheet" href="/Riveropedia/css/sherlocked.css">
 </head>
 
 <body>
-
-    <nav class="topbar">
-        <div class="topbar-section left">
-            <form id="busqueda-form">
-                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
-                <ul id="sugerencias"></ul>
-            </form>
-        </div>
-
-        <div class="topbar-section center">
-            <h1 class="titulo tooltip">
-                ♡ N.I.N.A
-                <span class="tooltiptext">
-                    Neural Interface for Noble Affection
-                </span>
-            </h1>
-        </div>
-
-        <div class="topbar-section right">
-            <ul>
-                <li>
-                    <a href="/Riveropedia/index.html">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="/Riveropedia/info/sobre-ti.html">
-                        Sobre ti
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <main class="poema-container">
-
         <article class="poema-card">
-
             <h2>I'm Sher-locked</h2>
-
-            <small>El cifrado César fue utilizado por Julio César para ocultar mensajes desplazando cada letra varias
+            <small>
+                El cifrado César fue utilizado por Julio César para ocultar mensajes desplazando cada letra varias
                 posiciones dentro del alfabeto.
 
                 Aunque es uno de los métodos de encriptación más antiguos, inspiró sistemas mucho más complejos como el
                 cifrado de Vigenère.
 
-                Toda clave deja pistas. Toda pista puede ser descifrada. ✦</small>
+                Toda clave deja pistas. Toda pista puede ser descifrada. ✦
+            </small>
 
             <div class="cesar-container">
-
                 <label>Texto cifrado</label>
-
                 <input id="texto-entrada" type="text" autocomplete="off" placeholder="Introduce texto...">
 
                 <label>Resultado</label>
-
                 <input id="texto-salida" type="text" readonly>
 
                 <label>Clave</label>
-
                 <input id="clave" type="text" autocomplete="off" placeholder="Número o palabra clave...">
 
                 <select id="modo">
-                    <option value="descifrar">
-                        Descifrar
-                    </option>
-
-                    <option value="cifrar">
-                        Cifrar
-                    </option>
+                    <option value="descifrar">Descifrar</option>
+                    <option value="cifrar">Cifrar</option>
                 </select>
 
-                <button id="procesar">
-                    Descifrar
-                </button>
-
+                <button id="procesar">Descifrar</button>
             </div>
-
         </article>
-
     </main>
 
-    <footer>
-        <p>© 2026 A. Ssshparro</p>
-    </footer>
-
-
+    <script src="/Riveropedia/js/layout.js"></script>
     <script src="/Riveropedia/js/poemas.js"></script>
     <script src="/Riveropedia/js/secretos.js"></script>
     <script src="/Riveropedia/js/sherlocked.js"></script>
     <script src="/Riveropedia/js/script.js"></script>
-
 </body>
 
 </html>

@@ -5,46 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para: La mujer</title>
-
     <link rel="stylesheet" href="/Riveropedia/css/style.css">
+    <link rel="stylesheet" href="/Riveropedia/css/poema.css">
     <link rel="stylesheet" href="/Riveropedia/css/sherlocked.css">
 </head>
 
 <body>
-
-    <nav class="topbar">
-        <div class="topbar-section left">
-            <form id="busqueda-form">
-                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
-                <ul id="sugerencias"></ul>
-            </form>
-        </div>
-
-        <div class="topbar-section center">
-            <h1 class="titulo tooltip">
-                ♡ N.I.N.A
-                <span class="tooltiptext">
-                    Neural Interface for Noble Affection
-                </span>
-            </h1>
-        </div>
-
-        <div class="topbar-section right">
-            <ul>
-                <li>
-                    <a href="/Riveropedia/index.html">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="/Riveropedia/info/sobre-ti.html">
-                        Sobre ti
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <main class="poema-container">
         <article class="poema-card">
             <div class="sherlock-lock">
@@ -60,153 +26,11 @@
         </article>
     </main>
 
-    <footer>
-        <p>© 2026 A. Ssshparro</p>
-    </footer>
-
-    <script>
-        const state = localStorage.getItem("sherlocked") === "true";
-
-        if (state) {
-            window.location.href = "sherlocked.html";
-        }
-
-        const respuesta = "SHER";
-        const cajas = [...document.querySelectorAll(".caja")];
-        let posicion = 0;
-
-        document.addEventListener(
-            "keydown",
-            e => {
-
-                if (/^[a-z]$/i.test(e.key)) {
-
-                    if (posicion >= 4)
-                        return;
-
-                    cajas[posicion]
-                        .textContent =
-                        e.key.toUpperCase();
-
-                    posicion++;
-
-                    actualizar();
-                }
-
-                if (
-                    e.key === "Backspace"
-                ) {
-
-                    if (posicion <= 0)
-                        return;
-
-                    posicion--;
-
-                    cajas[posicion]
-                        .textContent = "";
-
-                    actualizar();
-                }
-            }
-        );
-
-        function actualizar() {
-
-            cajas.forEach(
-                c => c.classList.remove(
-                    "activa"
-                )
-            );
-
-            if (
-                posicion < 4
-            ) {
-
-                cajas[posicion]
-                    .classList.add(
-                        "activa"
-                    );
-            }
-
-            const intento =
-                cajas
-                    .map(
-                        c => c.textContent
-                    )
-                    .join("");
-
-            if (
-                intento.length === 4
-            ) {
-
-                if (
-                    intento === respuesta
-                ) {
-
-                    localStorage.setItem(
-                        "sherlocked",
-                        "true"
-                    );
-
-                    setTimeout(
-                        () => {
-                            document.getElementById(
-                                "palabra"
-                            ).innerHTML = `
-                                <div class="lock-line">
-                                    S   H   E   R
-                                </div>
-                            `;
-                        },
-                        1000
-                    );
-
-                    setTimeout(
-                        () => {
-                            location.href = "sherlocked.html";
-                        },
-                        2000
-                    );
-                }
-                else {
-
-                    cajas.forEach(
-                        c =>
-                            c.classList.add(
-                                "shake"
-                            )
-                    );
-
-                    setTimeout(
-                        () => {
-
-                            cajas.forEach(
-                                c => {
-
-                                    c.textContent =
-                                        "";
-
-                                    c.classList.remove(
-                                        "shake"
-                                    );
-                                }
-                            );
-
-                            posicion = 0;
-
-                            actualizar();
-
-                        },
-                        500
-                    );
-                }
-            }
-        }
-
-        actualizar();
-
-    </script>
-
+    <script src="/Riveropedia/js/layout.js"></script>
+    <script src="/Riveropedia/js/poemas.js"></script>
+    <script src="/Riveropedia/js/secretos.js"></script>
+    <script src="/Riveropedia/js/script.js"></script>
+    <script src="/Riveropedia/js/crypto_lock.js"></script>
 </body>
 
 </html>

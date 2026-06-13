@@ -5,38 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pequeña hacker!</title>
-
     <link rel="stylesheet" href="/Riveropedia/css/style.css">
     <link rel="stylesheet" href="/Riveropedia/css/poema.css">
 </head>
 
 <body>
-
-    <nav class="topbar">
-        <div class="topbar-section left">
-            <form id="busqueda-form">
-                <input type="text" id="busqueda" placeholder="Buscar..." autocomplete="off">
-                <ul id="sugerencias"></ul>
-            </form>
-        </div>
-
-        <div class="topbar-section center">
-            <h1 class="titulo tooltip">
-                ♡ N.I.N.A
-                <span class="tooltiptext">
-                    Neural Interface for Noble Affection
-                </span>
-            </h1>
-        </div>
-
-        <div class="topbar-section right">
-            <ul>
-                <li><a href="/Riveropedia/index.html">Inicio</a></li>
-                <li><a href="/Riveropedia/info/sobre-ti.html">Sobre ti</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <main class="poema-container">
         <article class="poema-card">
             <span class="poema-fecha" id="poema-fecha"></span>
@@ -46,7 +19,7 @@
                 entraste en mi vida sin forzar la cerradura,
                 y cuando descubrí que faltaba el corazón,
                 ya era tarde para llamar a la cordura.
-                
+
                 Robaste mis certezas una por una,
                 como quien recoge flores al borde del camino,
                 y yo, que conocía el arte de desconfiar,
@@ -74,19 +47,10 @@
             </div>
             <div class="firma" id="poema-firma"></div>
         </article>
-
     </main>
 
-    <footer>
-        <p>© 2026 A. Ssshparro</p>
-    </footer>
-
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const fecha = params.get("fecha");
-        if (fecha) { document.getElementById("poema-fecha").textContent = fecha; }
-    </script>
-
+    <script src="/Riveropedia/js/layout.js"></script>
+    <script src="/Riveropedia/js/fecha_page.js"></script>
 </body>
 
 </html>
