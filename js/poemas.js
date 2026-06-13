@@ -1042,7 +1042,7 @@ const poemas = {
         calendarioIcono: { valor: "🐉", color: "#7f2f2f", escala: 0.65 },
         pd: "Pd. Odio esta oscuridad en mi, me confunde.",
         mecanica: "copias",
-        estadoInicial: [2, 3, 3, 3, 3, 3, 3],
+        estadoInicial: [2, 0, 3, 1, 1, 0, 2],
         combinacionCorrecta: [3, 3, 3, 3, 3, 3, 3],
         revelacion: {
             titulo: "Y tu ángel guardián",
