@@ -1,6 +1,12 @@
 const BASE = "/Riveropedia/";
 const sonidoError = new Audio(BASE + "wrong.mp3");
-sonidoError.preload = "auto";
+sonidoError.preload = "none";
+
+function prepararSonidoError() {
+    if (sonidoError.readyState > 0) return;
+    sonidoError.preload = "auto";
+    sonidoError.load();
+}
 
 function speak(text) {
     const message = new SpeechSynthesisUtterance(text);
@@ -38,6 +44,7 @@ function navegarBusqueda() {
             return;
         }
 
+        prepararSonidoError();
         sonidoError.currentTime = 0;
         sonidoError.play().catch(() => {});
         input.value = "";
@@ -84,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navegarBusqueda();
     initAutocomplete();
     initSherlocked();
+    setTimeout(prepararSonidoError, 3000);
     if (typeof initMesNavigation === "function") initMesNavigation();
     if (typeof renderCalendario === "function" && document.getElementById("grid")) renderCalendario(mesActual);
 });

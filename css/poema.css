@@ -2,95 +2,91 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 24px 60px;
     align-items: center;
     gap: 20px;
+    padding: 0 24px 60px;
 }
 
 .poema-card {
     width: 85%;
+    max-width: 900px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
     padding: 60px;
-    border-radius: 36px;
-    background: rgba(255, 255, 255, 0.45);
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.45);
     backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    box-shadow: 0 30px 80px rgba(255, 79, 135, 0.12);
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 30px 80px rgba(255,79,135,0.12);
 }
 
 .poema-card h2 {
+    margin-bottom: 50px;
+    text-align: left;
+    color: var(--rosa-dark);
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: -0.03em;
-    text-align: left;
-    color: #d6336c;
-    margin-bottom: 50px;
 }
 
 .poema-texto {
-    white-space: pre-wrap;
     margin: 1em 0;
+    white-space: pre-wrap;
     line-height: 1.6;
+}
+
+.poema-texto:has(.carrusel) {
+    height: min(1400px, 72vh);
     overflow: hidden;
-    height: 1400px;
 }
 
 .poema-texto p {
-    margin: 1em 0;
-    font-size: 1.15rem;
-    line-height: 2;
+    margin: 1em 0 42px;
     text-align: left;
     color: #4d3741;
-    margin-bottom: 42px;
+    font-size: 1.15rem;
+    line-height: 2;
 }
 
-.poema-texto br {
-    line-height: 1;
-}
+.poema-texto br { line-height: 1; }
 
 .carrusel {
     display: flex;
-    flex-direction: column; /* movimiento vertical */
+    flex-direction: column;
     animation: scroll 90s linear infinite;
 }
 
-.carrusel-track {
-    display: block;
-}
+.carrusel-track { display: block; }
 
-/* Animación infinita */
 @keyframes scroll {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-50%); } /* solo la mitad */
+    100% { transform: translateY(-50%); }
 }
-
 
 .poema-fecha {
     width: 200px;
-    text-align: center;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 10px 18px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.8);
-    color: #d6336c;
+    background: rgba(255,255,255,0.8);
+    color: var(--rosa-dark);
     font-weight: 600;
     font-size: 0.8rem;
     letter-spacing: 0.08em;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .camaleon::selection {
-    color: #d6336c;
+    color: var(--rosa-dark);
     text-decoration: underline;
-    text-decoration-color: #d6336c;
+    text-decoration-color: var(--rosa-dark);
 }
 
-.camaleon-inverse::selection {
-    color: transparent;
-}
+.camaleon-inverse::selection { color: transparent; }
 
 .poema-card form {
     display: flex;
@@ -102,21 +98,15 @@
 .poema-card form textarea {
     width: 100%;
     box-sizing: border-box;
-
-    border: 1px solid rgba(255, 79, 135, 0.15);
+    border: 1px solid rgba(255,79,135,0.15);
     border-radius: 18px;
-
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(12px);
-
     padding: 14px 18px;
-
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(12px);
+    color: var(--texto);
     font-family: inherit;
     font-size: 0.95rem;
-    color: var(--texto);
-
     transition: .25s ease;
-
 }
 
 .poema-card form textarea {
@@ -126,80 +116,50 @@
 }
 
 .poema-card form input::placeholder,
-.poema-card form textarea::placeholder {
-    color: #b78398;
-}
+.poema-card form textarea::placeholder { color: #b78398; }
 
 .poema-card form input:focus,
 .poema-card form textarea:focus {
     outline: none;
-    border-color: rgba(255, 79, 135, 0.45);
-
-    background: rgba(255, 255, 255, 0.9);
-
-    box-shadow:
-        0 0 0 4px rgba(255, 79, 135, 0.08),
-        0 10px 25px rgba(255, 79, 135, 0.08);
-
+    border-color: rgba(255,79,135,0.45);
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 0 4px rgba(255,79,135,0.08), 0 10px 25px rgba(255,79,135,0.08);
 }
 
 .poema-card form button {
     align-self: flex-end;
-
     border: none;
     border-radius: 999px;
-
     padding: 12px 24px;
-
     background: var(--rosa-main);
     color: white;
-
     font-family: inherit;
     font-size: 0.95rem;
     font-weight: 600;
-
     cursor: pointer;
-
     transition: .25s ease;
-
 }
 
 .poema-card form button:hover {
     background: var(--rosa-hover);
-
     transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 25px rgba(255, 79, 135, 0.25);
+    box-shadow: 0 10px 25px rgba(255,79,135,0.25);
 }
 
-.poema-card form button:active {
-    transform: translateY(0);
-}
+.poema-card form button:active { transform: translateY(0); }
 
-.loop {
-    animation: colorShift 5s ease-in-out infinite alternate;
-}
+.loop { animation: colorShift 5s ease-in-out infinite alternate; }
 
 .oculto-tecla {
     color: transparent;
     transition: color .4s ease;
 }
 
-.oculto-tecla.revelado {
-    color: #d6336c;
-}
+.oculto-tecla.revelado { color: var(--rosa-dark); }
 
 @keyframes colorShift {
-    from {
-        color: #000000;
-        /* opacity: 1; */
-    }
-
-    to {
-        color: #92460f;
-        /* opacity: 0.5; */
-    }
+    from { color: #000; }
+    to { color: #92460f; }
 }
 
 .mask-container {
@@ -210,54 +170,49 @@
 .mask-falso {
     position: relative;
     z-index: 1;
-    color: #d6336c;
+    color: var(--rosa-dark);
 }
 
 .mask-real {
     position: absolute;
     inset: 0;
-
     z-index: 2;
-
     color: #f59f00;
-
+    pointer-events: none;
+    clip-path: circle(0px at 0 0);
+    animation: girasol 1.5s ease-in-out infinite alternate;
     text-shadow:
         0 0 4px rgba(255,255,255,.8),
         0 0 10px rgba(255,220,120,.9),
         0 0 20px rgba(255,190,40,.7),
         0 0 40px rgba(255,190,40,.4);
-
-    background: radial-gradient(circle var(--radio) at var(--mx) var(--my),
-            rgba(255, 255, 220, 1) 0%,
-            rgba(255, 245, 180, 1) 25%,
-            rgba(255, 220, 120, 1) 55%,
-            rgba(255, 180, 40, 1) 80%,
-            rgba(255, 180, 40, 0) 100%);
-
-    clip-path: circle(0px at 0 0);
-
-    pointer-events: none;
-    animation: girasol 1.5s ease-in-out infinite alternate;
+    background: radial-gradient(
+        circle var(--radio) at var(--mx) var(--my),
+        rgba(255,255,220,1) 0%,
+        rgba(255,245,180,1) 25%,
+        rgba(255,220,120,1) 55%,
+        rgba(255,180,40,1) 80%,
+        rgba(255,180,40,0) 100%
+    );
 }
 
 @keyframes girasol {
-    from {
-        filter: brightness(1);
-    }
-    to {
-        filter: brightness(1.15);
-    }
+    from { filter: brightness(1); }
+    to { filter: brightness(1.15); }
 }
 
-.blur-letra {
-    /* filter: blur(8px); */
-    /* color: black; */
-    /* font-weight: bold; */
-    transition: .4s;
-}
+.blur-letra { transition: .4s; }
 
 .blur-letra.revelada {
     filter: blur(0);
-    color: #d6336c;
+    color: var(--rosa-dark);
     font-weight: bolder;
+}
+
+@media (max-width: 720px) {
+    .poema-container { padding: 0 14px 44px; }
+    .poema-card { width: 100%; padding: 28px 22px; border-radius: 24px; }
+    .poema-card h2 { margin-bottom: 30px; font-size: 2rem; }
+    .poema-texto p { margin-bottom: 28px; font-size: 1rem; line-height: 1.8; }
+    .poema-fecha { width: auto; max-width: 100%; }
 }

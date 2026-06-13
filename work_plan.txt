@@ -11,16 +11,16 @@ ILOVEU3K
     - Sabado:    Saturno  (Sabado = ANILLOS)   A
     - Domingo:   Sol      (Domingo = HELIOS)   L -> 7
 
-2. Pecados Capitales
-    - Lunes:     Soberbia (Rhitta = Escanor)  C
-    - Martes:    Avaricia (Elaine = Ban)      A
-    - Miercoles: Pereza   (Harlequin = King)  M
-    - Jueves:    Envidia  (Matrona = Diane)   E
-    - Viernes:   Gula     (Infinito = Merlin) L 
-    - Sabado:    Ira      (Meliodas)   O -> 6
+2. Pecados Capitales (Diferentes poderes)
+    - Lunes:     Soberbia (Rhitta = Escanor)     C
+    - Martes:    Avaricia (Elaine = Ban)         A
+    - Miercoles: Pereza   (Harlequin = King)     M
+    - Jueves:    Envidia  (Matrona = Diane)      E
+    - Viernes:   Gula     (Infinito = Merlin)    L 
+    - Sabado:    Ira      (Elizabeth = Meliodas) O -> 6
     - Domingo:   Lujuria  (Gowther)    T
 
-3. Maravillas del mundo
+3. Maravillas del mundo (Mapa interactivo)
     - Lunes:     Gran muralla China (40.4319° N, 116.570° E)  I
     - Martes:    Chichen Itza       (20.6843° N, 88.5678° W)  N
     - Miercoles: Machu Pichu        (13.1631° S, 72.5450° W)  D
@@ -29,7 +29,7 @@ ILOVEU3K
     - Sabado:    Coliseo romano     (41.8902° N, 12.4922° E)  N
     - Domingo:   Cristo redentor    (22.9519° S, 43.2105° W)  A
 
-4. Notas Musicales
+4. Notas Musicales (Ajuste de frecuencias)
     - Lunes:     La  (440Hz)           = 440     O
     - Martes:    Si  (440Hz * 2^2/12)  = 493.88  C
     - Miercoles: Do  (440Hz * 2^3/12)  = 523.25  T

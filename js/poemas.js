@@ -720,6 +720,7 @@ const poemas = {
         fecha: "8 de junio de 2026",
         titulo: "El León del Orgullo",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🦁", color: "#c48a1b", escala: 0.65 },
         pd: `Pd. Tesoro sagrado, adorado y bendito por el mismo sol. 🌞`,
         estrofas: [
             [
@@ -771,6 +772,7 @@ const poemas = {
         fecha: "9 de junio de 2026",
         titulo: "El zorro de la avaricia",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🦊", color: "#d86b22", escala: 0.65 },
         pd: `Pd. Elaine, joya eterna del ladrón inmortal.`,
         ocultar: "ELAINE",
         estrofas: [
@@ -826,6 +828,7 @@ const poemas = {
         fecha: "10 de junio de 2026",
         titulo: "El Rey Hada",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🐻", color: "#7a4a2a", escala: 0.65 },
         pd: `Pd. Tesoro sagrado, revélate. 🐻`,
         mask: "Harlequín",
         estrofas: [
@@ -878,6 +881,7 @@ const poemas = {
         fecha: "11 de junio de 2026",
         titulo: "Tengo una enorme envidia",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🐍", color: "#2f8f5b", escala: 0.65 },
         pd: `Pd. El juicio puede nublarse estando tan lejos. 🐍`,
         blur: [
             ["S", 1.5],
@@ -940,6 +944,7 @@ const poemas = {
         fecha: "11 de junio de 2026",
         titulo: "La hechicera del tiempo y conocimiento",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🐗", color: "#8b5d54", escala: 0.65 },
         pd: `Pd. Hermosa niña, tu gran cabeza me tiene vuelto loco.`,
         carrusel: true,
         estrofas: [

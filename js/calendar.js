@@ -60,14 +60,19 @@ function renderCalendario(mesIndex) {
 
 function prepararDiaDisponible(boton, fechaISO, esExcepcion) {
     const autor = excepciones[fechaISO];
+    const poema = typeof poemas !== "undefined" ? poemas[fechaISO] : null;
+    const icono = obtenerIconoCalendario(poema?.calendarioIcono, autor);
+
     boton.classList.add("disponible");
     boton.dataset.dia = fechaISO;
+    boton.dataset.icon = icono.valor;
+    boton.style.setProperty("--calendar-icon-color", icono.color);
+    boton.style.setProperty("--calendar-icon-scale", icono.escala);
 
     if (esExcepcion && autor) boton.classList.add(autor.toLowerCase());
     if (localStorage.getItem(fechaISO) === "visitado") boton.classList.add("visitado");
 
     boton.addEventListener("click", () => {
-        const poema = typeof poemas !== "undefined" ? poemas[fechaISO] : null;
         if (!poema) {
             location.href = BASE + "info/pendiente.html?fecha=" + fechaISO;
             return;
@@ -77,6 +82,18 @@ function prepararDiaDisponible(boton, fechaISO, esExcepcion) {
         boton.classList.add("visitado");
         location.href = BASE + "info/poema.html?fecha=" + fechaISO;
     });
+}
+
+function obtenerIconoCalendario(config, autor) {
+    const colorBase = autor === "Gina" ? "orange" : autor === "Armando" ? "blue" : "red";
+    if (!config) return { valor: "♥", color: colorBase, escala: "1" };
+    if (typeof config === "string") return { valor: config, color: colorBase, escala: "1" };
+
+    return {
+        valor: config.valor || config.icono || "♥",
+        color: config.color || colorBase,
+        escala: String(config.escala ?? 1)
+    };
 }
 
 function initMesNavigation() {
