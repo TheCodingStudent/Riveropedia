@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMELOT</title>
+
+    <link rel="stylesheet" href="/Riveropedia/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding-top: 80px;
+            margin: 0;
+            font-family: 'Cinzel', serif;
+            color: #f5e6c8;
+            overflow-x: hidden;
+        }
+
+        .titulo {
+            color: brown;
+        }
+
+        /* Fondo medieval */
+
+        .camelot-container::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -5;
+
+            background:
+                linear-gradient(rgba(5, 5, 5, .80), rgba(15, 8, 4, .92)),
+                url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .camelot-container::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -4;
+
+            background:
+                radial-gradient(circle at 20% 20%, rgba(255, 215, 0, .10), transparent 20%),
+                radial-gradient(circle at 80% 15%, rgba(180, 0, 0, .12), transparent 25%),
+                radial-gradient(circle at 50% 90%, rgba(255, 140, 0, .08), transparent 30%);
+        }
+
+        .camelot-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        /* Antorchas */
+
+        .antorcha {
+            position: fixed;
+            top: 150px;
+            width: 35px;
+            height: 140px;
+            background: linear-gradient(#5c381e, #241106);
+            border-radius: 4px;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .izquierda {
+            left: 24%;
+        }
+
+        .derecha {
+            right: 24%;
+        }
+
+        .antorcha::before {
+            content: "";
+
+            position: absolute;
+            width: 70px;
+            height: 70px;
+
+            left: -18px;
+            top: -40px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(circle,
+                    #fff8cf,
+                    #ffb347,
+                    #ff6600,
+                    transparent);
+
+            animation: fuego 1.2s infinite alternate;
+        }
+
+        @keyframes fuego {
+
+            from {
+                transform: scale(1);
+                filter: blur(2px);
+            }
+
+            to {
+                transform: scale(1.25);
+                filter: blur(8px);
+            }
+
+        }
+
+        /* Índices */
+
+        .indices {
+            display: flex;
+            justify-content: space-between;
+            width: min(900px, 90%);
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, .45);
+            letter-spacing: .3em;
+        }
+
+        .indice {
+            position: relative;
+            cursor: pointer;
+            z-index: 1000;
+            color: transparent;
+        }
+
+        .indice::selection {
+            color: white;
+        }
+
+        .indice::after {
+
+            content: attr(data-tooltip);
+
+            position: absolute;
+
+            top: 180%;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            background: rgba(25, 10, 5, .95);
+
+            border: 1px solid rgba(212, 175, 55, .3);
+
+            padding: 8px 12px;
+
+            border-radius: 10px;
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: .3s;
+
+            white-space: nowrap;
+        }
+
+        .indice:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Tarjeta */
+
+        .camelot-card {
+
+            width: min(1000px, 92%);
+
+            padding: 60px;
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(
+                    rgba(35, 22, 12, .95),
+                    rgba(18, 10, 5, .98)
+                );
+
+            border: 2px solid rgba(212, 175, 55, .25);
+
+            box-shadow:
+                0 0 60px rgba(0, 0, 0, .9),
+                inset 0 0 40px rgba(212, 175, 55, .05);
+        }
+
+        h3 {
+            width: min(1000px, 92%);
+            color: #9c7a3b;
+            letter-spacing: .3em;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+
+            text-align: center;
+
+            font-size: 4rem;
+
+            color: #d4af37;
+
+            letter-spacing: .3em;
+
+            margin-bottom: 10px;
+
+            text-shadow:
+                0 0 15px rgba(255, 215, 0, .5),
+                0 0 30px rgba(180, 0, 0, .4);
+        }
+
+        .subtitulo {
+
+            text-align: center;
+
+            color: #cbb47b;
+
+            letter-spacing: .4em;
+
+            margin-bottom: 50px;
+        }
+
+        /* Pecados */
+
+        .pecados {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+
+            gap: 18px;
+
+            margin-bottom: 60px;
+        }
+
+        .pecado {
+
+            position: relative;
+
+            padding: 20px;
+
+            text-align: center;
+
+            border: 1px solid rgba(212, 175, 55, .25);
+
+            background: rgba(212, 175, 55, .05);
+
+            cursor: pointer;
+
+            transition: .3s;
+        }
+
+        .pecado:hover {
+
+            transform: translateY(-5px);
+
+            background: rgba(120, 0, 0, .20);
+
+            box-shadow:
+                0 0 20px rgba(212, 175, 55, .3);
+        }
+
+        .pecado .icono {
+
+            display: block;
+
+            font-size: 2rem;
+
+            margin-bottom: 10px;
+        }
+
+        .pecado span {
+            color: #d4af37;
+        }
+
+        .pecado::after {
+
+            content: attr(data-tooltip);
+
+            position: absolute;
+
+            width: 250px;
+
+            left: 50%;
+            bottom: 120%;
+
+            transform: translateX(-50%);
+
+            background:
+                linear-gradient(
+                    rgba(40, 20, 10, .98),
+                    rgba(20, 10, 5, .98)
+                );
+
+            color: #f5e6c8;
+
+            border: 1px solid rgba(212, 175, 55, .35);
+
+            padding: 12px;
+
+            border-radius: 10px;
+
+            line-height: 1.5;
+            font-size: .8rem;
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: .3s;
+
+            z-index: 1000;
+
+            pointer-events: none;
+        }
+
+        .pecado:hover::after {
+
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Texto */
+
+        .cronica p {
+
+            line-height: 2.1;
+
+            margin-bottom: 25px;
+
+            color: #f3e5c5;
+        }
+
+        .espadas {
+
+            text-align: center;
+
+            font-size: 2rem;
+
+            color: #d4af37;
+
+            margin: 40px 0;
+        }
+
+        /* Firma */
+
+        .firma {
+
+            display: flex;
+
+            justify-content: flex-end;
+
+            margin-top: 30px;
+
+            color: #9c7a3b;
+        }
+
+        /* Secreto */
+
+        ::selection {
+            color: transparent;
+            background: transparent;
+        }
+
+        .secreto {
+            color: transparent;
+        }
+
+        .secreto::selection {
+            color: white;
+        }
+
+        @media(max-width:700px) {
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .camelot-card {
+                padding: 35px 25px;
+            }
+
+            .antorcha {
+                display: none;
+            }
+
+            .pecado::after {
+                width: 180px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="camelot-container" style="margin-top: 50px;">
+
+        <div class="antorcha izquierda"></div>
+        <div class="antorcha derecha"></div>
+
+        <div class="indices">
+
+            <small class="indice" data-tooltip="Semana">
+                2
+            </small>
+
+            <small class="indice" data-tooltip="Letra">
+                7
+            </small>
+
+        </div>
+
+        <h3 style="margin-left: 100px;">SEMANA II</h3>
+
+        <article class="camelot-card">
+
+            <h1>CAMELOT</h1>
+
+            <div class="subtitulo">
+                LOS SIETE PECADOS CAPITALES
+            </div>
+
+            <section class="pecados">
+
+                <div class="pecado"
+                    data-tooltip="El Orgullo convence al caballero de que es superior a todos los demás.">
+                    <span class="icono">♔</span>
+                    <span>ORGULLO</span>
+                </div>
+
+                <div class="pecado"
+                    data-tooltip="La Ira transforma la justicia en venganza y la valentía en destrucción.">
+                    <span class="icono">⚔</span>
+                    <span>IRA</span>
+                </div>
+
+                <div class="pecado"
+                    data-tooltip="La Avaricia hace que el oro valga más que el honor y la lealtad.">
+                    <span class="icono">🪙</span>
+                    <span>AVARICIA</span>
+                </div>
+
+                <div class="pecado"
+                    data-tooltip="La Envidia consume el alma al desear aquello que pertenece a otros.">
+                    <span class="icono">☠</span>
+                    <span>ENVIDIA</span>
+                </div>
+
+                <div class="pecado"
+                    data-tooltip="La Lujuria desvía el corazón de sus promesas y juramentos.">
+                    <span class="icono">❤</span>
+                    <span>LUJURIA</span>
+                </div>
+
+                <div class="pecado"
+                    data-tooltip="La Gula convierte la abundancia en exceso interminable.">
+                    <span class="icono">🍖</span>
+                    <span>GULA</span>
+                </div>
+
+                <div class="pecado"
+                    data-tooltip="La Pereza adormece la voluntad y deja el destino en manos ajenas.">
+                    <span class="icono">☾</span>
+                    <span>PEREZA</span>
+                </div>
+
+            </section>
+
+            <div class="espadas">
+                ⚔ ⚜ ⚔
+            </div>
+
+            <section class="cronica">
+
+                <p>
+                    En los días dorados de Camelot, cuando la Mesa Redonda reunía a los más nobles caballeros,
+                    una antigua oscuridad comenzó a despertar más allá de los bosques de Avalon.
+                </p>
+
+                <p>
+                    Siete sellos olvidados fueron quebrados y, de ellos, surgieron los Pecados Capitales:
+                    Orgullo, Ira, Avaricia, Envidia, Lujuria, Gula y Pereza.
+                </p>
+
+                <p>
+                    Cada uno tomó forma como un caballero oscuro, cubierto por hierro maldito y juramentos
+                    corrompidos. Su propósito era destruir la gloria del reino y apagar para siempre la luz de
+                    Arturo.
+                </p>
+
+                <p>
+                    Sin embargo, mientras una espada permaneciera en alto y un corazón siguiera siendo leal,
+                    Camelot jamás caería.
+                    <small class="secreto">EXCALIBUR</small>
+                </p>
+
+            </section>
+
+            <div class="firma">
+                <small>2 / 8</small>
+            </div>
+
+        </article>
+
+    </main>
+
+    <script src="/Riveropedia/js/layout.js"></script>
+    <script src="/Riveropedia/js/poemas.js"></script>
+    <script src="/Riveropedia/js/secretos.js"></script>
+    <script src="/Riveropedia/js/script.js"></script>
+
+</body>
+
+</html>

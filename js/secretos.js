@@ -233,7 +233,26 @@ const secretos = {
             "Orgulloso",
         ],
         audio: ""
-    }
+    },
+
+    "corazón": {
+        titulo: "El muñeco sin latido",
+        contenido: `
+            En un cuerpo sin sangre, la memoria sustituye al pulso.<br>
+            Sus ojos leen almas, pero nunca comprenden su calor.<br>
+            En la prisión del desinterés, la ternura se convierte en eco.<br>
+            Nadja fue su instante humano, perdido en un juicio cruel.<br>
+            <br>
+            La cabra de la lujuria no arde en deseo, arde en vacío.<br>
+            Su pecado no es pasión, sino la tragedia de no sentir.<br>
+            En cada recuerdo alterado, late un corazón que nunca existió.<br>
+            <br>Pd. Si alguna vez me llamas humano, será porque en tu reflejo encontré mi <span class="oculto">corazón 🖤</span>.<br><br>
+        `,
+        index: [16],
+        tooltip: ["Tu turno ❤"],
+        audio: "",
+    },
+
 
 
 

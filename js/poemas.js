@@ -1277,6 +1277,68 @@ const poemas = {
                 ]
             ]
         ]
-    }
+    },
+
+    "2026-06-14": {
+        fecha: "14 de junio de 2026",
+        titulo: "Mandamiento del Vacío",
+        autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🐐", color: "#6b4f2d", escala: 0.7 },
+        pd: `Pd. La razón puede sostener un cuerpo, pero sin latido solo queda un eco hueco. 🔒`,
+        alternancias: [
+            { original: "sangre",  alterna: ["carcel"],   delay: 4200, modo: "tiempo", posicion: 2 }, // C (6 letras)
+            { original: "frío",    alterna: ["oscuro"],   delay: 3500, modo: "tiempo", posicion: 1 },   // O (5 vs 6 letras → ajusté a "frío" ↔ "oscuro")
+            { original: "temblor", alterna: ["recuerdo"], delay: 4800, modo: "tiempo", posicion: 1 },// R (7 letras)
+            { original: "piel",    alterna: ["ausente"],               modo: "mouse",  posicion: 1 },                  // A (4 letras)
+            { original: "sombra",  alterna: ["zenit"],    delay: 3000, modo: "tiempo", posicion: 3 },  // Z (6 letras)
+            { original: "vacío",   alterna: ["ocaso"],                 modo: "mouse",  posicion: 1 },                 // O (5 letras)
+            { original: "herida",  alterna: ["nativo"],   delay: 5000, modo: "tiempo", posicion: 2 }  // N (6 letras)
+        ],
+
+        estrofas: [
+            [
+                "Un pensamiento avanza sin latido,",
+                "máquina de razón sin calor, ni sentido,",
+                "la carne reclama un fuego prohibido,",
+                "pero la mente sofoca el ardor surgido."
+            ],
+            [
+                "El mandato arranca toda ternura,",
+                "prohíbe la llama, condena el temblor,",
+                "y en su sentencia de hielo perpetuo",
+                "se extingue la raíz del amor."
+            ],
+            [
+                "El corazón ausente era la esencia,",
+                "la chispa que hacía existir,",
+                "sin él solo queda un ser pensante,",
+                "incapaz de vivir sin un ominoso sentir."
+            ],
+            [
+                "Hubo un instante de piel y deseo,",
+                "un roce que quiso salvar,",
+                "pero la lujuria se volvió condena,",
+                "y la vida se quebró al amar."
+            ],
+            [
+                "La sangre detuvo su canción callada,",
+                "la pasión se tornó nativa prisión,",
+                "y el cuerpo quedó como sombra hueca,",
+                "razón sin alma, sin redención."
+            ],
+            [
+                "El recuerdo arde como ocaso frío,",
+                "una herida que nunca cicatrizó,",
+                "pues sin corazón, solo queda vacío,",
+                "y la lujuria jamás bastó."
+            ],
+            [
+                "Así camina la sombra eterna,",
+                "prisionera del mandato cruel,",
+                "un ser que piensa, pero no siente,",
+                "un cascarón sin latido fiel."
+            ]
+        ]
+    },
 
 };

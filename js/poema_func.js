@@ -22,6 +22,121 @@ function envolverLetras(html, letras) {
     return resultado;
 }
 
+function aplicarAlternanciasTiempo(span) {
+    const inner = span.querySelector(".alternancia-inner");
+    const original = span.dataset.original;
+    const alterna = JSON.parse(span.dataset.alterna);
+    const delay = parseInt(span.dataset.delay, 10) || 3000;
+    let estado = 0;
+
+    setInterval(() => {
+        const reemplazo = estado < alterna.length ? alterna[estado] : original;
+        inner.textContent = reemplazo;
+        estado = (estado + 1) % (alterna.length + 1);
+    }, delay);
+}
+
+function aplicarAlternanciasMouse(span) {
+    const inner = span.querySelector(".alternancia-inner");
+    const original = span.dataset.original;
+    const alterna = JSON.parse(span.dataset.alterna);
+
+    span.addEventListener("mouseenter", () => {
+        inner.textContent = alterna[0];
+    });
+    span.addEventListener("mouseleave", () => {
+        inner.textContent = original;
+    });
+}
+
+
+function envolverAlternancias(html, alternancias) {
+    alternancias.forEach(item => {
+        const opciones = Array.isArray(item.alterna) ? item.alterna : [item.alterna];
+        const todas = [item.original, ...opciones];
+        const maxLen = Math.max(...todas.map(p => p.length));
+
+        // Regex para encontrar la palabra original
+        const regex = new RegExp(`\\b${item.original}\\b`, "gi");
+        let index = 0;
+
+        html = html.replace(regex, match => {
+            index++;
+            // Si se especifica "posicion", solo reemplaza esa ocurrencia
+            if (!item.posicion || index === item.posicion) {
+                return `<span class="alternancia" 
+                            style="display:inline-block; width:${maxLen}ch; text-align:center;" 
+                            data-original="${item.original}" 
+                            data-alterna='${JSON.stringify(opciones)}' 
+                            data-delay="${item.delay || 3000}" 
+                            data-modo="${item.modo || "tiempo"}">
+                            <span class="alternancia-inner">${item.original}</span>
+                        </span>`;
+            }
+            return match; // las demás ocurrencias quedan igual
+        });
+    });
+    return html;
+}
+
+function aplicarAlternancias() {
+    document.querySelectorAll(".alternancia").forEach(span => {
+        const inner = span.querySelector(".alternancia-inner");
+        const original = span.dataset.original;
+        const alterna = JSON.parse(span.dataset.alterna);
+        const baseDelay = parseInt(span.dataset.delay, 10) || 3000;
+        const modo = span.dataset.modo || "tiempo";
+
+        if (modo === "mouse") {
+            // Cambia al pasar el cursor con animación
+            span.addEventListener("mouseenter", () => {
+                inner.classList.add("fade-out");
+                setTimeout(() => {
+                    inner.textContent = alterna[0];
+                    inner.classList.remove("fade-out");
+                    inner.classList.add("fade-in");
+                    setTimeout(() => inner.classList.remove("fade-in"), 500);
+                }, 500);
+            });
+
+            span.addEventListener("mouseleave", () => {
+                inner.classList.add("fade-out");
+                setTimeout(() => {
+                    inner.textContent = original;
+                    inner.classList.remove("fade-out");
+                    inner.classList.add("fade-in");
+                    setTimeout(() => inner.classList.remove("fade-in"), 500);
+                }, 500);
+            });
+        } else {
+            // Estado inicial aleatorio
+            let estado = Math.floor(Math.random() * (alterna.length + 1));
+
+            // Offset inicial aleatorio
+            const offset = Math.floor(Math.random() * baseDelay);
+
+            // Delay único para cada palabra (±30% del baseDelay)
+            const delay = baseDelay + Math.floor((Math.random() - 0.5) * baseDelay * 0.6);
+
+            setTimeout(() => {
+                setInterval(() => {
+                    const reemplazo = estado < alterna.length ? alterna[estado] : original;
+
+                    inner.classList.add("fade-out");
+                    setTimeout(() => {
+                        inner.textContent = reemplazo;
+                        inner.classList.remove("fade-out");
+                        inner.classList.add("fade-in");
+                        setTimeout(() => inner.classList.remove("fade-in"), 500);
+                    }, 500);
+
+                    estado = (estado + 1) % (alterna.length + 1);
+                }, delay);
+            }, offset);
+        }
+    });
+}
+
 function aplicarBlur(html, blur) {
     let dentroTag = false, indice = 0, resultado = "";
     for (const c of html) {
@@ -135,6 +250,12 @@ function renderPoema() {
     }
 
     let html = estrofasHtml(poema.estrofas);
+
+    // Alternancias con modo por cada item
+    if (poema.alternancias) {
+        html = envolverAlternancias(html, poema.alternancias);
+    }
+
     if (poema.ocultar) html = envolverLetras(html, poema.ocultar);
     if (poema.blur) html = aplicarBlur(html, poema.blur);
     if (poema.carrusel) {
@@ -147,10 +268,11 @@ function renderPoema() {
         `;
     }
 
-
     $("poema-texto").innerHTML = html;
     $("poema-firma").innerHTML = `<span>— ${poema.autor}</span><br><small>${poema.pd}</small>`;
+
     if (poema.mask) aplicarMask($("poema-titulo"), poema.mask);
+    if (poema.alternancias) aplicarAlternancias(); // 👈 ahora decide según cada alternancia
     actualizarBlur();
 }
 

@@ -38,6 +38,10 @@ function navegarBusqueda() {
             location.href = BASE + "info/sideral.html";
             return;
         }
+        else if (palabra === "camelot") {
+            location.href = BASE + "info/camelot.html";
+            return;
+        }
 
         if (typeof secretos !== "undefined" && Object.hasOwn(secretos, palabra)) {
             location.href = BASE + "info/secreto.html?clave=" + encodeURIComponent(palabra);
