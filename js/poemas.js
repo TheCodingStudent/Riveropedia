@@ -1286,13 +1286,13 @@ const poemas = {
         calendarioIcono: { valor: "🐐", color: "#6b4f2d", escala: 0.7 },
         pd: `Pd. La razón puede sostener un cuerpo, pero sin latido solo queda un eco hueco. 🔒`,
         alternancias: [
-            { original: "sangre",  alterna: ["carcel"],   delay: 6200, modo: "tiempo", posicion: 2 }, // C (6 letras)
-            { original: "frío",    alterna: ["oscuro"],   delay: 5500, modo: "tiempo", posicion: 1 },   // O (5 vs 6 letras → ajusté a "frío" ↔ "oscuro")
-            { original: "temblor", alterna: ["recuerdo"], delay: 6800, modo: "tiempo", posicion: 1 },// R (7 letras)
+            { original: "sangre",  alterna: ["carcel"],   delay: 5200, modo: "tiempo", posicion: 1 }, // C (6 letras)
+            { original: "frío",    alterna: ["oscuro"],   delay: 4500, modo: "tiempo", posicion: 1 },   // O (5 vs 6 letras → ajusté a "frío" ↔ "oscuro")
+            { original: "temblor", alterna: ["recuerdo"], delay: 5800, modo: "tiempo", posicion: 1 },// R (7 letras)
             { original: "piel",    alterna: ["ausente"],               modo: "mouse",  posicion: 1 },                  // A (4 letras)
-            { original: "sombra",  alterna: ["zenit"],    delay: 5000, modo: "tiempo", posicion: 3 },  // Z (6 letras)
+            { original: "sombra",  alterna: ["zenit"],    delay: 4000, modo: "tiempo", posicion: 1 },  // Z (6 letras)
             { original: "vacío",   alterna: ["ocaso"],                 modo: "mouse",  posicion: 1 },                 // O (5 letras)
-            { original: "herida",  alterna: ["nativo"],   delay: 7000, modo: "tiempo", posicion: 2 }  // N (6 letras)
+            { original: "herida",  alterna: ["nativo"],   delay: 6000, modo: "tiempo", posicion: 1 }  // N (6 letras)
         ],
 
         estrofas: [
