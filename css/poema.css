@@ -314,6 +314,10 @@
     vertical-align: baseline;
 }
 
+.alternancia-inner::selection {
+    color: var(--rosa-dark);
+}
+
 .alternancia-inner {
     transition: opacity 0.5s ease;
     line-height: 1em;
