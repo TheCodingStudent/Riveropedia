@@ -271,6 +271,21 @@ function renderPoema() {
     $("poema-texto").innerHTML = html;
     $("poema-firma").innerHTML = `<span>— ${poema.autor}</span><br><small>${poema.pd}</small>`;
 
+    if (poema.mapa) {
+        const btnMapa = document.createElement("button");
+        btnMapa.innerHTML = "🗺️";
+        btnMapa.className = "map-float-button";
+        btnMapa.title = "Ver mapa interactivo";
+        btnMapa.onclick = () => {
+            if (poema.objetivoMapa) {
+                localStorage.setItem("objetivoMapa", poema.objetivoMapa);
+            }
+            window.location.href = "/Riveropedia/info/maps.html";
+        };
+        document.body.appendChild(btnMapa);
+    }
+
+
     if (poema.mask) aplicarMask($("poema-titulo"), poema.mask);
     if (poema.alternancias) aplicarAlternancias(); // 👈 ahora decide según cada alternancia
     actualizarBlur();

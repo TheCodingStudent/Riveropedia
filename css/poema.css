@@ -332,6 +332,33 @@
     opacity: 1;
 }
 
+.map-float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: var(--rosa-main);
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-card);
+    z-index: 2000;
+    opacity: 0.1; /* 👈 oculto por defecto */
+    transition: all 0.5s ease-in-out;
+}
+
+.map-float-button:hover {
+    background: var(--rosa-hover);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 
 /* @media (max-width: 720px) {
     .poema-container { padding: 0 14px 44px; }

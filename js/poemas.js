@@ -1286,13 +1286,13 @@ const poemas = {
         calendarioIcono: { valor: "🐐", color: "#6b4f2d", escala: 0.7 },
         pd: `Pd. La razón puede sostener un cuerpo, pero sin latido solo queda un eco hueco. 🔒`,
         alternancias: [
-            { original: "sangre",  alterna: ["carcel"],   delay: 6200, modo: "tiempo", posicion: 1 }, // C (6 letras)
-            { original: "frío",    alterna: ["oscuro"],   delay: 5500, modo: "tiempo", posicion: 1 }, // O (5 vs 6 letras → ajusté a "frío" ↔ "oscuro")
+            { original: "sangre", alterna: ["carcel"], delay: 6200, modo: "tiempo", posicion: 1 }, // C (6 letras)
+            { original: "frío", alterna: ["oscuro"], delay: 5500, modo: "tiempo", posicion: 1 }, // O (5 vs 6 letras → ajusté a "frío" ↔ "oscuro")
             { original: "temblor", alterna: ["recuerdo"], delay: 6800, modo: "tiempo", posicion: 1 }, // R (7 letras)
-            { original: "piel",    alterna: ["ausente"],               modo: "mouse",  posicion: 1 }, // A (4 letras)
-            { original: "sombra",  alterna: ["zenit"],    delay: 5000, modo: "tiempo", posicion: 1 }, // Z (6 letras)
-            { original: "vacío",   alterna: ["ocaso"],                 modo: "mouse",  posicion: 1 }, // O (5 letras)
-            { original: "herida",  alterna: ["nativo"],   delay: 7000, modo: "tiempo", posicion: 1 }  // N (6 letras)
+            { original: "piel", alterna: ["ausente"], modo: "mouse", posicion: 1 }, // A (4 letras)
+            { original: "sombra", alterna: ["zenit"], delay: 5000, modo: "tiempo", posicion: 1 }, // Z (6 letras)
+            { original: "vacío", alterna: ["ocaso"], modo: "mouse", posicion: 1 }, // O (5 letras)
+            { original: "herida", alterna: ["nativo"], delay: 7000, modo: "tiempo", posicion: 1 }  // N (6 letras)
         ],
 
         estrofas: [
@@ -1340,5 +1340,59 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-06-15": {
+        fecha: "15 de junio de 2026",
+        titulo: "La Muralla del Amor",
+        autor: "A. Ssshparro",
+        mapa: true,
+        objetivoMapa: "Gran Muralla China",
+        pd: "Pd. Para ti, 2000 años en el futuro ❤",
+        estrofas: [
+            [
+                "Entre piedras milenarias se alza tu figura,",
+                "camino eterno que abraza la tierra,",
+                "como tus brazos que me rodean segura,",
+                "y en tu abrazo mi alma se aferra."
+            ],
+            [
+                "Cada ladrillo guarda un secreto,",
+                "susurros de amantes en la brisa,",
+                "y en tu mirada encuentro el amuleto,",
+                "que convierte mi vida en sonrisa."
+            ],
+            [
+                "La muralla se extiende sin final,",
+                "como mi amor que nunca se quiebra,",
+                "un puente invisible, un lazo vital,",
+                "que ni el tiempo ni el mundo destierra."
+            ],
+            [
+                "Tus labios son torres encendidas,",
+                "tu voz, un eco que me guía,",
+                "y en el silencio de estas heridas,",
+                "tu ternura es mi melodía."
+            ],
+            [
+                "Caminar contigo sobre su cima,",
+                "es recorrer la eternidad,",
+                "cada paso se vuelve poesía,",
+                "cada instante, inmortalidad."
+            ],
+            [
+                "La muralla protege lo sagrado,",
+                "como tu amor que me resguarda,",
+                "y en su sombra quedo abrazado,",
+                "con la certeza que nada nos falta."
+            ],
+            [
+                "Así, entre historia y horizonte,",
+                "nuestros corazones se funden en uno,",
+                "la muralla es testigo y responde:",
+                "el amor verdadero nunca es ninguno."
+            ]
+        ]
+    },
+
 
 };

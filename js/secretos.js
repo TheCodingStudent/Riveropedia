@@ -253,9 +253,22 @@ const secretos = {
         audio: "",
     },
 
-
-
-
-
+    "shiganshina": {
+        titulo: "Attack on Titan",
+        contenido: `
+            Entre muros que guardan la infancia, nace la esperanza y el miedo.<br>
+            Shiganshina es el inicio y el fin, donde todo se revela.<br>
+            Cada piedra recuerda la lucha, cada sombra guarda un sacrificio.<br>
+            El rugido de los titanes no destruye mi fe, la fortalece.<br>
+            <br>
+            Amo esta serie porque es perfecta, porque en su dolor encuentro belleza.<br>
+            Si pudiera dedicar un anime a ti, sería este: eterno, crudo y sublime.<br>
+            En Shiganshina aprendí que incluso en la caída, tu reflejo es mi victoria <span class="oculto">mi cielo ⚔️</span>.<br><br>
+            Pd. Esta semana no habrá que resolver los secretos. Aprovechare para dedicarte cosas ❤
+        `,
+        index: [0],
+        tooltip: ["El inicio y el fin"],
+        audio: "",
+    },
 
 };

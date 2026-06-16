@@ -35,11 +35,11 @@ function navegarBusqueda() {
         if (!palabra) return;
 
         if (palabra === "sideral") {
-            location.href = BASE + "info/sideral.html";
+            location.href = BASE + "secrets/sideral.html";
             return;
         }
         else if (palabra === "camelot") {
-            location.href = BASE + "info/camelot.html";
+            location.href = BASE + "secrets/camelot.html";
             return;
         }
 
