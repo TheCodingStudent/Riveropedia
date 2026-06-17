@@ -1486,10 +1486,157 @@ const poemas = {
                 "como un río que nunca deja de andar."
             ],
             [
-                "Así, Machu Picchu, guardián eterno,",
+                "Así, lugar antiguo, guardián eterno,",
                 "eres santuario de unión y fe,",
                 "y en tu silencio hallo mi gobierno:",
                 "amarte siempre, sin retroceder."
+            ]
+        ]
+    },
+
+    "2026-06-18": {
+        fecha: "18 de junio de 2026",
+        titulo: "La Dama de Mármol",
+        autor: "A. Ssshparro",
+        mapa: true,
+        objetivoMapa: "Taj Mahal",
+        pd: "Pd. Mujer de mármol, tu blancura es mi eternidad. 🤍🏰",
+        estrofas: [
+            [
+                "Eres la dama vestida de nieve,",
+                "tu piel de mármol brilla al sol,",
+                "y en tu silencio mi alma se mueve,",
+                "como un río que busca tu farol."
+            ],
+            [
+                "Tus cúpulas son coronas divinas,",
+                "tus arcos, brazos que saben cuidar,",
+                "y en tu blancura mi fe se inclina,",
+                "como quien nunca deja de amar."
+            ],
+            [
+                "Tu rostro claro refleja la luna,",
+                "un espejo puro de eternidad,",
+                "y en tu mirada la noche se acuna,",
+                "como promesa de inmortalidad."
+            ],
+            [
+                "Cada terraza es caricia callada,",
+                "cada jardín, un suspiro fiel,",
+                "y en tu figura tan alabastrada",
+                "descubro el cielo sobre mi piel."
+            ],
+            [
+                "El sol dorado acaricia tu frente,",
+                "pintando tu piel con fuego divino,",
+                "y en ese instante mi alma presente",
+                "se rinde al destino que es tu camino."
+            ],
+            [
+                "Mujer de mármol, reina silente,",
+                "tu blancura es templo y altar,",
+                "y en tu abrazo eterno y presente",
+                "mi corazón aprende a descansar."
+            ]
+        ]
+    },
+
+    "2026-06-19": {
+        fecha: "19 de junio de 2026",
+        titulo: "El Hombre de Piedra",
+        autor: "A. Ssshparro",
+        mapa: true,
+        objetivoMapa: "Coliseo Romano",
+        pd: "Pd. Hombre eterno, tus cicatrices son versos que nunca mueren. 🗡️",
+        estrofas: [
+            [
+                "Tu piel de piedra respira batallas,",
+                "cicatrices viejas que aún laten fuerte,",
+                "y en tus arcos se encienden las llamas",
+                "de un amor que desafía la muerte."
+            ],
+            [
+                "Eres un hombre de rostro severo,",
+                "con arrugas talladas por siglos de sol,",
+                "y en tu silencio hallo lo sincero:",
+                "la promesa intacta de un viejo farol."
+            ],
+            [
+                "Tus muros son músculos tensos,",
+                "tus grietas, heridas que saben hablar,",
+                "y en tu cuerpo de siglos inmensos",
+                "mi corazón aprende a amar."
+            ],
+            [
+                "El tiempo golpea tu frente gastada,",
+                "dejando marcas de gloria y dolor,",
+                "pero en tus ojos aún veo la entrada",
+                "a un destino que nunca perdió color."
+            ],
+            [
+                "Cada herida es verso escondido,",
+                "cada cicatriz, un canto fiel,",
+                "y en tu figura de hierro vencido",
+                "descubro la fuerza sobre mi piel."
+            ],
+            [
+                "Hombre eterno, guardián del pasado,",
+                "tu cuerpo es templo, tu alma altar,",
+                "y en tu grandeza quedo abrazado:",
+                "amarte siempre, sin olvidar."
+            ]
+        ]
+    },
+
+    "2026-06-20": {
+        fecha: "20 de junio de 2026",
+        titulo: "El Guardián del Horizonte",
+        autor: "A. Ssshparro",
+        mapa: true,
+        objetivoMapa: "Estatua en la cima",
+        pd: "Pd. Tu abrazo blanco sostiene el mundo. 🌅",
+        estrofas: [
+            [
+                "Tu silueta se abre como un abrazo,",
+                "blanca figura que toca el cielo,",
+                "y en tu calma encuentro el lazo",
+                "que une la tierra con su consuelo."
+            ],
+            [
+                "Eres un hombre de brazos abiertos,",
+                "piel de nube, mirada serena,",
+                "y en tu gesto hallo los caminos",
+                "que me conducen a la luna plena."
+            ],
+            [
+                "El viento acaricia tu frente callada,",
+                "la lluvia besa tu piel de cristal,",
+                "y en tu altura la fe se alza",
+                "como promesa de amor inmortal."
+            ],
+            [
+                "Tus manos son faros de esperanza,",
+                "tu pecho, refugio de eternidad,",
+                "y en tu blancura mi alma descansa",
+                "como quien vuelve a su verdad."
+            ],
+            [
+                "No hay sombra que apague tu brillo,",
+                "ni tiempo que borre tu voz,",
+                "pues en tu figura hallo el hilo",
+                "que ata mi vida a un sueño feroz."
+            ],
+            [
+                "Cada cicatriz del mundo se borra",
+                "cuando tu gesto ilumina el mar,",
+                "y en tu silencio la pena se ahoga",
+                "como un suspiro que vuelve a amar."
+            ],
+            [
+                "No eres templo ni altar distante,",
+                "eres humano, cercano y real,",
+                "y en tu abrazo constante",
+                "aprendo que amar es lo esencial."
             ]
         ]
     },
@@ -1500,7 +1647,7 @@ const poemas = {
         autor: "A. Ssshparro",
         mapa: true,
         objetivoMapa: "Petra",
-        pd: "Pd. En el Tesoro de Petra, el amor también se oculta en la roca. 🏛️❤️",
+        pd: "Pd. En el Tesoro de Piedra, el amor también se oculta en la roca. 🏛️❤️",
         estrofas: [
             [
                 "Entre cañones rojos despierta tu rostro,",
@@ -1533,7 +1680,7 @@ const poemas = {
                 "como un río que nunca deja de andar."
             ],
             [
-                "Así, mi cielo, guardiana del tiempo,",
+                "Así, mi cielo, viajera del tiempo,",
                 "eres santuario de unión y fe,",
                 "y en tu silencio hallo mi gobierno:",
                 "amarte siempre, sin retroceder."

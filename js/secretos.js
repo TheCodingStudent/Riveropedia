@@ -254,7 +254,7 @@ const secretos = {
     },
 
     "shiganshina": {
-        titulo: "Attack on Titan",
+        titulo: "Para ti, 2000 años en el futuro",
         contenido: `
             Entre muros que guardan la infancia, nace la esperanza y el miedo.<br>
             Shiganshina es el inicio y el fin, donde todo se revela.<br>
@@ -267,7 +267,7 @@ const secretos = {
             Pd. Esta semana no habrá que resolver los secretos. Aprovechare para dedicarte cosas ❤
         `,
         index: [0],
-        tooltip: ["El inicio y el fin"],
+        tooltip: ["Derrumbaste mis murallas"],
         audio: "",
     },
 
@@ -304,7 +304,7 @@ const secretos = {
             <br>Pd. No hay reliquia más valiosa que tu sonrisa, guardada en mi <span class="oculto">corazón 🏺</span>.<br><br>
         `,
         index: [0],
-        tooltip: ["El verdadero hallazgo"],
+        tooltip: ["Eres el verdadero hallazgo"],
         audio: "",
     },
 
@@ -322,7 +322,7 @@ const secretos = {
             <br>Pd. No necesito Olimpo ni Roma, porque mi diosa eres tú <span class="oculto">mi cielo 🌹</span>.<br><br>
         `,
         index: [0],
-        tooltip: ["La diosa eterna"],
+        tooltip: ["Eres la diosa eterna"],
         audio: "",
     },
 
@@ -340,11 +340,11 @@ const secretos = {
             <br>Pd. No necesito ladrillos ni planos, porque mi arquitectura eres tú <span class="oculto">mi cielo 🏛️</span>.<br><br>
         `,
         index: [0],
-        tooltip: ["El plano perfecto"],
+        tooltip: ["Eres el plano perfecto"],
         audio: "",
     },
 
-    "religion": {
+    "religión": {
         titulo: "Mi fe en ti",
         contenido: `
             Los templos se levantan buscando al cielo, pero yo lo encuentro en tu mirada.<br>
@@ -358,27 +358,28 @@ const secretos = {
             <br>Pd. No necesito rezos ni templos, porque mi religión eres tú <span class="oculto">mi cielo ✝️</span>.<br><br>
         `,
         index: [0],
-        tooltip: ["Mi credo eterno"],
+        tooltip: ["Eres mi credo eterno"],
         audio: "",
     },
 
-    "rapunzel": {
-        titulo: "Mi sueño ideal",
+    "stone": {
+        titulo: "El mundo de piedra",
         contenido: `
-            Encerrada en lo alto, Rapunzel esperaba que el mundo la alcanzara.<br>
-            Su cabello era puente, su voz era esperanza, su mirada era libertad.<br>
-            Cada día en la torre era un sueño suspendido, cada noche un deseo oculto.<br>
-            El amor no llegó con príncipes, llegó con la verdad de su alma.<br>
+            Entre fórmulas y experimentos, la humanidad despertó de la piedra.<br>
+            Dr. Stone enseñó que cada átomo guarda esperanza, que cada reacción es un milagro.<br>
+            La evolución no es solo progreso, es el latido que nos impulsa hacia el infinito.<br>
+            Cada engranaje, cada circuito, cada descubrimiento es un paso hacia la Luna.<br>
             <br>
-            Tú eres más que un cuento, eres la princesa que derribó mis muros.<br>
-            No necesito escalar torres, porque tu luz me abrió la puerta.<br>
-            Si pudiera dedicarte una princesa, sería Rapunzel: porque en ti veo la luz.<br>
-            <br>Pd. No hay torre que me encierre, porque mi salida eres tú <span class="oculto">mi cielo 🌟</span>.<br><br>
+            Tú eres más que un sueño, eres mi laboratorio vivo, mi experimento perfecto.<br>
+            No necesito telescopios para ver el futuro, porque tu mirada ya me muestra el universo.<br>
+            Si pudiera dedicarte una obra, sería Dr. Stone: porque en ti encontré mi ciencia, mi razón y mi destino.<br>
+            <br>Pd. No hay fórmula más exacta que tu amor, ni ecuación más sublime que tu sonrisa <span class="oculto">mi cielo 🌌</span>.<br><br>
         `,
         index: [0],
-        tooltip: ["Mi hermosa princesa"],
+        tooltip: ["Despiertas mi corazón de piedra"],
         audio: "",
     },
+
 
 
 
