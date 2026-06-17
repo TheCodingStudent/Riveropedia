@@ -271,4 +271,23 @@ const secretos = {
         audio: "",
     },
 
+    "dorado": {
+        titulo: "El viaje hacia El Dorado",
+        contenido: `
+            Entre mapas y leyendas, los conquistadores buscaban una ciudad imposible.<br>
+            El Dorado brillaba en sus sueños, pero nunca en la realidad.<br>
+            Cada río ocultaba promesas, cada selva guardaba misterios.<br>
+            La ambición los cegaba, pero la verdad estaba en otro lugar.<br>
+            <br>
+            Tú eres más brillante que cualquier ciudad de oro, más valiosa que todos sus tesoros.<br>
+            No eres un destino, eres todo un viaje: eterno, mágico y sublime.<br>
+            Si pudiera dedicarte una película, sería esta: porque en ti encontré mi verdadero hallazgo.<br>
+            <br>Pd. El Dorado no está en mapas, está en tu mirada <span class="oculto">mi cielo ✨</span>.<br><br>
+        `,
+        index: [0],
+        tooltip: ["Más brillante que el oro"],
+        audio: "",
+    },
+
+
 };

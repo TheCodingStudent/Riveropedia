@@ -38,7 +38,7 @@ ILOVEU3K
     - Sabado:    Fa  (440Hz * 2^8/12)  = 698.46  A
     - Domingo:   Sol (440Hz * 2^10/12) = 783.99  S
 
-5. Colores del arcoiris
+5. Colores del arcoiris (Ajustar el color)
     - Lunes:     Rojo     (620nm - 750nm)         S
     - Martes:    Naranja  (255, 127, 0)      RGB  P
     - Miercoles: Amarillo (#FFFF00)          HEX  E -> 3

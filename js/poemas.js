@@ -1394,5 +1394,59 @@ const poemas = {
         ]
     },
 
+    "2026-06-16": {
+        fecha: "16 de junio de 2026",
+        titulo: "El Templo de mi Corazón",
+        autor: "A. Ssshparro",
+        mapa: true,
+        objetivoMapa: "Chichen Itza",
+        pd: "Pd. Entre ruinas y estrellas, el amor también se vuelve eterno. 🏛️❤️",
+        estrofas: [
+            [
+                "Entre columnas que rozan el cielo,",
+                "se alza la memoria de un tiempo perdido,",
+                "y en cada sombra que guarda el suelo",
+                "renace tu nombre, jamás vencido."
+            ],
+            [
+                "La pirámide canta con voz callada,",
+                "sus escalones son huellas de pasión,",
+                "y en su cima la luna sagrada",
+                "vigila el secreto de nuestra unión."
+            ],
+            [
+                "El eco resuena en la plaza abierta,",
+                "como susurro que busca tu piel,",
+                "y en cada piedra que aún está despierta",
+                "late un deseo imposible de esconder."
+            ],
+            [
+                "El sol desciende con fuego dorado,",
+                "pintando tu rostro en cada rincón,",
+                "y en ese instante quedo atrapado,",
+                "prisionero eterno de tu corazón."
+            ],
+            [
+                "La historia se escribe en muros antiguos,",
+                "con jeroglíficos de amor y dolor,",
+                "pero entre ruinas y dioses testigos",
+                "solo tu abrazo me da valor."
+            ],
+            [
+                "La lujuria arde como rito secreto,",
+                "un sacrificio que nunca cesó,",
+                "y en tu mirada encuentro el amuleto",
+                "que la eternidad me prometió."
+            ],
+            [
+                "Así, entre templos y estrellas vivas,",
+                "mi alma se funde con tu altar,",
+                "pues este culto guarda nuestras vidas,",
+                "y en su silencio nos vuelve inmortal."
+            ]
+        ]
+    },
+
+
 
 };

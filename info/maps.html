@@ -41,14 +41,15 @@
 
         // Lista de maravillas con coordenadas y letras
         const maravillas = [
-            { nombre: "Gran Muralla China", coords: [40.4319, 116.570], letra: "I", secreto: "Shiganshina",},
-            { nombre: "Chichen Itza",       coords: [20.6843, -88.567], letra: "N" },
-            { nombre: "Machu Picchu",       coords: [-13.163, -72.545], letra: "D" },
-            { nombre: "Petra",              coords: [30.3285, 35.4444], letra: "I" },
-            { nombre: "Taj Mahal",          coords: [27.1751, 78.0421], letra: "A" },
-            { nombre: "Coliseo Romano",     coords: [41.8902, 12.4922], letra: "N" },
-            { nombre: "Cristo Redentor",    coords: [-22.951, -43.210], letra: "A" }
+            { nombre: "Gran Muralla China", coords: [ 40.4314,  116.5644], letra: "I", zoom: 16, secreto: "Shiganshina" },
+            { nombre: "Chichen Itza",       coords: [ 20.6831, -88.5686],  letra: "N", zoom: 16, secreto: "Dorado" },
+            { nombre: "Machu Picchu",       coords: [-13.1631, -72.5451],  letra: "D", zoom: 16 },
+            { nombre: "Petra",              coords: [ 30.3207,  35.4839],  letra: "I", zoom: 16 },
+            { nombre: "Taj Mahal",          coords: [ 27.1739,  78.0421],  letra: "A", zoom: 16 },
+            { nombre: "Coliseo Romano",     coords: [ 41.8902,  12.4922],  letra: "N", zoom: 16 },
+            { nombre: "Cristo Redentor",    coords: [-22.9519, -43.2105],  letra: "A", zoom: 16 }
         ];
+
 
         // Si existe, buscarlo en la lista de maravillas
         let objetivo = null;
@@ -66,13 +67,11 @@
             objetivoMarker.bindPopup(`<b>${objetivo.nombre}</b><br>Tu objetivo secreto.<br><b style="color: var(--rosa-dark);">${objetivo.letra}</b><br><small>Pd. ${objetivo.secreto}</small>`);
 
             objetivoMarker.on('click', () => {
-                map.setView(objetivo.coords, 10); // acercar al objetivo
+                map.setView(objetivo.coords, objetivo.zoom);
                 document.getElementById('coords').textContent =
                     `Coordenadas: ${objetivo.coords[0].toFixed(4)}, ${objetivo.coords[1].toFixed(4)}`;
             });
 
-            // Opcional: centrar el mapa en el objetivo al cargar
-            // map.setView(objetivo.coords, 4);
         }
 
         // Mostrar coordenadas al hacer clic en cualquier parte del mapa
@@ -129,7 +128,7 @@
             const color = `rgb(${r},${g},0)`;
 
             const coordsEl = document.getElementById('coords');
-            coordsEl.textContent = `Coordenadas: ${latAbs}° ${latDir}, ${lngAbs}° ${lngDir} ${ map.getZoom()}`;
+            coordsEl.textContent = `Coordenadas: ${latAbs}° ${latDir}, ${lngAbs}° ${lngDir} ${map.getZoom()}`;
             coordsEl.style.color = color;
         });
 
