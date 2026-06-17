@@ -1447,6 +1447,102 @@ const poemas = {
         ]
     },
 
+    "2026-06-17": {
+        fecha: "17 de junio de 2026",
+        titulo: "Santuario del Cielo",
+        autor: "A. Ssshparro",
+        mapa: true,
+        objetivoMapa: "Machu Picchu",
+        pd: "Pd. Entre montañas y nubes, el amor se vuelve eterno. ⛰️❤️",
+        estrofas: [
+            [
+                "Entre montañas que rozan el alba,",
+                "se alza tu sombra de piedra sagrada,",
+                "como un suspiro que nunca acaba,",
+                "como un refugio de alma enamorada."
+            ],
+            [
+                "Tus muros guardan secretos antiguos,",
+                "susurros de dioses y voces perdidas,",
+                "y en tu silencio hallo caminos,",
+                "que me conducen a tus heridas."
+            ],
+            [
+                "El sol corona tu cima dorada,",
+                "pintando tu rostro con fuego divino,",
+                "y en ese instante, mi alma atrapada",
+                "se rinde al destino que es tu camino."
+            ],
+            [
+                "Cada terraza es poema escondido,",
+                "cada escalón, un verso de amor,",
+                "y en tu altura me siento erguido,",
+                "como quien toca la eternidad mayor."
+            ],
+            [
+                "La historia respira en tus piedras vivas,",
+                "la memoria se enciende en tu altar,",
+                "y entre tus ruinas mi espíritu gira,",
+                "como un río que nunca deja de andar."
+            ],
+            [
+                "Así, Machu Picchu, guardián eterno,",
+                "eres santuario de unión y fe,",
+                "y en tu silencio hallo mi gobierno:",
+                "amarte siempre, sin retroceder."
+            ]
+        ]
+    },
+
+    "2026-06-21": {
+        fecha: "21 de junio de 2026",
+        titulo: "El Tesoro de Piedra",
+        autor: "A. Ssshparro",
+        mapa: true,
+        objetivoMapa: "Petra",
+        pd: "Pd. En el Tesoro de Petra, el amor también se oculta en la roca. 🏛️❤️",
+        estrofas: [
+            [
+                "Entre cañones rojos despierta tu rostro,",
+                "un templo tallado que guarda la vida,",
+                "y en cada grieta se esconde el costo",
+                "de un amor eterno que nunca se olvida."
+            ],
+            [
+                "El Tesoro brilla en la roca encendida,",
+                "como secreto que el tiempo protege,",
+                "y en su fachada mi alma perdida",
+                "encuentra refugio que nunca se aleje."
+            ],
+            [
+                "El sol desciende y tiñe tu arena,",
+                "pintando tu piel con fuego dorado,",
+                "y en ese instante mi alma se llena",
+                "de un deseo que nunca ha callado."
+            ],
+            [
+                "Cada columna es verso tallado,",
+                "cada fachada, un canto de amor,",
+                "y en tu sombra quedo abrazado,",
+                "como quien toca lo eterno mayor."
+            ],
+            [
+                "La historia respira en tu piedra viva,",
+                "la memoria se enciende en tu altar,",
+                "y entre tus ruinas mi espíritu gira,",
+                "como un río que nunca deja de andar."
+            ],
+            [
+                "Así, mi cielo, guardiana del tiempo,",
+                "eres santuario de unión y fe,",
+                "y en tu silencio hallo mi gobierno:",
+                "amarte siempre, sin retroceder."
+            ]
+        ]
+    },
+
+
+
 
 
 };

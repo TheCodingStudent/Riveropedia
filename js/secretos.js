@@ -289,5 +289,97 @@ const secretos = {
         audio: "",
     },
 
+    "jones": {
+        titulo: "El arqueólogo del alma",
+        contenido: `
+            Entre ruinas y templos olvidados, la aventura siempre lo esperaba.<br>
+            Indiana Jones buscaba reliquias, pero hallaba historias más grandes.<br>
+            Cada mapa era un misterio, cada hallazgo un fragmento de eternidad.<br>
+            El peligro era su compañero, pero la verdad su destino.<br>
+            <br>
+            Tú eres más que una investigadora, eres la arqueóloga que desenterró mi corazón.<br>
+            No buscaste oro ni poder, sino el latido oculto bajo mis sombras.<br>
+            Eres todo un viaje: épico, arriesgado y sublime.<br>
+            Si pudiera dedicarte una saga, sería esta: porque en ti encontré mi tesoro más profundo.<br>
+            <br>Pd. No hay reliquia más valiosa que tu sonrisa, guardada en mi <span class="oculto">corazón 🏺</span>.<br><br>
+        `,
+        index: [0],
+        tooltip: ["El verdadero hallazgo"],
+        audio: "",
+    },
+
+    "afrodita": {
+        titulo: "La diosa de mi amor",
+        contenido: `
+            Nacida de la espuma, Afrodita emergió como promesa de deseo.<br>
+            En Grecia fue belleza, en Roma se convirtió en poder.<br>
+            Venus guardó victorias, Afrodita inspiró pasiones eternas.<br>
+            Entre palomas y rosas, su nombre se convirtió en mito.<br>
+            <br>
+            Tú eres más que un mito, eres la diosa que habita mi mundo.<br>
+            No hay templo que pueda contener tu luz, ni murallas que oculten tu encanto.<br>
+            Si pudiera dedicarte una divinidad, sería Afrodita: porque en ti encontré el amor y la belleza.<br>
+            <br>Pd. No necesito Olimpo ni Roma, porque mi diosa eres tú <span class="oculto">mi cielo 🌹</span>.<br><br>
+        `,
+        index: [0],
+        tooltip: ["La diosa eterna"],
+        audio: "",
+    },
+
+    "arquitectura": {
+        titulo: "El plano de mi amor",
+        contenido: `
+            Cada arco sostiene más que piedra, sostiene promesas invisibles.<br>
+            Las columnas no se alzan solas, se elevan como mi corazón cuando te pienso.<br>
+            Los muros guardan historias, pero contigo se convierten en ventanas abiertas.<br>
+            La bóveda no cubre el cielo, lo revela en tu mirada.<br>
+            <br>
+            Amo la arquitectura porque es orden y belleza, pero en ti descubrí su secreto.<br>
+            Tú eres mi plano perfecto, mi estructura eterna, mi diseño sublime.<br>
+            Si pudiera dedicarte una obra, sería esta: porque en ti se construye mi mundo.<br>
+            <br>Pd. No necesito ladrillos ni planos, porque mi arquitectura eres tú <span class="oculto">mi cielo 🏛️</span>.<br><br>
+        `,
+        index: [0],
+        tooltip: ["El plano perfecto"],
+        audio: "",
+    },
+
+    "religion": {
+        titulo: "Mi fe en ti",
+        contenido: `
+            Los templos se levantan buscando al cielo, pero yo lo encuentro en tu mirada.<br>
+            Las oraciones viajan en silencio, pero mi plegaria eres tú.<br>
+            Cada altar guarda símbolos sagrados, pero mi santuario es tu abrazo.<br>
+            La fe sostiene a los hombres, pero tú sostienes mi alma.<br>
+            <br>
+            Amo la religión porque habla de esperanza, pero en ti descubrí su verdad.<br>
+            Tú eres mi credo, mi milagro, mi eternidad.<br>
+            Si pudiera profesar una religión, serías tú: porque en ti hallé lo divino.<br>
+            <br>Pd. No necesito rezos ni templos, porque mi religión eres tú <span class="oculto">mi cielo ✝️</span>.<br><br>
+        `,
+        index: [0],
+        tooltip: ["Mi credo eterno"],
+        audio: "",
+    },
+
+    "rapunzel": {
+        titulo: "Mi sueño ideal",
+        contenido: `
+            Encerrada en lo alto, Rapunzel esperaba que el mundo la alcanzara.<br>
+            Su cabello era puente, su voz era esperanza, su mirada era libertad.<br>
+            Cada día en la torre era un sueño suspendido, cada noche un deseo oculto.<br>
+            El amor no llegó con príncipes, llegó con la verdad de su alma.<br>
+            <br>
+            Tú eres más que un cuento, eres la princesa que derribó mis muros.<br>
+            No necesito escalar torres, porque tu luz me abrió la puerta.<br>
+            Si pudiera dedicarte una princesa, sería Rapunzel: porque en ti veo la luz.<br>
+            <br>Pd. No hay torre que me encierre, porque mi salida eres tú <span class="oculto">mi cielo 🌟</span>.<br><br>
+        `,
+        index: [0],
+        tooltip: ["Mi hermosa princesa"],
+        audio: "",
+    },
+
+
 
 };
