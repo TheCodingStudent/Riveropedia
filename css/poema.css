@@ -359,6 +359,126 @@
     opacity: 1;
 }
 
+/* Piano flotante: solo se crea cuando el poema del dia tiene piano: true. */
+body.piano-activo .poema-container {
+    padding-bottom: 190px;
+}
+
+.piano-flotante {
+    --ancho-blanca: clamp(38px, 7vw, 68px);
+    position: fixed;
+    z-index: 2100;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 13px 13px;
+    border: 1px solid rgba(255, 255, 255, .42);
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(255, 235, 244, .82), rgba(255, 255, 255, .7));
+    box-shadow: 0 16px 45px rgba(92, 34, 60, .22), inset 0 1px 0 rgba(255, 255, 255, .7);
+    backdrop-filter: blur(18px);
+    opacity: .12;
+    transition: opacity .35s ease, transform .35s ease, box-shadow .35s ease;
+}
+
+.piano-flotante:hover,
+.piano-flotante:focus-within {
+    opacity: .96;
+    transform: translateX(-50%) translateY(-3px);
+    box-shadow: 0 20px 55px rgba(92, 34, 60, .3), inset 0 1px 0 rgba(255, 255, 255, .8);
+}
+
+.piano-adorno {
+    color: var(--rosa-dark);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.piano-teclas {
+    position: relative;
+    display: flex;
+    height: clamp(94px, 17vw, 132px);
+}
+
+.piano-tecla {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .07s ease, background .12s ease, box-shadow .12s ease;
+}
+
+.piano-tecla.blanca {
+    position: relative;
+    width: var(--ancho-blanca);
+    height: 100%;
+    border: 1px solid rgba(105, 58, 76, .24);
+    border-radius: 0 0 9px 9px;
+    background: linear-gradient(to bottom, #fff 0%, #fff7fa 78%, #f3dce6 100%);
+    box-shadow: inset 0 -7px 10px rgba(113, 58, 80, .09), 0 3px 3px rgba(65, 29, 43, .16);
+    color: #8c5268;
+}
+
+.piano-tecla.blanca:first-child { border-radius: 7px 0 9px 9px; }
+.piano-tecla.blanca:last-child { border-radius: 0 7px 9px 9px; }
+
+.piano-tecla.negra {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: calc(var(--posicion) * var(--ancho-blanca) - var(--ancho-blanca) * .3);
+    width: calc(var(--ancho-blanca) * .6);
+    height: 62%;
+    border: 1px solid rgba(255, 255, 255, .13);
+    border-radius: 0 0 7px 7px;
+    background: linear-gradient(145deg, #58303f, #24151c 72%);
+    box-shadow: inset 0 -6px 8px rgba(0, 0, 0, .35), 0 4px 5px rgba(48, 23, 32, .34);
+    color: #f9dce7;
+}
+
+.piano-nota {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    left: 0;
+    font-size: clamp(.58rem, 1.6vw, .72rem);
+    font-weight: 700;
+    pointer-events: none;
+    user-select: none;
+}
+
+.piano-tecla.negra .piano-nota {
+    bottom: 6px;
+    font-size: clamp(.48rem, 1.3vw, .62rem);
+}
+
+.piano-tecla:hover { filter: brightness(.98); }
+.piano-tecla:focus-visible { outline: 3px solid rgba(255, 79, 135, .65); outline-offset: 2px; }
+.piano-tecla.blanca.activa { transform: translateY(3px); background: linear-gradient(#ffe8f1, #f4bdd2); }
+.piano-tecla.negra.activa { transform: translateY(2px); background: linear-gradient(#8c4c65, #3a202a); }
+
+@media (max-width: 430px) {
+    .piano-flotante {
+        --ancho-blanca: calc((100vw - 32px) / 7);
+        bottom: 8px;
+        max-width: calc(100vw - 8px);
+        padding: 8px 8px 10px;
+        border-radius: 16px;
+    }
+
+    .piano-adorno { font-size: .58rem; }
+}
+
 
 /* @media (max-width: 720px) {
     .poema-container { padding: 0 14px 44px; }

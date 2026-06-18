@@ -1593,7 +1593,7 @@ const poemas = {
         titulo: "El Guardián del Horizonte",
         autor: "A. Ssshparro",
         mapa: true,
-        objetivoMapa: "Estatua en la cima",
+        objetivoMapa: "Cristo Redentor",
         pd: "Pd. Tu abrazo blanco sostiene el mundo. 🌅",
         estrofas: [
             [
@@ -1687,6 +1687,66 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-06-22": {
+        fecha: "21 de junio de 2026",
+        titulo: "Donde Renace Mi Fantasía",
+        autor: "A. Ssshparro",
+        piano: true,
+        song: ["Do", "Re", "Mi", "Fa"],
+        pd: "Pd. Cada nota es un latido eterno. 🎼",
+        estrofas: [
+            [
+                "DOnde renace mi fantasía,",
+                "se abre un camino de luz dorada,",
+                "y en cada nota la melodía",
+                "despierta un alma enamorada."
+            ],
+            [
+                "REcuerdo eterno que nunca muere,",
+                "susurra al viento tu voz callada,",
+                "y en cada eco mi fe se quiere",
+                "como promesa jamás quebrada."
+            ],
+            [
+                "MIro tus ojos, espejos de cielo,",
+                "destellos puros de claridad,",
+                "y en tu reflejo hallo el consuelo",
+                "que me devuelve la verdad."
+            ],
+            [
+                "FAro que guía mi pensamiento,",
+                "brillas constante sobre el mar,",
+                "y en tu fulgor hallo el aliento",
+                "que me permite siempre soñar."
+            ],
+            [
+                "SOLo tu latido me sostiene,",
+                "como columna de eternidad,",
+                "y en tu abrazo mi ser se entretiene",
+                "con la certeza de tu bondad."
+            ],
+            [
+                "LA vida entera se abre en tu canto,",
+                "latido suave que sabe cuidar,",
+                "y en tu ternura descubro tanto",
+                "que ya no puedo dejar de amar."
+            ],
+            [
+                "SIempre tu nombre será mi destino,",
+                "como un secreto que nunca se va,",
+                "y en tu silencio hallo el camino",
+                "que me conduce a la eternidad."
+            ],
+            [
+                "Notas sagradas, música divina,",
+                "DO, RE, MI, FA, SOL, LA, SI,",
+                "cada sonido mi alma ilumina,",
+                "y en tu armonía me quedo aquí."
+            ]
+        ]
+    },
+
 
 
 

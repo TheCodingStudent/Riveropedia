@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de ondas</title>
+</head>
+
+<body>
+    <h2>Generador de ondas en tiempo real</h2>
+    <label>Frecuencia (Hz):
+        <input type="number" id="freq" value="440" min="20" max="2000">
+    </label>
+    <button id="start">Iniciar</button>
+    <button id="stop">Detener</button>
+
+    <script>
+        let audioCtx;
+        let oscillator;
+
+        document.getElementById("start").onclick = () => {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            oscillator = audioCtx.createOscillator();
+            oscillator.type = "sine"; // tipos: sine, square, sawtooth, triangle
+            oscillator.frequency.value = document.getElementById("freq").value;
+            oscillator.connect(audioCtx.destination);
+            oscillator.start();
+        };
+
+        document.getElementById("stop").onclick = () => {
+            if (oscillator) {
+                oscillator.stop();
+                oscillator.disconnect();
+            }
+        };
+
+        document.getElementById("freq").oninput = (e) => {
+            if (oscillator) {
+                oscillator.frequency.value = e.target.value;
+            }
+        };
+    </script>
+</body>
+
+</html>

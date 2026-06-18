@@ -29,7 +29,7 @@ ILOVEU3K
     - Sabado:    Cristo redentor    (22.9519° S, 43.2105° W, Religion)     N
     - Doming:    Petra              (30.3285° N, 35.4444° E, Jones)        A
 
-4. Notas Musicales (Ajuste de frecuencias)
+4. Notas Musicales (piano)
     - Lunes:     La  (440Hz)           = 440     O
     - Martes:    Si  (440Hz * 2^2/12)  = 493.88  C
     - Miercoles: Do  (440Hz * 2^3/12)  = 523.25  T
