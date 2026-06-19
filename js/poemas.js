@@ -1345,6 +1345,7 @@ const poemas = {
         fecha: "15 de junio de 2026",
         titulo: "La Muralla del Amor",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🏯", color: "#7f2f2f", escala: 0.65 },
         mapa: true,
         objetivoMapa: "Gran Muralla China",
         pd: "Pd. Para ti, 2000 años en el futuro ❤",
@@ -1398,6 +1399,7 @@ const poemas = {
         fecha: "16 de junio de 2026",
         titulo: "El Templo de mi Corazón",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🌞", color: "#7f2f2f", escala: 0.65 },
         mapa: true,
         objetivoMapa: "Chichen Itza",
         pd: "Pd. Entre ruinas y estrellas, el amor también se vuelve eterno. 🏛️❤️",
@@ -1451,6 +1453,7 @@ const poemas = {
         fecha: "17 de junio de 2026",
         titulo: "Santuario del Cielo",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🏔️", color: "#3b6b3b", escala: 0.7 },
         mapa: true,
         objetivoMapa: "Machu Picchu",
         pd: "Pd. Entre montañas y nubes, el amor se vuelve eterno. ⛰️❤️",
@@ -1498,6 +1501,7 @@ const poemas = {
         fecha: "18 de junio de 2026",
         titulo: "La Dama de Mármol",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🕌", color: "#5c5c9d", escala: 0.7 },
         mapa: true,
         objetivoMapa: "Taj Mahal",
         pd: "Pd. Mujer de mármol, tu blancura es mi eternidad. 🤍🏰",
@@ -1545,6 +1549,7 @@ const poemas = {
         fecha: "19 de junio de 2026",
         titulo: "El Hombre de Piedra",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🏛️", color: "#a0522d", escala: 0.7 },
         mapa: true,
         objetivoMapa: "Coliseo Romano",
         pd: "Pd. Hombre eterno, tus cicatrices son versos que nunca mueren. 🗡️",
@@ -1592,6 +1597,7 @@ const poemas = {
         fecha: "20 de junio de 2026",
         titulo: "El Guardián del Horizonte",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "✝️", color: "#2f4f4f", escala: 0.7 },
         mapa: true,
         objetivoMapa: "Cristo Redentor",
         pd: "Pd. Tu abrazo blanco sostiene el mundo. 🌅",
@@ -1645,6 +1651,7 @@ const poemas = {
         fecha: "21 de junio de 2026",
         titulo: "El Tesoro de Piedra",
         autor: "A. Ssshparro",
+        calendarioIcono: { valor: "🏜️", color: "#d2691e", escala: 0.7 },
         mapa: true,
         objetivoMapa: "Petra",
         pd: "Pd. En el Tesoro de Piedra, el amor también se oculta en la roca. 🏛️❤️",
@@ -1746,10 +1753,5 @@ const poemas = {
             ]
         ]
     },
-
-
-
-
-
 
 };
