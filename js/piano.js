@@ -61,6 +61,14 @@
 
     let audioCtx;
     const voces = new Map();
+    const armonicosPiano = [
+        { multiplicador: 1, amplitud: 1 },
+        // { multiplicador: 2, amplitud: .42 },
+        // { multiplicador: 3, amplitud: .22 },
+        // { multiplicador: 4, amplitud: .12 },
+        // { multiplicador: 5, amplitud: .07 },
+        // { multiplicador: 6, amplitud: .04 }
+    ];
 
     const iniciarNota = async (tecla, pointerId) => {
         if (voces.has(pointerId)) return false;
@@ -68,15 +76,32 @@
         if (audioCtx.state === "suspended") await audioCtx.resume();
 
         const ahora = audioCtx.currentTime;
-        const oscilador = audioCtx.createOscillator();
         const ganancia = audioCtx.createGain();
-        oscilador.type = "sine";
-        oscilador.frequency.setValueAtTime(Number(tecla.dataset.frecuencia), ahora);
+        const filtro = audioCtx.createBiquadFilter();
+        const frecuenciaBase = Number(tecla.dataset.frecuencia);
+        const osciladores = armonicosPiano.map(({ multiplicador, amplitud }, index) => {
+            const oscilador = audioCtx.createOscillator();
+            const gananciaArmonico = audioCtx.createGain();
+            oscilador.type = "sine";
+            oscilador.frequency.setValueAtTime(frecuenciaBase * multiplicador, ahora);
+            oscilador.detune.setValueAtTime(index ? (index % 2 ? 1.8 : -1.2) : 0, ahora);
+            gananciaArmonico.gain.setValueAtTime(amplitud, ahora);
+            oscilador.connect(gananciaArmonico).connect(ganancia);
+            oscilador.start(ahora);
+            return oscilador;
+        });
+
+        filtro.type = "lowpass";
+        filtro.frequency.setValueAtTime(5200, ahora);
+        filtro.frequency.exponentialRampToValueAtTime(2400, ahora + .45);
+        filtro.Q.setValueAtTime(.7, ahora);
+
         ganancia.gain.setValueAtTime(.0001, ahora);
-        ganancia.gain.exponentialRampToValueAtTime(.22, ahora + .025);
-        oscilador.connect(ganancia).connect(audioCtx.destination);
-        oscilador.start(ahora);
-        voces.set(pointerId, { oscilador, ganancia, tecla });
+        ganancia.gain.exponentialRampToValueAtTime(.18, ahora + .012);
+        ganancia.gain.exponentialRampToValueAtTime(.065, ahora + .32);
+        ganancia.gain.exponentialRampToValueAtTime(.028, ahora + 1.7);
+        ganancia.connect(filtro).connect(audioCtx.destination);
+        voces.set(pointerId, { osciladores, ganancia, tecla });
         tecla.classList.add("activa");
         piano.classList.add("piano-despierto");
         clearTimeout(despertarTimer);
@@ -89,8 +114,8 @@
         const ahora = audioCtx.currentTime;
         voz.ganancia.gain.cancelScheduledValues(ahora);
         voz.ganancia.gain.setValueAtTime(Math.max(voz.ganancia.gain.value, .0001), ahora);
-        voz.ganancia.gain.exponentialRampToValueAtTime(.0001, ahora + .12);
-        voz.oscilador.stop(ahora + .13);
+        voz.ganancia.gain.exponentialRampToValueAtTime(.0001, ahora + .18);
+        voz.osciladores.forEach(oscilador => oscilador.stop(ahora + .19));
         voz.tecla.classList.remove("activa");
         voces.delete(pointerId);
         if (!voces.size) {

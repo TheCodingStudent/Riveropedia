@@ -1700,7 +1700,11 @@ const poemas = {
         titulo: "Estrellita, ¿Dónde Estás?",
         autor: "A. Ssshparro",
         piano: true,
-        song: ["Do", "Do", "Sol", "Sol", "La", "La", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Re", "Do", "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Do", "Do", "Sol", "Sol", "La", "La", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Re", "Do"],
+        song: ["Do", "Do", "Sol", "Sol", "La", "La", "Sol", "Fa",
+            "Fa", "Mi", "Mi", "Re", "Re", "Do", "Sol", "Sol", "Fa",
+            "Fa", "Mi", "Mi", "Re", "Sol", "Sol", "Fa", "Fa", "Mi",
+            "Mi", "Re", "Do", "Do", "Sol", "Sol", "La", "La", "Sol",
+            "Fa", "Fa", "Mi", "Mi", "Re", "Re", "Do"],
         pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
         estrofas: [
             [
@@ -1746,6 +1750,93 @@ const poemas = {
                 "<i><b>Do</b></i>nde estas, estrellita, ven: soy tu noche encendida."
             ]
         ]
-    }
+    },
 
-};
+    "2026-06-23": {
+        fecha: "23 de junio de 2026",
+        titulo: "Himno a mi alegría",
+        autor: "A. Ssshparro",
+        piano: true,
+        song: ["Mi", "Mi", "Fa", "Sol", "Sol", "Fa", "Mi", "Re",
+            "Do", "Do", "Re", "Mi", "Mi", "Re", "Re",
+            "Mi", "Mi", "Fa", "Sol", "Sol", "Fa", "Mi", "Re",
+            "Do", "Do", "Re", "Mi", "Re", "Do", "Do"],
+        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
+        estrofas: []
+    },
+
+    "2026-06-24": {
+        fecha: "24 de junio de 2026",
+        titulo: "María tenía un angelito",
+        autor: "A. Ssshparro",
+        piano: true,
+        song: ["Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
+            "Re", "Re", "Re", "Mi", "Sol", "Sol",
+            "Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
+            "Mi", "Re", "Re", "Mi", "Re", "Do"],
+        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
+        estrofas: []
+    },
+
+    "2026-06-25": {
+        fecha: "25 de junio de 2026",
+        titulo: "El viejo Chaparro tenía una granja",
+        autor: "A. Ssshparro",
+        piano: true,
+        song: ["Do", "Do", "Do", "Sol", "La", "La", "Sol",
+            "Mi", "Mi", "Re", "Re", "Do",
+            "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re",
+            "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re",
+            "Do", "Do", "Do", "Sol", "La", "La", "Sol"],
+        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
+        estrofas: []
+    },
+
+    "2026-06-26": {
+        fecha: "26 de junio de 2026",
+        titulo: "Armando es un muñeco",
+        autor: "A. Ssshparro",
+        piano: true,
+        song: [
+            "Sol", "Si", "Sol", "Mi", "Fa", "Sol", "Sol",
+            "Sol", "Si", "Sol", "Mi", "Fa", "Sol", "Sol",
+            "Do", "Re", "Mi", "Fa", "Sol", "Sol",
+            "La", "Sol", "Fa", "Mi", "Re", "Do",
+            "Sol", "Si", "Sol", "Mi", "Fa", "Sol", "Sol",
+            "Sol", "Si", "Sol", "Mi", "Fa", "Sol", "Sol",
+            "Do", "Re", "Mi", "Fa", "Sol", "Sol",
+            "La", "Sol", "Fa", "Mi", "Re", "Do"
+        ],
+        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
+        estrofas: []
+    },
+
+    "2026-06-27": {
+        fecha: "27 de junio de 2026",
+        titulo: "La cucarasssha",
+        autor: "A. Ssshparro",
+        piano: true,
+        song: ["Do", "Do", "Do", "Fa", "La",
+            "Do", "Do", "Do", "Fa", "La",
+            "Fa", "Fa", "Mi", "Mi", "Re", "Re", "Do"],
+        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
+        estrofas: []
+    },
+
+    "2026-06-28": {
+        fecha: "28 de junio de 2026",
+        titulo: "Mi cielito lindo",
+        autor: "A. Ssshparro",
+        piano: true,
+        song: [
+            "Si", "Si", "La", "Si", "Sol",
+            "Si", "Si", "La", "Si", "Sol",
+            "Si", "Si", "La", "Si", "Sol", "Fa", "Re",
+            "Si", "Si", "Si", "La", "Sol", "Fa",
+            "Fa", "Re", "Mi", "Fa", "Sol",
+            "Sol", "Sol", "Fa", "Mi", "Re", "Do"
+        ],
+        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
+        estrofas: []
+    },
+}
