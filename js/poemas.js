@@ -1696,62 +1696,56 @@ const poemas = {
     },
 
     "2026-06-22": {
-        fecha: "21 de junio de 2026",
-        titulo: "Donde Renace Mi Fantasía",
+        fecha: "22 de junio de 2026",
+        titulo: "Estrellita, ¿Dónde Estás?",
         autor: "A. Ssshparro",
         piano: true,
-        song: ["Do", "Re", "Mi", "Fa"],
-        pd: "Pd. Cada nota es un latido eterno. 🎼",
+        song: ["Do", "Do", "Sol", "Sol", "La", "La", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Re", "Do", "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Do", "Do", "Sol", "Sol", "La", "La", "Sol", "Fa", "Fa", "Mi", "Mi", "Re", "Re", "Do"],
+        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
         estrofas: [
             [
-                "DOnde renace mi fantasía,",
-                "se abre un camino de luz dorada,",
-                "y en cada nota la melodía",
-                "despierta un alma enamorada."
+                "<i><b>Do</b></i>nde la noche se inclina, te busco encendida,",
+                "en mi pecho enama<i><b>do</b></i> tu nombre respira,",
+                "eres mi <i><b>sol</b></i> secreto, mi con<i><b>sol</b></i>acion prohibida,",
+                "y <i><b>la</b></i> luna se rinde si <i><b>la</b></i> nombro junto a tu vida."
             ],
             [
-                "REcuerdo eterno que nunca muere,",
-                "susurra al viento tu voz callada,",
-                "y en cada eco mi fe se quiere",
-                "como promesa jamás quebrada."
+                "Como <i><b>sol</b></i> en mis venas, me incendias sin medida,",
+                "tu <i><b>fa</b></i>ro me reclama, tu <i><b>fa</b></i>z me desvaria,",
+                "eres <i><b>mi</b></i> sed primera, <i><b>mi</b></i> fiebre consentida,",
+                "y <i><b>re</b></i>greso a tus brazos aunque arda la agonia."
             ],
             [
-                "MIro tus ojos, espejos de cielo,",
-                "destellos puros de claridad,",
-                "y en tu reflejo hallo el consuelo",
-                "que me devuelve la verdad."
+                "Te <i><b>re</b></i>zo con los labios cuando el cielo se vacia,",
+                "<i><b>Do</b></i>nde estes, estrellita, mi alma te seguiria,",
+                "si tu <i><b>sol</b></i> me corona y tu con<i><b>sol</b></i>acion me guia,",
+                "mi <i><b>fa</b></i>ntasia se abre, mi <i><b>fa</b></i>lta se hace poesia."
             ],
             [
-                "FAro que guía mi pensamiento,",
-                "brillas constante sobre el mar,",
-                "y en tu fulgor hallo el aliento",
-                "que me permite siempre soñar."
+                "Porque <i><b>mi</b></i> piel te llama, porque <i><b>mi</b></i> voz te ansia,",
+                "cada <i><b>re</b></i>lampago aprende la forma de tu alegria,",
+                "y el <i><b>sol</b></i> de tus pupilas, con su fulgor de osadia,",
+                "me con<i><b>sol</b></i>a y me quema; tu <i><b>fa</b></i>lta es mi melodia."
             ],
             [
-                "SOLo tu latido me sostiene,",
-                "como columna de eternidad,",
-                "y en tu abrazo mi ser se entretiene",
-                "con la certeza de tu bondad."
+                "Sin tu <i><b>fa</b></i>vor de astro, la noche se enfria,",
+                "pero <i><b>mi</b></i> sangre canta y <i><b>mi</b></i> deseo porfia,",
+                "por <i><b>re</b></i>tener tu brillo cuando el alba lo desvia,",
+                "y en tu <i><b>do</b></i>rada boca mi mun<i><b>do</b></i> renacia."
             ],
             [
-                "LA vida entera se abre en tu canto,",
-                "latido suave que sabe cuidar,",
-                "y en tu ternura descubro tanto",
-                "que ya no puedo dejar de amar."
+                "Ven, <i><b>sol</b></i> de medianoche, mi con<i><b>sol</b></i>acion tardia,",
+                "baja a <i><b>la</b></i> tierra ardiente, a <i><b>la</b></i> llama de mi vida,",
+                "hazte <i><b>sol</b></i> en mis sombras, desnuda y encendida,",
+                "y en mi <i><b>fa</b></i>ntasma antiguo siembra tu valentia."
             ],
             [
-                "SIempre tu nombre será mi destino,",
-                "como un secreto que nunca se va,",
-                "y en tu silencio hallo el camino",
-                "que me conduce a la eternidad."
-            ],
-            [
-                "Notas sagradas, música divina,",
-                "DO, RE, MI, FA, SOL, LA, SI,",
-                "cada sonido mi alma ilumina,",
-                "y en tu armonía me quedo aquí."
+                "Tu <i><b>fa</b></i>ro me desnuda de toda lejania,",
+                "y <i><b>mi</b></i> corazon declara que <i><b>mi</b></i> eternidad serias,",
+                "te <i><b>re</b></i>clamo en cada estrella, te <i><b>re</b></i>cibo cuando brillas,",
+                "<i><b>Do</b></i>nde estas, estrellita, ven: soy tu noche encendida."
             ]
         ]
-    },
+    }
 
 };
