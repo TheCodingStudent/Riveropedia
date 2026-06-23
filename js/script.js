@@ -42,8 +42,8 @@ function navegarBusqueda() {
             location.href = BASE + "Secrets/camelot.html";
             return;
         }
-        else if (palabra === "marqués") {
-            location.href = BASE + "Secrets/marques.html";
+        else if (palabra === "caminos") {
+            location.href = BASE + "Secrets/caminos.html";
             return;
         }
 
