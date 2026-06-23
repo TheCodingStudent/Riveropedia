@@ -143,6 +143,7 @@
         if (secretoMostrado) return;
         secretoMostrado = true;
         const secreto = poemaPiano.secretoPiano || {};
+        const mensajeSecreto = poemaPiano.mensaje || secreto.mensaje || "Tocaste lo que el poema guardaba en silencio.";
         const modal = document.createElement("div");
         modal.className = "piano-secreto";
         modal.innerHTML = `
@@ -150,9 +151,11 @@
                 <button class="piano-secreto-cerrar" type="button" aria-label="Cerrar secreto">×</button>
                 <div class="piano-secreto-brillo" aria-hidden="true">✦</div>
                 <h3>${secreto.titulo || "La canción escondida"}</h3>
-                <p>${secreto.mensaje || "Tocaste lo que el poema guardaba en silencio."}</p>
+                <p class="piano-secreto-intro">Tocaste lo que el poema guardaba en silencio.</p>
+                <p class="piano-secreto-mensaje"><strong></strong></p>
             </div>
         `;
+        modal.querySelector(".piano-secreto-mensaje strong").textContent = mensajeSecreto;
         document.body.appendChild(modal);
         modal.querySelector(".piano-secreto-cerrar").focus();
         modal.addEventListener("click", event => {

@@ -66,6 +66,12 @@ function prepararDiaDisponible(boton, fechaISO, esExcepcion) {
     boton.classList.add("disponible");
     boton.dataset.dia = fechaISO;
     boton.dataset.icon = icono.valor;
+    if (poema?.titulo) {
+        const diaDelMes = Number(fechaISO.slice(-2));
+        boton.dataset.tooltip = poema.titulo;
+        boton.title = poema.titulo;
+        boton.setAttribute("aria-label", `${diaDelMes}: ${poema.titulo}`);
+    }
     boton.style.setProperty("--calendar-icon-color", icono.color);
     boton.style.setProperty("--calendar-icon-scale", icono.escala);
 

@@ -114,6 +114,38 @@
     color: white;
 }
 
+.dia.disponible[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    bottom: calc(100% + 10px);
+    width: max-content;
+    max-width: min(230px, 62vw);
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, .68);
+    border-radius: 999px;
+    background: rgba(255, 246, 250, .94);
+    color: #7a2f4d;
+    font-size: .72rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: .02em;
+    text-transform: none;
+    white-space: normal;
+    box-shadow: 0 12px 28px rgba(92, 34, 60, .18);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(6px) scale(.96);
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+.dia.disponible[data-tooltip]:hover::before,
+.dia.disponible[data-tooltip]:focus-visible::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+}
+
 .disponible {
     cursor: pointer;
     opacity: 1;
@@ -171,5 +203,13 @@
         top: 4px;
         right: 6px;
         font-size: 1.35rem;
+    }
+
+    .dia.disponible[data-tooltip]::before {
+        bottom: calc(100% + 6px);
+        max-width: 190px;
+        padding: 7px 10px;
+        border-radius: 14px;
+        font-size: .66rem;
     }
 }

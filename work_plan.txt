@@ -30,8 +30,8 @@ ILOVEU3K
     - Doming:    Petra              (30.3285° N, 35.4444° E, Jones)        S
 
 4. Notas Musicales (piano)
-    - Lunes:     La  (440Hz)           = 440     (Estrellita donde estas) O
-    - Martes:    Si  (440Hz * 2^2/12)  = 493.88  (Himno a la alegría)     C
+    - Lunes:     La  (440Hz * 2)       = 880.00  (Estrellita donde estas) O
+    - Martes:    Si  (440Hz * 2^14/12) = 987.76  (Himno a la alegría)     C
     - Miercoles: Do  (440Hz * 2^3/12)  = 523.25  (Maria tenía un cordero) T
     - Jueves:    Re  (440Hz * 2^5/12)  = 587.33  (Viejo McDonald)         A
     - Viernes:   Mi  (440Hz * 2^7/12)  = 659.25  (Jingle Bells)           V -> 5

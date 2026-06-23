@@ -410,6 +410,7 @@ const poemas = {
     "2026-06-01": {
         fecha: "1 de junio de 2026",
         titulo: "La Luna y sus secretos.",
+        calendarioIcono: { valor: "🌙", color: "#6f74b8", escala: 0.68 },
         autor: "A. Ssshparro",
         pd: "Pd. Algunas palabras nacieron mirando el cielo y perduran hoy en día. 🌙✨",
         estrofas: [
@@ -449,6 +450,7 @@ const poemas = {
     "2026-06-02": {
         fecha: "2 de junio de 2026",
         titulo: "Marte y sus cálculos.",
+        calendarioIcono: { valor: "♂️", color: "#c2412d", escala: 0.72 },
         autor: "A. Ssshparro",
         pd: "Pd. Hoy es el día del Dios de la guerra. ⚔️🔥",
         estrofas: [
@@ -494,6 +496,7 @@ const poemas = {
     "2026-06-03": {
         fecha: "3 de junio de 2026",
         titulo: "Mercurio y su soledad.",
+        calendarioIcono: { valor: "☿️", color: "#9b8f82", escala: 0.72 },
         autor: "A. Ssshparro",
         pd: `Pd. El silencio obliga a buscar... respuestas que no existen. 🌌`,
         estrofas: [
@@ -539,6 +542,7 @@ const poemas = {
     "2026-06-04": {
         fecha: "4 de junio de 2026",
         titulo: "Júpiter fue hecho pensando en ti.",
+        calendarioIcono: { valor: "♃", color: "#b7793f", escala: 0.78 },
         autor: "A. Ssshparro",
         pd: `Pd. ¿Conoces a César? Dile que retroceda 3 pasos. 🪐✨`,
         estrofas: [
@@ -584,6 +588,7 @@ const poemas = {
     "2026-06-05": {
         fecha: "5 de junio de 2026",
         titulo: "Quiero venirme en Venus.",
+        calendarioIcono: { valor: "♀️", color: "#d783a7", escala: 0.72 },
         autor: "A. Ssshparro",
         pd: `Pd. Venus no es solo estrella del alba, también mujer que inspira la entrega. 🧡`,
         estrofas: [
@@ -629,6 +634,7 @@ const poemas = {
     "2026-06-06": {
         fecha: "6 de junio de 2026",
         titulo: "El señor de los anillos.",
+        calendarioIcono: { valor: "🪐", color: "#b08a4f", escala: 0.7 },
         autor: "A. Ssshparro",
         pd: `Pd. Acróstico tallado en la proporción que todo círculo obedece, voz del infinito.<br>Te lleva a seleccionarlo todo, guardando su secreto bendito. 🪐`,
         estrofas: [
@@ -674,6 +680,7 @@ const poemas = {
     "2026-06-07": {
         fecha: "7 de junio de 2026",
         titulo: "El sol",
+        calendarioIcono: { valor: "☀️", color: "#d99a1e", escala: 0.72 },
         autor: "A. Ssshparro",
         pd: `Pd. Como los lados de un hexágono, cada destello pertenecen a la misma figura. ☀️`,
         estrofas: [
@@ -1698,8 +1705,10 @@ const poemas = {
     "2026-06-22": {
         fecha: "22 de junio de 2026",
         titulo: "Estrellita, ¿Dónde Estás?",
+        calendarioIcono: { valor: "⭐", color: "#d4a21f", escala: 0.72 },
         autor: "A. Ssshparro",
         piano: true,
+        mensaje: "S",
         song: ["Do", "Do", "Sol", "Sol", "La", "La", "Sol", "Fa",
             "Fa", "Mi", "Mi", "Re", "Re", "Do", "Sol", "Sol", "Fa",
             "Fa", "Mi", "Mi", "Re", "Sol", "Sol", "Fa", "Fa", "Mi",
@@ -1709,45 +1718,45 @@ const poemas = {
         estrofas: [
             [
                 "<i><b>Do</b></i>nde la noche se inclina, te busco encendida,",
-                "en mi pecho enama<i><b>do</b></i> tu nombre respira,",
-                "eres mi <i><b>sol</b></i> secreto, mi con<i><b>sol</b></i>acion prohibida,",
+                "en mi pecho enamora<i><b>do</b></i> tu nombre respira,",
+                "eres mi <i><b>sol</b></i> secreto, mi con<i><b>sol</b></i>ación prohibida,",
                 "y <i><b>la</b></i> luna se rinde si <i><b>la</b></i> nombro junto a tu vida."
             ],
             [
                 "Como <i><b>sol</b></i> en mis venas, me incendias sin medida,",
-                "tu <i><b>fa</b></i>ro me reclama, tu <i><b>fa</b></i>z me desvaria,",
+                "tu <i><b>fa</b></i>ro me reclama, tu <i><b>fa</b></i>z me desvaría,",
                 "eres <i><b>mi</b></i> sed primera, <i><b>mi</b></i> fiebre consentida,",
-                "y <i><b>re</b></i>greso a tus brazos aunque arda la agonia."
+                "y <i><b>re</b></i>greso a tus brazos aunque arda la agonía."
             ],
             [
-                "Te <i><b>re</b></i>zo con los labios cuando el cielo se vacia,",
-                "<i><b>Do</b></i>nde estes, estrellita, mi alma te seguiria,",
-                "si tu <i><b>sol</b></i> me corona y tu con<i><b>sol</b></i>acion me guia,",
-                "mi <i><b>fa</b></i>ntasia se abre, mi <i><b>fa</b></i>lta se hace poesia."
+                "Te <i><b>re</b></i>zo con los labios cuando el cielo se vacía,",
+                "<i><b>Dó</b></i>nde estés, estrellita, mi alma te seguiría,",
+                "si tu <i><b>sol</b></i> me corona y tu con<i><b>sol</b></i>ación me guía,",
+                "mi <i><b>fa</b></i>ntasía se abre, mi <i><b>fa</b></i>lta se hace poesía."
             ],
             [
                 "Porque <i><b>mi</b></i> piel te llama, porque <i><b>mi</b></i> voz te ansia,",
-                "cada <i><b>re</b></i>lampago aprende la forma de tu alegria,",
-                "y el <i><b>sol</b></i> de tus pupilas, con su fulgor de osadia,",
-                "me con<i><b>sol</b></i>a y me quema; tu <i><b>fa</b></i>lta es mi melodia."
+                "cada <i><b>re</b></i>lámpago aprende la forma de tu alegría,",
+                "y el <i><b>sol</b></i> de tus pupilas, con su fulgor de osadía,",
+                "me con<i><b>sol</b></i>a y me quema; tu <i><b>fa</b></i>lta es mi melodía."
             ],
             [
-                "Sin tu <i><b>fa</b></i>vor de astro, la noche se enfria,",
-                "pero <i><b>mi</b></i> sangre canta y <i><b>mi</b></i> deseo porfia,",
-                "por <i><b>re</b></i>tener tu brillo cuando el alba lo desvia,",
-                "y en tu <i><b>do</b></i>rada boca mi mun<i><b>do</b></i> renacia."
+                "Sin tu <i><b>fa</b></i>vor de astro, la noche se enfría,",
+                "pero <i><b>mi</b></i> sangre canta y <i><b>mi</b></i> deseo porfía,",
+                "por <i><b>re</b></i>tener tu brillo cuando el alba lo desvía,",
+                "y en tu <i><b>do</b></i>rada boca mi mun<i><b>do</b></i> renacía."
             ],
             [
-                "Ven, <i><b>sol</b></i> de medianoche, mi con<i><b>sol</b></i>acion tardia,",
+                "Ven, <i><b>sol</b></i> de medianoche, mi con<i><b>sol</b></i>ación tardía,",
                 "baja a <i><b>la</b></i> tierra ardiente, a <i><b>la</b></i> llama de mi vida,",
                 "hazte <i><b>sol</b></i> en mis sombras, desnuda y encendida,",
-                "y en mi <i><b>fa</b></i>ntasma antiguo siembra tu valentia."
+                "y en mi <i><b>fa</b></i>ntasma antiguo siembra tu valentía."
             ],
             [
-                "Tu <i><b>fa</b></i>ro me desnuda de toda lejania,",
-                "y <i><b>mi</b></i> corazon declara que <i><b>mi</b></i> eternidad serias,",
+                "Tu <i><b>fa</b></i>ro me desnuda de toda lejanía,",
+                "y <i><b>mi</b></i> corazón declara que <i><b>mi</b></i> eternidad serías,",
                 "te <i><b>re</b></i>clamo en cada estrella, te <i><b>re</b></i>cibo cuando brillas,",
-                "<i><b>Do</b></i>nde estas, estrellita, ven: soy tu noche encendida."
+                "<i><b>Dó</b></i>nde estás, estrellita, ven: soy tu noche encendida."
             ]
         ]
     },
@@ -1755,20 +1764,67 @@ const poemas = {
     "2026-06-23": {
         fecha: "23 de junio de 2026",
         titulo: "Himno a mi alegría",
+        calendarioIcono: { valor: "🎶", color: "#7d5cc6", escala: 0.68 },
         autor: "A. Ssshparro",
         piano: true,
+        mensaje: "A",
         song: ["Mi", "Mi", "Fa", "Sol", "Sol", "Fa", "Mi", "Re",
             "Do", "Do", "Re", "Mi", "Mi", "Re", "Re",
             "Mi", "Mi", "Fa", "Sol", "Sol", "Fa", "Mi", "Re",
             "Do", "Do", "Re", "Mi", "Re", "Do", "Do"],
-        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
-        estrofas: []
+        pd: "Pd. Tu alegría hace que hasta los días chiquitos parezcan fiesta.",
+        estrofas: [
+            [
+                "<i><b>Mi</b></i> alegría empieza cuando llegas sonriendo,",
+                "y todo lo sencillo vuelve a florecer en <i><b>mi</b></i>,",
+                "tu <i><b>fa</b></i>ro de ternura va despacito encendiendo,",
+                "un <i><b>sol</b></i> de caramelos que se queda junto a ti."
+            ],
+            [
+                "Bajo el <i><b>sol</b></i> de tus ojos mi día se acomoda,",
+                "tu <i><b>fa</b></i>z trae la calma de un cuento al despertar,",
+                "en <i><b>mi</b></i> bolsillo guardo una risa pequeñita,",
+                "para <i><b>re</b></i>galártela si te quieres alegrar."
+            ],
+            [
+                "<i><b>Do</b></i>nde pisas, mi cielo, nace luz en la cocina,",
+                "y to<i><b>do</b></i> sabe a abrazo, a pan dulce y a canción,",
+                "yo <i><b>re</b></i>pito tu nombre como quien cuida una flor,",
+                "porque <i><b>mi</b></i> mundo canta cuando escucha tu voz."
+            ],
+            [
+                "Eres <i><b>mi</b></i> risa suave, mi domingo favorito,",
+                "mi <i><b>re</b></i>creo bonito cuando aprieta la ciudad,",
+                "y <i><b>re</b></i>cuerdo que la vida tiene un brillo pequeñito,",
+                "si <i><b>mi</b></i> mano se acomoda con la tuya al caminar."
+            ],
+            [
+                "En <i><b>mi</b></i> pecho haces fiesta con campanas de colores,",
+                "tu <i><b>fa</b></i>miliar dulzura sabe siempre consolar,",
+                "como un <i><b>sol</b></i> de patio entre listones y flores,",
+                "otro <i><b>sol</b></i> en mi ventana me dan ganas de cantar."
+            ],
+            [
+                "Tu <i><b>fa</b></i>vor es quedarte cuando el mundo hace ruido,",
+                "y a <i><b>mi</b></i> lado inventarte una tarde de algodón,",
+                "yo <i><b>re</b></i>greso a tu risa como vuelve un niño al nido,",
+                "<i><b>Do</b></i>nde encuentro ternura, también encuentro canción."
+            ],
+            [
+                "To<i><b>do</b></i> mi cariño se hace claro si te mira,",
+                "te <i><b>re</b></i>galo este himno con cuidado y devoción,",
+                "<i><b>Mi</b></i> alegría eres tú, chiquita luz de mis días,",
+                "y <i><b>re</b></i>zo, corazón, por tu mun<i><b>do</b></i> y por tu <i><b>do</b></i>n."
+            ]
+        ]
     },
 
     "2026-06-24": {
         fecha: "24 de junio de 2026",
         titulo: "María tenía un angelito",
+        calendarioIcono: { valor: "🐑", color: "#8a7a6b", escala: 0.68 },
         autor: "A. Ssshparro",
+        mensaje: "V",
         piano: true,
         song: ["Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
             "Re", "Re", "Re", "Mi", "Sol", "Sol",
@@ -1781,7 +1837,9 @@ const poemas = {
     "2026-06-25": {
         fecha: "25 de junio de 2026",
         titulo: "El viejo Chaparro tenía una granja",
+        calendarioIcono: { valor: "🚜", color: "#4f8f3a", escala: 0.66 },
         autor: "A. Ssshparro",
+        mensaje: "A",
         piano: true,
         song: ["Do", "Do", "Do", "Sol", "La", "La", "Sol",
             "Mi", "Mi", "Re", "Re", "Do",
@@ -1795,7 +1853,9 @@ const poemas = {
     "2026-06-26": {
         fecha: "26 de junio de 2026",
         titulo: "Armando es un muñeco",
+        calendarioIcono: { valor: "🧸", color: "#b36a3c", escala: 0.68 },
         autor: "A. Ssshparro",
+        mensaje: "T",
         piano: true,
         song: [
             "Sol", "Si", "Sol", "Mi", "Fa", "Sol", "Sol",
@@ -1814,7 +1874,9 @@ const poemas = {
     "2026-06-27": {
         fecha: "27 de junio de 2026",
         titulo: "La cucarasssha",
+        calendarioIcono: { valor: "🪳", color: "#6b5b2e", escala: 0.68 },
         autor: "A. Ssshparro",
+        mensaje: "C",
         piano: true,
         song: ["Do", "Do", "Do", "Fa", "La",
             "Do", "Do", "Do", "Fa", "La",
@@ -1826,7 +1888,9 @@ const poemas = {
     "2026-06-28": {
         fecha: "28 de junio de 2026",
         titulo: "Mi cielito lindo",
+        calendarioIcono: { valor: "✨", color: "#1f8f55", escala: 0.62 },
         autor: "A. Ssshparro",
+        mensaje: "O",
         piano: true,
         song: [
             "Si", "Si", "La", "Si", "Sol",
