@@ -1826,12 +1826,55 @@ const poemas = {
         autor: "A. Ssshparro",
         mensaje: "V",
         piano: true,
+        pd: "Pd. María tenía un Angelito, y el Angelito sabía que era suyo por completo.",
+        estrofas: [
+            [
+                "María, mi nombre se vuelve <i><b>mi</b></i>lagro en tu voz,",
+                "y mi <i><b>re</b></i>spiro se calma si caminas conmigo,",
+                "yo te <i><b>do</b></i>y lo que soy, sin guardar un rincón,",
+                "mi <i><b>re</b></i>ino chiquito cabe entero contigo."
+            ],
+            [
+                "Si soy Ángel, soy de <i><b>mi</b></i> María, sin medida,",
+                "con <i><b>mi</b></i> mano, mi pecho, mi tiempo y mi verdad,",
+                "<i><b>Mi</b></i> camino te elige, mi vida te cuida,",
+                "y <i><b>re</b></i>posa en tu nombre toda mi voluntad."
+            ],
+            [
+                "Te <i><b>re</b></i>pito bajito: pertenezco a tus días,",
+                "te <i><b>re</b></i>servo mi risa, mi cansancio y mi paz,",
+                "porque <i><b>mi</b></i> corazón, cuando tú lo acaricias,",
+                "se vuelve <i><b>sol</b></i> obediente que te quiere alumbrar."
+            ],
+            [
+                "Con tu <i><b>sol</b></i> en mi frente se me ordena la vida,",
+                "y <i><b>mi</b></i> fe se arrodilla sin temor ni disfraz,",
+                "yo <i><b>re</b></i>nuncio a perderme si tu amor me cobija,",
+                "y te <i><b>do</b></i>y cada parte de mi mundo al pasar."
+            ],
+            [
+                "Te <i><b>re</b></i>conozco dueña de mis pasos sinceros,",
+                "de <i><b>mi</b></i> voz, de mis planes, de mi humilde oración,",
+                "<i><b>Mi</b></i> silencio también se acomoda en tus dedos,",
+                "y <i><b>mi</b></i> pecho responde si le dices: amor."
+            ],
+            [
+                "María, en <i><b>mi</b></i> nombre vive un Ángel pequeño,",
+                "que <i><b>re</b></i>gresa a tu pecho como a su único hogar,",
+                "que te <i><b>re</b></i>za en lo simple, sin orgullo ni dueño,",
+                "y en <i><b>mi</b></i> forma de amarte aprende a descansar."
+            ],
+            [
+                "Por eso te <i><b>re</b></i>cuerdo, con ternura y certeza,",
+                "que a ti me <i><b>do</b></i>y completo, sin partirme jamás,",
+                "por dentro y por fuera, en promesa y naturaleza,",
+                "soy tu Ángel, María; tuyo entero, nada más."
+            ]
+        ],
         song: ["Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
             "Re", "Re", "Re", "Mi", "Sol", "Sol",
             "Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
             "Mi", "Re", "Re", "Mi", "Re", "Do"],
-        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
-        estrofas: []
     },
 
     "2026-06-25": {
