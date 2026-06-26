@@ -1826,6 +1826,10 @@ const poemas = {
         autor: "A. Ssshparro",
         mensaje: "V",
         piano: true,
+        song: ["Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
+            "Re", "Re", "Re", "Mi", "Sol", "Sol",
+            "Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
+            "Mi", "Re", "Re", "Mi", "Re", "Do"],
         pd: "Pd. María tenía un Angelito, y el Angelito sabía que era suyo por completo.",
         estrofas: [
             [
@@ -1870,11 +1874,7 @@ const poemas = {
                 "por dentro y por fuera, en promesa y naturaleza,",
                 "soy tu Ángel, María; tuyo entero, nada más."
             ]
-        ],
-        song: ["Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
-            "Re", "Re", "Re", "Mi", "Sol", "Sol",
-            "Mi", "Re", "Do", "Re", "Mi", "Mi", "Mi",
-            "Mi", "Re", "Re", "Mi", "Re", "Do"],
+        ]
     },
 
     "2026-06-25": {
@@ -1889,8 +1889,51 @@ const poemas = {
             "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re",
             "Sol", "Sol", "Fa", "Fa", "Mi", "Mi", "Re",
             "Do", "Do", "Do", "Sol", "La", "La", "Sol"],
-        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
-        estrofas: []
+        pd: "Pd. En la granja de mi vida, tú eres la cosecha más bonita que quiero cuidar.",
+        estrofas: [
+            [
+                "En la granja del viejo Chaparro ama<i><b>do</b></i>,",
+                "to<i><b>do</b></i> florece cuando llegas tú,",
+                "y en un rinconcito dora<i><b>do</b></i>,",
+                "guardo un <i><b>sol</b></i> de campo y <i><b>la</b></i> mañana azul."
+            ],
+            [
+                "Si <i><b>la</b></i> cerca cruje, sonrío contigo,",
+                "porque el <i><b>sol</b></i> se acomoda en tu forma de andar,",
+                "y <i><b>mi</b></i> corazón pequeño aprende a cantar,",
+                "de <i><b>mi</b></i> amor cada fruto te quiero <i><b>re</b></i>galar."
+            ],
+            [
+                "Te <i><b>re</b></i>cojo flores al filo del día,",
+                "y te <i><b>do</b></i>y pan dulce con leche y querer,",
+                "bajo el <i><b>sol</b></i> de la tarde, bajo otro <i><b>sol</b></i> de miel,",
+                "mi <i><b>fa</b></i>vorito paisaje es mirarte volver."
+            ],
+            [
+                "En mi <i><b>fa</b></i>ena sencilla te llevo presente,",
+                "si <i><b>mi</b></i> sombra se cansa, tu risa la va a alzar,",
+                "porque <i><b>mi</b></i> rancho de cielo se vuelve valiente,",
+                "cuando te <i><b>re</b></i>cibe la puerta de mi paz."
+            ],
+            [
+                "Hay un <i><b>sol</b></i> en la noria que canta despacio,",
+                "y me con<i><b>sol</b></i>a saberte mi hogar,",
+                "tu <i><b>fa</b></i>z entre trigales me vuelve muchacho,",
+                "mi <i><b>fa</b></i>vor más tierno es poderte cuidar."
+            ],
+            [
+                "Por <i><b>mi</b></i> vida lo digo, con tierra en las manos,",
+                "eres <i><b>mi</b></i> cosecha, mi dulce verdad,",
+                "yo <i><b>re</b></i>greso a tus ojos, humilde y cercano,",
+                "y te <i><b>do</b></i>y to<i><b>do</b></i> entero, sin mirar hacia atrás."
+            ],
+            [
+                "<i><b>Do</b></i>nde el viejo Chaparro sembró su alegría,",
+                "nació un <i><b>sol</b></i> para verte bailar,",
+                "y <i><b>la</b></i> granja se llena de luz cada día,",
+                "porque <i><b>la</b></i> dueña de mi alma es mi <i><b>sol</b></i> y mi hogar."
+            ]
+        ]
     },
 
     "2026-06-26": {
