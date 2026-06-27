@@ -1953,8 +1953,51 @@ const poemas = {
             "Do", "Re", "Mi", "Fa", "Sol", "Sol",
             "La", "Sol", "Fa", "Mi", "Re", "Do"
         ],
-        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
-        estrofas: []
+        pd: "Pd. Sí, Armando es un muñeco... pero hasta sus costuras presumen que te pertenecen.",
+        estrofas: [
+            [
+                "Con mi <i><b>sol</b></i>tura de muñeco me presento ganador,",
+                "te digo que <i><b>sí</b></i>, que soy encanto certificado,",
+                "soy tu <i><b>sol</b></i> de bolsillo, tu galán superior,",
+                "y <i><b>mi</b></i> <i><b>fa</b></i>ma brilla con dos <i><b>sol</b></i>es: <i><b>sol</b></i>o a tu lado."
+            ],
+            [
+                "Tengo un <i><b>sol</b></i> en la frente y carita de campeón,",
+                "<i><b>sí</b></i>, lo sé, soy peligroso de tan adorable,",
+                "otro <i><b>sol</b></i> me aplaude cuando entro en tu habitación,",
+                "y <i><b>mi</b></i> <i><b>fa</b></i>cha presume: soy <i><b>sol</b></i>tero imposible, pero <i><b>sol</b></i>o tuyo amable."
+            ],
+            [
+                "Te <i><b>do</b></i>y mis botones, mi orgullo y mi relleno,",
+                "me <i><b>re</b></i>clino elegante si me quieres abrazar,",
+                "porque <i><b>mi</b></i> <i><b>fa</b></i>ntástico ego cabe entero en tu seno,",
+                "y bajo tu <i><b>sol</b></i> me vuelvo <i><b>sol</b></i>amente de amar."
+            ],
+            [
+                "<i><b>La</b></i> verdad, mi vida, no vine a ser discreto,",
+                "soy un <i><b>sol</b></i> con moño, con pose y vanidad,",
+                "mi <i><b>fa</b></i>vorita hazaña es jurar que soy perfecto,",
+                "aunque <i><b>mi</b></i> <i><b>re</b></i>y <i><b>do</b></i>mino si me pides humildad."
+            ],
+            [
+                "Tengo <i><b>sol</b></i>era fina, mirada de postal,",
+                "y <i><b>sí</b></i>, me queda hermosa la ternura exagerada,",
+                "soy el <i><b>sol</b></i> que se mira y se vuelve a enamorar,",
+                "pero <i><b>mi</b></i> <i><b>fa</b></i>lsa modestia cae <i><b>sol</b></i>a, <i><b>sol</b></i>o si tú me llamas."
+            ],
+            [
+                "Soy un <i><b>sol</b></i> de peluche con corona imaginaria,",
+                "digo que <i><b>sí</b></i> a mis méritos con toda seriedad,",
+                "otro <i><b>sol</b></i> me confirma que mi gloria es necesaria,",
+                "pero <i><b>mi</b></i> <i><b>fa</b></i>ma se arrodilla ante tu <i><b>sol</b></i>, <i><b>sol</b></i>ita verdad."
+            ],
+            [
+                "Te <i><b>do</b></i>y mi nombre entero, mi risa y mi teatrito,",
+                "me <i><b>re</b></i>galas cordura cuando empiezo a presumir,",
+                "porque <i><b>mi</b></i> <i><b>fa</b></i>buloso yo se cree infinito,",
+                "pero tu <i><b>sol</b></i>, mi <i><b>sol</b></i>, <i><b>la</b></i> <i><b>sol</b></i>a <i><b>fa</b></i>ma que deseo es <i><b>mi</b></i> <i><b>re</b></i>ino en tu <i><b>do</b></i>rmir."
+            ]
+        ]
     },
 
     "2026-06-27": {
