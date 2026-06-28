@@ -2072,7 +2072,50 @@ const poemas = {
             "Fa", "Re", "Mi", "Fa", "Sol",
             "Sol", "Sol", "Fa", "Mi", "Re", "Do"
         ],
-        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
-        estrofas: []
+        pd: "Pd. Mi cielito lindo: si el amor tuviera altura, tendría exactamente tu nombre.",
+        estrofas: [
+            [
+                "<i><b>Si</b></i> levanto la mirada, tu luz me sostiene,",
+                "y <i><b>si</b></i> cierro los ojos, te vuelvo a encontrar,",
+                "<i><b>la</b></i> ternura del cielo en tu nombre se enciende,",
+                "como un <i><b>si</b></i>lencio sagrado que aprende a besar."
+            ],
+            [
+                "Eres mi <i><b>sol</b></i> más alto, mi calma encendida,",
+                "<i><b>si</b></i> la tarde se inclina, te empieza a nombrar,",
+                "y <i><b>si</b></i> el alba despierta buscando su vida,",
+                "<i><b>la</b></i> encuentra en tus ojos, queriendo brillar."
+            ],
+            [
+                "<i><b>Si</b></i> supieras, mi cielo, qué dulce es mirarte,",
+                "mi <i><b>sol</b></i> se arrodilla para verte pasar,",
+                "<i><b>si</b></i> la noche me pide dejar de adorarte,",
+                "le digo que <i><b>si</b></i>n ti no sabría soñar."
+            ],
+            [
+                "<i><b>La</b></i> luna aprende despacio tu forma bendita,",
+                "y <i><b>si</b></i> pronuncio tu nombre, se vuelve canción,",
+                "mi <i><b>sol</b></i> interior ante ti resucita,",
+                "con <i><b>fa</b></i>ma de eterno y humilde fervor."
+            ],
+            [
+                "Te <i><b>re</b></i>conozco en la altura más clara del día,",
+                "<i><b>si</b></i> me falta tu risa, me falta el color,",
+                "<i><b>si</b></i> tus manos me rozan, mi alma confía,",
+                "y <i><b>si</b></i> me miras, mi cielo, me vuelvo mejor."
+            ],
+            [
+                "<i><b>La</b></i> belleza en tus ojos no cabe en el tiempo,",
+                "mi <i><b>sol</b></i> se hace promesa bajo tu fulgor,",
+                "tu <i><b>fa</b></i>z es la patria de todo mi aliento,",
+                "y en tu <i><b>fa</b></i>vor descansa mi entero amor."
+            ],
+            [
+                "Te <i><b>re</b></i>zo con besos, mi cielo querido,",
+                "y <i><b>mi</b></i> corazón te declara su voz,",
+                "tu <i><b>fa</b></i>ro me guía, mi <i><b>sol</b></i> más divino,",
+                "mi <i><b>sol</b></i>, mi <i><b>sol</b></i>, mi <i><b>fa</b></i>tal paraíso, mi <i><b>mi</b></i>lagro, mi <i><b>re</b></i>zo, mi <i><b>do</b></i>n."
+            ]
+        ]
     },
 }
