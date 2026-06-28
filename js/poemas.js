@@ -2010,8 +2010,51 @@ const poemas = {
         song: ["Do", "Do", "Do", "Fa", "La",
             "Do", "Do", "Do", "Fa", "La",
             "Fa", "Fa", "Mi", "Mi", "Re", "Re", "Do"],
-        pd: "Pd. Si tú eres la estrella, yo quiero ser la noche que nunca deja de mirarte.",
-        estrofas: []
+        pd: "Pd. Si un día me ves caminando raro, no es drama: es que me faltas tú.",
+        estrofas: [
+            [
+                "<i><b>Do</b></i>n cucaracha salió muy peinado,",
+                "con lentes oscuros y cara formal,",
+                "dijo: to<i><b>do</b></i> listo, soy fino y adorado,",
+                "pero to<i><b>do</b></i> el barrio lo vio tropezar."
+            ],
+            [
+                "Le faltó una <i><b>fa</b></i>mosa patita traviesa,",
+                "y <i><b>la</b></i> pobre cucaracha no pudo avanzar,",
+                "yo me reí poquito, con mucha nobleza,",
+                "pero luego pensé: me suele pasar."
+            ],
+            [
+                "Porque <i><b>do</b></i>nde no estás, se me pierde el camino,",
+                "y to<i><b>do</b></i> mi porte se empieza a doblar,",
+                "to<i><b>do</b></i> mi teatro de galán divino,",
+                "sin tu <i><b>fa</b></i>miliar presencia no sabe marchar."
+            ],
+            [
+                "<i><b>La</b></i> cucaracha pidió chocolate,",
+                "una patita nueva y un mapa del lugar,",
+                "yo pedí tu risa, porque ese parte de ti",
+                "me arregla las ruedas del alma al pasar."
+            ],
+            [
+                "Con tu <i><b>fa</b></i>cha bonita me vuelvo valiente,",
+                "tu <i><b>fa</b></i>z me guía como el ferrocarril,",
+                "y aunque <i><b>mi</b></i> ego diga: camino excelente,",
+                "sin <i><b>mi</b></i> cielo, me voy de perfil."
+            ],
+            [
+                "Me <i><b>re</b></i>tumba la vida, me topo con una silla,",
+                "me <i><b>re</b></i>ta una puerta que no abre al empujar,",
+                "y yo, muy serio, con gran pesadilla,",
+                "declaro: me falta mi mitad principal."
+            ],
+            [
+                "La cucaracha no anda sin patitas,",
+                "ni presume rumbo si no puede ir,",
+                "yo tampoco estoy hecho de piezas completas,",
+                "si en mi mun<i><b>do</b></i> no estás tú para mí."
+            ]
+        ]
     },
 
     "2026-06-28": {
