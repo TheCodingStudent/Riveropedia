@@ -228,6 +228,280 @@ function renderCopias() {
     });
 }
 
+function hexARgb(hex) {
+    const limpio = String(hex || "").replace("#", "").trim();
+    if (!/^[0-9a-f]{6}$/i.test(limpio)) return { r: 255, g: 79, b: 135 };
+    return {
+        r: parseInt(limpio.slice(0, 2), 16),
+        g: parseInt(limpio.slice(2, 4), 16),
+        b: parseInt(limpio.slice(4, 6), 16)
+    };
+}
+
+function limitar(valor, min, max) {
+    return Math.min(max, Math.max(min, valor));
+}
+
+function rgbAHex({ r, g, b }) {
+    return `#${[r, g, b].map(valor => Math.round(valor).toString(16).padStart(2, "0")).join("")}`;
+}
+
+function rgbAHsv({ r, g, b }) {
+    const rn = r / 255, gn = g / 255, bn = b / 255;
+    const max = Math.max(rn, gn, bn);
+    const min = Math.min(rn, gn, bn);
+    const delta = max - min;
+    let h = 0;
+
+    if (delta) {
+        if (max === rn) h = 60 * (((gn - bn) / delta) % 6);
+        else if (max === gn) h = 60 * ((bn - rn) / delta + 2);
+        else h = 60 * ((rn - gn) / delta + 4);
+    }
+
+    return {
+        h: Math.round((h + 360) % 360),
+        s: max === 0 ? 0 : delta / max,
+        v: max
+    };
+}
+
+function hsvARgb({ h, s, v }) {
+    const c = v * s;
+    const x = c * (1 - Math.abs((h / 60) % 2 - 1));
+    const m = v - c;
+    let r = 0, g = 0, b = 0;
+
+    if (h < 60) [r, g, b] = [c, x, 0];
+    else if (h < 120) [r, g, b] = [x, c, 0];
+    else if (h < 180) [r, g, b] = [0, c, x];
+    else if (h < 240) [r, g, b] = [0, x, c];
+    else if (h < 300) [r, g, b] = [x, 0, c];
+    else [r, g, b] = [c, 0, x];
+
+    return {
+        r: Math.round((r + m) * 255),
+        g: Math.round((g + m) * 255),
+        b: Math.round((b + m) * 255)
+    };
+}
+
+function distanciaColor(a, b) {
+    return Math.sqrt(
+        Math.pow(a.r - b.r, 2) +
+        Math.pow(a.g - b.g, 2) +
+        Math.pow(a.b - b.b, 2)
+    );
+}
+
+function escaparRegExp(texto) {
+    return String(texto || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function obtenerTextoPistaColor(pista) {
+    return pista?.pista || pista?.nombre || pista?.palabra || pista?.texto || pista?.valor || "";
+}
+
+function contienePistaColor(html, pista) {
+    const textoPista = obtenerTextoPistaColor(pista);
+    if (!textoPista) return false;
+    const regex = new RegExp(`(^|[^\\p{L}\\p{N}_])(${escaparRegExp(textoPista)})(?=$|[^\\p{L}\\p{N}_])`, "iu");
+    return regex.test(html.replace(/<[^>]*>/g, ""));
+}
+
+function resaltarPistaColor(html, pista, color) {
+    if (!pista) return html;
+    const regex = new RegExp(`(^|[^\\p{L}\\p{N}_])(${escaparRegExp(pista)})(?=$|[^\\p{L}\\p{N}_])`, "giu");
+    let dentroTag = false;
+    let fragmento = "";
+    let resultado = "";
+
+    const envolverTexto = texto => texto ? `<span class="color-texto">${texto}</span>` : "";
+    const construirPista = palabra => `
+        <span class="color-palabra" style="--color-objetivo:${color}" data-color-tooltip="${color}">
+            <span class="color-circulo" aria-hidden="true"></span>
+            <span class="color-palabra-texto">${palabra}</span>
+        </span>
+    `;
+
+    const procesarFragmento = texto => {
+        let salida = "";
+        let ultimoIndice = 0;
+
+        for (const match of texto.matchAll(regex)) {
+            const indice = match.index;
+            const antes = match[1] || "";
+            const palabra = match[2];
+            const inicioPalabra = indice + antes.length;
+
+            salida += envolverTexto(texto.slice(ultimoIndice, indice));
+            salida += envolverTexto(antes);
+            salida += construirPista(palabra);
+            ultimoIndice = inicioPalabra + palabra.length;
+        }
+
+        return salida + envolverTexto(texto.slice(ultimoIndice));
+    };
+
+    for (const caracter of html) {
+        if (caracter === "<") {
+            resultado += procesarFragmento(fragmento);
+            fragmento = "";
+            dentroTag = true;
+        }
+
+        if (dentroTag) resultado += caracter;
+        else fragmento += caracter;
+
+        if (caracter === ">") dentroTag = false;
+    }
+
+    return resultado + procesarFragmento(fragmento);
+}
+
+function renderColor() {
+    const pistas = poema.colorPistas || poema.colores || [];
+    const contenedor = $("poema-texto");
+    const colorInicial = poema.colorInicial || pistas[0]?.color || "#ff4f87";
+    const umbral = poema.colorUmbral ?? 0.88;
+
+    contenedor.classList.add("poema-color-texto");
+    contenedor.innerHTML = `
+        <section class="color-mecanica" aria-label="Rueda de color para revelar el poema">
+            <div class="color-panel">
+                <div class="color-preview" aria-hidden="true"></div>
+                <div class="color-picker">
+                    <div class="color-control-titulo">Busca el color escondido</div>
+                    <div class="color-sv" role="slider" tabindex="0" aria-label="Saturación y brillo del color">
+                        <span class="color-sv-cursor" aria-hidden="true"></span>
+                    </div>
+                    <div class="color-hue" role="slider" tabindex="0" aria-label="Tono del color">
+                        <span class="color-hue-cursor" aria-hidden="true"></span>
+                    </div>
+                    <div class="color-valores" aria-live="polite">
+                        <code class="color-rgb"></code>
+                        <code class="color-hsv"></code>
+                    </div>
+                </div>
+                <small class="color-ayuda">Acércate al tono de cada pista para revelar su estrofa.</small>
+            </div>
+            <div class="color-poema-normal">
+                ${poema.estrofas.map((estrofa, i) => {
+                    const htmlEstrofa = estrofa.join("\n");
+                    const pistasEnEstrofa = pistas.filter(pista => contienePistaColor(htmlEstrofa, pista));
+                    const pistaBase = pistasEnEstrofa[0] || pistas[i] || {};
+                    const colorObjetivo = pistaBase.color || colorInicial;
+                    const pistasParaResaltar = pistasEnEstrofa.length ? pistasEnEstrofa : [pistaBase];
+                    const versos = estrofa.map(verso => pistasParaResaltar.reduce((html, pista) => {
+                        const textoPista = obtenerTextoPistaColor(pista);
+                        return resaltarPistaColor(html, textoPista, pista.color || colorObjetivo);
+                    }, verso));
+                    return `
+                        <p class="color-estrofa" data-color="${colorObjetivo}">
+                            ${versos.join("<br>")}
+                        </p>
+                    `;
+                }).join("")}
+            </div>
+        </section>
+    `;
+
+    const preview = contenedor.querySelector(".color-preview");
+    const panel = contenedor.querySelector(".color-panel");
+    const areaSV = contenedor.querySelector(".color-sv");
+    const cursorSV = contenedor.querySelector(".color-sv-cursor");
+    const barraHue = contenedor.querySelector(".color-hue");
+    const cursorHue = contenedor.querySelector(".color-hue-cursor");
+    const textoRgb = contenedor.querySelector(".color-rgb");
+    const textoHsv = contenedor.querySelector(".color-hsv");
+    const estrofas = [...contenedor.querySelectorAll(".color-estrofa")];
+    const estadoColor = rgbAHsv(hexARgb(colorInicial));
+
+    const colorSeleccionado = () => {
+        const rgb = hsvARgb(estadoColor);
+        return { rgb, hex: rgbAHex(rgb) };
+    };
+
+    const moverSV = event => {
+        const rect = areaSV.getBoundingClientRect();
+        estadoColor.s = limitar((event.clientX - rect.left) / rect.width, 0, 1);
+        estadoColor.v = limitar(1 - (event.clientY - rect.top) / rect.height, 0, 1);
+        actualizar();
+    };
+
+    const moverHue = event => {
+        const rect = barraHue.getBoundingClientRect();
+        estadoColor.h = Math.round(limitar((event.clientX - rect.left) / rect.width, 0, 1) * 359);
+        actualizar();
+    };
+
+    const iniciarArrastre = (elemento, mover) => {
+        elemento.addEventListener("pointerdown", event => {
+            event.preventDefault();
+            elemento.setPointerCapture(event.pointerId);
+            mover(event);
+        });
+        elemento.addEventListener("pointermove", event => {
+            if (event.buttons) mover(event);
+        });
+    };
+
+    const actualizar = () => {
+        const { rgb: seleccionado, hex } = colorSeleccionado();
+        const hsvTexto = {
+            h: Math.round(estadoColor.h),
+            s: Math.round(estadoColor.s * 100),
+            v: Math.round(estadoColor.v * 100)
+        };
+        preview.style.background = hex;
+        panel.style.setProperty("--color-actual", hex);
+        panel.style.setProperty("--color-hue", `hsl(${estadoColor.h} 100% 50%)`);
+        cursorSV.style.left = `${estadoColor.s * 100}%`;
+        cursorSV.style.top = `${(1 - estadoColor.v) * 100}%`;
+        cursorHue.style.left = `${estadoColor.h / 359 * 100}%`;
+        textoRgb.textContent = `RGB(${seleccionado.r}, ${seleccionado.g}, ${seleccionado.b})`;
+        textoHsv.textContent = `HSV(${hsvTexto.h}°, ${hsvTexto.s}%, ${hsvTexto.v}%)`;
+
+        estrofas.forEach(estrofa => {
+            const objetivoHex = estrofa.dataset.color;
+            const objetivo = hexARgb(objetivoHex);
+            const cercania = Math.max(0, 1 - distanciaColor(seleccionado, objetivo) / 260);
+            const revelado = cercania >= umbral;
+            estrofa.style.setProperty("--color-objetivo", objetivoHex);
+            estrofa.style.setProperty("--color-cercania", cercania.toFixed(3));
+            estrofa.style.setProperty("--color-blur", `${(14 * (1 - cercania)).toFixed(2)}px`);
+            estrofa.style.setProperty("--color-opacidad", Math.max(.16, cercania).toFixed(3));
+            estrofa.style.setProperty("--color-offset", `${(8 * (1 - cercania)).toFixed(2)}px`);
+            estrofa.style.setProperty("--color-sombra", (.04 + cercania * .16).toFixed(3));
+            estrofa.classList.toggle("color-revelada", revelado);
+        });
+    };
+
+    iniciarArrastre(areaSV, moverSV);
+    iniciarArrastre(barraHue, moverHue);
+    areaSV.addEventListener("keydown", event => {
+        const paso = event.shiftKey ? .1 : .03;
+        if (event.key === "ArrowRight") estadoColor.s = limitar(estadoColor.s + paso, 0, 1);
+        else if (event.key === "ArrowLeft") estadoColor.s = limitar(estadoColor.s - paso, 0, 1);
+        else if (event.key === "ArrowUp") estadoColor.v = limitar(estadoColor.v + paso, 0, 1);
+        else if (event.key === "ArrowDown") estadoColor.v = limitar(estadoColor.v - paso, 0, 1);
+        else return;
+        event.preventDefault();
+        actualizar();
+    });
+    barraHue.addEventListener("keydown", event => {
+        const paso = event.shiftKey ? 15 : 3;
+        if (event.key === "ArrowRight" || event.key === "ArrowUp") estadoColor.h = (estadoColor.h + paso) % 360;
+        else if (event.key === "ArrowLeft" || event.key === "ArrowDown") estadoColor.h = (estadoColor.h - paso + 360) % 360;
+        else return;
+        event.preventDefault();
+        actualizar();
+    });
+    actualizar();
+
+    $("poema-firma").innerHTML = `<span>— ${poema.autor}</span><br><small>${poema.pd}</small>`;
+}
+
 function renderPoema() {
     if (!puedeAbrirse(fecha)) {
         location.replace("/Riveropedia/info/tramposa.html?fecha=" + encodeURIComponent(fecha || ""));
@@ -246,6 +520,11 @@ function renderPoema() {
     if (poema.mecanica === "copias") {
         renderCopias();
         $("poema-firma").innerHTML = `<span>— ${poema.autor}</span><br><small>${poema.pd}</small>`;
+        return;
+    }
+
+    if (poema.mecanica === "color") {
+        renderColor();
         return;
     }
 

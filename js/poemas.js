@@ -2118,4 +2118,118 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-06-29": {
+        fecha: "29 de junio de 2026",
+        titulo: "Combustión Secreta",
+        calendarioIcono: { valor: "🍒", color: "#b11226", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mecanica: "color",
+        colorInicial: "#ff4f87",
+        colorUmbral: 0.88,
+        colorPistas: [
+            { pista: "sangre", color: "#8a0303" },
+            { pista: "corazón", color: "#c1121f" },
+            { pista: "fresa", color: "#e32636" },
+            { pista: "carmesí", color: "#960018" },
+            { pista: "cereza", color: "#b11226" },
+            { pista: "rubí", color: "#9b111e" }
+        ],
+        pd: "Pd. Hay colores que no se nombran; se descubren cuando el pulso empieza a arder.",
+        estrofas: [
+            [
+                "Hay un fuego que despierta cuando te acercas,",
+                "un incendio suave debajo de mi voz,",
+                "como si la sangre supiera tu nombre,",
+                "y corriera hacia ti sin pedir perdón."
+            ],
+            [
+                "No es solo pasión lo que arde en mis manos,",
+                "es un corazón terco, brillante y feroz,",
+                "que late más fuerte cuando me miras,",
+                "y convierte mi calma en pura combustión."
+            ],
+            [
+                "Tu risa tiene un borde de fresa madura,",
+                "dulce, llamativa, difícil de ignorar,",
+                "y yo, que juraba guardar compostura,",
+                "me vuelvo llamarada si te oigo llegar."
+            ],
+            [
+                "Hay noches que tiemblan con brillo carmesí,",
+                "a labios que arden antes de hablar,",
+                "a deseo que avanza con calma atrevida,",
+                "y no encuentra motivo para regresar."
+            ],
+            [
+                "Tu boca parece cereza encendida,",
+                "dulce peligro difícil de esquivar,",
+                "y cuando sonríes, la noche se inclina,",
+                "como si aprendiera de ti a provocar."
+            ],
+            [
+                "Si el amor guardara una piedra secreta,",
+                "sería rubí latiendo bajo la luz,",
+                "profundo, imposible, perfecto en su herida,",
+                "ardiendo en silencio por parecerse a ti."
+            ]
+        ]
+    },
+
+    "2026-06-30": {
+        fecha: "30 de junio de 2026",
+        titulo: "El Color Que Te Nombra",
+        calendarioIcono: { valor: "🍊", color: "#f97316", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mecanica: "color",
+        colorInicial: "#ff9f1c",
+        colorUmbral: 0.88,
+        colorPistas: [
+            { pista: "anaranjado", color: "#f97316" },
+            { pista: "mandarina", color: "#ff8c1a" },
+            { pista: "ámbar", color: "#ffbf3f" },
+            { pista: "cobre", color: "#c96a2b" },
+            { pista: "durazno", color: "#ffb07c" },
+            { pista: "ocaso", color: "#ff7a2f" }
+        ],
+        pd: "Pd. Hay tonos que parecen inventados solo para parecerse a ti.",
+        estrofas: [
+            [
+                "Hay una luz anaranjado cuando sonríes,",
+                "tan tuya, tan viva, tan fácil de amar,",
+                "que hasta mi voz se vuelve más cálida,",
+                "como si aprendiera contigo a brillar."
+            ],
+            [
+                "Tu risa deja aroma de mandarina,",
+                "dulce chispa que despierta el jardín,",
+                "y todo lo serio pierde su prisa,",
+                "cuando tu alegría se sienta junto a mí."
+            ],
+            [
+                "En tus ojos descansa un ámbar precioso,",
+                "una calma encendida que sabe cuidar,",
+                "y si la tarde me encuentra dudoso,",
+                "tu luz me convence de volver a intentar."
+            ],
+            [
+                "Hay un brillo de cobre sobre tu pelo,",
+                "como fuego tranquilo besando la piel,",
+                "y yo me quedo mirando en silencio,",
+                "porque ningún sol aprendió a arder tan bien."
+            ],
+            [
+                "Tu ternura parece durazno maduro,",
+                "suave milagro de aroma sutil,",
+                "me acerca a la vida con gesto seguro,",
+                "y vuelve mi pecho más claro por ti."
+            ],
+            [
+                "Cuando llega el ocaso, pienso en tu nombre,",
+                "porque el cielo se viste de tu color,",
+                "y entiendo que incluso la tarde conoce,",
+                "la forma exacta de rendirse al amor."
+            ]
+        ]
+    },
 }
