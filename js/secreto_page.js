@@ -28,6 +28,29 @@ function marcarRobables(html, letras) {
     return resultado;
 }
 
+function aplicarArcoiris(html, config) {
+    const letras = config?.letras || [];
+    const mapa = new Map(letras.map(item => [String(item.letra || "").toLowerCase(), item]));
+    const fija = String(config?.fija || "").toLowerCase();
+    let resultado = "", dentroTag = false;
+
+    for (const c of html) {
+        if (c === "<") dentroTag = true;
+
+        const item = mapa.get(c.toLowerCase());
+        if (!dentroTag && item) {
+            const clase = c.toLowerCase() === fija ? "arcoiris-letra fija" : "arcoiris-letra";
+            resultado += `<span class="${clase}" style="--arcoiris-color:${item.color}" title="${item.nombre || item.color}">${c}</span>`;
+        } else {
+            resultado += c;
+        }
+
+        if (c === ">") dentroTag = false;
+    }
+
+    return resultado;
+}
+
 function aplicarMask(elemento, textoReal) {
     const textoVisible = elemento.textContent;
     elemento.classList.add("mask-container");
@@ -60,6 +83,11 @@ function renderSecreto() {
     if (secreto.robar) {
         tituloFinal = ocultarTitulo(tituloFinal, secreto.robar);
         contenidoFinal = marcarRobables(contenidoFinal, secreto.robar);
+    }
+
+    if (secreto.arcoiris) {
+        tituloFinal = aplicarArcoiris(tituloFinal, secreto.arcoiris);
+        contenidoFinal = aplicarArcoiris(contenidoFinal, secreto.arcoiris);
     }
 
     $secreto("titulo").innerHTML = tituloFinal;

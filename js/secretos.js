@@ -380,6 +380,67 @@ const secretos = {
         audio: "",
     },
 
+    "rojo": {
+        titulo: "Ritual maldito inverso: Rojo",
+        contenido: `
+            Entre tú y todo lo que amenaza tu calma, pondría un infinito invisible.<br>
+            Una distancia imposible, tan delicada como absoluta, donde nada dañino pueda alcanzarte.<br>
+            Si el azul atrae, este secreto hace lo contrario: aparta el miedo, empuja la sombra, rompe el peligro.<br>
+            No es fuego sin control; es una técnica inversa aprendiendo a proteger lo que ama.<br>
+            <br>
+            Pasea despacio por cada letra; algunas guardan un destello prestado del arcoiris.<br>
+            Ninguna se entrega a primera vista: todas esperan el gesto correcto para encenderse.<br>
+            <br>
+            Lo que repele también cuida. Lo que arde también guía. Lo que parece explosión puede ser refugio.<br>
+            Y si encuentras la letra correcta, sabrás que mi pasión también sabe levantar una barrera por ti.<br>
+            <br>Pd. Al rozarlas hablan una por una; al seleccionarlas, confiesan todo el espectro. 🔍<br><br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: "",
+        arcoiris: {
+            fija: "S",
+            letras: [
+                { letra: "S", nombre: "Rojo", color: "#ff1f1f" },
+                { letra: "P", nombre: "Naranja", color: "rgb(255, 127, 0)" },
+                { letra: "E", nombre: "Amarillo", color: "#ffff00" },
+                { letra: "C", nombre: "Verde", color: "#21c45a" },
+                { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
+                { letra: "R", nombre: "Azul", color: "#0000ff" },
+                { letra: "M", nombre: "Magenta", color: "hsl(300 100% 50%)" }
+            ]
+        }
+    },
+
+    "naranja": {
+        titulo: "Pulso de atardecer",
+        contenido: `
+            Para ella, este tono no es solo un color: es una forma de alegría que se queda en el aire.<br>
+            Parece risa tibia, tarde encendida, promesa suave después de un día largo.<br>
+            Pasa el cursor con calma; algunas letras responderán como pequeñas ventanas de luz.<br>
+            Ninguna presume al principio, porque el color favorito también sabe guardar misterio.<br>
+            <br>
+            Hay colores que adornan, y hay colores que pertenecen. Este pertenece a su manera de existir.<br>
+            Por eso cada destello vuelve a ella, como si el cielo hubiera aprendido su gusto favorito.<br>
+            <br>Pd. Al rozarlas hablan una por una; al seleccionarlas, confiesan todo el espectro. 🔍<br><br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: "",
+        arcoiris: {
+            fija: "P",
+            letras: [
+                { letra: "S", nombre: "Rojo", color: "#ff1f1f" },
+                { letra: "P", nombre: "Naranja", color: "rgb(255, 127, 0)" },
+                { letra: "E", nombre: "Amarillo", color: "#ffff00" },
+                { letra: "C", nombre: "Verde", color: "#21c45a" },
+                { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
+                { letra: "R", nombre: "Azul", color: "#0000ff" },
+                { letra: "M", nombre: "Magenta", color: "hsl(300 100% 50%)" }
+            ]
+        }
+    },
+
 
 
 
