@@ -2232,4 +2232,61 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-07-01": {
+        fecha: "1 de julio de 2026",
+        titulo: "Donde La Luz Se Queda",
+        calendarioIcono: { valor: "🌻", color: "#facc15", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mecanica: "color",
+        colorInicial: "#ffff00",
+        colorUmbral: 0.88,
+        colorPistas: [
+            { pista: "amarillo", color: "#ffff00" },
+            { pista: "dorado", color: "#f5c542" },
+            { pista: "girasol", color: "#f6c915" },
+            { pista: "miel", color: "#f2b705" },
+            { pista: "limón", color: "#d9f20f" },
+            { pista: "aurora", color: "#ffe680" }
+        ],
+        pd: "Pd. Hay luces que no vienen del cielo: algunas llegan cuando tú sonríes.",
+        estrofas: [
+            [
+                "Hay un amarillo que nace en tu risa,",
+                "claro, valiente, difícil de apagar,",
+                "y hasta mi sombra se vuelve tranquila,",
+                "cuando tu alegría la viene a tocar."
+            ],
+            [
+                "Tu voz tiene un borde dorado en la tarde,",
+                "como una promesa que aprende a brillar,",
+                "me llama despacio, me salva del ruido,",
+                "y pone en mis días un poco de paz."
+            ],
+            [
+                "Si pasas, parece girasol la mañana,",
+                "girando completa hacia donde tú vas,",
+                "porque la belleza también se inclina,",
+                "cuando reconoce su forma de amar."
+            ],
+            [
+                "Tu ternura derrama miel en mis horas,",
+                "dulce paciencia, refugio sutil,",
+                "y todo lo amargo que el día me deja,",
+                "pierde su fuerza si pienso en ti."
+            ],
+            [
+                "Hay un destello de limón en tus gestos,",
+                "vivo, travieso, ligero al pasar,",
+                "como si el mundo soltara una risa,",
+                "cada vez que te mira llegar."
+            ],
+            [
+                "Cuando despierta la aurora en tus ojos,",
+                "entiendo que el cielo también sabe querer,",
+                "pues guarda su luz más suave y preciosa,",
+                "para parecerse a ti al amanecer."
+            ]
+        ]
+    },
 }
