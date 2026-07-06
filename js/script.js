@@ -50,6 +50,10 @@ function navegarBusqueda() {
             location.href = BASE + "Secrets/octavas.html";
             return;
         }
+        else if (palabra === "spectre") {
+            location.href = BASE + "Secrets/spectre.html";
+            return;
+        }
 
         if (typeof secretos !== "undefined" && Object.hasOwn(secretos, palabra)) {
             location.href = BASE + "info/secreto.html?clave=" + encodeURIComponent(palabra);

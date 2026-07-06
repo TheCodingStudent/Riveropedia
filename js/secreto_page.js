@@ -86,6 +86,7 @@ function renderSecreto() {
     }
 
     if (secreto.arcoiris) {
+        document.body.classList.add("secreto-arcoiris-activo");
         tituloFinal = aplicarArcoiris(tituloFinal, secreto.arcoiris);
         contenidoFinal = aplicarArcoiris(contenidoFinal, secreto.arcoiris);
     }

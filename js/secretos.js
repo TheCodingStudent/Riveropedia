@@ -385,6 +385,7 @@ const secretos = {
         contenido: `
             Entre tú y todo lo que amenaza tu calma, pondría un infinito invisible.<br>
             Una distancia imposible, tan delicada como absoluta, donde nada dañino pueda alcanzarte.<br>
+            Fase, paramita, pilares de luz: así empieza este juramento escondido.<br>
             Si el azul atrae, este secreto hace lo contrario: aparta el miedo, empuja la sombra, rompe el peligro.<br>
             No es fuego sin control; es una técnica inversa aprendiendo a proteger lo que ama.<br>
             <br>
@@ -392,6 +393,7 @@ const secretos = {
             Ninguna se entrega a primera vista: todas esperan el gesto correcto para encenderse.<br>
             <br>
             Lo que repele también cuida. Lo que arde también guía. Lo que parece explosión puede ser refugio.<br>
+            Si esos pilares de luz se levantan, no son para alejarte de mí, sino para alejar de ti cualquier daño.<br>
             Y si encuentras la letra correcta, sabrás que mi pasión también sabe levantar una barrera por ti.<br>
             <br>Pd. Al rozarlas hablan una por una; al seleccionarlas, confiesan todo el espectro. 🔍<br><br>
         `,
@@ -408,6 +410,159 @@ const secretos = {
                 { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
                 { letra: "R", nombre: "Azul", color: "#0000ff" },
                 { letra: "M", nombre: "Magenta", color: "hsl(300 100% 50%)" }
+            ]
+        }
+    },
+
+    "amarillo": {
+        titulo: "Relámpago De Tu Risa",
+        contenido: `
+            Este secreto no entra con solemnidad: entra riéndose, despeinando la sombra y prendiendo lámparas.<br>
+            Si el día estaba serio, lo acusa de exagerado; si mi ánimo estaba gris, le dibuja ventanas.<br>
+            <br>
+            Pasa el cursor por las letras y deja que el espectro se despierte por partes.<br>
+            La letra marcada no grita desde el principio; espera tu gesto, como una chispa educada.<br>
+            <br>
+            La luz más hermosa no siempre cae del cielo. A veces aparece cuando tú dices cualquier tontería bonita,<br>
+            y yo, completamente vencido, entiendo que mi alegría tiene tu pronunciación.<br>
+            <br>Pd. No todos los destellos iluminan igual; algunos hacen cosquillas en el corazón. 🔍<br><br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: "",
+        arcoiris: {
+            fija: "E",
+            letras: [
+                { letra: "S", nombre: "Rojo", color: "#ff1f1f" },
+                { letra: "P", nombre: "Naranja", color: "rgb(255, 127, 0)" },
+                { letra: "E", nombre: "Amarillo", color: "#ffff00" },
+                { letra: "C", nombre: "Verde", color: "#21c45a" },
+                { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
+                { letra: "R", nombre: "Azul", color: "#0000ff" },
+                { letra: "M", nombre: "Magenta", color: "hsl(300 100% 50%)" }
+            ]
+        }
+    },
+
+    "verde": {
+        titulo: "Botánica Del Regreso",
+        contenido: `
+            Este secreto no explota: germina. Se queda quieto, junta paciencia y empuja la vida desde abajo.<br>
+            Lo escribí como quien riega una promesa pequeña, sabiendo que lo importante no siempre florece de golpe.<br>
+            <br>
+            Busca en las letras el pulso del arcoiris. Algunas cambian solo cuando las rozas,<br>
+            como hojas que no muestran su envés hasta que el viento las convence.<br>
+            <br>
+            Tú eres la estación que no obedece calendarios: llegas, y lo que yo daba por seco vuelve a querer quedarse.<br>
+            Por eso este color no habla de suerte; habla de raíces eligiendo tu nombre.<br>
+            <br>Pd. Si algo vuelve a crecer en mí, casi siempre tiene tus manos cerca. 🔍<br><br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: "",
+        arcoiris: {
+            fija: "C",
+            letras: [
+                { letra: "S", nombre: "Rojo", color: "#ff1f1f" },
+                { letra: "P", nombre: "Naranja", color: "rgb(255, 127, 0)" },
+                { letra: "E", nombre: "Amarillo", color: "#ffff00" },
+                { letra: "C", nombre: "Verde", color: "#21c45a" },
+                { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
+                { letra: "R", nombre: "Azul", color: "#0000ff" },
+                { letra: "M", nombre: "Magenta", color: "hsl(300 100% 50%)" }
+            ]
+        }
+    },
+
+    "cyan": {
+        titulo: "Manual Para Respirar Luz",
+        contenido: `
+            Este secreto se lee como agua clara: sin prisa, sin peso, dejando que cada línea lave un poco el ruido.<br>
+            No quiere esconderte nada; quiere enseñarte que también la transparencia puede ser intensa.<br>
+            <br>
+            Las letras guardan pequeñas corrientes de color. Algunas solo despiertan con hover,<br>
+            otras confiesan su tono cuando seleccionas el texto completo y miras con calma.<br>
+            <br>
+            Si alguna vez me falta aire, pienso en ti como quien abre una ventana frente al mar.<br>
+            Tu nombre no hace ruido: despeja, refresca, acomoda el alma y la deja flotar.<br>
+            <br>Pd. La calma también puede tener brillo, y tú la haces parecer inevitable. 🔍<br><br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: "",
+        arcoiris: {
+            fija: "T",
+            letras: [
+                { letra: "S", nombre: "Rojo", color: "#ff1f1f" },
+                { letra: "P", nombre: "Naranja", color: "rgb(255, 127, 0)" },
+                { letra: "E", nombre: "Amarillo", color: "#ffff00" },
+                { letra: "C", nombre: "Verde", color: "#21c45a" },
+                { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
+                { letra: "R", nombre: "Azul", color: "#0000ff" },
+                { letra: "M", nombre: "Magenta", color: "hsl(300 100% 50%)" }
+            ]
+        }
+    },
+
+    "azul": {
+        titulo: "Ritual maldito: Azul",
+        contenido: `
+            Fase, crepusculo, ojos de la sabiduria: el llamado empieza como una gravedad suave.<br>
+            Azul no corre hacia el mundo; lo atrae. Lo dobla en silencio, lo acerca, lo vuelve inevitable.<br>
+            <br>
+            En este secreto, cada letra puede ser una órbita. Algunas se encienden al roce,<br>
+            y otras revelan su color verdadero cuando seleccionas el conjuro entero.<br>
+            <br>
+            Si yo tuviera esos ojos de la sabiduria, no los usaría para dominar nada.<br>
+            Los usaría para encontrarte más rápido, para entender tus silencios y para traer hacia mí todo lo que te haga feliz.<br>
+            <br>Pd. Hay atracciones que no jalan: llaman, cuidan y esperan a que vuelvas. 🔍<br><br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: "",
+        arcoiris: {
+            fija: "R",
+            letras: [
+                { letra: "S", nombre: "Rojo", color: "#ff1f1f" },
+                { letra: "P", nombre: "Naranja", color: "rgb(255, 127, 0)" },
+                { letra: "E", nombre: "Amarillo", color: "#ffff00" },
+                { letra: "C", nombre: "Verde", color: "#21c45a" },
+                { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
+                { letra: "R", nombre: "Azul", color: "#0000ff" },
+                { letra: "M", nombre: "Magenta", color: "hsl(300 100% 50%)" }
+            ]
+        }
+    },
+
+    "magenta": {
+        titulo: "tecnica maldita: vacio purpura",
+        contenido: `
+            Nueve cuerdas, luz polarizada, cuervo y shomyo: el secreto abre los ojos en medio del silencio.<br>
+            La brecha entre el interior y el exterior tiembla, y justo ahí nace este morado imposible.<br>
+            <br>
+            No es solo mezcla de fuerzas; es el lugar donde lo que atrae y lo que repele dejan de pelear,<br>
+            y por un instante todo se vuelve dirección, destino, vértigo y nombre tuyo.<br>
+            <br>
+            Recorre las letras como quien pisa un círculo ritual. Algunas esconden el arcoiris hasta que las tocas,<br>
+            pero al seleccionar el texto, el vacío entero se llena de color.<br>
+            <br>
+            Si amarte fuera técnica prohibida, la aprendería igual: no para destruir, sino para abrir un hueco en el mundo<br>
+            donde solo quedemos tú, yo, y esa forma absurda de magia que me pasa cuando me miras.<br>
+            <br>Pd. El vacío no siempre borra; a veces deja espacio exacto para lo que más amas. 🔍<br><br>
+        `,
+        index: [-1],
+        tooltip: [""],
+        audio: "",
+        arcoiris: {
+            fija: "E",
+            letras: [
+                { letra: "S", nombre: "Rojo", color: "#ff1f1f" },
+                { letra: "P", nombre: "Naranja", color: "rgb(255, 127, 0)" },
+                { letra: "M", nombre: "Amarillo", color: "#ffff00" },
+                { letra: "C", nombre: "Verde", color: "#21c45a" },
+                { letra: "T", nombre: "Cyan", color: "rgb(0, 255, 255)" },
+                { letra: "R", nombre: "Azul", color: "#0000ff" },
+                { letra: "E", nombre: "Magenta", color: "hsl(300 100% 50%)" }
             ]
         }
     },

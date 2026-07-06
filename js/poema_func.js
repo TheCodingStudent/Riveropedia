@@ -228,8 +228,51 @@ function renderCopias() {
     });
 }
 
-function hexARgb(hex) {
-    const limpio = String(hex || "").replace("#", "").trim();
+function hexARgb(color) {
+    const valor = String(color || "").trim();
+    const rgbMatch = valor.match(/^rgba?\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)(?:\s*,\s*[\d.]+)?\s*\)$/i);
+
+    if (rgbMatch) {
+        return {
+            r: limitar(Number(rgbMatch[1]), 0, 255),
+            g: limitar(Number(rgbMatch[2]), 0, 255),
+            b: limitar(Number(rgbMatch[3]), 0, 255)
+        };
+    }
+
+    const hslMatch = valor.match(/^hsla?\(\s*([\d.]+)(?:deg)?(?:\s*,\s*|\s+)([\d.]+)%?(?:\s*,\s*|\s+)([\d.]+)%?(?:\s*\/\s*[\d.]+%?)?\s*\)$/i);
+
+    if (hslMatch) {
+        const h = (((Number(hslMatch[1]) % 360) + 360) % 360) / 360;
+        const s = limitar(Number(hslMatch[2]) / 100, 0, 1);
+        const l = limitar(Number(hslMatch[3]) / 100, 0, 1);
+        const convertir = (p, q, tBase) => {
+            let t = tBase;
+            if (t < 0) t += 1;
+            if (t > 1) t -= 1;
+            if (t < 1 / 6) return p + (q - p) * 6 * t;
+            if (t < 1 / 2) return q;
+            if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+            return p;
+        };
+
+        if (s === 0) {
+            const gris = Math.round(l * 255);
+            return { r: gris, g: gris, b: gris };
+        }
+
+        const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        const p = 2 * l - q;
+
+        return {
+            r: Math.round(convertir(p, q, h + 1 / 3) * 255),
+            g: Math.round(convertir(p, q, h) * 255),
+            b: Math.round(convertir(p, q, h - 1 / 3) * 255)
+        };
+    }
+
+    let limpio = valor.replace("#", "").trim();
+    if (/^[0-9a-f]{3}$/i.test(limpio)) limpio = limpio.split("").map(letra => letra + letra).join("");
     if (!/^[0-9a-f]{6}$/i.test(limpio)) return { r: 255, g: 79, b: 135 };
     return {
         r: parseInt(limpio.slice(0, 2), 16),
@@ -379,6 +422,7 @@ function renderColor() {
                         <span class="color-hue-cursor" aria-hidden="true"></span>
                     </div>
                     <div class="color-valores" aria-live="polite">
+                        <code class="color-hex"></code>
                         <code class="color-rgb"></code>
                         <code class="color-hsv"></code>
                     </div>
@@ -412,6 +456,7 @@ function renderColor() {
     const cursorSV = contenedor.querySelector(".color-sv-cursor");
     const barraHue = contenedor.querySelector(".color-hue");
     const cursorHue = contenedor.querySelector(".color-hue-cursor");
+    const textoHex = contenedor.querySelector(".color-hex");
     const textoRgb = contenedor.querySelector(".color-rgb");
     const textoHsv = contenedor.querySelector(".color-hsv");
     const estrofas = [...contenedor.querySelectorAll(".color-estrofa")];
@@ -459,6 +504,7 @@ function renderColor() {
         cursorSV.style.left = `${estadoColor.s * 100}%`;
         cursorSV.style.top = `${(1 - estadoColor.v) * 100}%`;
         cursorHue.style.left = `${estadoColor.h / 359 * 100}%`;
+        textoHex.textContent = hex.toUpperCase();
         textoRgb.textContent = `RGB(${seleccionado.r}, ${seleccionado.g}, ${seleccionado.b})`;
         textoHsv.textContent = `HSV(${hsvTexto.h}°, ${hsvTexto.s}%, ${hsvTexto.v}%)`;
 

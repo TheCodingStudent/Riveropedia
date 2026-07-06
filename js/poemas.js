@@ -2121,7 +2121,7 @@ const poemas = {
 
     "2026-06-29": {
         fecha: "29 de junio de 2026",
-        titulo: "Combustión Secreta",
+        titulo: "Pulso En Llamas",
         calendarioIcono: { valor: "🍒", color: "#b11226", escala: 0.68 },
         autor: "A. Ssshparro",
         mecanica: "color",
@@ -2135,7 +2135,7 @@ const poemas = {
             { pista: "cereza", color: "#b11226" },
             { pista: "rubí", color: "#9b111e" }
         ],
-        pd: "Pd. Hay colores que no se nombran; se descubren cuando el pulso empieza a arder.",
+        pd: "Pd. Si mi corazón delata el secreto, que arda; yo nunca supe quererte en voz baja.",
         estrofas: [
             [
                 "Hay un fuego que despierta cuando te acercas,",
@@ -2178,7 +2178,7 @@ const poemas = {
 
     "2026-06-30": {
         fecha: "30 de junio de 2026",
-        titulo: "El Color Que Te Nombra",
+        titulo: "Favorita Del Atardecer",
         calendarioIcono: { valor: "🍊", color: "#f97316", escala: 0.68 },
         autor: "A. Ssshparro",
         mecanica: "color",
@@ -2192,50 +2192,50 @@ const poemas = {
             { pista: "durazno", color: "#ffb07c" },
             { pista: "ocaso", color: "#ff7a2f" }
         ],
-        pd: "Pd. Hay tonos que parecen inventados solo para parecerse a ti.",
+        pd: "Pd. Tu color favorito no lo escogiste tú; creo que él te estaba buscando primero.",
         estrofas: [
             [
-                "Hay una luz anaranjado cuando sonríes,",
-                "tan tuya, tan viva, tan fácil de amar,",
-                "que hasta mi voz se vuelve más cálida,",
-                "como si aprendiera contigo a brillar."
+                "En tu risa cabe todo lo anaranjado,",
+                "fiesta pequeña que empieza a cantar,",
+                "y mi día, que venía descalzo,",
+                "se pone bonito con verte llegar."
             ],
             [
-                "Tu risa deja aroma de mandarina,",
-                "dulce chispa que despierta el jardín,",
-                "y todo lo serio pierde su prisa,",
-                "cuando tu alegría se sienta junto a mí."
+                "Pelas la tarde como mandarina,",
+                "gajo por gajo me das claridad,",
+                "y hasta mis planes más torpes se endulzan,",
+                "si tu alegría los quiere tocar."
             ],
             [
-                "En tus ojos descansa un ámbar precioso,",
-                "una calma encendida que sabe cuidar,",
-                "y si la tarde me encuentra dudoso,",
-                "tu luz me convence de volver a intentar."
+                "Llevas ámbar guardado en los ojos,",
+                "lámpara tibia contra mi ansiedad,",
+                "no me prometes quitarme la lluvia,",
+                "pero me enseñas a verla pasar."
             ],
             [
-                "Hay un brillo de cobre sobre tu pelo,",
-                "como fuego tranquilo besando la piel,",
-                "y yo me quedo mirando en silencio,",
-                "porque ningún sol aprendió a arder tan bien."
+                "Si el cobre se asoma sobre tu pelo,",
+                "mi pulso tropieza de puro mirar,",
+                "no hay metal noble, corona ni cielo,",
+                "que valga la forma en que sabes brillar."
             ],
             [
-                "Tu ternura parece durazno maduro,",
-                "suave milagro de aroma sutil,",
-                "me acerca a la vida con gesto seguro,",
-                "y vuelve mi pecho más claro por ti."
+                "Me das durazno en medio del ruido,",
+                "suave descanso, mordida feliz,",
+                "y el mundo, que a veces llega torcido,",
+                "se sienta derecho cerquita de ti."
             ],
             [
-                "Cuando llega el ocaso, pienso en tu nombre,",
-                "porque el cielo se viste de tu color,",
-                "y entiendo que incluso la tarde conoce,",
-                "la forma exacta de rendirse al amor."
+                "Al borde del ocaso te recuerdo,",
+                "favorita del cielo al cambiar de color,",
+                "y todo lo que termina se queda",
+                "un segundo más, por mirarte mejor."
             ]
         ]
     },
 
     "2026-07-01": {
         fecha: "1 de julio de 2026",
-        titulo: "Donde La Luz Se Queda",
+        titulo: "La Risa Que Enciende El Día",
         calendarioIcono: { valor: "🌻", color: "#facc15", escala: 0.68 },
         autor: "A. Ssshparro",
         mecanica: "color",
@@ -2249,43 +2249,271 @@ const poemas = {
             { pista: "limón", color: "#d9f20f" },
             { pista: "aurora", color: "#ffe680" }
         ],
-        pd: "Pd. Hay luces que no vienen del cielo: algunas llegan cuando tú sonríes.",
+        pd: "Pd. Me haces reír tan fácil que hasta mis días nublados se creen mediodía.",
         estrofas: [
             [
-                "Hay un amarillo que nace en tu risa,",
-                "claro, valiente, difícil de apagar,",
-                "y hasta mi sombra se vuelve tranquila,",
-                "cuando tu alegría la viene a tocar."
+                "Amarillo se queda en la puerta,",
+                "como un saludo que quiere entrar,",
+                "y basta que rías, chiquita preciosa,",
+                "para que mi sombra se ponga a bailar."
             ],
             [
-                "Tu voz tiene un borde dorado en la tarde,",
-                "como una promesa que aprende a brillar,",
-                "me llama despacio, me salva del ruido,",
-                "y pone en mis días un poco de paz."
+                "Dorado me sabe tu modo de hablarme,",
+                "pan de la tarde, campana de sol,",
+                "me nombras bajito y mi pecho responde",
+                "quitándose encima cualquier nubarrón."
             ],
             [
-                "Si pasas, parece girasol la mañana,",
-                "girando completa hacia donde tú vas,",
-                "porque la belleza también se inclina,",
-                "cuando reconoce su forma de amar."
+                "El girasol se pondría celoso,",
+                "si viera hacia dónde me haces mirar;",
+                "yo también giro sin darme permiso,",
+                "siguiendo tu rastro de felicidad."
             ],
             [
-                "Tu ternura derrama miel en mis horas,",
-                "dulce paciencia, refugio sutil,",
-                "y todo lo amargo que el día me deja,",
-                "pierde su fuerza si pienso en ti."
+                "Miel en la taza, miel en tus manos,",
+                "miel en la forma de decir que sí;",
+                "lo amargo del día se queda pequeño,",
+                "cuando imagino tu abrazo venir."
             ],
             [
-                "Hay un destello de limón en tus gestos,",
-                "vivo, travieso, ligero al pasar,",
-                "como si el mundo soltara una risa,",
-                "cada vez que te mira llegar."
+                "Limón travieso traen tus ocurrencias,",
+                "chispa brillante, mordida de luz,",
+                "me haces reír hasta de mis dramas,",
+                "y eso, mi vida, lo consigues tú."
             ],
             [
-                "Cuando despierta la aurora en tus ojos,",
-                "entiendo que el cielo también sabe querer,",
-                "pues guarda su luz más suave y preciosa,",
-                "para parecerse a ti al amanecer."
+                "La aurora firma cartas en tus ojos,",
+                "cartas que nunca termino de leer,",
+                "porque cada línea me deja pensando",
+                "que amanecer es volverte a querer."
+            ]
+        ]
+    },
+
+    "2026-07-02": {
+        fecha: "2 de julio de 2026",
+        titulo: "Raíces De Ti",
+        calendarioIcono: { valor: "🍃", color: "#22c55e", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mecanica: "color",
+        colorInicial: "#22c55e",
+        colorUmbral: 0.88,
+        colorPistas: [
+            { pista: "verde", color: "#22c55e" },
+            { pista: "esmeralda", color: "#0f9f6e" },
+            { pista: "jade", color: "#00a86b" },
+            { pista: "trébol", color: "#2f9e44" },
+            { pista: "musgo", color: "#5f7f3a" },
+            { pista: "primavera", color: "#7fdc6a" }
+        ],
+        pd: "Pd. Contigo no florezco de golpe; me vuelvo jardín poquito a poquito.",
+        estrofas: [
+            [
+                "Verde me vuelvo si dices mi nombre,",
+                "rama reciente buscando tu voz,",
+                "se me acomoda la vida en el pecho,",
+                "y echa raíces mi terco amor."
+            ],
+            [
+                "Esmeralda parece tu paciencia,",
+                "no por perfecta, sino por durar;",
+                "me esperas bonito cuando me pierdo,",
+                "sin hacer ruido, sin preguntar de más."
+            ],
+            [
+                "Jade pequeño contra mi bolsillo,",
+                "llevo tu cariño para no caer,",
+                "y aunque la calle me empuje de frente,",
+                "tu recuerdo sabe sostener."
+            ],
+            [
+                "Trébol de cuatro son tus buenos días,",
+                "suerte doblada sobre mi café,",
+                "no gano el mundo, pero te tengo,",
+                "y eso me basta para vencer."
+            ],
+            [
+                "Musgo en la piedra: así me suavizas,",
+                "sin prisa, sin ruido, con fiel humedad;",
+                "lo duro que llevo se vuelve camino",
+                "si tus dedos lo saben tocar."
+            ],
+            [
+                "Primavera no llega por calendario,",
+                "llega si vienes riéndote así;",
+                "abren las cosas que daba por muertas,",
+                "y vuelvo a nacer cerquita de ti."
+            ]
+        ]
+    },
+
+    "2026-07-03": {
+        fecha: "3 de julio de 2026",
+        titulo: "Respirar Bajo Cristal",
+        calendarioIcono: { valor: "💧", color: "#00ffff", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mecanica: "color",
+        colorInicial: "#00ffff",
+        colorUmbral: 0.88,
+        colorPistas: [
+            { pista: "hielo", color: "rgb(0, 255, 255)" },
+            { pista: "turquesa", color: "#30d5c8" },
+            { pista: "aguamarina", color: "#7fffd4" },
+            { pista: "cristal", color: "#d7faff" },
+            { pista: "laguna", color: "#0077be" },
+            { pista: "brisa", color: "#b5f5ec" }
+        ],
+        pd: "Pd. A tu lado hasta el silencio se lava la cara y vuelve oliendo a brisa.",
+        estrofas: [
+            [
+                "Hielo clarito se vuelve mi prisa,",
+                "si tu respiración me roza al pasar;",
+                "no enfría el amor, le limpia las alas,",
+                "lo deja ligero para navegar."
+            ],
+            [
+                "Turquesa suena la tarde contigo,",
+                "vidrio de playa, campana de sal;",
+                "hasta el cansancio se quita los zapatos,",
+                "y corre a la orilla para descansar."
+            ],
+            [
+                "Aguamarina dibujo en el aire,",
+                "cuando tu nombre me quiere salvar;",
+                "mis dudas hacen espuma un momento,",
+                "y luego se rompen sin molestar."
+            ],
+            [
+                "Cristal no es débil si guarda tu risa,",
+                "tiembla bonito sin dejarse quebrar;",
+                "así me vuelvo si me das la mano:",
+                "transparente, valiente, listo para amar."
+            ],
+            [
+                "Laguna quieta bajo tus abrazos,",
+                "mapa sin ruido para regresar;",
+                "me miro en ella y por fin reconozco,",
+                "al hombre que quieres cuidar."
+            ],
+            [
+                "Brisa que pasa, brisa que escribe,",
+                "sobre mi frente tu dulce inicial;",
+                "yo cierro los ojos y el día completo",
+                "aprende despacio a respirar."
+            ]
+        ]
+    },
+
+    "2026-07-04": {
+        fecha: "4 de julio de 2026",
+        titulo: "Puerto En Lo Profundo",
+        calendarioIcono: { valor: "💙", color: "#0000ff", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mecanica: "color",
+        colorInicial: "#0000ff",
+        colorUmbral: 0.88,
+        colorPistas: [
+            { pista: "azul", color: "#0000ff" },
+            { pista: "zafiro", color: "#082567" },
+            { pista: "marino", color: "#001f3f" },
+            { pista: "cobalto", color: "#0047ab" },
+            { pista: "cielo", color: "#87ceeb" },
+            { pista: "océano", color: "#006994" }
+        ],
+        pd: "Pd. En lo más hondo no encontré miedo; encontré tu nombre esperándome.",
+        estrofas: [
+            [
+                "Azul es la puerta que abres despacio,",
+                "hacia una casa sin necesidad de hablar;",
+                "entro en tus ojos y baja la marea",
+                "de todo lo que me quería asustar."
+            ],
+            [
+                "Zafiro escondido llevo en la lengua,",
+                "tu nombre pesado de tanto valer;",
+                "lo digo bajito y se ordena mi pecho,",
+                "como un puerto que vuelve a encender."
+            ],
+            [
+                "Marino es el ritmo con que me esperas,",
+                "ola obediente, regreso leal;",
+                "no preguntas cuánto tardé en perderme,",
+                "solo preparas un sitio al final."
+            ],
+            [
+                "Cobalto me queda la fe cuando ríes,",
+                "dura y brillante contra la pared;",
+                "si el mundo golpea, no cedo tan fácil,",
+                "porque tu alegría me pone de pie."
+            ],
+            [
+                "Cielo no digo mirando hacia arriba,",
+                "lo digo pensando en tu modo de oír;",
+                "me cubres sin jaula, me acercas sin prisa,",
+                "me dejas ser libre volviendo hacia ti."
+            ],
+            [
+                "Océano inmenso me llama tu pecho,",
+                "no por distancia, sino por verdad;",
+                "me hundo contento, sin pedir rescate,",
+                "porque en tu fondo sé respirar."
+            ]
+        ]
+    },
+
+    "2026-07-05": {
+        fecha: "5 de julio de 2026",
+        titulo: "La Trampa Del Encanto",
+        calendarioIcono: { valor: "💜", color: "#ff00ff", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mecanica: "color",
+        colorInicial: "#ff00ff",
+        colorUmbral: 0.88,
+        colorPistas: [
+            { pista: "magenta", color: "hsl(300 100% 50%)" },
+            { pista: "fucsia", color: "#ff1493" },
+            { pista: "bugambilia", color: "#c2185b" },
+            { pista: "orquídea", color: "#da70d6" },
+            { pista: "violeta", color: "#8f00ff" },
+            { pista: "hechizo", color: "#7e22ce" }
+        ],
+        pd: "Pd. Si esto fue un truco, mi amor, aplaudo la trampa y pido repetirla.",
+        estrofas: [
+            [
+                "Magenta se enciende detrás de la escena,",
+                "cuando apareces robándote el telón;",
+                "yo, público entero, pierdo la compostura,",
+                "y aplaudo en silencio tu aparición."
+            ],
+            [
+                "Fucsia descarado trae tu sonrisa,",
+                "chispa con tacones, dulce explosión;",
+                "se burla de mi pose de hombre serio,",
+                "y me deja rendido, muerto de amor."
+            ],
+            [
+                "Bugambilia trepa por donde caminas,",
+                "atrevida, hermosa, dueña del balcón;",
+                "yo subo detrás, fingiendo cordura,",
+                "pero mi destino ya cambió de dirección."
+            ],
+            [
+                "Orquídea imposible, así es tu delicadeza:",
+                "no pide permiso para deslumbrar;",
+                "la miro de cerca y entiendo enseguida,",
+                "que lo extraordinario también sabe cuidar."
+            ],
+            [
+                "Violeta conversa con todos mis miedos,",
+                "les baja la voz, los manda a dormir;",
+                "después me guiña desde tu mirada,",
+                "y yo me dejo convencer por ti."
+            ],
+            [
+                "Hechizo firmado con tu nombre exacto,",
+                "contrato brillante sobre mi razón;",
+                "si amarte es truco, condena o milagro,",
+                "yo elijo caer una vez y otra vez."
             ]
         ]
     },
