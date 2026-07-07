@@ -57,6 +57,27 @@
     text-shadow: 0 0 14px rgba(255,79,135,0.2);
 }
 
+.palabra-trinidad {
+    position: relative;
+    color: inherit;
+    font-weight: inherit;
+    cursor: default;
+    transition: color .25s ease, text-shadow .25s ease, filter .25s ease;
+}
+
+.palabra-trinidad:hover,
+.palabra-trinidad::selection {
+    color: #ff2f78;
+}
+
+.palabra-trinidad:hover {
+    filter: brightness(1.08);
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, .75),
+        0 0 12px rgba(255, 79, 135, .55),
+        0 0 26px rgba(255, 47, 120, .38);
+}
+
 .poema-texto p {
     margin: 1em 0 42px;
     text-align: left;

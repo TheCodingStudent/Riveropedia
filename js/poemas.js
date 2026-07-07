@@ -2517,4 +2517,51 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-07-06": {
+        fecha: "6 de julio de 2026",
+        titulo: "El tercer vértice",
+        calendarioIcono: { valor: "△", color: "#b11226", escala: 0.76 },
+        autor: "A. Ssshparro",
+        mensaje: "T",
+        pd: "Pd. Esta semana no habrá palabras secretas diarias. 🧡",
+        estrofas: [
+            [
+                "No bastaba una línea para decirte entera,",
+                "ni dos puntos temblando frente al mismo fulgor,",
+                "tu nombre pidió forma, frontera y primavera,",
+                "y nació un <span class='palabra-trinidad'>triángulo</span> alrededor de mi amor."
+            ],
+            [
+                "Un vértice fue tu risa, clara como una herida,",
+                "otro mi pecho torpe buscándote al arder,",
+                "y el tercero, secreto, cerró toda la vida",
+                "cuando entendí que en ti podía permanecer."
+            ],
+            [
+                "Tres lados nos rodean con exacta <span class='palabra-trinidad'>ternura</span>,",
+                "tres sombras nos protegen del ruido y del azar,",
+                "si el mundo se derrumba, tu forma me asegura:",
+                "lo que se cierra en tres no se deja quebrar."
+            ],
+            [
+                "Eres ángulo dulce, geometría encendida,",
+                "la prueba más hermosa que no pude negar,",
+                "porque hasta la razón, tan fría y tan medida,",
+                "se arrodilla en silencio si te mira pasar."
+            ],
+            [
+                "Y si alguna distancia nos dibuja distintos,",
+                "si un lado de la noche nos quiere separar,",
+                "yo vuelvo a tus vértices, a tus signos benditos,",
+                "al centro donde todo me conduce a tu altar."
+            ],
+            [
+                "<span class='palabra-trinidad'>trazo</span> sagrado, cuerpo, alma y deseo,",
+                "figura diminuta donde cabe mi fe,",
+                "tres veces te nombro, tres veces te creo,",
+                "y en cada lado tuyo me vuelvo a nacer."
+            ]
+        ]
+    },
 }

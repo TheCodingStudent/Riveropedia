@@ -4,7 +4,7 @@ const diasPorMes = {
 };
 
 const meses = Object.keys(diasPorMes);
-let mesActual = 5;
+let mesActual = 6;
 
 const inicio = new Date(2026, 4, 25);
 const fin = new Date(2026, 6, 31);
