@@ -2558,9 +2558,56 @@ const poemas = {
             ],
             [
                 "<span class='palabra-trinidad'>trazo</span> sagrado, cuerpo, alma y deseo,",
-                "figura diminuta donde cabe mi fe,",
+                "trinidad diminuta donde cabe mi fe,",
                 "tres veces te nombro, tres veces te creo,",
                 "y en cada lado tuyo me vuelvo a nacer."
+            ]
+        ]
+    },
+
+    "2026-07-07": {
+        fecha: "7 de julio de 2026",
+        titulo: "Tres hojas para encontrarte",
+        calendarioIcono: { valor: "☘️", color: "#2f9e44", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "R",
+        pd: "Pd. Si la suerte existe, seguro aprendió primero la forma de tu ser.",
+        estrofas: [
+            [
+                "Hay un trébol pequeño dormido en la hierba,",
+                "con tres hojas abiertas al tímido sol,",
+                "parece sencillo, pero guarda en silencio",
+                "la manera exacta de hablar de los dos."
+            ],
+            [
+                "Una hoja me nombra la fe que regreso,",
+                "cuando todo se inclina y me quiere vencer;",
+                "bajo tierra te busca mi <span class='palabra-trinidad'>raíz</span> en silencio,",
+                "porque sabe a tu lado volver a crecer."
+            ],
+            [
+                "Otra hoja sostiene la risa que enciendes,",
+                "verde campanita temblando por mí;",
+                "soy <span class='palabra-trinidad'>retoño</span> si llegas, si miras, si vuelves,",
+                "si dejas tu luz respirando en mi jardín."
+            ],
+            [
+                "La tercera se vuelve promesa callada,",
+                "un amuleto tibio contra la ansiedad;",
+                "si el mundo hace ruido, tu pecho es <span class='palabra-trinidad'>refugio</span>,",
+                "mi suerte más cierta, mi verde verdad."
+            ],
+            [
+                "No necesito cuatro hojas ni milagros,",
+                "ni pedirle al azar que me quiera escuchar;",
+                "me basta tu nombre rozando mis labios,",
+                "para sentir que la vida sabe cuidar."
+            ],
+            [
+                "Trébol de tres hojas, sencillo y perfecto,",
+                "pequeña trinidad que aprendió a florecer;",
+                "si alguna fortuna me espera en secreto,",
+                "que tenga tus ojos y venga a nacer."
             ]
         ]
     },
