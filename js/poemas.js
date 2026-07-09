@@ -2611,4 +2611,98 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-07-08": {
+        fecha: "8 de julio de 2026",
+        titulo: "Tres letras para nombrarte",
+        calendarioIcono: { valor: "🧬", color: "#7a3cff", escala: 0.7 },
+        autor: "A. Ssshparro",
+        mensaje: "I",
+        pd: "Pd. Si tres letras bastan para ordenar la vida, imagina lo que hace tu nombre conmigo.",
+        estrofas: [
+            [
+                "Un triplete de codones guarda una orden diminuta,",
+                "tres letras latiendo dentro de la piel;",
+                "parece poca cosa, apenas una ruta,",
+                "pero con tres signos la vida aprende a ser."
+            ],
+            [
+                "En ti comienza mi <span class='palabra-trinidad'>inicio</span>,",
+                "como una base que encuentra su lugar;",
+                "A, U, G de mi pecho encendido,",
+                "primera señal de volver a amar."
+            ],
+            [
+                "Tres pulsos escriben una <span class='palabra-trinidad'>instrucción</span> secreta,",
+                "que mi cuerpo obedece sin preguntar;",
+                "si pronuncias mi nombre, la sangre interpreta",
+                "que todo mi mundo te debe buscar."
+            ],
+            [
+                "No hay azar pequeño cuando tú me miras,",
+                "ni molécula quieta bajo tu fulgor;",
+                "hasta lo invisible se vuelve caricia,",
+                "si tu risa traduce mi torpe interior."
+            ],
+            [
+                "Mi <span class='palabra-trinidad'>identidad</span> se acomoda en tres destellos,",
+                "como si el alma tuviera codón;",
+                "uno dice deseo, otro dice regreso,",
+                "y el último escribe tu nombre en mi voz."
+            ],
+            [
+                "Triplete sagrado, ternura precisa,",
+                "mínima llave de mi formación;",
+                "si tres letras levantan la vida,",
+                "tres veces te elijo con todo mi amor."
+            ]
+        ]
+    },
+
+    "2026-07-09": {
+        fecha: "9 de julio de 2026",
+        titulo: "Donde deseo besarte",
+        calendarioIcono: { valor: "🩺", color: "#c1121f", escala: 0.68 },
+        autor: "A. Ssshparro",
+        mensaje: "N",
+        pd: "Pd. Hay lugares del cuerpo donde la vida pasa en silencio; tú eres el mío.",
+        estrofas: [
+            [
+                "El trígono carotídeo guarda una zona sagrada,",
+                "donde el pulso conversa con tenue claridad;",
+                "bajo la piel, la vida pasa callada,",
+                "como si cuidara su propia verdad."
+            ],
+            [
+                "Ahí tiembla mi <span class='palabra-trinidad'>nervio</span> cuando te acercas,",
+                "fino mensajero de mi rendición;",
+                "no sabe mentir si tu boca lo cerca,",
+                "y entrega mi calma a tu respiración."
+            ],
+            [
+                "Una arteria sube con roja paciencia,",
+                "llevando memoria, latido y calor;",
+                "yo siento que toda mi ciencia se inclina",
+                "si rozas mi cuello con lento amor."
+            ],
+            [
+                "Mi <span class='palabra-trinidad'>nudo</span> secreto se afloja en tus manos,",
+                "cuando tu ternura me viene a tocar;",
+                "lo que era tensión, defensa y espanto,",
+                "aprende despacio a descansar."
+            ],
+            [
+                "No todo triángulo vive en la geometría,",
+                "algunos protegen lo vital al pasar;",
+                "también mi pecho, con torpe anatomía,",
+                "te guarda en el centro para no fallar."
+            ],
+            [
+                "Y si mi <span class='palabra-trinidad'>nombre</span> se pierde entre latidos,",
+                "búscalo cerca de esta región;",
+                "donde la sangre pronuncia bajito",
+                "que tú eres mi pulso, mi norte y mi razón."
+            ]
+        ]
+    },
 }
