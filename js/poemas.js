@@ -2705,4 +2705,145 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-07-10": {
+        fecha: "10 de julio de 2026",
+        titulo: "La flor que se abre en tres",
+        calendarioIcono: { valor: "⚜️", color: "#b88a2a", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "I",
+        pd: "Pd. Hay símbolos que parecen antiguos porque el amor también sabe tener linaje.",
+        estrofas: [
+            [
+                "La flor de lis levanta tres pétalos dorados,",
+                "como una llama quieta que aprendió a rezar;",
+                "no presume su nobleza, pero guarda en silencio",
+                "la forma de algo eterno que no quiere acabar."
+            ],
+            [
+                "En su centro vive una <span class='palabra-trinidad'>insignia</span> pequeña,",
+                "un brillo antiguo, difícil de explicar;",
+                "así te llevo, sin ruido, en el pecho,",
+                "como quien carga un reino sin quererlo mostrar."
+            ],
+            [
+                "Un pétalo mira al cielo con paciencia,",
+                "otro desciende a cuidar la raíz;",
+                "el tercero se queda temblando en medio,",
+                "como mi ser cuando hablas de mí."
+            ],
+            [
+                "Tu ternura tiene algo de <span class='palabra-trinidad'>imperio</span> secreto,",
+                "no manda con fuerza, no sabe obligar;",
+                "solo llega despacio, me toca la frente,",
+                "y todo en mi mundo se inclina a descansar."
+            ],
+            [
+                "Flor de tres luces, dorada y tranquila,",
+                "guardián diminuto de mi devoción;",
+                "si alguna corona merece mi vida,",
+                "será la que hagas con tu corazón."
+            ],
+            [
+                "Y bajo tu nombre pronuncio una <span class='palabra-trinidad'>invocación</span>,",
+                "no para pedirte milagros ni fe;",
+                "sino para quedarme, pétalo por pétalo,",
+                "en la noble costumbre de volverte a querer."
+            ]
+        ]
+    },
+
+    "2026-07-11": {
+        fecha: "11 de julio de 2026",
+        titulo: "Uno para todos",
+        calendarioIcono: { valor: "⚔️", color: "#7f2f2f", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "T",
+        pd: "Pd. Si el amor fuera juramento, yo lo firmaría con espada, risa y corazón.",
+        estrofas: [
+            [
+                "Los tres mosqueteros cruzan la tarde,",
+                "con capa de viento y promesa leal;",
+                "no caminan solos aunque el mundo se cierre,",
+                "porque una amistad verdadera sabe pelear."
+            ],
+            [
+                "Yo también tengo mi <span class='palabra-trinidad'>trío</span> sagrado:",
+                "tu risa, tus ojos, tu forma de pensar;",
+                "tres luces pequeñas guardando mi pecho,",
+                "cuando la vida me quiere ofuscar."
+            ],
+            [
+                "Uno para todos, repite la historia,",
+                "todos para uno, responde el valor;",
+                "yo cambio la frase con torpe memoria:",
+                "todo yo para solo tu, mi amor."
+            ],
+            [
+                "Mi <span class='palabra-trinidad'>temple</span> se afila si escucho tu nombre,",
+                "como una espada que vuelve a brillar;",
+                "no por la guerra, ni por la gloria,",
+                "sino para saberte cuidar."
+            ],
+            [
+                "Si vienen tormentas, levanto mi capa,",
+                "si viene la duda, sostengo mi voz;",
+                "no hay enemigo que venza tan fácil",
+                "a quien tiene tu abrazo como dirección."
+            ],
+            [
+                "Y en este <span class='palabra-trinidad'>tratado</span> de amor y aventura,",
+                "firmado con besos, paciencia y verdad;",
+                "juro quedarme, espada en ternura,",
+                "todos mis días guardando tu paz."
+            ]
+        ]
+    },
+
+    "2026-07-12": {
+        fecha: "12 de julio de 2026",
+        titulo: "Tres estados para amarte",
+        calendarioIcono: { valor: "🧪", color: "#4f8f9f", escala: 0.7 },
+        autor: "A. Ssshparro",
+        mensaje: "Y",
+        pd: "Pd. Cambia la materia, cambia la forma; pero lo que siento por ti conserva su nombre.",
+        estrofas: [
+            [
+                "La materia conoce tres estados antiguos,",
+                "sólido, líquido y gas, en combinación;",
+                "yo los aprendí como quien aprende un mapa,",
+                "pero contigo se volvieron pura intuición."
+            ],
+            [
+                "Sólido soy si tu mano me encuentra,",
+                "piedra confiada, tranquila, capaz;",
+                "mi <span class='palabra-trinidad'>yo</span> deja de huir cuando estás cerca,",
+                "y aprende de pronto a permanecer en paz."
+            ],
+            [
+                "Líquido soy si tus ojos me llaman,",
+                "río sin forma buscando tu piel;",
+                "me adapto a tu risa, desbordo mis bordes,",
+                "y vuelvo a tus manos para renacer."
+            ],
+            [
+                "Gas me vuelvo si me falta tu boca,",
+                "nube nerviosa, deseo al pasar;",
+                "subo, me expando, me pierdo en la noche,",
+                "hasta que tu nombre me vuelve a juntar."
+            ],
+            [
+                "Como el <span class='palabra-trinidad'>yodo</span>, mi sombra se enciende,",
+                "misterio violeta queriendo subir;",
+                "dejo mi forma, cruzo el silencio,",
+                "solo para encontrarte al fin."
+            ],
+            [
+                "Y si todo cambia, si nada se queda,",
+                "si el mundo transforma su antigua ley;",
+                "que <span class='palabra-trinidad'>ya</span> sepa mi alma, en cualquier estado,",
+                "que siempre te elige, una y otra vez."
+            ]
+        ]
+    },
 }
