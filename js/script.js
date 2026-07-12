@@ -54,6 +54,10 @@ function navegarBusqueda() {
             location.href = BASE + "Secrets/spectre.html";
             return;
         }
+        else if (palabra === "trinity") {
+            location.href = BASE + "Secrets/trinity.html";
+            return;
+        }
 
         if (typeof secretos !== "undefined" && Object.hasOwn(secretos, palabra)) {
             location.href = BASE + "info/secreto.html?clave=" + encodeURIComponent(palabra);
