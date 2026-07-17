@@ -6,324 +6,185 @@ const familias = {
     misterio: "#aa86ff"
 };
 
-const mensajesFamilia = {
-    pasion: "Una reacción intensa: no siempre hace ruido, pero cambia la temperatura del mundo.",
-    ternura: "Una forma suave de permanecer, como una luz pequeña que no se cansa.",
-    calma: "Un elemento estable: baja el volumen del caos y vuelve respirable la distancia.",
-    cuidado: "La química de sostener sin apretar, de estar sin invadir, de querer bonito.",
-    misterio: "Una fuerza rara y luminosa: no se explica del todo, pero se siente inevitable."
-};
+const elementosRaw = `
+1|H|Hidrógeno|ternura|1|1
+2|He|Helio|misterio|18|1
+3|Li|Litio|pasion|1|2
+4|Be|Berilio|pasion|2|2
+5|B|Boro|ternura|13|2
+6|C|Carbono|cuidado|14|2
+7|N|Nitrógeno|calma|15|2
+8|O|Oxígeno|calma|16|2
+9|F|Flúor|pasion|17|2
+10|Ne|Neón|misterio|18|2
+11|Na|Sodio|ternura|1|3
+12|Mg|Magnesio|pasion|2|3
+13|Al|Aluminio|misterio|13|3
+14|Si|Silicio|ternura|14|3
+15|P|Fósforo|pasion|15|3
+16|S|Azufre|calma|16|3
+17|Cl|Cloro|calma|17|3
+18|Ar|Argón|cuidado|18|3
+19|K|Potasio|misterio|1|4
+20|Ca|Calcio|ternura|2|4
+21|Sc|Escandio|misterio|3|4
+22|Ti|Titanio|ternura|4|4
+23|V|Vanadio|pasion|5|4
+24|Cr|Cromo|cuidado|6|4
+25|Mn|Manganeso|ternura|7|4
+26|Fe|Hierro|cuidado|8|4
+27|Co|Cobalto|misterio|9|4
+28|Ni|Níquel|ternura|10|4
+29|Cu|Cobre|misterio|11|4
+30|Zn|Zinc|cuidado|12|4
+31|Ga|Galio|misterio|13|4
+32|Ge|Germanio|ternura|14|4
+33|As|Arsénico|misterio|15|4
+34|Se|Selenio|calma|16|4
+35|Br|Bromo|pasion|17|4
+36|Kr|Criptón|pasion|18|4
+37|Rb|Rubidio|pasion|1|5
+38|Sr|Estroncio|ternura|2|5
+39|Y|Itrio|misterio|3|5
+40|Zr|Circonio|cuidado|4|5
+41|Nb|Niobio|misterio|5|5
+42|Mo|Molibdeno|cuidado|6|5
+43|Tc|Tecnecio|misterio|7|5
+44|Ru|Rutenio|cuidado|8|5
+45|Rh|Rodio|cuidado|9|5
+46|Pd|Paladio|pasion|10|5
+47|Ag|Plata|ternura|11|5
+48|Cd|Cadmio|calma|12|5
+49|In|Indio|misterio|13|5
+50|Sn|Estaño|cuidado|14|5
+51|Sb|Antimonio|misterio|15|5
+52|Te|Telurio|ternura|16|5
+53|I|Yodo|pasion|17|5
+54|Xe|Xenón|misterio|18|5
+55|Cs|Cesio|pasion|1|6
+56|Ba|Bario|ternura|2|6
+57|La|Lantano|calma|3|6
+72|Hf|Hafnio|cuidado|4|6
+73|Ta|Tántalo|pasion|5|6
+74|W|Wolframio|misterio|6|6
+75|Re|Renio|ternura|7|6
+76|Os|Osmio|calma|8|6
+77|Ir|Iridio|pasion|9|6
+78|Pt|Platino|ternura|10|6
+79|Au|Oro|ternura|11|6
+80|Hg|Mercurio|misterio|12|6
+81|Tl|Talio|calma|13|6
+82|Pb|Plomo|cuidado|14|6
+83|Bi|Bismuto|misterio|15|6
+84|Po|Polonio|pasion|16|6
+85|At|Astato|misterio|17|6
+86|Rn|Radón|calma|18|6
+87|Fr|Francio|pasion|1|7
+88|Ra|Radio|ternura|2|7
+89|Ac|Actinio|pasion|3|7
+104|Rf|Rutherfordio|misterio|4|7
+105|Db|Dubnio|calma|5|7
+106|Sg|Seaborgio|cuidado|6|7
+107|Bh|Bohrio|misterio|7|7
+108|Hs|Hassio|pasion|8|7
+109|Mt|Meitnerio|ternura|9|7
+110|Ds|Darmstadtio|misterio|10|7
+111|Rg|Roentgenio|calma|11|7
+112|Cn|Copernicio|cuidado|12|7
+113|Nh|Nihonio|ternura|13|7
+114|Fl|Flerovio|misterio|14|7
+115|Mc|Moscovio|pasion|15|7
+116|Lv|Livermorio|calma|16|7
+117|Ts|Teneso|misterio|17|7
+118|Og|Oganesón|calma|18|7
+58|Ce|Cerio|calma|4|8
+59|Pr|Praseodimio|ternura|5|8
+60|Nd|Neodimio|pasion|6|8
+61|Pm|Prometio|misterio|7|8
+62|Sm|Samario|calma|8|8
+63|Eu|Europio|ternura|9|8
+64|Gd|Gadolinio|cuidado|10|8
+65|Tb|Terbio|misterio|11|8
+66|Dy|Disprosio|pasion|12|8
+67|Ho|Holmio|ternura|13|8
+68|Er|Erbio|calma|14|8
+69|Tm|Tulio|misterio|15|8
+70|Yb|Iterbio|cuidado|16|8
+71|Lu|Lutecio|pasion|17|8
+90|Th|Torio|pasion|4|9
+91|Pa|Protactinio|misterio|5|9
+92|U|Uranio|calma|6|9
+93|Np|Neptunio|pasion|7|9
+94|Pu|Plutonio|misterio|8|9
+95|Am|Americio|ternura|9|9
+96|Cm|Curio|cuidado|10|9
+97|Bk|Berkelio|misterio|11|9
+98|Cf|Californio|pasion|12|9
+99|Es|Einstenio|ternura|13|9
+100|Fm|Fermio|calma|14|9
+101|Md|Mendelevio|misterio|15|9
+102|No|Nobelio|cuidado|16|9
+103|Lr|Lawrencio|pasion|17|9
+`;
 
-const elementosEspeciales = {
-    H: {
-        nombre: "Hábito",
-        texto: "La costumbre bonita de pensarte incluso cuando el día intenta hacerse el serio."
-    },
-    He: {
-        nombre: "Hechizo",
-        texto: "Eso que haces sin darte cuenta y aun así me cambia la gravedad."
-    },
-    Li: {
-        nombre: "Latido inicial",
-        texto: "El primer golpe suave del pecho cuando apareces en mi cabeza."
-    },
-    Be: {
-        nombre: "Beso eterno",
-        texto: "Una promesa pequeña con vocación de quedarse mucho tiempo."
-    },
-    B: {
-        nombre: "Brillo",
-        texto: "La luz mínima que de pronto vuelve habitable cualquier lugar."
-    },
-    C: {
-        nombre: "Cuidado",
-        texto: "Amar sin ruido: notar, sostener, cubrir del frío."
-    },
-    N: {
-        nombre: "Nido",
-        texto: "El lugar al que mi cansancio quiere volver cuando te piensa."
-    },
-    O: {
-        nombre: "Oxígeno",
-        texto: "No porque me falte aire, sino porque contigo respiro distinto."
-    },
-    F: {
-        nombre: "Fiebre",
-        texto: "La temperatura secreta de extrañarte demasiado."
-    },
-    Ne: {
-        nombre: "Neblina",
-        texto: "Ese misterio dulce donde no entiendo todo, pero quiero quedarme."
-    },
-    Na: {
-        nombre: "Nácar",
-        texto: "La forma delicada en que algo herido también puede volverse hermoso."
-    },
-    Mg: {
-        nombre: "Magnetismo",
-        texto: "La explicación menos científica para seguir acercándome a ti."
-    },
-    Al: {
-        nombre: "Alma",
-        texto: "Lo que no se ve, pero de algún modo reconoce tu nombre."
-    },
-    Si: {
-        nombre: "Siempre",
-        texto: "Una palabra inmensa disfrazada de sílaba simple."
-    },
-    P: {
-        nombre: "Pulso",
-        texto: "Mi manera biológica de confesar que algo en mí te celebra."
-    },
-    S: {
-        nombre: "Suspiro",
-        texto: "Una pausa del cuerpo para pronunciarte sin decirte."
-    },
-    Cl: {
-        nombre: "Claridad",
-        texto: "Cuando llegas y las cosas dejan de pelearse dentro de mí."
-    },
-    Ar: {
-        nombre: "Abrazo",
-        texto: "Un refugio con brazos, temperatura y memoria."
-    },
-    K: {
-        nombre: "Kilómetro",
-        texto: "La distancia intentando presumir que puede más que mis ganas de verte."
-    },
-    Ca: {
-        nombre: "Caricia",
-        texto: "La frase que la piel entiende antes que cualquier idioma."
-    },
-    Sc: {
-        nombre: "Secreto",
-        texto: "Una verdad guardada con moño, esperando el momento correcto."
-    },
-    Ti: {
-        nombre: "Tibieza",
-        texto: "La forma en que tu presencia le baja el volumen al mundo."
-    },
-    V: {
-        nombre: "Vértigo",
-        texto: "Mirarte y sentir que el suelo también sabe emocionarse."
-    },
-    Cr: {
-        nombre: "Creer",
-        texto: "La fe tranquila de elegirte incluso en días nublados."
-    },
-    Mn: {
-        nombre: "Mañana",
-        texto: "Ese futuro que suena menos abstracto cuando te incluye."
-    },
-    Fe: {
-        nombre: "Fidelidad",
-        texto: "Quedarme, no por costumbre, sino por convicción luminosa."
-    },
-    Co: {
-        nombre: "Cómplice",
-        texto: "La persona con quien hasta el silencio parece planear travesuras."
-    },
-    Ni: {
-        nombre: "Niñez",
-        texto: "La parte de mí que vuelve a jugar cuando me miras bonito."
-    },
-    Cu: {
-        nombre: "Curiosidad",
-        texto: "Las ganas infinitas de seguir descubriendo tus mundos pequeños."
-    },
-    Zn: {
-        nombre: "Zona segura",
-        texto: "Donde puedo ser raro, tierno, torpe y todavía querido."
-    },
-    Ga: {
-        nombre: "Galaxia",
-        texto: "Todo lo que eres cuando intento explicarte y me queda corto el cielo."
-    },
-    Ge: {
-        nombre: "Gesto",
-        texto: "La evidencia mínima de que el amor también vive en detalles."
-    },
-    As: {
-        nombre: "Asombro",
-        texto: "La sorpresa de que existas precisamente así."
-    },
-    Se: {
-        nombre: "Serenidad",
-        texto: "Una paz que no exige silencio, solo tu manera de estar."
-    },
-    Br: {
-        nombre: "Brasa",
-        texto: "Lo que no hace escándalo, pero sigue ardiendo debajo."
-    },
-    Kr: {
-        nombre: "Kryptonita",
-        texto: "Mi punto débil más precioso: tú acercándote."
-    },
-    Rh: {
-        nombre: "Refugio",
-        texto: "El sitio emocional donde mi caos se sienta y baja los hombros."
-    },
-    Y: {
-        nombre: "Y entonces",
-        texto: "La conjunción perfecta: antes estaba el mundo, y entonces llegaste."
-    },
-    Pd: {
-        nombre: "Piel despierta",
-        texto: "La reacción química de estar cerca y fingir normalidad."
-    },
-    Nd: {
-        nombre: "Nudo dulce",
-        texto: "Ese enredo bonito en la garganta cuando quiero decir demasiado."
-    }
-};
-
-const elementosBase = [
-    { n: 1, s: "H", elemento: "Hidrógeno", familia: "ternura", col: 1, row: 1 },
-    { n: 2, s: "He", elemento: "Helio", familia: "misterio", col: 18, row: 1 },
-
-    { n: 3, s: "Li", elemento: "Litio", familia: "pasion", col: 1, row: 2 },
-    { n: 4, s: "Be", elemento: "Berilio", familia: "pasion", col: 2, row: 2 },
-    { n: 5, s: "B", elemento: "Boro", familia: "ternura", col: 13, row: 2 },
-    { n: 6, s: "C", elemento: "Carbono", familia: "cuidado", col: 14, row: 2 },
-    { n: 7, s: "N", elemento: "Nitrógeno", familia: "calma", col: 15, row: 2 },
-    { n: 8, s: "O", elemento: "Oxígeno", familia: "calma", col: 16, row: 2 },
-    { n: 9, s: "F", elemento: "Flúor", familia: "pasion", col: 17, row: 2 },
-    { n: 10, s: "Ne", elemento: "Neón", familia: "misterio", col: 18, row: 2 },
-
-    { n: 11, s: "Na", elemento: "Sodio", familia: "ternura", col: 1, row: 3 },
-    { n: 12, s: "Mg", elemento: "Magnesio", familia: "pasion", col: 2, row: 3 },
-    { n: 13, s: "Al", elemento: "Aluminio", familia: "misterio", col: 13, row: 3 },
-    { n: 14, s: "Si", elemento: "Silicio", familia: "ternura", col: 14, row: 3 },
-    { n: 15, s: "P", elemento: "Fósforo", familia: "pasion", col: 15, row: 3 },
-    { n: 16, s: "S", elemento: "Azufre", familia: "calma", col: 16, row: 3 },
-    { n: 17, s: "Cl", elemento: "Cloro", familia: "calma", col: 17, row: 3 },
-    { n: 18, s: "Ar", elemento: "Argón", familia: "cuidado", col: 18, row: 3 },
-
-    { n: 19, s: "K", elemento: "Potasio", familia: "misterio", col: 1, row: 4 },
-    { n: 20, s: "Ca", elemento: "Calcio", familia: "ternura", col: 2, row: 4 },
-    { n: 21, s: "Sc", elemento: "Escandio", familia: "misterio", col: 3, row: 4 },
-    { n: 22, s: "Ti", elemento: "Titanio", familia: "ternura", col: 4, row: 4 },
-    { n: 23, s: "V", elemento: "Vanadio", familia: "pasion", col: 5, row: 4 },
-    { n: 24, s: "Cr", elemento: "Cromo", familia: "cuidado", col: 6, row: 4 },
-    { n: 25, s: "Mn", elemento: "Manganeso", familia: "ternura", col: 7, row: 4 },
-    { n: 26, s: "Fe", elemento: "Hierro", familia: "cuidado", col: 8, row: 4 },
-    { n: 27, s: "Co", elemento: "Cobalto", familia: "misterio", col: 9, row: 4 },
-    { n: 28, s: "Ni", elemento: "Níquel", familia: "ternura", col: 10, row: 4 },
-    { n: 29, s: "Cu", elemento: "Cobre", familia: "misterio", col: 11, row: 4 },
-    { n: 30, s: "Zn", elemento: "Zinc", familia: "cuidado", col: 12, row: 4 },
-    { n: 31, s: "Ga", elemento: "Galio", familia: "misterio", col: 13, row: 4 },
-    { n: 32, s: "Ge", elemento: "Germanio", familia: "ternura", col: 14, row: 4 },
-    { n: 33, s: "As", elemento: "Arsénico", familia: "misterio", col: 15, row: 4 },
-    { n: 34, s: "Se", elemento: "Selenio", familia: "calma", col: 16, row: 4 },
-    { n: 35, s: "Br", elemento: "Bromo", familia: "pasion", col: 17, row: 4 },
-    { n: 36, s: "Kr", elemento: "Kriptón", familia: "pasion", col: 18, row: 4 },
-
-    { n: 37, s: "Rb", elemento: "Rubidio", familia: "pasion", col: 1, row: 5 },
-    { n: 38, s: "Sr", elemento: "Estroncio", familia: "ternura", col: 2, row: 5 },
-    { n: 39, s: "Y", elemento: "Itrio", familia: "misterio", col: 3, row: 5 },
-    { n: 40, s: "Zr", elemento: "Circonio", familia: "cuidado", col: 4, row: 5 },
-    { n: 41, s: "Nb", elemento: "Niobio", familia: "misterio", col: 5, row: 5 },
-    { n: 42, s: "Mo", elemento: "Molibdeno", familia: "cuidado", col: 6, row: 5 },
-    { n: 43, s: "Tc", elemento: "Tecnecio", familia: "misterio", col: 7, row: 5 },
-    { n: 44, s: "Ru", elemento: "Rutenio", familia: "cuidado", col: 8, row: 5 },
-    { n: 45, s: "Rh", elemento: "Rodio", familia: "cuidado", col: 9, row: 5 },
-    { n: 46, s: "Pd", elemento: "Paladio", familia: "pasion", col: 10, row: 5 },
-    { n: 47, s: "Ag", elemento: "Plata", familia: "ternura", col: 11, row: 5 },
-    { n: 48, s: "Cd", elemento: "Cadmio", familia: "calma", col: 12, row: 5 },
-    { n: 49, s: "In", elemento: "Indio", familia: "misterio", col: 13, row: 5 },
-    { n: 50, s: "Sn", elemento: "Estaño", familia: "cuidado", col: 14, row: 5 },
-    { n: 51, s: "Sb", elemento: "Antimonio", familia: "misterio", col: 15, row: 5 },
-    { n: 52, s: "Te", elemento: "Telurio", familia: "ternura", col: 16, row: 5 },
-    { n: 53, s: "I", elemento: "Yodo", familia: "pasion", col: 17, row: 5 },
-    { n: 54, s: "Xe", elemento: "Xenón", familia: "misterio", col: 18, row: 5 },
-
-    { n: 55, s: "Cs", elemento: "Cesio", familia: "pasion", col: 1, row: 6 },
-    { n: 56, s: "Ba", elemento: "Bario", familia: "ternura", col: 2, row: 6 },
-    { n: 57, s: "La", elemento: "Lantano", familia: "calma", col: 3, row: 6 },
-    { n: 72, s: "Hf", elemento: "Hafnio", familia: "cuidado", col: 4, row: 6 },
-    { n: 73, s: "Ta", elemento: "Tantalio", familia: "pasion", col: 5, row: 6 },
-    { n: 74, s: "W", elemento: "Wolframio", familia: "misterio", col: 6, row: 6 },
-    { n: 75, s: "Re", elemento: "Renio", familia: "ternura", col: 7, row: 6 },
-    { n: 76, s: "Os", elemento: "Osmio", familia: "calma", col: 8, row: 6 },
-    { n: 77, s: "Ir", elemento: "Iridio", familia: "pasion", col: 9, row: 6 },
-    { n: 78, s: "Pt", elemento: "Platino", familia: "ternura", col: 10, row: 6 },
-    { n: 79, s: "Au", elemento: "Oro", familia: "ternura", col: 11, row: 6 },
-    { n: 80, s: "Hg", elemento: "Mercurio", familia: "misterio", col: 12, row: 6 },
-    { n: 81, s: "Tl", elemento: "Talio", familia: "calma", col: 13, row: 6 },
-    { n: 82, s: "Pb", elemento: "Plomo", familia: "cuidado", col: 14, row: 6 },
-    { n: 83, s: "Bi", elemento: "Bismuto", familia: "misterio", col: 15, row: 6 },
-    { n: 84, s: "Po", elemento: "Polonio", familia: "pasion", col: 16, row: 6 },
-    { n: 85, s: "At", elemento: "Astato", familia: "misterio", col: 17, row: 6 },
-    { n: 86, s: "Rn", elemento: "Radón", familia: "calma", col: 18, row: 6 },
-
-    { n: 87, s: "Fr", elemento: "Francio", familia: "pasion", col: 1, row: 7 },
-    { n: 88, s: "Ra", elemento: "Radio", familia: "ternura", col: 2, row: 7 },
-    { n: 89, s: "Ac", elemento: "Actinio", familia: "pasion", col: 3, row: 7 },
-    { n: 104, s: "Rf", elemento: "Rutherfordio", familia: "misterio", col: 4, row: 7 },
-    { n: 105, s: "Db", elemento: "Dubnio", familia: "calma", col: 5, row: 7 },
-    { n: 106, s: "Sg", elemento: "Seaborgio", familia: "cuidado", col: 6, row: 7 },
-    { n: 107, s: "Bh", elemento: "Bohrio", familia: "misterio", col: 7, row: 7 },
-    { n: 108, s: "Hs", elemento: "Hassio", familia: "pasion", col: 8, row: 7 },
-    { n: 109, s: "Mt", elemento: "Meitnerio", familia: "ternura", col: 9, row: 7 },
-    { n: 110, s: "Ds", elemento: "Darmstadtio", familia: "misterio", col: 10, row: 7 },
-    { n: 111, s: "Rg", elemento: "Roentgenio", familia: "calma", col: 11, row: 7 },
-    { n: 112, s: "Cn", elemento: "Copernicio", familia: "cuidado", col: 12, row: 7 },
-    { n: 113, s: "Nh", elemento: "Nihonio", familia: "ternura", col: 13, row: 7 },
-    { n: 114, s: "Fl", elemento: "Flerovio", familia: "misterio", col: 14, row: 7 },
-    { n: 115, s: "Mc", elemento: "Moscovio", familia: "pasion", col: 15, row: 7 },
-    { n: 116, s: "Lv", elemento: "Livermorio", familia: "calma", col: 16, row: 7 },
-    { n: 117, s: "Ts", elemento: "Teneso", familia: "misterio", col: 17, row: 7 },
-    { n: 118, s: "Og", elemento: "Oganesón", familia: "calma", col: 18, row: 7 },
-
-    { n: 58, s: "Ce", elemento: "Cerio", familia: "calma", col: 4, row: 8 },
-    { n: 59, s: "Pr", elemento: "Praseodimio", familia: "ternura", col: 5, row: 8 },
-    { n: 60, s: "Nd", elemento: "Neodimio", familia: "pasion", col: 6, row: 8 },
-    { n: 61, s: "Pm", elemento: "Prometio", familia: "misterio", col: 7, row: 8 },
-    { n: 62, s: "Sm", elemento: "Samario", familia: "calma", col: 8, row: 8 },
-    { n: 63, s: "Eu", elemento: "Europio", familia: "ternura", col: 9, row: 8 },
-    { n: 64, s: "Gd", elemento: "Gadolinio", familia: "cuidado", col: 10, row: 8 },
-    { n: 65, s: "Tb", elemento: "Terbio", familia: "misterio", col: 11, row: 8 },
-    { n: 66, s: "Dy", elemento: "Disprosio", familia: "pasion", col: 12, row: 8 },
-    { n: 67, s: "Ho", elemento: "Holmio", familia: "ternura", col: 13, row: 8 },
-    { n: 68, s: "Er", elemento: "Erbio", familia: "calma", col: 14, row: 8 },
-    { n: 69, s: "Tm", elemento: "Tulio", familia: "misterio", col: 15, row: 8 },
-    { n: 70, s: "Yb", elemento: "Iterbio", familia: "cuidado", col: 16, row: 8 },
-    { n: 71, s: "Lu", elemento: "Lutecio", familia: "pasion", col: 17, row: 8 },
-
-    { n: 90, s: "Th", elemento: "Torio", familia: "pasion", col: 4, row: 9 },
-    { n: 91, s: "Pa", elemento: "Protactinio", familia: "misterio", col: 5, row: 9 },
-    { n: 92, s: "U", elemento: "Uranio", familia: "calma", col: 6, row: 9 },
-    { n: 93, s: "Np", elemento: "Neptunio", familia: "pasion", col: 7, row: 9 },
-    { n: 94, s: "Pu", elemento: "Plutonio", familia: "misterio", col: 8, row: 9 },
-    { n: 95, s: "Am", elemento: "Americio", familia: "ternura", col: 9, row: 9 },
-    { n: 96, s: "Cm", elemento: "Curio", familia: "cuidado", col: 10, row: 9 },
-    { n: 97, s: "Bk", elemento: "Berkelio", familia: "misterio", col: 11, row: 9 },
-    { n: 98, s: "Cf", elemento: "Californio", familia: "pasion", col: 12, row: 9 },
-    { n: 99, s: "Es", elemento: "Einstenio", familia: "ternura", col: 13, row: 9 },
-    { n: 100, s: "Fm", elemento: "Fermio", familia: "calma", col: 14, row: 9 },
-    { n: 101, s: "Md", elemento: "Mendelevio", familia: "misterio", col: 15, row: 9 },
-    { n: 102, s: "No", elemento: "Nobelio", familia: "cuidado", col: 16, row: 9 },
-    { n: 103, s: "Lr", elemento: "Lawrencio", familia: "pasion", col: 17, row: 9 }
-];
-
-const elementosAmor = elementosBase.map(elemento => {
-    const especial = elementosEspeciales[elemento.s];
-    const nombre = especial?.nombre ?? elemento.elemento;
-    const texto = especial?.texto ?? `${elemento.elemento}: ${mensajesFamilia[elemento.familia]}`;
-
+const elementosBase = elementosRaw.trim().split("\n").map(linea => {
+    const [n, s, elemento, familia, col, row] = linea.split("|");
     return {
-        ...elemento,
-        nombre,
-        texto
+        n: Number(n),
+        s,
+        elemento,
+        familia,
+        col: Number(col),
+        row: Number(row)
     };
 });
 
 const tabla = document.getElementById("tabla-amor");
-const panel = document.getElementById("panel-elemento");
-const panelNumero = panel.querySelector(".panel-numero");
-const panelSimbolo = panel.querySelector(".panel-simbolo");
-const panelNombre = panel.querySelector(".panel-nombre");
-const panelTexto = panel.querySelector(".panel-texto");
+const poemaElemento = document.getElementById("poema-elemento");
+const poemaNumero = poemaElemento.querySelector(".poema-numero");
+const poemaSimbolo = poemaElemento.querySelector(".poema-simbolo");
+const poemaTitulo = poemaElemento.querySelector(".poema-titulo");
+const poemaVersos = poemaElemento.querySelector(".poema-versos");
+
+function obtenerPoemaElemento(elemento) {
+    return (typeof poemasElementales !== "undefined" && poemasElementales[elemento.s]) || {
+        titulo: elemento.elemento,
+        estrofas: [
+            [
+                `En ${elemento.elemento} guardo una forma secreta,`,
+                "una luz pequeña volviendo hacia ti;",
+                "si nadie comprende mi rara materia,",
+                "tu nombre la ordena dentro de mí."
+            ],
+            [
+                "No necesito medir este cariño,",
+                "ni encerrarlo entero en explicación;",
+                "me basta saber que cuando apareces,",
+                "algo se enciende en mi corazón."
+            ],
+            [
+                "Hay días que pesan como metales,",
+                "hay noches que piden volver a creer;",
+                "pero tu ternura cambia mi estado,",
+                "y hasta mi sombra aprende a florecer."
+            ],
+            [
+                "Por eso te escribo desde esta tabla,",
+                "con ciencia pequeña y hambre de luz;",
+                "si el universo pregunta mi centro,",
+                "mi respuesta vuelve siempre a tú."
+            ]
+        ]
+    };
+}
+
+function renderizarPoema(poema) {
+    const estrofas = poema.estrofas || (poema.poema ? [poema.poema] : []);
+
+    return estrofas
+        .map(estrofa => `<p>${estrofa.join("<br>")}</p>`)
+        .join("");
+}
 
 function pintarElemento(elemento) {
     const boton = document.createElement("button");
@@ -332,8 +193,8 @@ function pintarElemento(elemento) {
         boton.classList.add("serie-interna");
     }
     boton.type = "button";
-    boton.title = `${elemento.elemento} · ${elemento.nombre}`;
-    boton.setAttribute("aria-label", `${elemento.n}. ${elemento.elemento}: ${elemento.nombre}`);
+    boton.title = elemento.elemento;
+    boton.setAttribute("aria-label", `${elemento.n}. ${elemento.elemento}`);
     boton.style.setProperty("--col", elemento.col);
     boton.style.setProperty("--row", elemento.row);
     boton.style.setProperty("--color", familias[elemento.familia]);
@@ -347,18 +208,23 @@ function pintarElemento(elemento) {
 }
 
 function activarElemento(elemento, boton) {
+    const poema = obtenerPoemaElemento(elemento);
     document.querySelectorAll(".elemento").forEach(item => item.classList.remove("activo"));
     boton.classList.add("activo");
-    panel.style.setProperty("--activo", familias[elemento.familia]);
-    panelNumero.textContent = String(elemento.n).padStart(2, "0");
-    panelSimbolo.textContent = elemento.s;
-    panelNombre.textContent = elemento.nombre;
-    panelTexto.textContent = elemento.texto;
+    poemaElemento.style.setProperty("--activo", familias[elemento.familia]);
+    poemaNumero.textContent = String(elemento.n).padStart(2, "0");
+    poemaSimbolo.textContent = elemento.s;
+    poemaTitulo.textContent = poema.titulo || elemento.elemento;
+    poemaVersos.innerHTML = renderizarPoema(poema);
 }
 
-elementosAmor
+elementosBase
     .sort((a, b) => a.n - b.n)
     .forEach(pintarElemento);
 
 const primerElemento = document.querySelector(".elemento");
-if (primerElemento) primerElemento.classList.add("activo");
+if (primerElemento) {
+    const primerSimbolo = primerElemento.querySelector("strong")?.textContent;
+    const primerElementoData = elementosBase.find(elemento => elemento.s === primerSimbolo);
+    if (primerElementoData) activarElemento(primerElementoData, primerElemento);
+}

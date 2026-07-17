@@ -114,7 +114,7 @@
         }
 
         .periodica-card {
-            width: min(1400px, 96vw);
+            width: min(1700px, 96vw);
             padding: clamp(28px, 5vw, 54px);
             border: 1px solid rgba(255, 255, 255, .18);
             border-radius: 34px;
@@ -129,10 +129,6 @@
         }
 
         .hero {
-            display: grid;
-            grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr);
-            gap: clamp(22px, 4vw, 46px);
-            align-items: end;
             margin-bottom: 30px;
         }
 
@@ -162,43 +158,11 @@
             font-size: clamp(1rem, 2vw, 1.16rem);
         }
 
-        .panel {
-            min-height: 206px;
-            padding: 24px;
-            border: 1px solid color-mix(in srgb, var(--activo, var(--tabla-rose)) 48%, rgba(255, 255, 255, .16));
-            border-radius: 28px;
-            background:
-                radial-gradient(circle at 18% 16%, color-mix(in srgb, var(--activo, var(--tabla-rose)) 24%, transparent), transparent 48%),
-                rgba(255, 255, 255, .06);
-            box-shadow:
-                0 0 34px color-mix(in srgb, var(--activo, var(--tabla-rose)) 22%, transparent),
-                inset 0 1px 0 rgba(255, 255, 255, .12);
-        }
-
-        .panel-numero {
-            color: rgba(255, 248, 251, .58);
-            font-family: monospace;
-            font-size: .82rem;
-        }
-
-        .panel-simbolo {
-            margin: 8px 0 2px;
-            font-size: 3.6rem;
-            line-height: 1;
-            font-weight: 950;
-        }
-
-        .panel-nombre {
-            margin: 0;
-            color: var(--tabla-gold);
-            font-size: 1.24rem;
-            font-weight: 900;
-        }
-
-        .panel-texto {
-            margin: 14px 0 0;
-            color: rgba(255, 248, 251, .78);
-            line-height: 1.65;
+        .periodica-explorador {
+            display: grid;
+            grid-template-columns: minmax(720px, 1fr) minmax(280px, 360px);
+            gap: clamp(22px, 3vw, 38px);
+            align-items: start;
         }
 
         .tabla-wrap {
@@ -275,6 +239,59 @@
             white-space: nowrap;
         }
 
+        .poema-elemento {
+            position: sticky;
+            top: 96px;
+            min-height: 380px;
+            padding: clamp(24px, 4vw, 34px);
+            border: 1px solid color-mix(in srgb, var(--activo, var(--tabla-gold)) 48%, rgba(255, 255, 255, .16));
+            border-radius: 30px;
+            background:
+                radial-gradient(circle at 18% 16%, color-mix(in srgb, var(--activo, var(--tabla-gold)) 24%, transparent), transparent 50%),
+                linear-gradient(145deg, rgba(255, 255, 255, .10), rgba(255, 255, 255, .045));
+            box-shadow:
+                0 0 34px color-mix(in srgb, var(--activo, var(--tabla-gold)) 20%, transparent),
+                inset 0 1px 0 rgba(255, 255, 255, .14);
+        }
+
+        .poema-numero {
+            color: rgba(255, 248, 251, .58);
+            font-family: monospace;
+            font-size: .82rem;
+        }
+
+        .poema-simbolo {
+            margin: 10px 0 4px;
+            font-size: clamp(3.6rem, 8vw, 5.4rem);
+            line-height: .92;
+            font-weight: 950;
+            text-shadow:
+                0 0 22px color-mix(in srgb, var(--activo, var(--tabla-gold)) 52%, transparent),
+                0 0 50px rgba(255, 255, 255, .14);
+        }
+
+        .poema-titulo {
+            margin: 0;
+            color: var(--tabla-gold);
+            font-size: clamp(1.35rem, 3vw, 2rem);
+            font-weight: 900;
+        }
+
+        .poema-versos {
+            margin: 16px 0 0;
+            color: rgba(255, 248, 251, .80);
+            font-size: clamp(.7rem, 1.4vw, .8rem);
+            line-height: 1.48;
+        }
+
+        .poema-versos p {
+            margin: 0 0 12px;
+        }
+
+        .poema-versos p:last-child {
+            margin-bottom: 0;
+        }
+
         .nota {
             margin: 24px 0 0;
             color: rgba(255, 248, 251, .56);
@@ -291,10 +308,17 @@
                 grid-template-columns: 1fr;
             }
 
+            .periodica-explorador {
+                grid-template-columns: 1fr;
+            }
+
+            .poema-elemento {
+                position: static;
+            }
+
             .semana,
             .indices,
             .periodica-card {
                 width: min(1180px, 94vw);
             }
         }
-
