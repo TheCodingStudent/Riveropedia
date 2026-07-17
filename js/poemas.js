@@ -2846,4 +2846,333 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-07-13": {
+        fecha: "13 de julio de 2026",
+        titulo: "Atracción sin mapa",
+        calendarioIcono: { valor: "⚡", color: "#f43f5e", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "Q",
+        pd: "Pd. ¿Cómo podría describir la atracción que me generas?",
+        estrofas: [
+            [
+                "Hay fuerzas pequeñas que nadie mira,",
+                "pero cambian el rumbo de una habitación;",
+                "así llegas tú, sin levantar la voz,",
+                "y ordenas mi caos con una sonrisa."
+            ],
+            [
+                "La carga eléctrica sabe de encuentros,",
+                "de signos que se buscan sin pedir explicación;",
+                "yo no sé nombrar lo que haces conmigo,",
+                "solo sé que me acerco aunque tiemble mi razón."
+            ],
+            [
+                "Si me miras de cerca, algo se despierta,",
+                "una chispa obediente debajo de la piel;",
+                "mi pecho se vuelve campo invisible",
+                "donde todo termina apuntando hacia ti."
+            ],
+            [
+                "No necesito alfombras para entenderlo,",
+                "ni cielos partidos sobre la ciudad;",
+                "basta tu mano rozando la mía",
+                "para que mi mundo recuerde brillar."
+            ],
+            [
+                "No sé quedarme neutro cuando apareces,",
+                "algo en mi centro comienza a vibrar;",
+                "aunque finja calma, aunque mire al suelo,",
+                "todo mi cuerpo te quiere alcanzar."
+            ],
+            [
+                "Si existe una ley para este deseo,",
+                "que no la corrijan, que la dejen vivir;",
+                "porque todo lo que soy, cuando te acercas,",
+                "se atrae despacio y corre hacia ti."
+            ]
+        ]
+    },
+
+    "2026-07-14": {
+        fecha: "14 de julio de 2026",
+        titulo: "Lo que arde por dentro",
+        calendarioIcono: { valor: "🔥", color: "#f97316", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "U",
+        pd: "Pd. ¿Cómo podría explicar la energía que me provocas internamente?",
+        estrofas: [
+            [
+                "Hay un fuego que no presume llama,",
+                "un calor callado, difícil de ver;",
+                "vive bajo el gesto con que me nombras",
+                "y me vuelve suave sin obedecer."
+            ],
+            [
+                "La energía interna de mi pecho cambia",
+                "si tu risa cruza la tarde por mí;",
+                "todo lo quieto se agita en secreto,",
+                "todo lo frío aprende a latir."
+            ],
+            [
+                "No es fiebre triste ni incendio torpe,",
+                "es una ternura queriendo quedarse;",
+                "como pan reciente dentro de la casa,",
+                "como luz pequeña que sabe cuidarse."
+            ],
+            [
+                "Si el mundo me deja cansado y disperso,",
+                "si pierdo la forma de estar en paz;",
+                "recuerdo tus ojos, tu voz, tu paciencia,",
+                "y algo en mi centro vuelve a templar."
+            ],
+            [
+                "Me calientas el alma sin tocar mis manos,",
+                "me haces hogar donde había piedra;",
+                "tu nombre conversa con todas mis partes",
+                "y las convence de volver a creer."
+            ],
+            [
+                "Por eso te guardo donde nadie mira,",
+                "en la zona exacta de mi devoción;",
+                "ahí donde el amor no hace ruido,",
+                "pero sostiene completa mi respiración."
+            ]
+        ]
+    },
+
+    "2026-07-15": {
+        fecha: "15 de julio de 2026",
+        titulo: "La forma en la que me enciendes",
+        calendarioIcono: { valor: "🔌", color: "#f59e0b", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "A",
+        pd: "Pd. ¿Cómo podría medir lo que despiertas con solo tocarme?",
+        estrofas: [
+            [
+                "Hay corrientes que pasan sin verse,",
+                "mensajes eléctricos por debajo de la piel;",
+                "así me atraviesas cuando estás cerca,",
+                "con una dulzura que me sabe encender."
+            ],
+            [
+                "Un amperio sería poco para esta prisa,",
+                "para este temblor que me sube a la voz;",
+                "si rozas mis dedos, mi mundo responde",
+                "como un circuito aprendiendo tu amor."
+            ],
+            [
+                "No busco descarga que rompa la calma,",
+                "ni trueno violento partiéndome en dos;",
+                "prefiero esa chispa pequeña y constante",
+                "con que tu presencia me vuelve mejor."
+            ],
+            [
+                "A veces soy cable cansado de lluvia,",
+                "metal apagado, sombra y ansiedad;",
+                "pero llegas riendo, conectas mi pecho,",
+                "y siento que me vuelvo Iron Man."
+            ],
+            [
+                "Tu mirada conduce lo que no digo,",
+                "lo lleva despacio hasta florecer;",
+                "por eso mis manos, cuando te buscan,",
+                "parecen saber lo que quieren creer."
+            ],
+            [
+                "Quédate cerca de esta corriente,",
+                "no por peligro, sino por calor;",
+                "porque si tú pasas por mi vida,",
+                "hasta mis noches encuentran color."
+            ]
+        ]
+    },
+
+    "2026-07-16": {
+        fecha: "16 de julio de 2026",
+        titulo: "La fuerza que me devuelve",
+        calendarioIcono: { valor: "🧲", color: "#64748b", escala: 0.7 },
+        autor: "A. Ssshparro",
+        mensaje: "N",
+        pd: "Pd. ¿Cómo podría describir el empuje con que me regresas a mí?",
+        estrofas: [
+            [
+                "A veces la vida me deja en reposo,",
+                "como objeto olvidado después del dolor;",
+                "pero tú llegas con manos tranquilas",
+                "y algo en mi centro recupera dirección."
+            ],
+            [
+                "Ni Newton sabría como decirlo,",
+                "pero me ayuda a empezar la verdad;",
+                "hay una fuerza dulce en tu manera",
+                "de empujar mi tristeza hacia otro lugar."
+            ],
+            [
+                "No me arrastras, no me impones camino,",
+                "solo apareces y vuelve la fe;",
+                "tu ternura corrige mi caída",
+                "como si supiera dónde sostener."
+            ],
+            [
+                "Cuando mi ánimo pierde equilibrio,",
+                "cuando mi voz se quiere romper;",
+                "me basta pensar en tu risa cercana",
+                "para encontrar suelo bajo los pies."
+            ],
+            [
+                "Hay impulsos que salvan despacio,",
+                "sin ruido heroico, sin vanidad;",
+                "el tuyo me toca como abrazo invisible",
+                "y me devuelve la voluntad."
+            ],
+            [
+                "Si todo cuerpo responde a una causa,",
+                "si nada se mueve sin una razón;",
+                "la mía eres tú, constante y hermosa,",
+                "mi delicada forma de volver al sol."
+            ]
+        ]
+    },
+
+    "2026-07-17": {
+        fecha: "17 de julio de 2026",
+        titulo: "El instante donde cabes",
+        calendarioIcono: { valor: "⏳", color: "#b7791f", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "T",
+        pd: "Pd. ¿Cómo podría pedirle al reloj que no corra cuando estás conmigo?",
+        estrofas: [
+            [
+                "Hay relojes que creen saberlo todo,",
+                "con su paso exacto, su pulso formal;",
+                "pero cuando llegas y dices mi nombre,",
+                "hasta lo preciso comienza a temblar."
+            ],
+            [
+                "El tiempo se dobla si rozas mi tarde,",
+                "se vuelve más lento para verte reír;",
+                "un segundo contigo se ensancha completo",
+                "y cabe en mi pecho como porvenir."
+            ],
+            [
+                "No quiero eternidades vacías de ti,",
+                "ni años perfectos sin tu calor;",
+                "prefiero un instante pequeño y honesto",
+                "donde tu mirada me dé dirección."
+            ],
+            [
+                "Si la noche se alarga cuando te extraño,",
+                "si la mañana tarda en volver;",
+                "yo cuento recuerdos como quien enciende",
+                "velas pequeñas para no caer."
+            ],
+            [
+                "Tu risa inaugura calendarios secretos,",
+                "fechas que nadie podría entender;",
+                "yo las celebro sin decir palabra,",
+                "porque en cada una te vuelvo a querer."
+            ],
+            [
+                "Quédate aquí, en este punto claro,",
+                "donde la prisa deja de mandar;",
+                "si el universo sigue su marcha,",
+                "que nos encuentre aprendiendo a besar."
+            ]
+        ]
+    },
+
+    "2026-07-18": {
+        fecha: "18 de julio de 2026",
+        titulo: "Pequeña medida del mundo",
+        calendarioIcono: { valor: "⚛️", color: "#7c3aed", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "U",
+        pd: "Pd. ¿Cómo podría pesar algo tan pequeño que aun así cambia todo?",
+        estrofas: [
+            [
+                "Hay medidas diminutas que sostienen mundos,",
+                "secretos pequeños detrás de la luz;",
+                "yo pienso en tus detalles, casi invisibles,",
+                "y en cómo me salvan sin hacer ruido."
+            ],
+            [
+                "Una masa atómica cabe en lo mínimo,",
+                "pero ayuda a entender lo que no se ve;",
+                "así tus detalles, discretos y exactos,",
+                "ordenan mi vida sin pedir poder."
+            ],
+            [
+                "Una palabra tuya parece ligera,",
+                "pero mueve mi día con precisión;",
+                "me cambia la órbita, limpia mi miedo,",
+                "me deja más cerca de tener un corazón."
+            ],
+            [
+                "No todo lo grande se anuncia gigante,",
+                "no todo milagro pretende brillar;",
+                "a veces lo inmenso llega en voz baja,",
+                "con tu forma simple de acompañar."
+            ],
+            [
+                "Si miro lo pequeño, te encuentro escondida,",
+                "en la paciencia, en el pan, en la sal;",
+                "en ese cuidado que nadie presume",
+                "pero que me enseña cómo descansar."
+            ],
+            [
+                "Por eso celebro tu escala secreta,",
+                "tu modo callado de hacerme vivir;",
+                "porque incluso lo breve, si viene de tus manos,",
+                "puede levantar universos en mí."
+            ]
+        ]
+    },
+
+    "2026-07-19": {
+        fecha: "19 de julio de 2026",
+        titulo: "Energía es igual a Mi amor por mi Cielo al cuadrado",
+        calendarioIcono: { valor: "⚖️", color: "#8b5e34", escala: 0.7 },
+        autor: "A. Ssshparro",
+        mensaje: "M",
+        pd: "Pd. ¿Cómo podría explicar que tu recuerdo me ancla sin hundirme?",
+        estrofas: [
+            [
+                "Hay presencias que no ocupan la sala,",
+                "pero cambian la forma de respirar;",
+                "la tuya llega incluso en silencio",
+                "y vuelve mi pecho un lugar para estar."
+            ],
+            [
+                "La masa de tu nombre no cae sobre mí,",
+                "me sostiene despacio, me enseña a quedar;",
+                "como una certeza tibia en el centro",
+                "cuando todo afuera se quiere quebrar."
+            ],
+            [
+                "No es carga triste ni piedra en la espalda,",
+                "es raíz amable, dulce gravedad;",
+                "me deja en la tierra sin robarme el cielo,",
+                "me da pertenencia, me da claridad."
+            ],
+            [
+                "Si alguna vez floto lejos de mí mismo,",
+                "si pierdo mis bordes, mi voz, mi razón;",
+                "tu memoria llega con manos tranquilas",
+                "y acomoda de nuevo mi respiración."
+            ],
+            [
+                "Tienes ese peso que tienen los hogares,",
+                "las mantas, los besos, la primera canción;",
+                "no aplasta, no obliga, no exige nada,",
+                "solo permanece cuidando el amor."
+            ],
+            [
+                "Y si el universo pregunta mi centro,",
+                "si quiere saber dónde aprendí a existir;",
+                "le diré bajito que fue en tu ternura,",
+                "donde mi mundo decidió quedarse aquí."
+            ]
+        ]
+    },
 }
