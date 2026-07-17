@@ -62,6 +62,10 @@ function navegarBusqueda() {
             location.href = BASE + "Secrets/quantum.html";
             return;
         }
+        else if (palabra === "periodica" || palabra === "tabla") {
+            location.href = BASE + "Secrets/periodica.html";
+            return;
+        }
 
         if (typeof secretos !== "undefined" && Object.hasOwn(secretos, palabra)) {
             location.href = BASE + "info/secreto.html?clave=" + encodeURIComponent(palabra);

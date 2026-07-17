@@ -3175,4 +3175,291 @@ const poemas = {
             ]
         ]
     },
+
+    "2026-07-20": {
+        fecha: "20 de julio de 2026",
+        titulo: "La sal de volver a ti",
+        calendarioIcono: { valor: "K", color: "#a3e635", escala: 0.78 },
+        autor: "A. Ssshparro",
+        mensaje: "K",
+        pd: "Pd. ¿Qué reacción escribirías para explicar que mi impulso siempre termina buscándote?",
+        estrofas: [
+            [
+                "Hay días que empiezan con sed de distancia,",
+                "con ruido en la sangre, con prisa en la piel;",
+                "pero tu recuerdo me encuentra despierto",
+                "y vuelve más claro lo que quiero ser."
+            ],
+            [
+                "El potasio arde si toca el agua,",
+                "yo ardo bajito si escucho tu voz;",
+                "no por peligro, sino por ternura,",
+                "por esa chispa que aprende calor."
+            ],
+            [
+                "Tienes la forma de hacerme corriente,",
+                "de mover mis nervios hacia la luz;",
+                "como si mi cuerpo, sin pedir permiso,",
+                "supiera el camino que lleva hasta tú."
+            ],
+            [
+                "No necesito una llama gigante,",
+                "ni un laboratorio para comprobar;",
+                "me basta tu nombre cruzando la tarde",
+                "para que mi pecho vuelva a reaccionar."
+            ],
+            [
+                "Si alguna distancia presume ser fuerte,",
+                "si quiere alejarme de donde nací;",
+                "yo le contesto con manos abiertas:",
+                "mi elemento estable comienza en ti."
+            ]
+        ]
+    },
+
+    "2026-07-21": {
+        fecha: "21 de julio de 2026",
+        titulo: "Metal noble de tus brazos",
+        calendarioIcono: { valor: "Rh", color: "#f0abfc", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "Rh",
+        pd: "Pd. ¿Cómo se llama el lugar exacto donde mi cansancio deja de defenderse?",
+        estrofas: [
+            [
+                "Hay metales que guardan su brillo",
+                "aunque la noche les quiera caer;",
+                "así tu manera de estar en mi vida",
+                "resiste la sombra sin endurecer."
+            ],
+            [
+                "El rodio parece una luz reservada,",
+                "un lujo pequeño que sabe durar;",
+                "yo pienso en tus brazos, discretos y firmes,",
+                "y en cómo me enseñan a descansar."
+            ],
+            [
+                "No todo refugio se anuncia con puertas,",
+                "no toda casa se puede tocar;",
+                "a veces un nombre, dicho con cariño,",
+                "levanta paredes contra la ansiedad."
+            ],
+            [
+                "Contigo mi caos no pierde su historia,",
+                "solo encuentra sitio para respirar;",
+                "me vuelvo más suave, menos defensivo,",
+                "más cerca del mundo, más cerca de amar."
+            ],
+            [
+                "Si la vida oxida mis ganas pequeñas,",
+                "si el día me deja sin claridad;",
+                "tu ternura llega, noble y callada,",
+                "y pule mi miedo hasta hacerlo brillar."
+            ]
+        ]
+    },
+
+    "2026-07-22": {
+        fecha: "22 de julio de 2026",
+        titulo: "Y entonces llegaste",
+        calendarioIcono: { valor: "Y", color: "#60a5fa", escala: 0.78 },
+        autor: "A. Ssshparro",
+        mensaje: "Y",
+        pd: "Pd. ¿Qué símbolo usarías para ese instante en que todo empieza a tener dirección?",
+        estrofas: [
+            [
+                "Antes de ti, la tarde era una línea",
+                "sin mucho misterio, sin mucho temblor;",
+                "pasaban las horas con pasos iguales,",
+                "como si el destino no alzara la voz."
+            ],
+            [
+                "El itrio aparece en cristales y luces,",
+                "en cosas que aprenden color al arder;",
+                "tú apareciste con esa costumbre",
+                "de hacer que lo simple vuelva a florecer."
+            ],
+            [
+                "Y entonces mi mundo cambió de gramática,",
+                "la frase más breve se volvió canción;",
+                "un mensaje tuyo bastó para abrirme",
+                "ventanas pequeñas dentro del corazón."
+            ],
+            [
+                "No sé si fue ciencia, azar o milagro,",
+                "ni quiero volverlo fácil de explicar;",
+                "hay cosas que existen para ser vividas,",
+                "no para encerrarse en definición."
+            ],
+            [
+                "Si alguien pregunta por mi coordenada,",
+                "por dónde comienza mi nueva verdad;",
+                "diré que fue un día cualquiera del mundo,",
+                "y entonces llegaste, y aprendí a brillar."
+            ]
+        ]
+    },
+
+    "2026-07-23": {
+        fecha: "23 de julio de 2026",
+        titulo: "Catalizador de mi calma",
+        calendarioIcono: { valor: "Pd", color: "#c4b5fd", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "Pd",
+        pd: "Pd. ¿Cómo podría describir esa manera tuya de acelerar mi alegría sin romperme?",
+        estrofas: [
+            [
+                "Hay procesos lentos dentro del pecho,",
+                "miedos que tardan en querer salir;",
+                "pero tú llegas con voz pequeñita",
+                "y algo se atreve de nuevo a vivir."
+            ],
+            [
+                "El paladio ayuda a cambiar las moléculas,",
+                "sin presumirse dueño de la reacción;",
+                "así tu ternura trabaja en silencio",
+                "cambiando mis dudas por respiración."
+            ],
+            [
+                "No me empujas, no fuerzas mi ritmo,",
+                "no haces del alma un lugar a vencer;",
+                "solo acompañas, paciente y precisa,",
+                "hasta que mi sombra aprende a ceder."
+            ],
+            [
+                "Tu presencia tiene química noble,",
+                "esa que transforma sin lastimar;",
+                "me vuelve más claro, menos perdido,",
+                "más capaz de quedarme y confiar."
+            ],
+            [
+                "Si alguna tristeza parece insoluble,",
+                "si alguna palabra no quiere nacer;",
+                "me basta pensarte, mi dulce catalizadora,",
+                "para que lo imposible empiece a ceder."
+            ]
+        ]
+    },
+
+    "2026-07-24": {
+        fecha: "24 de julio de 2026",
+        titulo: "Ligero como tu fuerza",
+        calendarioIcono: { valor: "Ti", color: "#94a3b8", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "Ti",
+        pd: "Pd. ¿Qué aleación inventarías para unir mi terquedad con tu ternura?",
+        estrofas: [
+            [
+                "Hay fuerzas que pesan como una condena,",
+                "y otras que ayudan sin hacer presión;",
+                "la tuya es ligera, firme y tranquila,",
+                "como un puente claro sobre mi confusión."
+            ],
+            [
+                "El titanio resiste sin volverse tosco,",
+                "guarda ligereza, sostiene metal;",
+                "yo miro tu forma de cuidar mis grietas",
+                "y entiendo otra clase de fortaleza."
+            ],
+            [
+                "No necesitas armadura de ruido,",
+                "ni frases enormes para proteger;",
+                "te basta quedarte, mirar con paciencia,",
+                "y mi mundo empieza otra vez a creer."
+            ],
+            [
+                "Si soy nave cansada de tantas tormentas,",
+                "si pierdo mis alas por miedo a caer;",
+                "tú haces del aire una pista posible",
+                "y de mi cansancio ganas de volver."
+            ],
+            [
+                "Por eso te escribo con pulso de aleación,",
+                "mitad esperanza, mitad gratitud;",
+                "porque en tu manera de hacerme más fuerte",
+                "también me permites seguir siendo luz."
+            ]
+        ]
+    },
+
+    "2026-07-25": {
+        fecha: "25 de julio de 2026",
+        titulo: "Respirar donde tú existes",
+        calendarioIcono: { valor: "O", color: "#38bdf8", escala: 0.78 },
+        autor: "A. Ssshparro",
+        mensaje: "O",
+        pd: "Pd. ¿Cómo podría medir la calma exacta que entra en mí cuando te pienso?",
+        estrofas: [
+            [
+                "No digo que sin ti no tenga aire,",
+                "porque la vida también sabe seguir;",
+                "pero contigo respiro distinto,",
+                "como si el mundo cupiera en mí."
+            ],
+            [
+                "El oxígeno pasa callado en la sangre,",
+                "enciende lo vivo, sostiene la voz;",
+                "así tu recuerdo cruza mis días",
+                "y vuelve habitable mi respiración."
+            ],
+            [
+                "Hay tardes cerradas, ventanas pequeñas,",
+                "habitaciones llenas de ansiedad;",
+                "pero tu risa abre una corriente",
+                "y entra en mi pecho claridad."
+            ],
+            [
+                "No eres remedio ni deuda ni obligación,",
+                "eres presencia, descanso, canción;",
+                "esa manera sencilla y hermosa",
+                "de recordarme que todo mejora."
+            ],
+            [
+                "Si alguna vez callo y parezco distante,",
+                "si mi voz se esconde para no temblar;",
+                "búscame en el ritmo con que te pienso:",
+                "ahí sigo aprendiendo a respirar."
+            ]
+        ]
+    },
+
+    "2026-07-26": {
+        fecha: "26 de julio de 2026",
+        titulo: "Imán de domingo",
+        calendarioIcono: { valor: "Nd", color: "#818cf8", escala: 0.72 },
+        autor: "A. Ssshparro",
+        mensaje: "Nd",
+        pd: "Pd. ¿Qué campo invisible explicarías para decir por qué siempre vuelvo a ti? Mira la <a href='/Riveropedia/Secrets/periodica.html'>tabla periódica de amor</a>.",
+        estrofas: [
+            [
+                "Hay domingos que llegan con voz de planeta,",
+                "lentos, redondos, queriendo abrazar;",
+                "yo los recibo pensando en tus ojos,",
+                "como quien encuentra su norte al mirar."
+            ],
+            [
+                "El neodimio guarda imanes potentes,",
+                "fuerzas discretas difíciles de ver;",
+                "así me atraes sin mover un dedo,",
+                "sin dar una orden, sin querer vencer."
+            ],
+            [
+                "No es posesión lo que tira de mi alma,",
+                "no es una jaula ni una gravedad;",
+                "es esa certeza tranquila y brillante",
+                "de que contigo quiero regresar."
+            ],
+            [
+                "Si el mundo me empuja hacia rutas dispersas,",
+                "si todo se vuelve ruido exterior;",
+                "tu nombre aparece, campo invisible,",
+                "y ordena de nuevo mi corazón."
+            ],
+            [
+                "Por eso este día termina en tu orilla,",
+                "como metal dulce buscando su imán;",
+                "si amar es volver sin perder el camino,",
+                "yo vuelvo contigo, una vez más."
+            ]
+        ]
+    },
 }
