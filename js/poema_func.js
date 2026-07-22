@@ -3,7 +3,12 @@ const poema = fecha && typeof poemas !== "undefined" ? poemas[fecha] : null;
 const $ = id => document.getElementById(id);
 
 const puedeAbrirse = fechaISO => {
-    return Boolean(fechaISO);
+    if (!fechaISO) return false;
+    const [y, m, d] = fechaISO.split("-").map(Number);
+    const fechaPoema = new Date(y, m - 1, d);
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+    return fechaPoema <= hoy;
 };
 
 function envolverLetras(html, letras) {

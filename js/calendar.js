@@ -42,7 +42,7 @@ function renderCalendario(mesIndex) {
         const fecha = new Date(2026, mesIndex, d);
         const fechaISO = formatearFecha(fecha);
         const esExcepcion = Object.prototype.hasOwnProperty.call(excepciones, fechaISO);
-        const dentroDeRango = fecha >= inicio && fecha <= fin;
+        const dentroDeRango = fecha >= inicio && fecha <= hoy && fecha <= fin;
 
         boton.classList.add("dia");
         boton.textContent = d;
