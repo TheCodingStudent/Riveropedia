@@ -54,7 +54,7 @@ function navegarBusqueda() {
             location.href = BASE + "Secrets/spectre.html";
             return;
         }
-        else if (palabra === "trinity") {
+        else if (palabra === "trinity" || palabra === "trinidad") {
             location.href = BASE + "Secrets/trinity.html";
             return;
         }
