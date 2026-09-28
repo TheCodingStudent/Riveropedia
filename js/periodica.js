@@ -2,8 +2,9 @@ const familias = {
     pasion: "#ff6fbd",
     ternura: "#ffd985",
     calma: "#74ddff",
-    cuidado: "#7dffb2",
-    misterio: "#aa86ff"
+    cuidado: "#c7b8ff",
+    misterio: "#86a2ff",
+    solucion: "#00ff00"
 };
 
 const elementosRaw = `
@@ -25,7 +26,7 @@ const elementosRaw = `
 16|S|Azufre|calma|16|3
 17|Cl|Cloro|calma|17|3
 18|Ar|Argón|cuidado|18|3
-19|K|Potasio|misterio|1|4
+19|K|Potasio|solucion|1|4
 20|Ca|Calcio|ternura|2|4
 21|Sc|Escandio|misterio|3|4
 22|Ti|Titanio|ternura|4|4

@@ -547,6 +547,9 @@ const poemasElementales = {
                 "no te confíes, mi amor, por favor;",
                 "debajo llevo potasio en el pecho,",
                 "esperando tu agua para arder mejor."
+            ],
+            [
+                "Ésta es la última letra que necesitas."
             ]
         ]
     },

@@ -65,6 +65,9 @@ function navegarBusqueda() {
         else if (palabra === "periodica" || palabra === "tabla") {
             location.href = BASE + "Secrets/periodica.html";
             return;
+        }else if (palabra === "iloveu3000" || palabra === "iloveu3k") {
+            location.href = BASE + "Secrets/iloveu3k.html";
+            return;
         }
 
         if (typeof secretos !== "undefined" && Object.hasOwn(secretos, palabra)) {
