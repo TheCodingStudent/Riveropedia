@@ -66,7 +66,7 @@ function navegarBusqueda() {
             location.href = BASE + "Secrets/periodica.html";
             return;
         }else if (palabra === "iloveu3000" || palabra === "iloveu3k") {
-            location.href = BASE + "Secrets/iloveu3k.html";
+            location.href = BASE + "Secrets/iloveu3k.pdf";
             return;
         }
 
